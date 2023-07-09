@@ -1,0 +1,36 @@
+CREATE VIEW ZT_IdCardKihonRn AS SELECT
+     zrnidkbn ,         /* （連携用）ＩＤ区分 */
+     zrnidcd ,         /* （連携用）ＩＤコード */
+     zrnyobiv8 ,         /* （連携用）予備項目Ｖ８ */
+     zrnyobiv10 ,         /* （連携用）予備項目Ｖ１０ */
+     zrntanmatusiyoukbn ,         /* （連携用）端末使用区分 */
+     zrnaccesskbn ,         /* （連携用）アクセス区分 */
+     zrnidnyuuryokusyanm ,         /* （連携用）ＩＤ入力者名 */
+     zrnkanjiidnyuuryokusyanm ,         /* （連携用）漢字ＩＤ入力者名 */
+     zrnidnyuuryokusyaseiymd ,         /* （連携用）ＩＤ入力者生年月日 */
+     zrnidnyuuryokusyanyuusyaymd ,         /* （連携用）ＩＤ入力者入社年月日 */
+     zrnsyozokusosikicd ,         /* （連携用）所属組織コード */
+     zrnsyozokusisyacd ,         /* （連携用）所属支社コード */
+     zrnsyozokusibucd ,         /* （連携用）所属支部コード */
+     zrnidnyuuryokusyasikakucd ,         /* （連携用）ＩＤ入力者資格コード */
+     zrnyobiv2 ,         /* （連携用）予備項目Ｖ２ */
+     zrnidsdpsouhuhyouji ,         /* （連携用）ＩＤＳＤＰ送付表示 */
+     zrnyobiv1 ,         /* （連携用）予備項目Ｖ１ */
+     zrnyobiv1x2 ,         /* （連携用）予備項目Ｖ１＿２ */
+     zrnyobiv1x3 ,         /* （連携用）予備項目Ｖ１＿３ */
+     zrnyobiv2x2 ,         /* （連携用）予備項目Ｖ２＿２ */
+     zrnyobiv2x3 ,         /* （連携用）予備項目Ｖ２＿３ */
+     zrnyobiv26 ,         /* （連携用）予備項目Ｖ２６ */
+     zrnyobiv8x2 ,         /* （連携用）予備項目Ｖ８＿２ */
+     zrnidcardsaisyuukousinymd ,         /* （連携用）ＩＤカード最終更新年月日 */
+     zrnidcardmukouymd ,         /* （連携用）ＩＤカード無効年月日 */
+     zrnkaikeitantousyakbn ,         /* （連携用）会計担当者区分 */
+     zrnsyanaiyokintantousyakbn ,         /* （連携用）社内預金担当者区分 */
+     zrnjinjimynosyoukaihyj ,         /* （連携用）人事・マイナンバー照会可能表示 */
+     zrneisyokumynosyoukaihyj ,         /* （連携用）営職・マイナンバー照会可能表示 */
+     zrnhudousanmynosyoukaihyj ,         /* （連携用）不動産・マイナンバー照会可能表示 */
+     zrnkohomynosyoukaihyj ,         /* （連携用）個保・マイナンバー照会可能表示 */
+     zrnkihomynosyoukaihyj ,         /* （連携用）企保・マイナンバー照会可能表示 */
+     zrnkikantantoukbn ,         /* （連携用）機関担当区分 */
+     zrnyobiv32           /* （連携用）予備項目Ｖ３２ */
+FROM ZT_IdCardKihonRn_Z;

@@ -1,0 +1,36 @@
+CREATE VIEW IT_TRDattai AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     syoriYmd ,         /* 処理年月日 */
+     dattaitrrenno ,         /* 脱退TR連番 */
+     dattaikeiro ,         /* 脱退経路 */
+     syuudaikocd ,         /* 収納代行社コード */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     hurihunokbn ,         /* 振替不能理由区分 */
+     hurikaeymd ,         /* 振替日 */
+     creditdatakbn ,         /* クレジットデータ区分 */
+     creditcardno1 ,         /* クレジットカード番号１ */
+     creditcardno2 ,         /* クレジットカード番号２ */
+     creditcardno3 ,         /* クレジットカード番号３ */
+     creditcardno4 ,         /* クレジットカード番号４ */
+     creditbrerrorcd ,         /* クレジット払エラーコード */
+     dattaiym ,         /* 脱退年月 */
+     nykkeiro ,         /* 入金経路 */
+     nyknaiyoukbn ,         /* 入金内容区分 */
+     jyutoukaisuuy ,         /* 充当回数（年） */
+     jyutoukaisuum ,         /* 充当回数（月） */
+     tikiktbrisyuruikbn ,         /* 定期一括払種類区分 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     creditkessaiyouno ,         /* クレジットカード決済用番号 */
+     cardbrandkbn ,         /* カードブランド区分 */
+     creditkaiinnosimo4keta           /* クレジット会員番号（下４桁） */
+FROM IT_TRDattai_Z;

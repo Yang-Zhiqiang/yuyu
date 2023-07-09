@@ -1,0 +1,38 @@
+CREATE VIEW IW_KhYendtHnkHrShrWk AS SELECT
+     kouteikanriid ,         /* 工程管理ＩＤ */
+     syono ,         /* 証券番号 */
+     skssakuseiymd ,         /* 請求書作成日 */
+     khhrshrjiyuu ,         /* 契約保全返戻金支払事由 */
+     syoruiukeymd ,         /* 書類受付日 */
+     shnmkj ,         /* 送付先氏名（漢字）（３０桁） */
+     shskyno ,         /* 送付先郵便番号 */
+     shsadr1kj ,         /* 送付先住所１（漢字）（３０桁） */
+     shsadr2kj ,         /* 送付先住所２（漢字）（３０桁） */
+     shsadr3kj ,         /* 送付先住所３（漢字）（３０桁） */
+     khskssakuseijiyuu ,         /* 契約保全請求書作成事由 */
+     kyksyaszknmkn ,         /* 契約者相続人氏名（カナ） */
+     kyksyaszknmkj ,         /* 契約者相続人氏名（漢字） */
+     kyksyaszkyno ,         /* 契約者相続人郵便番号 */
+     kyksyaszkadr1kj ,         /* 契約者相続人住所１（漢字） */
+     kyksyaszkadr2kj ,         /* 契約者相続人住所２（漢字） */
+     kyksyaszkadr3kj ,         /* 契約者相続人住所３（漢字） */
+     inputshrhousiteikbn ,         /* 入力用支払方法指定区分 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     kzdoukbn ,         /* 口座名義人同一区分 */
+     kzmeiginmkn ,         /* 口座名義人氏名（カナ） */
+     kykmnmeigibangou ,         /* 契約者ＭＮ名義番号 */
+     uktmnmeigibangou ,         /* 受取人ＭＮ名義番号 */
+     honninkakninkekkakbn ,         /* 本人確認結果区分 */
+     hassoukbn ,         /* 発送区分 */
+     zenkaisyorikekkakbn ,         /* 前回処理結果区分 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IW_KhYendtHnkHrShrWk_Z;

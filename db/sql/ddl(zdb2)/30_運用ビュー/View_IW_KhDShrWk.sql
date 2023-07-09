@@ -1,0 +1,29 @@
+CREATE VIEW IW_KhDShrWk AS SELECT
+     kouteikanriid ,         /* 工程管理ＩＤ */
+     syono ,         /* 証券番号 */
+     skssakuseiymd ,         /* 請求書作成日 */
+     syoruiukeymd ,         /* 書類受付日 */
+     haitoukinskkbn ,         /* 配当金請求区分 */
+     haitoukinskkngk ,         /* 配当金請求金額 */
+     haitoukinskkngk$ ,         /* 配当金請求金額(通貨型) */
+     inputshrhousiteikbn ,         /* 入力用支払方法指定区分 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     kzdoukbn ,         /* 口座名義人同一区分 */
+     kzmeiginmkn ,         /* 口座名義人氏名（カナ） */
+     honninkakninkekkakbn ,         /* 本人確認結果区分 */
+     zenkaisyorikekkakbn ,         /* 前回処理結果区分 */
+     shskyno ,         /* 送付先郵便番号 */
+     shsadr1kj ,         /* 送付先住所１（漢字）（３０桁） */
+     shsadr2kj ,         /* 送付先住所２（漢字）（３０桁） */
+     shsadr3kj ,         /* 送付先住所３（漢字）（３０桁） */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IW_KhDShrWk_Z;

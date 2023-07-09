@@ -1,0 +1,41 @@
+CREATE VIEW ZT_DrtenKykIdouDetailRn AS SELECT
+     zrnkinyuukikancd ,         /* （連携用）金融機関コード */
+     zrnkinyuukikansitencd ,         /* （連携用）金融機関支店コード */
+     zrnbsydrtencd ,         /* （連携用）募集代理店コード */
+     zrncifcd ,         /* （連携用）ＣＩＦコード */
+     zrnbosyuunincd ,         /* （連携用）募集人コード */
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnidouhasseiymd ,         /* （連携用）異動発生年月日 */
+     zrnkykmfksnctrlkh ,         /* （連携用）契約ＭＦ更新ＣＴＲ（保全） */
+     zrnsyoricd ,         /* （連携用）処理コード */
+     zrnidoukbn ,         /* （連携用）異動区分 */
+     zrnbsyym ,         /* （連携用）募集年月 */
+     zrnkydatkikbn ,         /* （連携用）共同扱区分 */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnjikaipjyuutouym ,         /* （連携用）次回Ｐ充当年月 */
+     zrnhrkkaisuukbn ,         /* （連携用）払込回数区分 */
+     zrnhrkkeirokbn ,         /* （連携用）払込経路区分 */
+     zrnanniskcd ,         /* （連携用）案内先コード */
+     zrndntcd ,         /* （連携用）団体コ－ド */
+     zrnharaikomip ,         /* （連携用）払込Ｐ */
+     zrnkjsyagaihknnm ,         /* （連携用）漢字社外向け保険名 */
+     zrntelno ,         /* （連携用）電話番号 */
+     zrnhensyuubosyuudrtennm ,         /* （連携用）編集後漢字募集代理店名 */
+     zrnkyknmkjdirtnkykido ,         /* （連携用）契約者名（漢字）（代理店契約異動明細） */
+     zrnkjdntnm ,         /* （連携用）漢字団体名 */
+     zrnkzhurikaebankcd ,         /* （連携用）口座振替銀行番号 */
+     zrnkzhurikaesitencd ,         /* （連携用）口座振替支店番号 */
+     zrnkzhurikaeyokinkbn ,         /* （連携用）口座振替預金種目区分 */
+     zrnkzhurikaekouzano ,         /* （連携用）口座振替口座番号 */
+     zrnoyabosyuudairitencd ,         /* （連携用）親募集代理店コード */
+     zrnbsydrtenkanrisosikicd ,         /* （連携用）募集代理店管理組織コード */
+     zrnbosyuudairitengyousyukbn ,         /* （連携用）募集代理店業種区分 */
+     zrnbosyuudrtennmkj ,         /* （連携用）募集代理店名（漢字） */
+     zrndoujitusyoricount ,         /* （連携用）同日処理回数 */
+     zrnhjnkykhyj ,         /* （連携用）法人契約表示 */
+     zrnhjnnmkj ,         /* （連携用）法人名（漢字） */
+     zrnsyuhrkkaisuukbn ,         /* （連携用）表示用主契約払込回数区分 */
+     zrnikkatubaraikbn ,         /* （連携用）一括払区分 */
+     zrnikkatubaraikaisuu ,         /* （連携用）一括払回数 */
+     zrnyobiv103           /* （連携用）予備項目Ｖ１０３ */
+FROM ZT_DrtenKykIdouDetailRn_Z;

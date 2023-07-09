@@ -1,0 +1,1 @@
+INSERT INTO BM_ChkNkgns (hhknfromnen, hhkntonen, nkgnsgndgk, nkgnsgndgk$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('0', '999', '1500000000', 'YEN', 'init', '20180625000000000', 'init', '0');

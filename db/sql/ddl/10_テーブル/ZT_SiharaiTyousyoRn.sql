@@ -1,0 +1,85 @@
+CREATE TABLE ZT_SiharaiTyousyoRn (
+     zrnsubsystemid                                     CHAR        (50)                                                      NOT NULL  ,  /* （連携用）サブシステムＩＤ */
+     zrnsequenceno                                      NUMBER      (8)                                                       NOT NULL  ,  /* （連携用）シーケンス番号 */
+     zrnsyono                                           CHAR        (11)                                                      NOT NULL  ,  /* （連携用）証券番号 */
+     zrnhknsyukigou                                     CHAR        (2)                                                       NOT NULL  ,  /* （連携用）保険種類記号 */
+     zrnkacd                                            CHAR        (3)                                                       NOT NULL  ,  /* （連携用）課コード */
+     zrntantocd                                         CHAR        (1)                                                       NOT NULL  ,  /* （連携用）担当コード */
+     zrnsyorisosikicd                                   CHAR        (7)                                                       NOT NULL  ,  /* （連携用）処理組織コード */
+     zrnshrtysysyuruicd                                 CHAR        (1)                                                       NOT NULL  ,  /* （連携用）支払調書種類コード */
+     zrnsyoritaisyoukbn                                 CHAR        (2)                                                       NOT NULL  ,  /* （連携用）処理対象区分 */
+     zrnbaitaiskshunoriyuukbn1                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）媒体作成不能理由区分１ */
+     zrnbaitaiskshunoriyuukbn2                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）媒体作成不能理由区分２ */
+     zrnbaitaiskshunoriyuukbn3                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）媒体作成不能理由区分３ */
+     zrnbaitaiskshunoriyuukbn4                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）媒体作成不能理由区分４ */
+     zrnbaitaiskshunoriyuukbn5                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）媒体作成不能理由区分５ */
+     zrnshrtysyjyuusyocd                                CHAR        (8)                                                       NOT NULL  ,  /* （連携用）支払調書住所コード */
+     zrnshrtysyjyuusyo                                  VARCHAR     (62)                                                      NOT NULL  ,  /* （連携用）支払調書住所 */
+     zrnuktnmkj35                                       VARCHAR     (35)                                                      NOT NULL  ,  /* （連携用）受取人名（漢字）（３５桁） */
+     zrndaihyouktkbn                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）代表受取人区分 */
+     zrnkjdaihyouuktnm                                  VARCHAR     (15)                                                      NOT NULL  ,  /* （連携用）漢字代表受取人名 */
+     zrnuktmnmeigibangou                                CHAR        (3)                                                       NOT NULL  ,  /* （連携用）受取人ＭＮ名義番号 */
+     zrnyobiv24                                         CHAR        (24)                                                      NOT NULL  ,  /* （連携用）予備項目Ｖ２４ */
+     zrnmfjyuusyocd                                     CHAR        (8)                                                       NOT NULL  ,  /* （連携用）ＭＦ住所コード */
+     zrnmfjyuusyo                                       VARCHAR     (62)                                                      NOT NULL  ,  /* （連携用）ＭＦ住所 */
+     zrnkyknmkj35                                       VARCHAR     (35)                                                      NOT NULL  ,  /* （連携用）契約者名（漢字）（３５桁） */
+     zrnkykmnmeigibangou                                CHAR        (3)                                                       NOT NULL  ,  /* （連携用）契約者ＭＮ名義番号 */
+     zrnjigyoukykmndantaicd                             CHAR        (8)                                                       NOT NULL  ,  /* （連携用）事業契約用ＭＮ団体コード */
+     zrnyobiv17                                         CHAR        (17)                                                      NOT NULL  ,  /* （連携用）予備項目Ｖ１７ */
+     zrnhhknnmkj                                        VARCHAR     (15)                                                      NOT NULL  ,  /* （連携用）被保険者名（漢字） */
+     zrnyobiv3                                          CHAR        (3)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ３ */
+     zrnyobiv17x2                                       CHAR        (17)                                                      NOT NULL  ,  /* （連携用）予備項目Ｖ１７＿２ */
+     zrnoldkykkihontikucd                               CHAR        (8)                                                       NOT NULL  ,  /* （連携用）旧契約者基本地区コード */
+     zrnkjoldkykkaiadr                                  VARCHAR     (62)                                                      NOT NULL  ,  /* （連携用）漢字旧契約者下位住所 */
+     zrnkjoldkyknm                                      VARCHAR     (35)                                                      NOT NULL  ,  /* （連携用）漢字旧契約者名 */
+     zrnkykhnkkaisuu                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）契約者変更回数 */
+     zrnyobiv3x2                                        CHAR        (3)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ３＿２ */
+     zrnyobiv23                                         CHAR        (23)                                                      NOT NULL  ,  /* （連携用）予備項目Ｖ２３ */
+     zrnshrymd                                          CHAR        (8)                                                       NOT NULL  ,  /* （連携用）支払年月日 */
+     zrnsakuseiymd                                      CHAR        (8)                                                       NOT NULL  ,  /* （連携用）作成日 */
+     zrnkouryokuhasseiymd                               CHAR        (8)                                                       NOT NULL  ,  /* （連携用）効力発生日 */
+     zrnyobiv8                                          CHAR        (8)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ８ */
+     zrnyobiv8x2                                        CHAR        (8)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ８＿２ */
+     zrnyobiv8x3                                        CHAR        (8)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ８＿３ */
+     zrnyobiv8x4                                        CHAR        (8)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ８＿４ */
+     zrnshrgk11                                         NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）支払金額Ｎ１１ */
+     zrnwarimsishrgk                                    NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）割増支払金額 */
+     zrnznnphr                                          NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）前納Ｐ等返戻金 */
+     zrnttkekstkganri                                   NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）立替貸付元利金 */
+     zrnsshkd                                           NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）差引Ｄ */
+     zrnsasihikisiharaigaku                             NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）差引支払金額 */
+     zrnmihrkmp                                         NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）未払込Ｐ */
+     zrnshrtienrsk11                                    NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）支払遅延利息Ｎ１１ */
+     zrntysyouhtykeihi                                  NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）調書用必要経費 */
+     zrngenkykhtykeihiyouhyj                            CHAR        (1)                                                       NOT NULL  ,  /* （連携用）現契約者必要経費要表示 */
+     zrngenkykhtykeihi                                  NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）現契約者必要経費 */
+     zrnyobin11                                         NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）予備項目Ｎ１１ */
+     zrnyobin11x2                                       NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）予備項目Ｎ１１＿２ */
+     zrnyobin11x3                                       NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）予備項目Ｎ１１＿３ */
+     zrnyobin11x4                                       NUMBER      (11)                                                      NOT NULL  ,  /* （連携用）予備項目Ｎ１１＿４ */
+     zrngensenkbn                                       CHAR        (1)                                                       NOT NULL  ,  /* （連携用）源泉徴収区分 */
+     zrngensentaisyoukkngai                             CHAR        (4)                                                       NOT NULL  ,  /* （連携用）源泉徴収対象外期間 */
+     zrngensentaisyoukkn                                CHAR        (4)                                                       NOT NULL  ,  /* （連携用）源泉徴収対象期間 */
+     zrnmnsaiannaihnskakbn                              CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ＭＮ再案内本社回送区分 */
+     zrnshrhousiteikbn                                  CHAR        (2)                                                       NOT NULL  ,  /* （連携用）支払方法指定区分 */
+     zrnshrtysykurikosidisp                             CHAR        (1)                                                       NOT NULL  ,  /* （連携用）支払調書繰越表示 */
+     zrnmfadrsiyouhyouji                                CHAR        (1)                                                       NOT NULL  ,  /* （連携用）ＭＦ住所使用表示 */
+     zrnnkshrhkjksyuruikbn                              CHAR        (2)                                                       NOT NULL  ,  /* （連携用）年金支払用保険事故種類区分 */
+     zrnnenkinkkn                                       CHAR        (2)                                                       NOT NULL  ,  /* （連携用）年金期間 */
+     zrnsynyhsjykykndisp                                CHAR        (1)                                                       NOT NULL  ,  /* （連携用）収入保障年金受給権表示 */
+     zrnonlinecentercutkbn                              CHAR        (1)                                                       NOT NULL  ,  /* （連携用）オンラインセンターカット区分 */
+     zrnhuho2kykdisp                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）普保Ⅱ契約表示 */
+     zrnshrtysyhknsyukbn                                VARCHAR     (15)                                                      NOT NULL  ,  /* （連携用）支払調書保険種類区分 */
+     zrnyobiv9x5                                        CHAR        (9)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ９＿５ */
+     zrntekiyouranhensyuukbn1                           CHAR        (2)                                                       NOT NULL  ,  /* （連携用）摘要欄編集区分１ */
+     zrntekiyouranhensyuukbn2                           CHAR        (2)                                                       NOT NULL  ,  /* （連携用）摘要欄編集区分２ */
+     zrntekiyouranhensyuukbn3                           CHAR        (2)                                                       NOT NULL  ,  /* （連携用）摘要欄編集区分３ */
+     zrntekiyouranhensyuukbn4                           CHAR        (2)                                                       NOT NULL  ,  /* （連携用）摘要欄編集区分４ */
+     zrntekiyouranhensyuukbn5                           CHAR        (2)                                                       NOT NULL  ,  /* （連携用）摘要欄編集区分５ */
+     zrnyobiv181                                        CHAR        (181)                                                     NOT NULL     /* （連携用）予備項目Ｖ１８１ */
+)
+;
+
+ALTER TABLE ZT_SiharaiTyousyoRn ADD CONSTRAINT PK_SiharaiTyousyoRn PRIMARY KEY (
+     zrnsequenceno                                              /* （連携用）シーケンス番号 */
+) ;

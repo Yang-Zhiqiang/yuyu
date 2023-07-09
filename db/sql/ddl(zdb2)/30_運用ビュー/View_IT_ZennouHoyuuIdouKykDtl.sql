@@ -1,0 +1,45 @@
+CREATE VIEW IT_ZennouHoyuuIdouKykDtl AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     sakuseiymd ,         /* 作成年月日 */
+     syoricd ,         /* 処理コード */
+     kykmfksnctr ,         /* 契約ＭＦ更新ＣＴＲ */
+     henkousyoriymd ,         /* 変更処理年月日 */
+     zennoukessanrecordkbn ,         /* 前納決算レコード区分 */
+     keijyouym ,         /* 計上年月 */
+     denymd ,         /* 伝票日付 */
+     zennoucalckijyunymd ,         /* 前納計算基準年月日 */
+     zennoubikinkbn ,         /* 前納備金区分 */
+     syukeiyakusyuruicd ,         /* 主契約種類コード */
+     kbnkeirisegcd ,         /* 区分経理用セグメントコード */
+     zennoutoukeilistkbn ,         /* 前納統計リスト区分 */
+     keiyakuymd ,         /* 契約年月日 */
+     zennouwrbkrt ,         /* 前納割引率 */
+     tndmatutkyrt ,         /* 当年度末適用利率 */
+     tndzndkhikakukbn ,         /* 当年度残高比較区分 */
+     zennoukaisiymd ,         /* 前納開始年月日 */
+     zennoukbn ,         /* 前納区分 */
+     zennoukikan ,         /* 前納期間 */
+     zennounyuukinymd ,         /* 前納入金年月日 */
+     zennounyuukinkgk ,         /* 前納入金額 */
+     zennounyuukinkgk$ ,         /* 前納入金額(通貨型) */
+     toukimatuzennouzndk ,         /* 当期末前納残高金額 */
+     toukimatuzennouzndk$ ,         /* 当期末前納残高金額(通貨型) */
+     toukijyuutoup ,         /* 当期充当Ｐ */
+     toukijyuutoup$ ,         /* 当期充当Ｐ(通貨型) */
+     toukizennouseisangk ,         /* 当期前納精算額 */
+     toukizennouseisangk$ ,         /* 当期前納精算額(通貨型) */
+     toukizennounyuukinkgk ,         /* 当期前納入金額 */
+     toukizennounyuukinkgk$ ,         /* 当期前納入金額(通貨型) */
+     yokukinenbaraip ,         /* 翌期年払Ｐ */
+     yokukinenbaraip$ ,         /* 翌期年払Ｐ(通貨型) */
+     wrbkrttkyrt ,         /* 割引利率適用残高 */
+     wrbkrttkyrt$ ,         /* 割引利率適用残高(通貨型) */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_ZennouHoyuuIdouKykDtl_Z;

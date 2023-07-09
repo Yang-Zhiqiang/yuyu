@@ -1,0 +1,37 @@
+CREATE VIEW ZT_SinninTouhyouTy AS SELECT
+     ztyhokenkbn ,         /* （中継用）保険区分 */
+     ztykyknaiyoukbn ,         /* （中継用）契約内容区分 */
+     ztyhokenkbnnys ,         /* （中継用）保険区分（名寄せ） */
+     ztysakuinmeinonys ,         /* （中継用）索引名番号（名寄せ） */
+     ztysyainnm ,         /* （中継用）社員名 */
+     ztykanjisyainnm ,         /* （中継用）漢字社員名 */
+     ztysyainseiymd ,         /* （中継用）社員生年月日 */
+     ztytsinkihontikucd ,         /* （中継用）通信先基本地区コード */
+     ztykanjitsinkaiadr ,         /* （中継用）漢字通信先下位住所 */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztyannaifuyouriyuukbn ,         /* （中継用）案内不要理由区分 */
+     ztyhrkkaisuukbn ,         /* （中継用）払込回数区分 */
+     ztyhrkkeirokbn ,         /* （中継用）払込経路区分 */
+     ztytksyuannaikykkbn ,         /* （中継用）特殊案内契約区分 */
+     ztysouhuhunoukbn ,         /* （中継用）送付不能区分 */
+     ztynaimitureigaihyj ,         /* （中継用）内密例外表示 */
+     ztysyuukinsisya ,         /* （中継用）集金支社 */
+     ztysyuukintntusycd ,         /* （中継用）集金担当者個人コード */
+     ztyokyakusamano ,         /* （中継用）お客様番号 */
+     ztynaibukojincd ,         /* （中継用）内部個人コード */
+     ztyhokenkbnsyainno ,         /* （中継用）保険区分（社員ＮＯ） */
+     ztysakuinmeinosyainno ,         /* （中継用）索引名番号（社員ＮＯ） */
+     ztybsyym ,         /* （中継用）募集年月 */
+     ztyprivacyhogoyouhyj ,         /* （中継用）プライバシー保護要表示 */
+     ztykaigaitokoukykhyj ,         /* （中継用）海外渡航契約表示 */
+     ztynaibukbn ,         /* （中継用）内部区分 */
+     ztykyktsnatkitkyktrkjtkbn ,         /* （中継用）契約通算扱特約登録状態区分 */
+     ztyalcardhkkbn ,         /* （中継用）ＡＬカード発行区分 */
+     ztybsydrtenkbn ,         /* （中継用）募集代理店区分 */
+     ztyvitkaiinno ,         /* （中継用）Ｖｉｔ会員番号 */
+     ztyyobiv60 ,         /* （中継用）予備項目Ｖ６０ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_SinninTouhyouTy_Z;

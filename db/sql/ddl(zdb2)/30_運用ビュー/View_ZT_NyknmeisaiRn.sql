@@ -1,0 +1,41 @@
+CREATE VIEW ZT_NyknmeisaiRn AS SELECT
+     zrndatakbn1 ,         /* （連携用）データ区分１ */
+     zrnsyubetucd ,         /* （連携用）種別コード */
+     zrncdkbn ,         /* （連携用）コード区分 */
+     zrnsakuseiymd6keta ,         /* （連携用）作成日６桁 */
+     zrnknjyymdfrom6keta ,         /* （連携用）勘定日（自）６桁 */
+     zrnknjyymdto6keta ,         /* （連携用）勘定日（至）６桁 */
+     zrnbankcd ,         /* （連携用）銀行番号 */
+     zrnbanknmkn ,         /* （連携用）銀行名（カナ） */
+     zrnshitencd ,         /* （連携用）支店番号 */
+     zrnsitennmkn ,         /* （連携用）支店名（カナ） */
+     zrnyobiv3 ,         /* （連携用）予備項目Ｖ３ */
+     zrnyokinkbn ,         /* （連携用）預金種目区分 */
+     zrnkouzano ,         /* （連携用）口座番号 */
+     zrnkznmkn ,         /* （連携用）口座名（カナ） */
+     zrnkasikosikbn ,         /* （連携用）貸越区分 */
+     zrntuutyousysykbn ,         /* （連携用）通帳・証書区分 */
+     zrntrhkmaezndk ,         /* （連携用）取引前残高 */
+     zrnyobiv63 ,         /* （連携用）予備項目Ｖ６３ */
+     zrnrenno8 ,         /* （連携用）連番８桁 */
+     zrndatakbn2 ,         /* （連携用）データ区分２ */
+     zrnsyoukaino ,         /* （連携用）照会番号 */
+     zrnknjyymd6keta ,         /* （連携用）勘定日６桁 */
+     zrnazkrhrdsymd6keta ,         /* （連携用）預入・払出日６桁 */
+     zrniribaraikbn ,         /* （連携用）入払区分 */
+     zrntrhkkbn ,         /* （連携用）取引区分 */
+     zrntrhkgk ,         /* （連携用）取引金額 */
+     zrntatenkengk ,         /* （連携用）うち他店券金額 */
+     zrnkknteijiymd6keta ,         /* （連携用）交換呈示日６桁 */
+     zrnhwtrhnknymd6keta ,         /* （連携用）不渡返還日６桁 */
+     zrntgtkgtkbn ,         /* （連携用）手形・小切手区分 */
+     zrntgtkgtno ,         /* （連携用）手形・小切手番号 */
+     zrnryoutenno ,         /* （連携用）僚店番号 */
+     zrnhrkmirnincd ,         /* （連携用）振込依頼人コード */
+     zrnhrkmirninnm ,         /* （連携用）振込依頼人名 */
+     zrnsimukebanknmkn ,         /* （連携用）仕向銀行名 */
+     zrnsimuketennmkn ,         /* （連携用）仕向店名 */
+     zrntekiyounaiyou ,         /* （連携用）摘要内容 */
+     zrnediinfo ,         /* （連携用）EDI情報 */
+     zrnyobiv1           /* （連携用）予備項目Ｖ１ */
+FROM ZT_NyknmeisaiRn_Z;

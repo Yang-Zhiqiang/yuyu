@@ -1,0 +1,18 @@
+CREATE TABLE BT_TyouhyouOutputKengen (
+     roleCd                                             VARCHAR     (30)                                                      NOT NULL  ,  /* ロールコード */
+     syoruiCd                                           VARCHAR     (5)                                                       NOT NULL  ,  /* 書類コード */
+     ikkatuoutputkahikbn                                VARCHAR     (1)                                                                 ,  /* 一括出力可否区分 */
+     kobetuoutputkahikbn                                VARCHAR     (1)                                                                 ,  /* 個別出力可否区分 */
+     gyoumuKousinsyaId                                  VARCHAR     (15)                                                                ,  /* 業務用更新者ＩＤ */
+     gyoumuKousinTime                                   VARCHAR     (17)                                                                ,  /* 業務用更新時間 */
+     kousinsyaId                                        VARCHAR     (30)                                                                ,  /* 更新者ＩＤ */
+     kousinTime                                         VARCHAR     (17)                                                                ,  /* 更新時間 */
+     kousinKinou                                        VARCHAR     (50)                                                                ,  /* 更新機能 */
+     version                                            BIGINT      NOT NULL  DEFAULT 0                                                    /* バージョン */
+)
+;
+
+ALTER TABLE BT_TyouhyouOutputKengen ADD CONSTRAINT PK_TyouhyouOutputKengen PRIMARY KEY (
+     roleCd                                                   , /* ロールコード */
+     syoruiCd                                                   /* 書類コード */
+) ;

@@ -1,0 +1,92 @@
+CREATE TABLE ZT_RrtHndugtHknJigyohiRn_Z (
+     zrnsequenceno                                      DECIMAL     (8)                                                       NOT NULL  ,  /* （連携用）シーケンス番号 */
+     zrnyuukourecordlength                              DECIMAL     (7)                                                       NOT NULL  ,  /* （連携用）有効レコード長 */
+     zrnrdwarea                                         CHAR        (4)                                                       NOT NULL  ,  /* （連携用）ＲＤＷ領域 */
+     zrnkeijyouym                                       CHAR        (6)                                                       NOT NULL  ,  /* （連携用）計上年月 */
+     zrnsuuriyoupjytouym                                CHAR        (6)                                                       NOT NULL  ,  /* （連携用）数理用Ｐ充当年月 */
+     zrnsihankibikinkbn                                 CHAR        (1)                                                       NOT NULL  ,  /* （連携用）四半期備金区分 */
+     zrnhenkousyoriymd                                  CHAR        (8)                                                       NOT NULL  ,  /* （連携用）変更処理年月日 */
+     zrndenymd                                          CHAR        (8)                                                       NOT NULL  ,  /* （連携用）伝票日付 */
+     zrnsyoricd                                         CHAR        (4)                                                       NOT NULL  ,  /* （連携用）処理コード */
+     zrnkykymdmaekykhyj                                 CHAR        (1)                                                       NOT NULL  ,  /* （連携用）契約日前契約表示 */
+     zrnkarikasikbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）借方貸方区分 */
+     zrnsuuriyouyobin8                                  CHAR        (8)                                                       NOT NULL  ,  /* （連携用）数理用予備項目Ｎ８ */
+     zrnyobiv7                                          CHAR        (7)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ７ */
+     zrndatakanrino                                     CHAR        (11)                                                      NOT NULL  ,  /* （連携用）データ管理番号 */
+     zrnraysystemhyj                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）ＲＡＹシステム表示 */
+     zrnhknsyukigou                                     CHAR        (2)                                                       NOT NULL  ,  /* （連携用）保険種類記号 */
+     zrnhknsyuruikigousedaikbn                          CHAR        (1)                                                       NOT NULL  ,  /* （連携用）保険種類記号世代区分 */
+     zrnsotodasipmenkbn                                 CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出Ｐ免区分 */
+     zrnstdssytikbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出集定区分 */
+     zrnstdssnskbn                                      CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出診査区分 */
+     zrnsotodasimanagehyouji                            CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出満年令表示 */
+     zrnsotodasiphkbnmnoshyouji                         CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出Ｐ不可分見直表示 */
+     zrnstdsstkjytkyuhyj                                CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出新特条適用表示 */
+     zrnsuuriyouyobin5                                  CHAR        (5)                                                       NOT NULL  ,  /* （連携用）数理用予備項目Ｎ５ */
+     zrnyobiv4                                          CHAR        (4)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ４ */
+     zrnkbnkeiriyousegmentkbn                           CHAR        (2)                                                       NOT NULL  ,  /* （連携用）区分経理用セグメント区分 */
+     zrnkbnkeiriyourgnbnskkbn                           CHAR        (2)                                                       NOT NULL  ,  /* （連携用）区分経理用利源分析区分 */
+     zrnsuurisyuruicd                                   CHAR        (2)                                                       NOT NULL  ,  /* （連携用）数理種類コード */
+     zrnhosyoukinoukbn                                  CHAR        (1)                                                       NOT NULL  ,  /* （連携用）保障機能区分 */
+     zrndaikbn                                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）大区分 */
+     zrntyuukbn                                         CHAR        (4)                                                       NOT NULL  ,  /* （連携用）中区分 */
+     zrnsyoukbn                                         CHAR        (4)                                                       NOT NULL  ,  /* （連携用）小区分 */
+     zrnsedaikbn                                        CHAR        (4)                                                       NOT NULL  ,  /* （連携用）世代区分 */
+     zrnharaikatakbn                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）払方区分 */
+     zrnkykymd                                          CHAR        (8)                                                       NOT NULL  ,  /* （連携用）契約年月日 */
+     zrnhknkkn                                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）保険期間 */
+     zrnphrkkikn                                        CHAR        (2)                                                       NOT NULL  ,  /* （連携用）Ｐ払込期間 */
+     zrnsaimnkkykhyj                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）才満期契約表示 */
+     zrnannaifuyouriyuukbn                              CHAR        (2)                                                       NOT NULL  ,  /* （連携用）案内不要理由区分 */
+     zrnhrkkaisuukbn                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）払込回数区分 */
+     zrnhrkkeirokbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）払込経路区分 */
+     zrnsdpdkbn                                         CHAR        (1)                                                       NOT NULL  ,  /* （連携用）Ｓ建Ｐ建区分 */
+     zrnryouritukbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）料率区分 */
+     zrnhhknseikbn                                      CHAR        (1)                                                       NOT NULL  ,  /* （連携用）被保険者性別区分 */
+     zrnhihokensyaagev2                                 CHAR        (2)                                                       NOT NULL  ,  /* （連携用）被保険者年令Ｖ２ */
+     zrnhhknnentysihyj                                  CHAR        (1)                                                       NOT NULL  ,  /* （連携用）被保険者年令調整表示 */
+     zrnsyukeiyakupwaribikikbn                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）主契約Ｐ割引区分 */
+     zrnkuriagekurisagekbn                              CHAR        (1)                                                       NOT NULL  ,  /* （連携用）繰上げ繰下げ区分 */
+     zrnsuuriyouyobin11                                 CHAR        (11)                                                      NOT NULL  ,  /* （連携用）数理用予備項目Ｎ１１ */
+     zrnyobiv10                                         CHAR        (10)                                                      NOT NULL  ,  /* （連携用）予備項目Ｖ１０ */
+     zrnalmyousohutomeisyoukbn                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ＡＬＭ用ソフト名称区分 */
+     zrnsnkyksoftmeisyoukbn                             CHAR        (2)                                                       NOT NULL  ,  /* （連携用）新契約ソフト名称区分 */
+     zrnsoftmeisyoukbn                                  CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ソフト名称区分 */
+     zrnnenkinkaisinendo                                CHAR        (4)                                                       NOT NULL  ,  /* （連携用）年金開始年度 */
+     zrnnenkingatakbn                                   CHAR        (1)                                                       NOT NULL  ,  /* （連携用）年金型区分 */
+     zrnnknshry                                         CHAR        (2)                                                       NOT NULL  ,  /* （連携用）年金支払期間 */
+     zrnbosyuukeitaikbn                                 CHAR        (2)                                                       NOT NULL  ,  /* （連携用）募集形態区分 */
+     zrngaikakbn                                        CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外貨区分 */
+     zrnsuuriyouyobin8x2                                CHAR        (8)                                                       NOT NULL  ,  /* （連携用）数理用予備項目Ｎ８＿２ */
+     zrnyobiv6                                          CHAR        (6)                                                       NOT NULL  ,  /* （連携用）予備項目Ｖ６ */
+     zrnsyukeiyakup                                     DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）主契約Ｐ */
+     zrnkihons                                          DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）基本Ｓ */
+     zrnpjuutoujikawaserate                             DECIMAL     (9,6)                                                     NOT NULL  ,  /* （連携用）保険料充当時為替レート */
+     zrnpjuutoujikawasekijyunymd                        CHAR        (8)                                                       NOT NULL  ,  /* （連携用）保険料充当時為替基準年月日 */
+     zrngessitumitatekin                                DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）月始積立金 */
+     zrnyoteiriritun5                                   DECIMAL     (5,4)                                                     NOT NULL  ,  /* （連携用）予定利率Ｎ５ */
+     zrntumitateriritu                                  DECIMAL     (5,4)                                                     NOT NULL  ,  /* （連携用）積立利率 */
+     zrngaikadatetougetujuutoup                         DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）外貨建当月充当Ｐ */
+     zrnkiharaikomip                                    DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）既払込Ｐ */
+     zrnkeisanhanteiyoutmttkn                           DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）計算判定用積立金 */
+     zrnzettaisibouritu                                 DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）絶対死亡率 */
+     zrnsoutaisibouritu                                 DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）相対死亡率 */
+     zrnsoutaikaiyakuritu                               DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）相対解約率 */
+     zrnvhireilritu                                     DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）Ｖ比例Ｌ率 */
+     zrnyobin13                                         DECIMAL     (13)                                                      NOT NULL  ,  /* （連携用）予備項目Ｎ１３ */
+     zrnphireilwrbkritu                                 DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）Ｐ比例Ｌ割引率 */
+     zrngetumatutumitatekin                             DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）月末積立金 */
+     zrnzennoujiikkatubaraijytgk                        DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）前納時一括払充当額 */
+     zrngaikadatenkgns                                  DECIMAL     (11)                                                      NOT NULL  ,  /* （連携用）外貨建年金原資 */
+     zrnphireialpha                                     DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）Ｐ比例α */
+     zrnphireibeta                                      DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）Ｐ比例β */
+     zrnphireiganma                                     DECIMAL     (13,11)                                                   NOT NULL  ,  /* （連携用）Ｐ比例γ */
+     zrnkykjikawaserate                                 DECIMAL     (9,6)                                                     NOT NULL  ,  /* （連携用）契約時為替レート */
+     zrnkykjikawaseratetkyuymd                          CHAR        (8)                                                       NOT NULL  ,  /* （連携用）契約時為替レート適用年月日 */
+     zrnyobiv11                                         CHAR        (11)                                                      NOT NULL     /* （連携用）予備項目Ｖ１１ */
+)
+;
+
+ALTER TABLE ZT_RrtHndugtHknJigyohiRn_Z ADD CONSTRAINT PK_RrtHndugtHknJigyohiRn PRIMARY KEY (
+     zrnsequenceno                                              /* （連携用）シーケンス番号 */
+) ;

@@ -1,0 +1,32 @@
+CREATE VIEW ZT_KhDrtenMinyuuKykMeisaiRn AS SELECT
+     zrnsyoriymd ,         /* （連携用）処理年月日 */
+     zrnbsydrtencd ,         /* （連携用）募集代理店コード */
+     zrnbosyuunincd ,         /* （連携用）募集人コード */
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnpjyuutouyymmwareki4keta ,         /* （連携用）保険料充当年月（和暦）（４桁） */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrncifcd ,         /* （連携用）ＣＩＦコード */
+     zrnbosyuudrtennmkj ,         /* （連携用）募集代理店名（漢字） */
+     zrnminyuujyutuymd ,         /* （連携用）未入充当年月日 */
+     zrnhassinka ,         /* （連携用）発信課 */
+     zrnbsyym ,         /* （連携用）募集年月 */
+     zrndrtnbsyunnmisyou ,         /* （連携用）代理店募集人名称（漢字） */
+     zrnkydatkikbn ,         /* （連携用）共同扱区分 */
+     zrnkyknmkj35 ,         /* （連携用）契約者名（漢字）（３５桁） */
+     zrnhrkkaisuukbn ,         /* （連携用）払込回数区分 */
+     zrnhrkkeirokbn ,         /* （連携用）払込経路区分 */
+     zrnhrkgk ,         /* （連携用）払込額 */
+     zrnknkimnyuuryu ,         /* （連携用）今回未入理由 */
+     zrnbosyuuningyouhaiymd ,         /* （連携用）募集人業廃年月日 */
+     zrnkzhurikaebankcd ,         /* （連携用）口座振替銀行番号 */
+     zrnkzhurikaesitencd ,         /* （連携用）口座振替支店番号 */
+     zrnkzhurikaeyokinkbn ,         /* （連携用）口座振替預金種目区分 */
+     zrnkzhurikaekouzano ,         /* （連携用）口座振替口座番号 */
+     zrnknyukknmei ,         /* （連携用）金融機関名 */
+     zrnknyykknstnmei ,         /* （連携用）金融機関支店名 */
+     zrndantaicd ,         /* （連携用）団体コード */
+     zrnkjdntnm ,         /* （連携用）漢字団体名 */
+     zrnhknsyuruimei ,         /* （連携用）保険種類名 */
+     zrnbkofccd ,         /* （連携用）バックオフィスコード */
+     zrnhjnkykhyj           /* （連携用）法人契約表示 */
+FROM ZT_KhDrtenMinyuuKykMeisaiRn_Z;

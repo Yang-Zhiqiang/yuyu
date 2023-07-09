@@ -1,0 +1,38 @@
+CREATE VIEW ZT_DsKariPasswordTuutiRn AS SELECT
+     zrnkrpasswordtuutikey ,         /* （連携用）仮パスワード通知キー */
+     zrndskokno ,         /* （連携用）ＤＳ顧客番号 */
+     zrnatesakiyno ,         /* （連携用）宛先郵便番号 */
+     zrnatesakiynobarcode ,         /* （連携用）宛先郵便番号バーコード */
+     zrnsakuseimd ,         /* （連携用）作成月日 */
+     zrnsclakadskokno ,         /* （連携用）スクランブル化ＤＳ顧客番号 */
+     zrnreigaisyorihyj ,         /* （連携用）例外処理表示 */
+     zrnyuubinbutukanpusakiyno ,         /* （連携用）郵便物還付先郵便番号 */
+     zrnyuubinbutukanpusakiadr ,         /* （連携用）郵便物還付先住所 */
+     zrnatesakiadr1 ,         /* （連携用）宛先住所１ */
+     zrnatesakiadr2 ,         /* （連携用）宛先住所２ */
+     zrnatesakiadr3 ,         /* （連携用）宛先住所３ */
+     zrnatena1 ,         /* （連携用）宛名１ */
+     zrnatena2 ,         /* （連携用）宛名２ */
+     zrndai1syoukaisakifreearea1 ,         /* （連携用）第１照会先フリーエリア１ */
+     zrndai1syoukaisakifreearea2 ,         /* （連携用）第１照会先フリーエリア２ */
+     zrndai1syoukaisakifreearea3 ,         /* （連携用）第１照会先フリーエリア３ */
+     zrndai1syoukaisakifreearea4 ,         /* （連携用）第１照会先フリーエリア４ */
+     zrndai1syoukaisakifreearea5 ,         /* （連携用）第１照会先フリーエリア５ */
+     zrnsakuseino ,         /* （連携用）作成No */
+     zrnokyakusamanm ,         /* （連携用）お客様氏名 */
+     zrnhkymd ,         /* （連携用）発行日 */
+     zrndskrhnnkakcdyoken ,         /* （連携用）ＤＳ仮本人確認コード与件 */
+     zrnkrpasswordyuukouymd ,         /* （連携用）仮パスワード有効年月日 */
+     zrnfreearea1 ,         /* （連携用）フリーエリア１ */
+     zrnfreearea2 ,         /* （連携用）フリーエリア２ */
+     zrnfreearea3 ,         /* （連携用）フリーエリア３ */
+     zrnfreearea4 ,         /* （連携用）フリーエリア４ */
+     zrnfreearea5 ,         /* （連携用）フリーエリア５ */
+     zrntyuuijikou1 ,         /* （連携用）注意事項欄１ */
+     zrntyuuijikou2 ,         /* （連携用）注意事項欄２ */
+     zrntyuuijikou3 ,         /* （連携用）注意事項欄３ */
+     zrntyuuijikou4 ,         /* （連携用）注意事項欄４ */
+     zrntyuuijikou5 ,         /* （連携用）注意事項欄５ */
+     zrntyuuijikou6 ,         /* （連携用）注意事項欄６ */
+     zrntyuuijikou7           /* （連携用）注意事項欄７ */
+FROM ZT_DsKariPasswordTuutiRn_Z;

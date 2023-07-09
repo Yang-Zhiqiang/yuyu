@@ -1,0 +1,29 @@
+CREATE VIEW BW_IdCardWk AS SELECT
+     idkbn ,         /* ＩＤ区分 */
+     idcd ,         /* ＩＤコード */
+     tanmatusiyoukbn ,         /* 端末使用区分 */
+     accesskbn ,         /* アクセス区分 */
+     idnyuuryokusyanm ,         /* ＩＤ入力者名 */
+     kanjiidnyuuryokusyanm ,         /* 漢字ＩＤ入力者名 */
+     idnyuuryokusyaseiymd ,         /* ＩＤ入力者生年月日 */
+     idnyuuryokusyanyuusyaymd ,         /* ＩＤ入力者入社年月日 */
+     syozokusosikicd ,         /* 所属組織コード */
+     syozokusisyacd ,         /* 所属支社コード */
+     syozokusibucd ,         /* 所属支部コード */
+     idnyuuryokusyasikakucd ,         /* ＩＤ入力者資格コード */
+     idsdpsouhuhyouji ,         /* ＩＤＳＤＰ送付表示 */
+     idcardsaisyuukousinymd ,         /* ＩＤカード最終更新年月日 */
+     idcardmukouymd ,         /* ＩＤカード無効年月日 */
+     kaikeitantousyakbn ,         /* 会計担当者区分 */
+     syanaiyokintantousyakbn ,         /* 社内預金担当者区分 */
+     jinjimynosyoukaihyj ,         /* 人事・マイナンバー照会可能表示 */
+     eisyokumynosyoukaihyj ,         /* 営職・マイナンバー照会可能表示 */
+     hudousanmynosyoukaihyj ,         /* 不動産・マイナンバー照会可能表示 */
+     kohomynosyoukaihyj ,         /* 個保・マイナンバー照会可能表示 */
+     kihomynosyoukaihyj ,         /* 企保・マイナンバー照会可能表示 */
+     kikantantoukbn ,         /* 機関担当区分 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM BW_IdCardWk_Z;

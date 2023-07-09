@@ -1,0 +1,43 @@
+CREATE VIEW IT_CreditHnknTuuti AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     denrenno ,         /* 伝票データ連番 */
+     edano ,         /* 枝番号 */
+     tyouhyouymd ,         /* 帳票作成日 */
+     henkousikibetukey ,         /* 変更識別キー */
+     hassoukbn ,         /* 発送区分 */
+     shskyno ,         /* 送付先郵便番号 */
+     shsadr1kj ,         /* 送付先住所１（漢字）（３０桁） */
+     shsadr2kj ,         /* 送付先住所２（漢字）（３０桁） */
+     shsadr3kj ,         /* 送付先住所３（漢字）（３０桁） */
+     shsnmkj ,         /* 送付先氏名（漢字） */
+     toiawasesosikinmkj ,         /* 問合せ先組織名（漢字） */
+     toiawaseyno ,         /* 問合せ先郵便番号 */
+     toiawaseadr1kj ,         /* 問合せ先住所１（漢字） */
+     toiawaseadr2kj ,         /* 問合せ先住所２（漢字） */
+     toiawaseadr3kj ,         /* 問合せ先住所３（漢字） */
+     toiawasetelno ,         /* 問合せ先電話番号 */
+     toiawaseteluktkkanou1 ,         /* 問合せ先電話受付可能時間１ */
+     toiawaseteluktkkanou2 ,         /* 問合せ先電話受付可能時間２ */
+     toiawasesosikinmkj2 ,         /* 第２問合せ先組織名（漢字） */
+     toiawasetelno2 ,         /* 第２問合せ先電話番号 */
+     shrriyuukbn ,         /* 支払理由区分 */
+     uriageseikyuuymd ,         /* 売上請求日 */
+     hnkngk ,         /* 返金額 */
+     hnkngk$ ,         /* 返金額(通貨型) */
+     krkriyuukbn ,         /* 仮受理由区分 */
+     uriageymd ,         /* 売上日 */
+     uriagegk ,         /* 売上金額 */
+     uriagegk$ ,         /* 売上金額(通貨型) */
+     jyuutouym ,         /* 充当年月 */
+     jyutoukaisuuy ,         /* 充当回数（年） */
+     jyutoukaisuum ,         /* 充当回数（月） */
+     hnkntaisyouinjiflg ,         /* 返金対象印字フラグ */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_CreditHnknTuuti_Z;

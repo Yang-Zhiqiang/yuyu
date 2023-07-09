@@ -1,0 +1,2 @@
+INSERT INTO AM_User (userId, userNm, specialUserKbn, password, passwordSetteiYmd, passwordYuukouKigenYmd, passwordYuukouCountY, passwordYuukouCountM, passwordYuukouCountD, passwordYuukouKikanKbn, passwordHenkouKyokaKbn, passwordHenkouYoukyuuKbn, loginKyokaKbn, loginErrorCount, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('administrator', '管理者', '1', 'password', '20130209', NULL, '0', '0', '0', '1', '1', '0', '1', '0', 'init', '0', 'init', '0');
+

@@ -1,0 +1,29 @@
+CREATE VIEW HW_NyuukinJyouhouHuittiWk AS SELECT
+     nyksyoriymd ,         /* 入金処理日 */
+     itirenno ,         /* 一連番号 */
+     kouzano ,         /* 口座番号 */
+     hrkmirnincd ,         /* 振込依頼人コード */
+     hrkmirninnm ,         /* 振込依頼人名 */
+     hrkmirninnm140 ,         /* 振込依頼人名（１４０桁） */
+     trhkkgk ,         /* 取引金額 */
+     trhkkgk$ ,         /* 取引金額(通貨型) */
+     rstuukasyu ,         /* 領収通貨種類 */
+     banknmkn ,         /* 銀行名（カナ） */
+     sitennmkn ,         /* 支店名（カナ） */
+     simukebanknm ,         /* 仕向銀行名 */
+     simuketennm ,         /* 仕向店名 */
+     seikeijizenkizennouumu ,         /* 成契時全期前納有無 */
+     nyuukinhuittiriyuukbn ,         /* 入金不一致理由区分 */
+     oyadrtencd ,         /* 親代理店コード */
+     knjyymd ,         /* 勘定日 */
+     nykmosno ,         /* 入金用申込番号 */
+     syoriYmd ,         /* 処理年月日 */
+     hrkmnykndatarenmotoKbn ,         /* 振込入金データ連携元区分 */
+     oyadrtensyoritarget ,         /* 親代理店処理対象 */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HW_NyuukinJyouhouHuittiWk_Z;

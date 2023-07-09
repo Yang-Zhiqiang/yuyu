@@ -1,0 +1,43 @@
+CREATE VIEW IT_DattaiTuutiKzhuri AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     tyouhyouymd ,         /* 帳票作成日 */
+     shskyno ,         /* 送付先郵便番号 */
+     shsadr1kj ,         /* 送付先住所１（漢字）（３０桁） */
+     shsadr2kj ,         /* 送付先住所２（漢字）（３０桁） */
+     shsadr3kj ,         /* 送付先住所３（漢字）（３０桁） */
+     shsnmkj ,         /* 送付先氏名（漢字） */
+     toiawasesosikinmkj ,         /* 問合せ先組織名（漢字） */
+     toiawaseyno ,         /* 問合せ先郵便番号 */
+     toiawaseadr1kj ,         /* 問合せ先住所１（漢字） */
+     toiawaseadr2kj ,         /* 問合せ先住所２（漢字） */
+     toiawaseadr3kj ,         /* 問合せ先住所３（漢字） */
+     toiawasetelno ,         /* 問合せ先電話番号 */
+     toiawaseteluktkkanou1 ,         /* 問合せ先電話受付可能時間１ */
+     toiawaseteluktkkanou2 ,         /* 問合せ先電話受付可能時間２ */
+     toiawasesosikinmkj2 ,         /* 第２問合せ先組織名（漢字） */
+     toiawasetelno2 ,         /* 第２問合せ先電話番号 */
+     osirasemongon1 ,         /* お知らせ文言１ */
+     osirasemongon2 ,         /* お知らせ文言２ */
+     osirasemongon3 ,         /* お知らせ文言３ */
+     osirasemongon4 ,         /* お知らせ文言４ */
+     osirasemongon5 ,         /* お知らせ文言５ */
+     osirasemongon6 ,         /* お知らせ文言６ */
+     osirasemongon7 ,         /* お知らせ文言７ */
+     osirasemongon8 ,         /* お知らせ文言８ */
+     osirasemongon9 ,         /* お知らせ文言９ */
+     hhknnmkj ,         /* 被保険者名（漢字） */
+     kzinfo30keta1 ,         /* 口座情報（３０桁）１ */
+     kzinfo30keta2 ,         /* 口座情報（３０桁）２ */
+     kzinfo30keta3 ,         /* 口座情報（３０桁）３ */
+     kouzamaskingmsg ,         /* 口座マスキングＭＳＧ */
+     syoruiCd ,         /* 書類コード */
+     hassoukbn ,         /* 発送区分 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_DattaiTuutiKzhuri_Z;

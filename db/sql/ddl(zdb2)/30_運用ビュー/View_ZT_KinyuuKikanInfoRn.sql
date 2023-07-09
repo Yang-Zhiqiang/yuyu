@@ -1,0 +1,34 @@
+CREATE VIEW ZT_KinyuuKikanInfoRn AS SELECT
+     zrnkinyuukikancd ,         /* （連携用）金融機関コード */
+     zrnsitencd ,         /* （連携用）支店コード */
+     zrntenpokbn ,         /* （連携用）店舗区分 */
+     zrnkousinymd ,         /* （連携用）更新年月日 */
+     zrnsinsetuymd ,         /* （連携用）新設年月日 */
+     zrnhaisiymd ,         /* （連携用）廃止年月日 */
+     zrnkanakinyuukikannm ,         /* （連携用）カナ金融機関名 */
+     zrnkanasitennm ,         /* （連携用）カナ支店名 */
+     zrnkanjikinyuukikannm ,         /* （連携用）漢字金融機関名 */
+     zrnkanjisitennm ,         /* （連携用）漢字支店名 */
+     zrneijikinyuukikannm ,         /* （連携用）英字金融機関名 */
+     zrneijisitennm ,         /* （連携用）英字支店名 */
+     zrncsskyouteikaisiymd ,         /* （連携用）ＣＳＳ協定開始年月日 */
+     zrncsskyouteikaijyoymd ,         /* （連携用）ＣＳＳ協定解除年月日 */
+     zrnkokunaikawasehyouji ,         /* （連携用）内国為替制度加盟表示 */
+     zrnhurikomikanousitenhyouji ,         /* （連携用）振込可能支店表示 */
+     zrngyoutaikbn ,         /* （連携用）業態区分 */
+     zrnyofurikyouteikaisiymd ,         /* （連携用）預振協定開始年月日 */
+     zrnyofurikyouteikaijyoymd ,         /* （連携用）預振協定解除年月日 */
+     zrnitakusyakinyuucd ,         /* （連携用）委託者金融機関コード */
+     zrnitakusyasitencd ,         /* （連携用）委託者支店コード */
+     zrnitakusyayokinkbn ,         /* （連携用）委託者預金種目区分 */
+     zrnitakusyakouzano ,         /* （連携用）委託者口座番号 */
+     zrntsrkeisanhoukbn ,         /* （連携用）手数料計算方法区分 */
+     zrnkinyuutesuuryou ,         /* （連携用）手数料 */
+     zrnitakusyacd ,         /* （連携用）委託者コード */
+     zrntapekoukankbn1 ,         /* （連携用）テープ交換区分１ */
+     zrnmdsisyacd ,         /* （連携用）窓口支社コード */
+     zrnzzkkyouteikaisiymd ,         /* （連携用）全税共協定開始年月日 */
+     zrnzzkkyouteikaijyoymd ,         /* （連携用）全税共協定解除年月日 */
+     zrnhuhoyofuriinfokousinymd ,         /* （連携用）普保預振情報更新年月日 */
+     zrnyobiv17           /* （連携用）予備項目Ｖ１７ */
+FROM ZT_KinyuuKikanInfoRn_Z;

@@ -1,0 +1,42 @@
+CREATE VIEW ZT_DsKariPasswordTuutiTy AS SELECT
+     ztykrpasswordtuutikey ,         /* （中継用）仮パスワード通知キー */
+     ztydskokno ,         /* （中継用）ＤＳ顧客番号 */
+     ztyatesakiyno ,         /* （中継用）宛先郵便番号 */
+     ztyatesakiynobarcode ,         /* （中継用）宛先郵便番号バーコード */
+     ztysakuseimd ,         /* （中継用）作成月日 */
+     ztysclakadskokno ,         /* （中継用）スクランブル化ＤＳ顧客番号 */
+     ztyreigaisyorihyj ,         /* （中継用）例外処理表示 */
+     ztyyuubinbutukanpusakiyno ,         /* （中継用）郵便物還付先郵便番号 */
+     ztyyuubinbutukanpusakiadr ,         /* （中継用）郵便物還付先住所 */
+     ztyatesakiadr1 ,         /* （中継用）宛先住所１ */
+     ztyatesakiadr2 ,         /* （中継用）宛先住所２ */
+     ztyatesakiadr3 ,         /* （中継用）宛先住所３ */
+     ztyatena1 ,         /* （中継用）宛名１ */
+     ztyatena2 ,         /* （中継用）宛名２ */
+     ztydai1syoukaisakifreearea1 ,         /* （中継用）第１照会先フリーエリア１ */
+     ztydai1syoukaisakifreearea2 ,         /* （中継用）第１照会先フリーエリア２ */
+     ztydai1syoukaisakifreearea3 ,         /* （中継用）第１照会先フリーエリア３ */
+     ztydai1syoukaisakifreearea4 ,         /* （中継用）第１照会先フリーエリア４ */
+     ztydai1syoukaisakifreearea5 ,         /* （中継用）第１照会先フリーエリア５ */
+     ztysakuseino ,         /* （中継用）作成No */
+     ztyokyakusamanm ,         /* （中継用）お客様氏名 */
+     ztyhkymd ,         /* （中継用）発行日 */
+     ztydskrhnnkakcdyoken ,         /* （中継用）ＤＳ仮本人確認コード与件 */
+     ztykrpasswordyuukouymd ,         /* （中継用）仮パスワード有効年月日 */
+     ztyfreearea1 ,         /* （中継用）フリーエリア１ */
+     ztyfreearea2 ,         /* （中継用）フリーエリア２ */
+     ztyfreearea3 ,         /* （中継用）フリーエリア３ */
+     ztyfreearea4 ,         /* （中継用）フリーエリア４ */
+     ztyfreearea5 ,         /* （中継用）フリーエリア５ */
+     ztytyuuijikou1 ,         /* （中継用）注意事項欄１ */
+     ztytyuuijikou2 ,         /* （中継用）注意事項欄２ */
+     ztytyuuijikou3 ,         /* （中継用）注意事項欄３ */
+     ztytyuuijikou4 ,         /* （中継用）注意事項欄４ */
+     ztytyuuijikou5 ,         /* （中継用）注意事項欄５ */
+     ztytyuuijikou6 ,         /* （中継用）注意事項欄６ */
+     ztytyuuijikou7 ,         /* （中継用）注意事項欄７ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_DsKariPasswordTuutiTy_Z;

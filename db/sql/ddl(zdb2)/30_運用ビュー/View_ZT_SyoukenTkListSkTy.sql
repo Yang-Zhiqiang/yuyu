@@ -1,0 +1,33 @@
+CREATE VIEW ZT_SyoukenTkListSkTy AS SELECT
+     ztysyoruicd ,         /* （中継用）書類コード */
+     ztytyouhyouymd ,         /* （中継用）帳票作成日 */
+     ztyhassoukbn ,         /* （中継用）発送区分 */
+     ztyatesakitantnm ,         /* （中継用）宛先担当室名(組織名) */
+     ztyhozonkkn ,         /* （中継用）保存期間 */
+     ztytyouhyouymdwa ,         /* （中継用）帳票作成日（和暦） */
+     ztysagyoukbn ,         /* （中継用）作業区分 */
+     ztyyobiv25 ,         /* （中継用）予備項目Ｖ２５ */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztyhhknnmkj ,         /* （中継用）被保険者名（漢字） */
+     ztytksysyorinaiyou1 ,         /* （中継用）特殊処理内容１ */
+     ztytksysyorinaiyou2 ,         /* （中継用）特殊処理内容２ */
+     ztytksysyorinaiyou3 ,         /* （中継用）特殊処理内容３ */
+     ztytksysyorinaiyou4 ,         /* （中継用）特殊処理内容４ */
+     ztytksysyorinaiyou5 ,         /* （中継用）特殊処理内容５ */
+     ztytksysyorinaiyou6 ,         /* （中継用）特殊処理内容６ */
+     ztytksysyorinaiyou7 ,         /* （中継用）特殊処理内容７ */
+     ztytksysyorinaiyou8 ,         /* （中継用）特殊処理内容８ */
+     ztytksysyorinaiyou9 ,         /* （中継用）特殊処理内容９ */
+     ztytksysyorinaiyou10 ,         /* （中継用）特殊処理内容１０ */
+     ztytksysyorinaiyou11 ,         /* （中継用）特殊処理内容１１ */
+     ztytksysyorinaiyou12 ,         /* （中継用）特殊処理内容１２ */
+     ztytksysyorinaiyou13 ,         /* （中継用）特殊処理内容１３ */
+     ztytksysyorinaiyou14 ,         /* （中継用）特殊処理内容１４ */
+     ztybikouupside ,         /* （中継用）備考上段 */
+     ztybikoudownside ,         /* （中継用）備考下段 */
+     ztyyobiv37 ,         /* （中継用）予備項目Ｖ３７ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_SyoukenTkListSkTy_Z;

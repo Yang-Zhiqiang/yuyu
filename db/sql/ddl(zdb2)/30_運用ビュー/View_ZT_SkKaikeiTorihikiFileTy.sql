@@ -1,0 +1,30 @@
+CREATE VIEW ZT_SkKaikeiTorihikiFileTy AS SELECT
+     ztylen ,         /* （中継用）ＬＥＮ */
+     ztykaikeitani ,         /* （中継用）会計単位 */
+     ztysystemkbnnum ,         /* （中継用）システム区分（数値） */
+     ztysyoricd ,         /* （中継用）処理コード */
+     ztytorihikiymd ,         /* （中継用）取引年月日 */
+     ztytorihikinon7 ,         /* （中継用）取引番号Ｎ７ */
+     ztynyuuryokubasyo ,         /* （中継用）入力場所 */
+     ztynyuuryokusyacd ,         /* （中継用）入力者コード */
+     ztysyoriymdn ,         /* （中継用）処理年月日（数値） */
+     ztysimekirikbn ,         /* （中継用）締切区分 */
+     ztykessankbn ,         /* （中継用）決算区分 */
+     ztyyobiv20 ,         /* （中継用）予備項目Ｖ２０ */
+     ztykaisyakantorihikikbn ,         /* （中継用）会社間取引区分 */
+     ztytukekaekbn ,         /* （中継用）付替区分 */
+     ztytablekosuu ,         /* （中継用）テーブル個数 */
+     ztykanjyoukbnn ,         /* （中継用）勘定区分（数値） */
+     ztytaisyakukbnn ,         /* （中継用）貸借区分（数値） */
+     ztykanjyoukamokucdn ,         /* （中継用）勘定科目コード（数値） */
+     ztyyobiv4 ,         /* （中継用）予備項目Ｖ４ */
+     ztysuitoubumon ,         /* （中継用）出納部門 */
+     ztykingaku ,         /* （中継用）金額 */
+     ztytekiyoucd ,         /* （中継用）摘要コード */
+     ztyyobiv10 ,         /* （中継用）予備項目Ｖ１０ */
+     ztymeisaikanryoukbn ,         /* （中継用）明細完了区分 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_SkKaikeiTorihikiFileTy_Z;

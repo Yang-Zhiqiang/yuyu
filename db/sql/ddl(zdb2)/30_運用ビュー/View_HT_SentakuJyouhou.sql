@@ -1,0 +1,33 @@
+CREATE VIEW HT_SentakuJyouhou AS SELECT
+     mosno ,         /* 申込番号 */
+     sntkinfotaisyousyakbn ,         /* 選択情報対象者区分 */
+     edano ,         /* 枝番号 */
+     sntkinfono ,         /* 選択情報番号 */
+     syscdkbn ,         /* システムコード区分 */
+     sntkinfokankeisyakbn ,         /* 選択情報関係者区分 */
+     sntkinfofkojinkbn ,         /* 選択情報Ｆ個人区分 */
+     sntkinfokbn ,         /* 選択情報区分 */
+     sntkinfosakuseiymd ,         /* 選択情報作成日 */
+     mrumukbn ,         /* ＭＲ有無区分 */
+     decumukbn ,         /* ＤＥＣ有無区分 */
+     infokoukanumukbn ,         /* 情報交換有無区分 */
+     nyuuinkyhkshrumukbn ,         /* 入院給付金支払有無区分 */
+     syujyutukyhkshrumukbn ,         /* 手術給付金支払有無区分 */
+     syougaikyhkshrumukbn ,         /* 障害給付金支払有無区分 */
+     koudosyougaiumukbn ,         /* 高度障害有無区分 */
+     pmenumukbn ,         /* Ｐ免有無区分 */
+     torikaijoumukbn ,         /* 取消解除有無区分 */
+     soukikeakyhkshrumukbn ,         /* 早期ケア給付金支払有無区分 */
+     sonotakyhkshrumukbn ,         /* その他給付金支払有無区分 */
+     kghsjjtkyhkshrumukbn ,         /* 介護保障充実給付金支払有無区分 */
+     huho2mrumukbn ,         /* 普保ⅡＭＲ有無区分 */
+     huho2decumukbn ,         /* 普保ⅡＤＥＣ有無区分 */
+     huho2kdumukbn ,         /* 普保Ⅱ高度障害有無区分 */
+     huho2torikaijoumukbn ,         /* 普保Ⅱ取消解除有無区分 */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_SentakuJyouhou_Z;

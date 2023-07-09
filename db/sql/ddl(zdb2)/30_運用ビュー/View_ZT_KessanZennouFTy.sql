@@ -1,0 +1,36 @@
+CREATE VIEW ZT_KessanZennouFTy AS SELECT
+     ztyraysystemhyj ,         /* （中継用）ＲＡＹシステム表示 */
+     ztyyobiv9 ,         /* （中継用）予備項目Ｖ９ */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztykbnkeiriyousegmentcd ,         /* （中継用）区分経理用セグメントコード */
+     ztyzennoutoukeilistkbn ,         /* （中継用）前納統計リスト区分 */
+     ztyzennoukbn ,         /* （中継用）前納区分 */
+     ztyzennoukaisiymd ,         /* （中継用）前納開始年月日 */
+     ztyzennoukaisijizndk ,         /* （中継用）前納開始時残高 */
+     ztykykymd ,         /* （中継用）契約年月日 */
+     ztyzennouwrbkrt ,         /* （中継用）前納割引率 */
+     ztyrthndzndk1 ,         /* （中継用）利率変動時残高１ */
+     ztytkyrt1 ,         /* （中継用）適用利率１ */
+     ztyrthndymd1 ,         /* （中継用）利率変動年月日１ */
+     ztyrthndzndk2 ,         /* （中継用）利率変動時残高２ */
+     ztytkyrt2 ,         /* （中継用）適用利率２ */
+     ztyrthndymd2 ,         /* （中継用）利率変動年月日２ */
+     ztyrthndzndk3 ,         /* （中継用）利率変動時残高３ */
+     ztytkyrt3 ,         /* （中継用）適用利率３ */
+     ztyrthndymd3 ,         /* （中継用）利率変動年月日３ */
+     ztyrthndzndk4 ,         /* （中継用）利率変動時残高４ */
+     ztytkyrt4 ,         /* （中継用）適用利率４ */
+     ztyrthndymd4 ,         /* （中継用）利率変動年月日４ */
+     ztytndmatuzndk ,         /* （中継用）当年度末残高 */
+     ztytndmatutkyrt ,         /* （中継用）当年度末適用利率 */
+     ztyzennounyuukinymd ,         /* （中継用）前納入金年月日 */
+     ztytndzndkhikakukbn ,         /* （中継用）当年度残高比較区分 */
+     ztyzennoukikan ,         /* （中継用）前納期間 */
+     ztyyobi01xv1 ,         /* （中継用）予備０１＿Ｖ１ */
+     ztybosyuukeitaikbn ,         /* （中継用）募集形態区分 */
+     ztyyobi02xv11 ,         /* （中継用）予備０２＿Ｖ１１ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_KessanZennouFTy_Z;

@@ -1,0 +1,8 @@
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2017','USD','108.57','init','0','init','0') ;
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2017','AUD','81.58','init','0','init','0') ;
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2018','USD','111.19','init','0','init','0') ;
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2018','AUD','86.05','init','0','init','0') ;
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2019','USD','110.57','init','0','init','0') ;
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2019','AUD','80.91','init','0','init','0') ;
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2020','USD','108.67','init','0','init','0') ;
+INSERT INTO BM_KijyungkHanteiKawaseRate (kijunnendo,kyktuukasyu,kjngkhntiyukawaserate,kousinsyaId,kousinTime,kousinKinou,version) VALUES ('2020','AUD','74.45','init','0','init','0') ;

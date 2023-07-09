@@ -1,0 +1,37 @@
+CREATE VIEW IW_KhHaraikataHenkouWk AS SELECT
+     kouteikanriid ,         /* 工程管理ＩＤ */
+     syono ,         /* 証券番号 */
+     skssakuseiymd ,         /* 請求書作成日 */
+     newhrkkeiro ,         /* （変更後）払込経路 */
+     newhrkkaisuu ,         /* （変更後）払込回数 */
+     newtikiktbrisyuruikbn ,         /* （変更後）定期一括払種類区分 */
+     henkouyoteiym ,         /* 変更（予定）年月 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     kzkykdoukbn ,         /* 口座名義契約者同一人区分 */
+     kzmeiginmkn ,         /* 口座名義人氏名（カナ） */
+     cardkaisyacd ,         /* カード会社コード */
+     creditcardno1 ,         /* クレジットカード番号１ */
+     creditcardno2 ,         /* クレジットカード番号２ */
+     creditcardno3 ,         /* クレジットカード番号３ */
+     creditcardno4 ,         /* クレジットカード番号４ */
+     ykkigenyy ,         /* 有効期限（ＹＹ） */
+     ykkigenmm ,         /* 有効期限（ＭＭ） */
+     creditmeiginmkn ,         /* クレジットカード名義人氏名（カナ） */
+     authorikakyhkbn ,         /* オーソリ確認要否区分 */
+     yykidouuktkkbn ,         /* 予約異動受付区分 */
+     kyuukouzaannaikbn ,         /* 旧口座案内区分 */
+     kanryotuutioutkbn ,         /* 完了通知出力区分 */
+     zenkaisyorikekkakbn ,         /* 前回処理結果区分 */
+     kyuukouzahurikaeymd ,         /* 旧口座振替日 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     creditkessaiyouno           /* クレジットカード決済用番号 */
+FROM IW_KhHaraikataHenkouWk_Z;

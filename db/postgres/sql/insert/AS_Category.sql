@@ -1,0 +1,6 @@
+INSERT INTO AS_Category (categoryId, subSystemId, categoryNm, sortNo, linkImage, titleStyle, menuHyoujiKahi, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('system', 'base', 'システムメンテナンス', '1', '/img/menu/Category_system.png', 'base', '1', 'init', '0', 'init', '0');
+INSERT INTO AS_Category (categoryId, subSystemId, categoryNm, sortNo, linkImage, titleStyle, menuHyoujiKahi, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('log', 'base', 'ログ管理', '2', '/img/menu/Category_log.png', 'base', '1', 'init', '0', 'init', '0');
+INSERT INTO AS_Category (categoryId, subSystemId, categoryNm, sortNo, linkImage, titleStyle, menuHyoujiKahi, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('menu', 'base', 'メニュー', '9', NULL, NULL, '0', 'init', '0', 'init', '0');
+INSERT INTO AS_Category (categoryId, subSystemId, categoryNm, sortNo, linkImage, titleStyle, menuHyoujiKahi, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('sysbatch', 'base', 'システム管理バッチ', '9', NULL, NULL, '0', 'init', '0', 'init', '0');
+INSERT INTO AS_Category (categoryId, subSystemId, categoryNm, sortNo, linkImage, titleStyle, menuHyoujiKahi, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('portal', 'consumer', 'ポータル', '1', NULL, 'consumer', '1', 'init', '0', 'init', '0');
+

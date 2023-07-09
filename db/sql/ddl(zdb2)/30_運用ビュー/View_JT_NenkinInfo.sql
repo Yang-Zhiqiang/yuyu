@@ -1,0 +1,31 @@
+CREATE VIEW JT_NenkinInfo AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuurirekino ,         /* 請求履歴番号 */
+     nkkknsetymd ,         /* 年金基金設定日 */
+     nkshrstartymd ,         /* 年金支払開始日 */
+     nkshrtkyknksyukbn ,         /* 年金支払特約年金種類区分 */
+     nkshrtkyknksyukkn ,         /* 年金支払特約年金期間 */
+     bnshrkaisuu ,         /* 分割支払回数 */
+     nkhaitoukinuketorihoukbn ,         /* 年金配当金受取方法区分 */
+     teinkkikingkgaika ,         /* 定額年金年金基金額（外貨） */
+     teinkkikingkgaika$ ,         /* 定額年金年金基金額（外貨）(通貨型) */
+     teinkkikingken ,         /* 定額年金年金基金額（円貨） */
+     teinkkikingken$ ,         /* 定額年金年金基金額（円貨）(通貨型) */
+     htykeihi ,         /* 必要経費 */
+     htykeihi$ ,         /* 必要経費(通貨型) */
+     yenhtykeihi ,         /* 円換算必要経費 */
+     yenhtykeihi$ ,         /* 円換算必要経費(通貨型) */
+     nknengk ,         /* 年金年額 */
+     nknengk$ ,         /* 年金年額(通貨型) */
+     bnktnkgk ,         /* 分割年金額 */
+     bnktnkgk$ ,         /* 分割年金額(通貨型) */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_NenkinInfo_Z;

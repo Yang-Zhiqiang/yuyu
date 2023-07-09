@@ -1,0 +1,9 @@
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Bz002', '1', '3', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Bz003', '1', '3', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Sk101', '1', '1', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Sk102', '1', '1', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Sk103', '1', '1', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Bz004', '3', '2', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Bz005', '3', '2', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Bz006', '3', '2', 'init', '0', 'init', '0');
+INSERT INTO AS_FileHozonKikan (fileSyuruiCd, hozonKikan, nengappiKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('Bz007', '1', '2', 'init', '0', 'init', '0');

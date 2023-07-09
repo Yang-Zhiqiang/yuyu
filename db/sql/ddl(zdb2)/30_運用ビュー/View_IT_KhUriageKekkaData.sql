@@ -1,0 +1,35 @@
+CREATE VIEW IT_KhUriageKekkaData AS SELECT
+     ansyuusyskbn ,         /* 案内収納用システム区分 */
+     uriagekekkadatarenno ,         /* 売上結果データ連番 */
+     syoriYmd ,         /* 処理年月日 */
+     syono ,         /* 証券番号 */
+     jyuutouym ,         /* 充当年月 */
+     jyutoukaisuuy ,         /* 充当回数（年） */
+     jyutoukaisuum ,         /* 充当回数（月） */
+     syuukeilvkbn ,         /* 集計レベル区分 */
+     uriagetorihikikbn ,         /* 売上取引区分 */
+     uriageymd ,         /* 売上日 */
+     uriagegk ,         /* 売上金額 */
+     uriagegk$ ,         /* 売上金額(通貨型) */
+     zeisoukin ,         /* 税・送金 */
+     zeisoukin$ ,         /* 税・送金(通貨型) */
+     uriagegoukei ,         /* 売上合計 */
+     uriagegoukei$ ,         /* 売上合計(通貨型) */
+     syouninno ,         /* 承認番号 */
+     creditcardno1 ,         /* クレジットカード番号１ */
+     creditcardno2 ,         /* クレジットカード番号２ */
+     creditcardno3 ,         /* クレジットカード番号３ */
+     creditcardno4 ,         /* クレジットカード番号４ */
+     creditcardykkigen ,         /* クレジットカード有効期限 */
+     cardkaisyacd ,         /* カード会社コード */
+     uriagekekkakbn ,         /* 売上結果区分 */
+     creditbrerrorcd ,         /* クレジット払エラーコード */
+     authorikaisuu ,         /* オーソリ回数 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_KhUriageKekkaData_Z;

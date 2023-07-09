@@ -1,0 +1,38 @@
+CREATE VIEW ZT_DirectMailDataTy AS SELECT
+     ztyhokenkbnnys ,         /* （中継用）保険区分（名寄せ） */
+     ztysakuinmeinonys ,         /* （中継用）索引名番号（名寄せ） */
+     ztysyainnm ,         /* （中継用）社員名 */
+     ztysyainseiymd ,         /* （中継用）社員生年月日 */
+     ztykanjisyainnm ,         /* （中継用）漢字社員名 */
+     ztytsinkihontikucd ,         /* （中継用）通信先基本地区コード */
+     ztynaimitureigaihyj ,         /* （中継用）内密例外表示 */
+     ztydrtenhyj ,         /* （中継用）代理店表示 */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztykanjitsinkaiadr ,         /* （中継用）漢字通信先下位住所 */
+     ztysouhuhunoukbn ,         /* （中継用）送付不能区分 */
+     ztybsyym ,         /* （中継用）募集年月 */
+     ztyhknnm ,         /* （中継用）保険名称 */
+     ztynenhousiki ,         /* （中継用）年齢方式 */
+     ztykzktrkarihyj ,         /* （中継用）ご家族登録有表示 */
+     ztyaatkioybsydrtencd ,         /* （中継用）Ａ扱者親募集代理店コード */
+     ztybatkioybsydrtencd ,         /* （中継用）Ｂ扱者親募集代理店コード */
+     ztyyobiv250x1 ,         /* （中継用）予備項目Ｖ２５０＿１ */
+     ztyyobiv250x2 ,         /* （中継用）予備項目Ｖ２５０＿２ */
+     ztyyobiv250x3 ,         /* （中継用）予備項目Ｖ２５０＿３ */
+     ztyyobiv250x4 ,         /* （中継用）予備項目Ｖ２５０＿４ */
+     ztyyobiv250x5 ,         /* （中継用）予備項目Ｖ２５０＿５ */
+     ztyyobiv250x6 ,         /* （中継用）予備項目Ｖ２５０＿６ */
+     ztyyobiv250x7 ,         /* （中継用）予備項目Ｖ２５０＿７ */
+     ztyyobiv250x8 ,         /* （中継用）予備項目Ｖ２５０＿８ */
+     ztyyobiv250x9 ,         /* （中継用）予備項目Ｖ２５０＿９ */
+     ztyyobiv250x10 ,         /* （中継用）予備項目Ｖ２５０＿１０ */
+     ztyyobiv250x11 ,         /* （中継用）予備項目Ｖ２５０＿１１ */
+     ztyyobiv250x12 ,         /* （中継用）予備項目Ｖ２５０＿１２ */
+     ztyyobiv250x13 ,         /* （中継用）予備項目Ｖ２５０＿１３ */
+     ztyyobiv250x14 ,         /* （中継用）予備項目Ｖ２５０＿１４ */
+     ztyyobiv122 ,         /* （中継用）予備項目Ｖ１２２ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_DirectMailDataTy_Z;

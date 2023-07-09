@@ -1,0 +1,43 @@
+CREATE VIEW JT_SiDetailKkn AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuurirekino ,         /* 請求履歴番号 */
+     uketukeno ,         /* 受付番号 */
+     kyuuhucd ,         /* 給付コード */
+     renno ,         /* 連番 */
+     renno2keta2 ,         /* 連番（２桁）２ */
+     shrtaisyoukbn ,         /* 支払対象区分 */
+     taisyoukknfrom ,         /* 対象期間（自） */
+     taisyoukknto ,         /* 対象期間（至） */
+     seikyuukknfrom ,         /* 請求期間（自） */
+     seikyuukknto ,         /* 請求期間（至） */
+     syujyututourokuno ,         /* 手術登録番号 */
+     kjcd1 ,         /* Ｋ・Ｊコード１ */
+     kjcd2 ,         /* Ｋ・Ｊコード２ */
+     kjcd3 ,         /* Ｋ・Ｊコード３ */
+     syujyutunmkn ,         /* 手術名（カナ） */
+     syujyutunmkj ,         /* 手術名（漢字） */
+     jyouken ,         /* 条件 */
+     syujyutubunruicd ,         /* 手術分類コード */
+     syujyutuhousiki ,         /* 手術方式 */
+     sensingijuturyou ,         /* 先進医療技術料 */
+     sensingijuturyou$ ,         /* 先進医療技術料(通貨型) */
+     sensinitijikinshrumukbn ,         /* 先進医療一時金支払有無区分 */
+     sandaisippeihknshrriyuukbn ,         /* ３大疾病保険金支払理由区分 */
+     shrkekkakbn ,         /* 支払結果区分 */
+     hushrsyousaikbn ,         /* 不支払詳細区分 */
+     hutanpoflg ,         /* 不担保フラグ */
+     itinyuuingendotyoukaflg ,         /* 1入院限度超過フラグ */
+     tuusangendotyoukaflg ,         /* 通算限度超過フラグ */
+     gannyuuinflg ,         /* がん入院フラグ */
+     nyuuintyuuflg ,         /* 入院中フラグ */
+     kyhknskgnkkntaisyouumukbn ,         /* 給付金削減期間対象有無区分 */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_SiDetailKkn_Z;

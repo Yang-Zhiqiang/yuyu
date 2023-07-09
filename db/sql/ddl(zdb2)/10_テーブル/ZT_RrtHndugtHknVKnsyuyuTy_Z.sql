@@ -1,0 +1,105 @@
+CREATE TABLE ZT_RrtHndugtHknVKnsyuyuTy_Z (
+     ztysequenceno                                      DECIMAL     (8)                                                       NOT NULL  ,  /* （中継用）シーケンス番号 */
+     ztyyuukourecordlength                              DECIMAL     (7)                                                                 ,  /* （中継用）有効レコード長 */
+     ztyrdwarea                                         VARCHAR     (4)                                                                 ,  /* （中継用）ＲＤＷ領域 */
+     ztykeijyouym                                       VARCHAR     (6)                                                                 ,  /* （中継用）計上年月 */
+     ztyraysystemhyj                                    VARCHAR     (1)                                                                 ,  /* （中継用）ＲＡＹシステム表示 */
+     ztydatakanrino                                     VARCHAR     (11)                                                                ,  /* （中継用）データ管理番号 */
+     ztyhknsyukigou                                     VARCHAR     (2)                                                                 ,  /* （中継用）保険種類記号 */
+     ztyhknsyuruikigousedaikbn                          VARCHAR     (1)                                                                 ,  /* （中継用）保険種類記号世代区分 */
+     ztysotodasipmenkbn                                 VARCHAR     (1)                                                                 ,  /* （中継用）外出Ｐ免区分 */
+     ztysotodasimanagehyouji                            VARCHAR     (1)                                                                 ,  /* （中継用）外出満年令表示 */
+     ztysuuriyouyobin6                                  VARCHAR     (6)                                                                 ,  /* （中継用）数理用予備項目Ｎ６ */
+     ztyyobiv12                                         VARCHAR     (12)                                                                ,  /* （中継用）予備項目Ｖ１２ */
+     ztykbnkeiriyousegmentkbn                           VARCHAR     (2)                                                                 ,  /* （中継用）区分経理用セグメント区分 */
+     ztykbnkeiriyourgnbnskkbn                           VARCHAR     (2)                                                                 ,  /* （中継用）区分経理用利源分析区分 */
+     ztysuurisyuruicd                                   VARCHAR     (2)                                                                 ,  /* （中継用）数理種類コード */
+     ztysuuriyouyobin6x2                                VARCHAR     (6)                                                                 ,  /* （中継用）数理用予備項目Ｎ６＿２ */
+     ztyyobiv8                                          VARCHAR     (8)                                                                 ,  /* （中継用）予備項目Ｖ８ */
+     ztykykymd                                          VARCHAR     (8)                                                                 ,  /* （中継用）契約年月日 */
+     ztyhknkkn                                          VARCHAR     (2)                                                                 ,  /* （中継用）保険期間 */
+     ztyphrkkikn                                        VARCHAR     (2)                                                                 ,  /* （中継用）Ｐ払込期間 */
+     ztysaimnkkykhyj                                    VARCHAR     (1)                                                                 ,  /* （中継用）才満期契約表示 */
+     ztyannaifuyouriyuukbn                              VARCHAR     (2)                                                                 ,  /* （中継用）案内不要理由区分 */
+     ztyhhknseikbn                                      VARCHAR     (1)                                                                 ,  /* （中継用）被保険者性別区分 */
+     ztyhihokensyaagev2                                 VARCHAR     (2)                                                                 ,  /* （中継用）被保険者年令Ｖ２ */
+     ztykuriagekurisagekbn                              VARCHAR     (1)                                                                 ,  /* （中継用）繰上げ繰下げ区分 */
+     ztysyukeiyakupwaribikikbn                          VARCHAR     (2)                                                                 ,  /* （中継用）主契約Ｐ割引区分 */
+     ztyjikaipjyuutouym2                                VARCHAR     (6)                                                                 ,  /* （中継用）次回Ｐ充当年月２ */
+     ztysyokainyknjikawasekjnymd                        VARCHAR     (8)                                                                 ,  /* （中継用）初回入金時為替基準年月日 */
+     ztysuuriyouyobin6x3                                VARCHAR     (6)                                                                 ,  /* （中継用）数理用予備項目Ｎ６＿３ */
+     ztyyobiv7                                          VARCHAR     (7)                                                                 ,  /* （中継用）予備項目Ｖ７ */
+     ztygaikakbn                                        VARCHAR     (1)                                                                 ,  /* （中継用）外貨区分 */
+     ztykimatukawaserate                                DECIMAL     (9,6)                                                               ,  /* （中継用）期末為替レート */
+     ztyyoteiriritun5                                   DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５ */
+     ztyyoteiriritun5x2                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿２ */
+     ztyyoteiriritun5x3                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿３ */
+     ztyyoteiriritun5x4                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿４ */
+     ztyyoteiriritun5x5                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿５ */
+     ztyyoteiriritun5x6                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿６ */
+     ztyyoteiriritun5x7                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿７ */
+     ztyyoteiriritun5x8                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿８ */
+     ztyyoteiriritun5x9                                 DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿９ */
+     ztyyoteiriritun5x10                                DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿１０ */
+     ztyyoteiriritun5x11                                DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿１１ */
+     ztyyoteiriritun5x12                                DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿１２ */
+     ztyyoteiriritun5x13                                DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿１３ */
+     ztyyoteiriritun5x14                                DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿１４ */
+     ztyyoteiriritun5x15                                DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿１５ */
+     ztyyoteiriritun5x16                                DECIMAL     (5,4)                                                               ,  /* （中継用）予定利率Ｎ５＿１６ */
+     ztyyobiv6                                          VARCHAR     (6)                                                                 ,  /* （中継用）予備項目Ｖ６ */
+     ztysyukeiyakup                                     DECIMAL     (11)                                                                ,  /* （中継用）主契約Ｐ */
+     ztysyuptumitatekin                                 DECIMAL     (11)                                                                ,  /* （中継用）主契約保険料積立金 */
+     ztyptumitatekin                                    DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金 */
+     ztyptumitatekinx2                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿２ */
+     ztyptumitatekinx3                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿３ */
+     ztyptumitatekinx4                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿４ */
+     ztyptumitatekinx5                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿５ */
+     ztyptumitatekinx6                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿６ */
+     ztyptumitatekinx7                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿７ */
+     ztyptumitatekinx8                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿８ */
+     ztyptumitatekinx9                                  DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿９ */
+     ztyptumitatekinx10                                 DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿１０ */
+     ztyptumitatekinx11                                 DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿１１ */
+     ztyptumitatekinx12                                 DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿１２ */
+     ztyptumitatekinx13                                 DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿１３ */
+     ztyptumitatekinx14                                 DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿１４ */
+     ztyptumitatekinx15                                 DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿１５ */
+     ztyptumitatekinx16                                 DECIMAL     (11)                                                                ,  /* （中継用）保険料積立金＿１６ */
+     ztygaikadatejyuutoup                               DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ */
+     ztygaikadatejyuutoupx2                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿２ */
+     ztygaikadatejyuutoupx3                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿３ */
+     ztygaikadatejyuutoupx4                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿４ */
+     ztygaikadatejyuutoupx5                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿５ */
+     ztygaikadatejyuutoupx6                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿６ */
+     ztygaikadatejyuutoupx7                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿７ */
+     ztygaikadatejyuutoupx8                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿８ */
+     ztygaikadatejyuutoupx9                             DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿９ */
+     ztygaikadatejyuutoupx10                            DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿１０ */
+     ztygaikadatejyuutoupx11                            DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿１１ */
+     ztygaikadatejyuutoupx12                            DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿１２ */
+     ztygaikadatejyuutoupx13                            DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿１３ */
+     ztygaikadatejyuutoupx14                            DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿１４ */
+     ztygaikadatejyuutoupx15                            DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿１５ */
+     ztygaikadatejyuutoupx16                            DECIMAL     (11)                                                                ,  /* （中継用）外貨建充当Ｐ＿１６ */
+     ztysykykkitmttvkeisanym1                           VARCHAR     (6)                                                                 ,  /* （中継用）主契約既積立Ｖ計算年月１ */
+     ztysykykkitmttv1                                   DECIMAL     (11)                                                                ,  /* （中継用）主契約既積立Ｖ１ */
+     ztysykykkitmttvkeisanym2                           VARCHAR     (6)                                                                 ,  /* （中継用）主契約既積立Ｖ計算年月２ */
+     ztysykykkitmttv2                                   DECIMAL     (11)                                                                ,  /* （中継用）主契約既積立Ｖ２ */
+     ztyrrthnduhknvkisovkisnyu1                         DECIMAL     (11)                                                                ,  /* （中継用）利率変動保険Ｖ基礎Ｖ計算用１ */
+     ztyrrthnduhknvkisovkisnyu2                         DECIMAL     (11)                                                                ,  /* （中継用）利率変動保険Ｖ基礎Ｖ計算用２ */
+     ztyrrthnduhknvkisovkisnyu3                         DECIMAL     (11)                                                                ,  /* （中継用）利率変動保険Ｖ基礎Ｖ計算用３ */
+     ztyrrthnduhknvkisovkisnyu4                         DECIMAL     (11)                                                                ,  /* （中継用）利率変動保険Ｖ基礎Ｖ計算用４ */
+     ztyrrthnduhknvkiso                                 DECIMAL     (11)                                                                ,  /* （中継用）利率変動保険Ｖ基礎Ｖ */
+     ztysuuriyouyobin9                                  VARCHAR     (9)                                                                 ,  /* （中継用）数理用予備項目Ｎ９ */
+     ztyyobiv14                                         VARCHAR     (14)                                                                ,  /* （中継用）予備項目Ｖ１４ */
+     kousinsyaId                                        VARCHAR     (30)                                                                ,  /* 更新者ＩＤ */
+     kousinTime                                         VARCHAR     (17)                                                                ,  /* 更新時間 */
+     kousinKinou                                        VARCHAR     (50)                                                                ,  /* 更新機能 */
+     version                                            BIGINT      NOT NULL WITH DEFAULT 0                                                /* バージョン */
+)
+;
+
+ALTER TABLE ZT_RrtHndugtHknVKnsyuyuTy_Z ADD CONSTRAINT PK_RrtHndugtHknVKnsyuyuTy PRIMARY KEY (
+     ztysequenceno                                              /* （中継用）シーケンス番号 */
+) ;

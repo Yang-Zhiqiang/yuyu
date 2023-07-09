@@ -1,0 +1,45 @@
+CREATE VIEW ZT_DairitenGtmtZndkRn AS SELECT
+     zrndatakijyunymd ,         /* （連携用）データ基準年月日 */
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnhknsyukigou ,         /* （連携用）保険種類記号 */
+     zrnhknsyuruikigousedaikbn ,         /* （連携用）保険種類記号世代区分 */
+     zrnmdhnaisyoumeicd ,         /* （連携用）窓販用愛称名コード */
+     zrntuuka ,         /* （連携用）通貨 */
+     zrnhrkhuhukbn ,         /* （連携用）払込方法区分 */
+     zrnkyknmkndrtengtmtzndk ,         /* （連携用）契約者名（カナ）（代理店月末残高） */
+     zrnkyknmkjdrtengtmtzndk ,         /* （連携用）契約者名（漢字）（代理店月末残高） */
+     zrnhhknnmkjdrtengtmtzndk ,         /* （連携用）被保険者名（漢字）（代理店月末残高） */
+     zrnitijibrp ,         /* （連携用）一時払保険料 */
+     zrngoukeip2 ,         /* （連携用）合計保険料２ */
+     zrnzennoup ,         /* （連携用）前納保険料 */
+     zrntumitatekngk ,         /* （連携用）積立金額 */
+     zrntargettktoutatubi ,         /* （連携用）ターゲット到達日 */
+     zrnmokuhyouti ,         /* （連携用）目標値 */
+     zrnmokuhyoukngk ,         /* （連携用）目標金額 */
+     zrnkaiyakuhr ,         /* （連携用）解約返戻金 */
+     zrnkihrkmpjytym ,         /* （連携用）既払込保険料充当年月 */
+     zrnkihrpruikeigk ,         /* （連携用）既払保険料累計額 */
+     zrntousyokykjikawaserate ,         /* （連携用）当初契約時為替レート */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnmankiymd ,         /* （連携用）満期年月日 */
+     zrnkishrkinruikeigk ,         /* （連携用）既支払金累計額 */
+     zrnsjkkktyouseigk ,         /* （連携用）市場価格調整額 */
+     zrnkaiyakukjgk ,         /* （連携用）解約控除額 */
+     zrnsoneki ,         /* （連携用）損益 */
+     zrnsonekicalchunouflg ,         /* （連携用）損益計算不能フラグ */
+     zrnsibous ,         /* （連携用）死亡Ｓ */
+     zrngmeigyoubijiyenshrrate ,         /* （連携用）月末営業日時円支払レート */
+     zrngmeigyoubijikawaserate ,         /* （連携用）月末営業日時為替レート */
+     zrntousyokykjiyennyknrate ,         /* （連携用）当初契約時円入金レート */
+     zrntousyokykjigaikanyknrate ,         /* （連携用）当初契約時外貨入金レート */
+     zrnkanyuusyaknrno ,         /* （連携用）加入者管理番号 */
+     zrnhrkstgktuuka ,         /* （連携用）払込相当額通貨 */
+     zrnmokuhyoukngktuuka ,         /* （連携用）目標金額通貨 */
+     zrnsonotaseisankin ,         /* （連携用）その他精算金 */
+     zrnyenkansansaiyousign ,         /* （連携用）円換算採用為替サイン */
+     zrnkykjiyoteitmttriritu ,         /* （連携用）契約時予定利率・積立利率 */
+     zrnhukusuutuukaflg ,         /* （連携用）複数通貨フラグ */
+     zrnyenkansanhunoflg ,         /* （連携用）円換算不能フラグ */
+     zrntyusyaku20 ,         /* （連携用）注釈２０ */
+     zrnyobiv187           /* （連携用）予備項目Ｖ１８７ */
+FROM ZT_DairitenGtmtZndkRn_Z;

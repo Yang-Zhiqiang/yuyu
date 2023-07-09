@@ -1,0 +1,45 @@
+CREATE VIEW IT_NyknJissekiRireki AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     jyutoustartym ,         /* 充当開始年月 */
+     renno ,         /* 連番 */
+     jyutouendym ,         /* 充当終了年月 */
+     rsgaku ,         /* 領収金額 */
+     rsgaku$ ,         /* 領収金額(通貨型) */
+     rstuukasyu ,         /* 領収通貨種類 */
+     ryosyukwsratekjymd ,         /* 領収為替レート基準日 */
+     ryosyukwsrate ,         /* 領収為替レート */
+     hrkp ,         /* 払込保険料 */
+     hrkp$ ,         /* 払込保険料(通貨型) */
+     iktwaribikikgk ,         /* 一括割引料 */
+     iktwaribikikgk$ ,         /* 一括割引料(通貨型) */
+     nyksyoriymd ,         /* 入金処理日 */
+     ryosyuymd ,         /* 領収日 */
+     nykdenno ,         /* 入金伝票番号 */
+     nykdenymd ,         /* 入金伝票日付 */
+     nykkeiro ,         /* 入金経路 */
+     hrkkaisuu ,         /* 払込回数 */
+     tikiktbrisyuruikbn ,         /* 定期一括払種類区分 */
+     ikkatuyoupkaisuu ,         /* 一括要Ｐ回数 */
+     jyutoukaisuuy ,         /* 充当回数（年） */
+     jyutoukaisuum ,         /* 充当回数（月） */
+     nyknaiyoukbn ,         /* 入金内容区分 */
+     iktnyuukinnumu ,         /* 一括入金有無 */
+     nyktrksflg ,         /* 入金取消フラグ */
+     nyktrksymd ,         /* 入金取消処理日 */
+     nyktrksdenno ,         /* 入金取消伝票番号 */
+     nyktrksdenymd ,         /* 入金取消伝票日付 */
+     yenkansannyknkingk ,         /* 円換算入金額 */
+     yenkansannyknkingk$ ,         /* 円換算入金額(通貨型) */
+     yenkansantkykwsrateymd ,         /* 円換算適用為替レート基準日 */
+     yenkansantkykwsrate ,         /* 円換算適用為替レート */
+     henkousikibetukey ,         /* 変更識別キー */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     creditkessaiyouno           /* クレジットカード決済用番号 */
+FROM IT_NyknJissekiRireki_Z;

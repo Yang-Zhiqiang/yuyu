@@ -1,0 +1,45 @@
+CREATE VIEW ZT_DrtenKykIdouDetailTy AS SELECT
+     ztykinyuukikancd ,         /* （中継用）金融機関コード */
+     ztykinyuukikansitencd ,         /* （中継用）金融機関支店コード */
+     ztybsydrtencd ,         /* （中継用）募集代理店コード */
+     ztycifcd ,         /* （中継用）ＣＩＦコード */
+     ztybosyuunincd ,         /* （中継用）募集人コード */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztyidouhasseiymd ,         /* （中継用）異動発生年月日 */
+     ztykykmfksnctrlkh ,         /* （中継用）契約ＭＦ更新ＣＴＲ（保全） */
+     ztysyoricd ,         /* （中継用）処理コード */
+     ztyidoukbn ,         /* （中継用）異動区分 */
+     ztybsyym ,         /* （中継用）募集年月 */
+     ztykydatkikbn ,         /* （中継用）共同扱区分 */
+     ztykykymd ,         /* （中継用）契約年月日 */
+     ztyjikaipjyuutouym ,         /* （中継用）次回Ｐ充当年月 */
+     ztyhrkkaisuukbn ,         /* （中継用）払込回数区分 */
+     ztyhrkkeirokbn ,         /* （中継用）払込経路区分 */
+     ztyanniskcd ,         /* （中継用）案内先コード */
+     ztydntcd ,         /* （中継用）団体コ－ド */
+     ztyharaikomip ,         /* （中継用）払込Ｐ */
+     ztykjsyagaihknnm ,         /* （中継用）漢字社外向け保険名 */
+     ztytelno ,         /* （中継用）電話番号 */
+     ztyhensyuubosyuudrtennm ,         /* （中継用）編集後漢字募集代理店名 */
+     ztykyknmkjdirtnkykido ,         /* （中継用）契約者名（漢字）（代理店契約異動明細） */
+     ztykjdntnm ,         /* （中継用）漢字団体名 */
+     ztykzhurikaebankcd ,         /* （中継用）口座振替銀行番号 */
+     ztykzhurikaesitencd ,         /* （中継用）口座振替支店番号 */
+     ztykzhurikaeyokinkbn ,         /* （中継用）口座振替預金種目区分 */
+     ztykzhurikaekouzano ,         /* （中継用）口座振替口座番号 */
+     ztyoyabosyuudairitencd ,         /* （中継用）親募集代理店コード */
+     ztybsydrtenkanrisosikicd ,         /* （中継用）募集代理店管理組織コード */
+     ztybosyuudairitengyousyukbn ,         /* （中継用）募集代理店業種区分 */
+     ztybosyuudrtennmkj ,         /* （中継用）募集代理店名（漢字） */
+     ztydoujitusyoricount ,         /* （中継用）同日処理回数 */
+     ztyhjnkykhyj ,         /* （中継用）法人契約表示 */
+     ztyhjnnmkj ,         /* （中継用）法人名（漢字） */
+     ztysyuhrkkaisuukbn ,         /* （中継用）表示用主契約払込回数区分 */
+     ztyikkatubaraikbn ,         /* （中継用）一括払区分 */
+     ztyikkatubaraikaisuu ,         /* （中継用）一括払回数 */
+     ztyyobiv103 ,         /* （中継用）予備項目Ｖ１０３ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_DrtenKykIdouDetailTy_Z;

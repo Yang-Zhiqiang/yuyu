@@ -1,0 +1,44 @@
+CREATE VIEW JT_SiDetail AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuurirekino ,         /* 請求履歴番号 */
+     uketukeno ,         /* 受付番号 */
+     syutkkbn ,         /* 主契約特約区分 */
+     syouhncd ,         /* 商品コード */
+     kyhgndkatakbn ,         /* 給付限度型区分 */
+     syouhnsdno ,         /* 商品世代番号 */
+     kyksyouhnrenno ,         /* 契約商品連番 */
+     kyuuhucd ,         /* 給付コード */
+     renno ,         /* 連番 */
+     kyuuhukbn ,         /* 給付区分 */
+     hokenkinsyuruikbn ,         /* 保険金種類区分 */
+     kanjyoukmkcd ,         /* 勘定科目コード */
+     checktaisyouumukbn ,         /* チェック対象有無区分 */
+     nitigakuhokenkngkkbn ,         /* 日額・保険金額区分 */
+     nitigakuhokenkngk ,         /* 日額・保険金額 */
+     nitigakuhokenkngk$ ,         /* 日額・保険金額(通貨型) */
+     nissuubairitu ,         /* 日数・倍率 */
+     kyhkintanikbn ,         /* 給付金単位区分 */
+     kyhkg ,         /* 給付金額 */
+     kyhkg$ ,         /* 給付金額(通貨型) */
+     yenkyhgk ,         /* 円換算給付金額 */
+     yenkyhgk$ ,         /* 円換算給付金額(通貨型) */
+     sitihsyutkyumaeyenhknkngk ,         /* 最低保証適用前円換算保険金額 */
+     sitihsyutkyumaeyenhknkngk$ ,         /* 最低保証適用前円換算保険金額(通貨型) */
+     hutanponissuu ,         /* 不担保日数 */
+     shrriyuugaitouymd ,         /* 支払理由該当日 */
+     hknskgnkkntgtumukbn ,         /* 保険金削減期間対象有無区分 */
+     hokenkinshrwariai ,         /* 保険金支払割合 */
+     bikoumsg1 ,         /* 備考ＭＳＧ１ */
+     bikoumsg2 ,         /* 備考ＭＳＧ２ */
+     bikoumsg3 ,         /* 備考ＭＳＧ３ */
+     bikoumsg4 ,         /* 備考ＭＳＧ４ */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_SiDetail_Z;

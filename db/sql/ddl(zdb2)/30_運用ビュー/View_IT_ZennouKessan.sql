@@ -1,0 +1,46 @@
+CREATE VIEW IT_ZennouKessan AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     sakuseiymd ,         /* 作成年月日 */
+     kbnkeirisegcd ,         /* 区分経理用セグメントコード */
+     zennoukbn ,         /* 前納区分 */
+     zennoutoukeilistkbn ,         /* 前納統計リスト区分 */
+     zennoustartym ,         /* 前納開始年月 */
+     zennoukaisiymd ,         /* 前納開始年月日 */
+     zennoukaisijizndk ,         /* 前納開始時残高 */
+     zennoukaisijizndk$ ,         /* 前納開始時残高(通貨型) */
+     keiyakuymd ,         /* 契約年月日 */
+     zennouwrbkrt ,         /* 前納割引率 */
+     rthndzndk1 ,         /* 利率変動時残高１ */
+     rthndzndk1$ ,         /* 利率変動時残高１(通貨型) */
+     tkyrt1 ,         /* 適用利率１ */
+     rthndymd1 ,         /* 利率変動年月日１ */
+     rthndzndk2 ,         /* 利率変動時残高２ */
+     rthndzndk2$ ,         /* 利率変動時残高２(通貨型) */
+     tkyrt2 ,         /* 適用利率２ */
+     rthndymd2 ,         /* 利率変動年月日２ */
+     rthndzndk3 ,         /* 利率変動時残高３ */
+     rthndzndk3$ ,         /* 利率変動時残高３(通貨型) */
+     tkyrt3 ,         /* 適用利率３ */
+     rthndymd3 ,         /* 利率変動年月日３ */
+     rthndzndk4 ,         /* 利率変動時残高４ */
+     rthndzndk4$ ,         /* 利率変動時残高４(通貨型) */
+     tkyrt4 ,         /* 適用利率４ */
+     rthndymd4 ,         /* 利率変動年月日４ */
+     tndmatuzndk ,         /* 当年度末残高 */
+     tndmatuzndk$ ,         /* 当年度末残高(通貨型) */
+     tndmatutkyrt ,         /* 当年度末適用利率 */
+     zennounyuukinymd ,         /* 前納入金年月日 */
+     tndzndkhikakukbn ,         /* 当年度残高比較区分 */
+     zennoukikan ,         /* 前納期間 */
+     yobi01xv1 ,         /* 予備０１＿Ｖ１ */
+     bosyuukeitaikbn ,         /* 募集形態区分 */
+     yobi02xv11 ,         /* 予備０２＿Ｖ１１ */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_ZennouKessan_Z;

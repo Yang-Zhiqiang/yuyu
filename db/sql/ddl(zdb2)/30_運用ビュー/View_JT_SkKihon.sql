@@ -1,0 +1,32 @@
+CREATE VIEW JT_SkKihon AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuusyubetu ,         /* 請求種別 */
+     saisateikbn ,         /* 再査定区分 */
+     siboukaritrkymd ,         /* 死亡仮受付登録日 */
+     kyknmkj ,         /* 契約者名（漢字） */
+     kyknmkn ,         /* 契約者名（カナ） */
+     kykseiymd ,         /* 契約者生年月日 */
+     kyksei ,         /* 契約者性別 */
+     hhknnmkj ,         /* 被保険者名（漢字） */
+     hhknnmkn ,         /* 被保険者名（カナ） */
+     hhknseiymd ,         /* 被保険者生年月日 */
+     hhknsei ,         /* 被保険者性別 */
+     syorijyoutaikbn ,         /* 処理状態区分 */
+     sateiyhkbn ,         /* 査定要否区分 */
+     kakninumukbn ,         /* 確認有無区分 */
+     hubijyoukyoukbn ,         /* 不備状況区分 */
+     tyousajyoukyoukbn ,         /* 調査状況区分 */
+     shrkekkakbn ,         /* 支払結果区分 */
+     sbjishrumukbn ,         /* 死亡時支払有無区分 */
+     saigaihigaitoukbn ,         /* 災害非該当区分 */
+     gaibuinsatuoutymd ,         /* 外部印刷出力日 */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_SkKihon_Z;

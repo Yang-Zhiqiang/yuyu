@@ -1,0 +1,31 @@
+CREATE VIEW ZT_KariwariateHtkinMeisaiTy AS SELECT
+     ztysequenceno ,         /* （中継用）シーケンス番号 */
+     ztyyuukourecordlength ,         /* （中継用）有効レコード長 */
+     ztyrdwarea ,         /* （中継用）ＲＤＷ領域 */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztyhknsyukigou ,         /* （中継用）保険種類記号 */
+     ztyhrkkaisuukbn ,         /* （中継用）払込回数区分 */
+     ztyhrkkeirokbn ,         /* （中継用）払込経路区分 */
+     ztyannaifuyouriyuukbn ,         /* （中継用）案内不要理由区分 */
+     ztyznnndkrkskrwratdruigk ,         /* （中継用）前年度繰越仮割当Ｄ累計額 */
+     ztytounendokariwariated ,         /* （中継用）当年度仮割当Ｄ */
+     ztytndmatukrkskrwratdruigk ,         /* （中継用）当年度末仮割当Ｄ累計額 */
+     ztykariwariatedrisoku ,         /* （中継用）仮割当Ｄ利息 */
+     ztyhsys ,         /* （中継用）保障Ｓ */
+     ztyyobiv3 ,         /* （中継用）予備項目Ｖ３ */
+     ztysrutiwake ,         /* （中継用）数理用内訳 */
+     ztysrkijyunym ,         /* （中継用）数理用基準年月 */
+     ztykbnkeiriyousegmentkbn ,         /* （中継用）区分経理用セグメント区分 */
+     ztykbnkeiriyourgnbnskkbn ,         /* （中継用）区分経理用利源分析区分 */
+     ztyseisikiwariatenendohyj ,         /* （中継用）正式割当年度表示 */
+     ztymankitouraiym ,         /* （中継用）満期到来年月 */
+     ztysyukeiyakusyuruicdv2 ,         /* （中継用）主契約種類コードＶ２ */
+     ztykeiyakunendo ,         /* （中継用）契約年度 */
+     ztydaihyouyoteiriritu ,         /* （中継用）代表予定利率 */
+     ztyharaikatakbn ,         /* （中継用）払方区分 */
+     ztyyobiv20 ,         /* （中継用）予備項目Ｖ２０ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_KariwariateHtkinMeisaiTy_Z;

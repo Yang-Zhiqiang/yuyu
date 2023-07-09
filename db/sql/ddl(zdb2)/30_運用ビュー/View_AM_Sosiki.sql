@@ -1,0 +1,29 @@
+CREATE VIEW AM_Sosiki AS SELECT
+     sosikicd ,         /* 組織コード */
+     sosikinmkbn ,         /* 組織名区分 */
+     sosikinm20 ,         /* 組織名（２０文字） */
+     kanjisosikinm20 ,         /* 漢字組織名（２０文字） */
+     sosikihaisiym ,         /* 組織廃止年月 */
+     sosikisinsetuym ,         /* 組織新設年月 */
+     tougetukeisyouusosikicd ,         /* 当月継承組織コード */
+     tougetukeisyoueigyoubucd ,         /* 当月継承営業推進部コード */
+     zengetukeisyousosikicd ,         /* 前月継承組織コード */
+     zengetukeisyoueigyoubucd ,         /* 前月継承営業推進部コード */
+     sosikikihontikucd ,         /* 組織基本地区コード */
+     sosikikanjikaijyuusyo30 ,         /* 組織漢字下位住所（３０文字） */
+     kanjibirunm15 ,         /* 漢字ビル名称（１５文字） */
+     sosikinyuukyokaisuu ,         /* 組織入居階数 */
+     sosikitelno ,         /* 組織電話番号 */
+     sosikifaxno ,         /* 組織ＦＡＸ番号 */
+     kouryokukaisiymd ,         /* 効力開始年月日 */
+     hensosikikihontikucd ,         /* (変更後)組織基本地区コード */
+     henkanjisosikikaijyuusyo30 ,         /* (変更後)漢字組織下位住所（３０文字） */
+     henkanjibirunm15 ,         /* (変更後)漢字ビル名称（１５文字） */
+     hensosikinyuukyokaisuu ,         /* (変更後)組織入居階数 */
+     hensosikitelno ,         /* (変更後)組織電話番号 */
+     hensosikifaxno ,         /* (変更後)組織ＦＡＸ番号 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM AM_Sosiki_Z;

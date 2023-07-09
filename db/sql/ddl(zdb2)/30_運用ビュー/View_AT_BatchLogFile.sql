@@ -1,0 +1,9 @@
+CREATE VIEW AT_BatchLogFile AS SELECT
+     batchJobId ,         /* バッチジョブＩＤ */
+     uniqueId ,         /* ユニークＩＤ */
+     batchSyoriYmd ,         /* バッチ処理年月日 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM AT_BatchLogFile_Z;

@@ -1,0 +1,43 @@
+CREATE VIEW ZT_SmbcGetujiKykMeisaiTy AS SELECT
+     ztydatakijyunymd ,         /* （中継用）データ基準年月日 */
+     ztydatakijyunym ,         /* （中継用）データ基準年月 */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztyaatukaidirtncd ,         /* （中継用）Ａ扱代理店コード */
+     ztybatukaidirtncd ,         /* （中継用）Ｂ扱代理店コード */
+     ztyaatukaibosyuunincd ,         /* （中継用）Ａ扱募集人コード */
+     ztybatukaibosyuunincd ,         /* （中継用）Ｂ扱募集人コード */
+     ztyhknsyukigou ,         /* （中継用）保険種類記号 */
+     ztyhknsyuruikigousedaikbn ,         /* （中継用）保険種類記号世代区分 */
+     ztymdhnaisyoumeicd ,         /* （中継用）窓販用愛称名コード */
+     ztytuukacdsmbcgetuji ,         /* （中継用）通貨コード（ＳＭＢＣ月次契約Ｆ） */
+     ztyhrkhuhukbn ,         /* （中継用）払込方法区分 */
+     ztykyknmknsmbcgetuji ,         /* （中継用）契約者名（カナ）（ＳＭＢＣ月次契約Ｆ） */
+     ztykyknmkjsmbcgetuji ,         /* （中継用）契約者名（漢字）（ＳＭＢＣ月次契約Ｆ） */
+     ztyhhknnmkjsmbcgetuji ,         /* （中継用）被保険者名（漢字）（ＳＭＢＣ月次契約Ｆ） */
+     ztyitijibrp ,         /* （中継用）一時払保険料 */
+     ztygoukeip2 ,         /* （中継用）合計保険料２ */
+     ztyzenkizennoup ,         /* （中継用）全期前納保険料 */
+     ztytumitatekngk ,         /* （中継用）積立金額 */
+     ztytargettktoutatubi ,         /* （中継用）ターゲット到達日 */
+     ztymokuhyouti ,         /* （中継用）目標値 */
+     ztymokuhyoukngk ,         /* （中継用）目標金額 */
+     ztykaiyakuhr ,         /* （中継用）解約返戻金 */
+     ztyhrkpjyuutouym ,         /* （中継用）払込保険料充当年月 */
+     ztykihrpruikeigk ,         /* （中継用）既払保険料累計額 */
+     ztytousyokykjikawaserate ,         /* （中継用）当初契約時為替レート */
+     ztykykymd ,         /* （中継用）契約年月日 */
+     ztymankiymd ,         /* （中継用）満期年月日 */
+     ztyikkatubaraikbn ,         /* （中継用）一括払区分 */
+     ztyikkatubaraikaisuu ,         /* （中継用）一括払回数 */
+     ztyyobiv56 ,         /* （中継用）予備項目Ｖ５６ */
+     ztygmeigyoubijikawaserate ,         /* （中継用）月末営業日時為替レート */
+     ztyyobiv16 ,         /* （中継用）予備項目Ｖ１６ */
+     ztysymtymd ,         /* （中継用）消滅年月日 */
+     ztygetumatuymdidouw ,         /* （中継用）月末日異動解約返戻金 */
+     ztygetumatuymdsibous ,         /* （中継用）月末日死亡保険金 */
+     ztyyobiv53 ,         /* （中継用）予備項目Ｖ５３ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_SmbcGetujiKykMeisaiTy_Z;

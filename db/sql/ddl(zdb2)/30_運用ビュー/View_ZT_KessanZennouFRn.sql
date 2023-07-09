@@ -1,0 +1,32 @@
+CREATE VIEW ZT_KessanZennouFRn AS SELECT
+     zrnraysystemhyj ,         /* （連携用）ＲＡＹシステム表示 */
+     zrnyobiv9 ,         /* （連携用）予備項目Ｖ９ */
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnkbnkeiriyousegmentcd ,         /* （連携用）区分経理用セグメントコード */
+     zrnzennoutoukeilistkbn ,         /* （連携用）前納統計リスト区分 */
+     zrnzennoukbn ,         /* （連携用）前納区分 */
+     zrnzennoukaisiymd ,         /* （連携用）前納開始年月日 */
+     zrnzennoukaisijizndk ,         /* （連携用）前納開始時残高 */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnzennouwrbkrt ,         /* （連携用）前納割引率 */
+     zrnrthndzndk1 ,         /* （連携用）利率変動時残高１ */
+     zrntkyrt1 ,         /* （連携用）適用利率１ */
+     zrnrthndymd1 ,         /* （連携用）利率変動年月日１ */
+     zrnrthndzndk2 ,         /* （連携用）利率変動時残高２ */
+     zrntkyrt2 ,         /* （連携用）適用利率２ */
+     zrnrthndymd2 ,         /* （連携用）利率変動年月日２ */
+     zrnrthndzndk3 ,         /* （連携用）利率変動時残高３ */
+     zrntkyrt3 ,         /* （連携用）適用利率３ */
+     zrnrthndymd3 ,         /* （連携用）利率変動年月日３ */
+     zrnrthndzndk4 ,         /* （連携用）利率変動時残高４ */
+     zrntkyrt4 ,         /* （連携用）適用利率４ */
+     zrnrthndymd4 ,         /* （連携用）利率変動年月日４ */
+     zrntndmatuzndk ,         /* （連携用）当年度末残高 */
+     zrntndmatutkyrt ,         /* （連携用）当年度末適用利率 */
+     zrnzennounyuukinymd ,         /* （連携用）前納入金年月日 */
+     zrntndzndkhikakukbn ,         /* （連携用）当年度残高比較区分 */
+     zrnzennoukikan ,         /* （連携用）前納期間 */
+     zrnyobi01xv1 ,         /* （連携用）予備０１＿Ｖ１ */
+     zrnbosyuukeitaikbn ,         /* （連携用）募集形態区分 */
+     zrnyobi02xv11           /* （連携用）予備０２＿Ｖ１１ */
+FROM ZT_KessanZennouFRn_Z;

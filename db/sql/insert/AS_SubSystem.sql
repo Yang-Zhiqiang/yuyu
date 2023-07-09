@@ -1,0 +1,11 @@
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('workflow', 'イメージワークフロー', '10', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('sinkeiyaku', '新契約', '20', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('hozen', '契約保全', '30', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('siharai', '保険金給付金支払', '40', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('direct', 'ダイレクトサービス', '60', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('suuri', '数理統計', '70', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('biz', '業務共通', '80', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('base', '管理機能', '90', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('ray', 'RAY（基盤）', '100', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('zdb', 'システム間連携', '110', '', '', 'init', '0', 'init', '0');
+INSERT INTO AS_SubSystem (subSystemId, subSystemNm, sortNo, linkImage, hyoudaiImage, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('workflowcore', 'ワークフローコア', '120', '', '', 'init', '0', 'init', '0');

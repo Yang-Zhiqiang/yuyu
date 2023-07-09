@@ -1,0 +1,35 @@
+CREATE VIEW ZT_YuseiMinyuKykDtlSyokaiTy AS SELECT
+     ztysakuseiym ,         /* （中継用）作成年月 */
+     ztybsydrtencd ,         /* （中継用）募集代理店コード */
+     ztytntusycd ,         /* （中継用）担当者コード */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztypjyuutouyymmwareki4keta ,         /* （中継用）保険料充当年月（和暦）（４桁） */
+     ztykykymwareki4keta ,         /* （中継用）契約年月（和暦）（４桁） */
+     ztycifcd ,         /* （中継用）ＣＩＦコード */
+     ztyatesakinm ,         /* （中継用）宛先名 */
+     ztyminyuujyutuymdyofuri ,         /* （中継用）未入充当年月（預振） */
+     ztyminyuujyutuymdyofuriigi ,         /* （中継用）未入充当年月（預振以外） */
+     ztyhassinka ,         /* （中継用）発信課 */
+     ztytelno15keta ,         /* （中継用）電話番号（１５桁） */
+     ztybsyymwareki4keta ,         /* （中継用）募集年月（和暦）（４桁） */
+     ztytntusynm ,         /* （中継用）担当者名 */
+     ztykydatkikbnkj ,         /* （中継用）共同扱区分（漢字） */
+     ztykyknmkj20 ,         /* （中継用）契約者名（漢字）（２０桁） */
+     ztyhjnkykhyj ,         /* （中継用）法人契約表示 */
+     ztyhrkkaisuukj ,         /* （中継用）払込回数（漢字） */
+     ztyhrkkeirokj ,         /* （中継用）払込経路（漢字） */
+     ztyp11keta ,         /* （中継用）保険料（１１桁） */
+     ztyknkimnyuuryukj ,         /* （中継用）今回未入理由（漢字） */
+     ztyjikaiminyuuji ,         /* （中継用）次回未入時 */
+     ztytntusygyouhaiinfo ,         /* （中継用）担当者業廃情報 */
+     ztyhrkkeirobtjhmidasi ,         /* （中継用）払込経路別情報見出し */
+     ztyhrkkeirobtjh ,         /* （中継用）払込経路別情報 */
+     ztyhknsyuruimei ,         /* （中継用）保険種類名 */
+     ztybkofccd ,         /* （中継用）バックオフィスコード */
+     ztydbskyoteiymd ,         /* （中継用）ＤＢ削除予定年月 */
+     ztyyobiv23 ,         /* （中継用）予備項目Ｖ２３ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_YuseiMinyuKykDtlSyokaiTy_Z;

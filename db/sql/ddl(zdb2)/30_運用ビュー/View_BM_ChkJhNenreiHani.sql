@@ -1,0 +1,33 @@
+CREATE VIEW BM_ChkJhNenreiHani AS SELECT
+     channelcd ,         /* チャネルコード */
+     syusyouhncd ,         /* 主契約商品コード */
+     syusyouhnsdnofrom ,         /* （主契約）商品世代番号自 */
+     syusyouhnsdnoto ,         /* （主契約）商品世代番号至 */
+     hhknseifrom ,         /* 被保険者性別自 */
+     hhknseito ,         /* 被保険者性別至 */
+     syukatakbn ,         /* 主契約型区分 */
+     syuhknkkn ,         /* 主契約保険期間 */
+     syuhknkknto ,         /* 主契約保険期間至 */
+     syuhknkknsmnkbn ,         /* 主契約保険期間歳満期区分 */
+     syuhrkkkn ,         /* 主契約払込期間 */
+     syuhrkkknto ,         /* 主契約払込期間至 */
+     syuhrkkknsmnkbn ,         /* 主契約払込期間歳満期区分 */
+     syufromnen ,         /* 主契約年齢自 */
+     syutonen ,         /* 主契約年齢至 */
+     syuyoteiriritufrom ,         /* 主契約予定利率自 */
+     syuyoteirirituto ,         /* 主契約予定利率至 */
+     tokusyuchkno ,         /* 特殊チェック番号 */
+     tksyouhncd ,         /* 特約商品コード */
+     tkhknkkn ,         /* 特約保険期間 */
+     tkhknkknto ,         /* 特約保険期間至 */
+     tkhknkknsmnkbn ,         /* 特約保険期間歳満期区分 */
+     tkhrkkkn ,         /* 特約払込期間 */
+     tkhrkkknto ,         /* 特約払込期間至 */
+     tkhrkkknsmnkbn ,         /* 特約払込期間歳満期区分 */
+     tkfromnen ,         /* 特約年齢自 */
+     tktonen ,         /* 特約年齢至 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM BM_ChkJhNenreiHani_Z;

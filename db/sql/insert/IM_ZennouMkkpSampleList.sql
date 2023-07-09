@@ -1,0 +1,4 @@
+INSERT INTO IM_ZennouMkkpSampleList (zennoutoukeilistkbn, zennoukbn, kbnkeirisegcd, znnmkkpkssamplekslsttitle, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('1', '1', '2602', '前納未経過Ｐ検証サンプルリスト（前納、一般前納、Ｒ）', 'init', '0', 'init', '0');
+INSERT INTO IM_ZennouMkkpSampleList (zennoutoukeilistkbn, zennoukbn, kbnkeirisegcd, znnmkkpkssamplekslsttitle, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('1', '1', '2702', '前納未経過Ｐ検証サンプルリスト（前納、一般前納、Ｒ）', 'init', '0', 'init', '0');
+INSERT INTO IM_ZennouMkkpSampleList (zennoutoukeilistkbn, zennoukbn, kbnkeirisegcd, znnmkkpkssamplekslsttitle, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('3', '1', '2602', '前納未経過Ｐ検証サンプルリスト（満了、一般前納、Ｒ）', 'init', '0', 'init', '0');
+INSERT INTO IM_ZennouMkkpSampleList (zennoutoukeilistkbn, zennoukbn, kbnkeirisegcd, znnmkkpkssamplekslsttitle, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('3', '1', '2702', '前納未経過Ｐ検証サンプルリスト（満了、一般前納、Ｒ）', 'init', '0', 'init', '0');

@@ -1,0 +1,34 @@
+CREATE VIEW ZT_DirectMailDataRn AS SELECT
+     zrnhokenkbnnys ,         /* （連携用）保険区分（名寄せ） */
+     zrnsakuinmeinonys ,         /* （連携用）索引名番号（名寄せ） */
+     zrnsyainnm ,         /* （連携用）社員名 */
+     zrnsyainseiymd ,         /* （連携用）社員生年月日 */
+     zrnkanjisyainnm ,         /* （連携用）漢字社員名 */
+     zrntsinkihontikucd ,         /* （連携用）通信先基本地区コード */
+     zrnnaimitureigaihyj ,         /* （連携用）内密例外表示 */
+     zrndrtenhyj ,         /* （連携用）代理店表示 */
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnkanjitsinkaiadr ,         /* （連携用）漢字通信先下位住所 */
+     zrnsouhuhunoukbn ,         /* （連携用）送付不能区分 */
+     zrnbsyym ,         /* （連携用）募集年月 */
+     zrnhknnm ,         /* （連携用）保険名称 */
+     zrnnenhousiki ,         /* （連携用）年齢方式 */
+     zrnkzktrkarihyj ,         /* （連携用）ご家族登録有表示 */
+     zrnaatkioybsydrtencd ,         /* （連携用）Ａ扱者親募集代理店コード */
+     zrnbatkioybsydrtencd ,         /* （連携用）Ｂ扱者親募集代理店コード */
+     zrnyobiv250x1 ,         /* （連携用）予備項目Ｖ２５０＿１ */
+     zrnyobiv250x2 ,         /* （連携用）予備項目Ｖ２５０＿２ */
+     zrnyobiv250x3 ,         /* （連携用）予備項目Ｖ２５０＿３ */
+     zrnyobiv250x4 ,         /* （連携用）予備項目Ｖ２５０＿４ */
+     zrnyobiv250x5 ,         /* （連携用）予備項目Ｖ２５０＿５ */
+     zrnyobiv250x6 ,         /* （連携用）予備項目Ｖ２５０＿６ */
+     zrnyobiv250x7 ,         /* （連携用）予備項目Ｖ２５０＿７ */
+     zrnyobiv250x8 ,         /* （連携用）予備項目Ｖ２５０＿８ */
+     zrnyobiv250x9 ,         /* （連携用）予備項目Ｖ２５０＿９ */
+     zrnyobiv250x10 ,         /* （連携用）予備項目Ｖ２５０＿１０ */
+     zrnyobiv250x11 ,         /* （連携用）予備項目Ｖ２５０＿１１ */
+     zrnyobiv250x12 ,         /* （連携用）予備項目Ｖ２５０＿１２ */
+     zrnyobiv250x13 ,         /* （連携用）予備項目Ｖ２５０＿１３ */
+     zrnyobiv250x14 ,         /* （連携用）予備項目Ｖ２５０＿１４ */
+     zrnyobiv122           /* （連携用）予備項目Ｖ１２２ */
+FROM ZT_DirectMailDataRn_Z;

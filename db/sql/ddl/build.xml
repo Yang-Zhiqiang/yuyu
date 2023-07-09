@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="encodingComvert" default="createSJIS">
+
+  <property name="toDir" value="sjis" />
+  <property name= "readEncoding" value="UTF-8" />
+  <property name="writeEncoding" value="MS932" />
+
+  <target name="createSJIS" description="カレントディレクトリの *.sql ファイルを ShiftJIS に変換し、sjis フォルダに出力します。">
+    <echo message="カレントディレクトリの *.sql ファイルを Shift-JIS に変換し、sjis フォルダに出力します。" />
+
+    <mkdir  dir="${toDir}" />
+
+    <echo message="中間ファイル作成中.." />
+    <apply executable="native2ascii" dir="." relative="true">
+      <arg value="-encoding"       />
+      <arg value="${readEncoding}" />
+      <srcfile    />
+      <targetfile />
+      <fileset dir="." includes="*.sql" />
+      <mapper type="glob" from="*.sql" to="*.tmp" />
+    </apply>
+
+    <echo message="${toDir} ディレクトリに ${writeEncoding} のファイルを作成中.." />
+    <apply executable="native2ascii" dir="." relative="true">
+      <arg value="-reverse"         />
+      <arg value="-encoding"        />
+      <arg value="${writeEncoding}" />
+      <srcfile    />
+      <targetfile />
+      <fileset dir="." includes="*.tmp" />
+      <mapper type="glob" from="*.tmp" to="${toDir}/*.sql" />
+    </apply>
+
+    <echo message="中間ファイル削除中.." />
+    <delete dir="." includes="*.tmp" />
+  </target>
+</project>

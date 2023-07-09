@@ -1,0 +1,29 @@
+CREATE VIEW ZT_SkCreditTourokukekkaQrTr AS SELECT
+     ztrrecordkbn ,         /* （取込用）レコード区分 */
+     ztrsystemjyusinymd ,         /* （取込用）システム受信日 */
+     ztrsystemjyusintime ,         /* （取込用）システム受信時刻 */
+     ztrcreditqrtrkkbn ,         /* （取込用）クレジットカードＱＲ登録区分 */
+     ztrcreditqrsousinkbn ,         /* （取込用）クレジットカードＱＲ送信区分 */
+     ztrcreditkessaiyouno ,         /* （取込用）クレジットカード決済用番号 */
+     ztryobiv34 ,         /* （取込用）予備項目Ｖ３４ */
+     ztrcreditkaiinno ,         /* （取込用）クレジット会員番号 */
+     ztrcardyuukoukigen ,         /* （取込用）カード有効期限 */
+     ztrauthorigkjyusin ,         /* （取込用）オーソリ金額（受信） */
+     ztryobiv153 ,         /* （取込用）予備項目Ｖ１５３ */
+     ztrtyuumonno ,         /* （取込用）注文番号 */
+     ztryobiv50 ,         /* （取込用）予備項目Ｖ５０ */
+     ztrbluegateshopid ,         /* （取込用）ＢｌｕｅＧａｔｅショップＩＤ */
+     ztryobiv81 ,         /* （取込用）予備項目Ｖ８１ */
+     ztrkessaisyoriymd ,         /* （取込用）決済処理日 */
+     ztryobiv24 ,         /* （取込用）予備項目Ｖ２４ */
+     ztrcreditqrerrorcd ,         /* （取込用）クレジットカードＱＲエラーコード */
+     ztrsyouninno7keta ,         /* （取込用）承認番号（７桁） */
+     ztrbluegateerrorcd ,         /* （取込用）ＢｌｕｅＧａｔｅエラーコード */
+     ztrhisimukekaisyacd ,         /* （取込用）被仕向会社コード */
+     ztrbluegatejyusinymdtime ,         /* （取込用）ＢｌｕｅＧａｔｅ受付日時 */
+     ztryobiv160 ,         /* （取込用）予備項目Ｖ１６０ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_SkCreditTourokukekkaQrTr_Z;

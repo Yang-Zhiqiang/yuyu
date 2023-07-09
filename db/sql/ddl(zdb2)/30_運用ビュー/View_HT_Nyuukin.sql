@@ -1,0 +1,31 @@
+CREATE VIEW HT_Nyuukin AS SELECT
+     mosno ,         /* 申込番号 */
+     renno ,         /* 連番 */
+     soukinymd ,         /* 送金日 */
+     tyakkinymd ,         /* 着金日 */
+     nyksyoriymd ,         /* 入金処理日 */
+     nyuukinsyoritime ,         /* 入金処理日時 */
+     nyknsyubetu ,         /* 入金種別 */
+     soukincd ,         /* 送金コード */
+     rsgaku ,         /* 領収金額 */
+     rsgaku$ ,         /* 領収金額(通貨型) */
+     rstuukasyu ,         /* 領収通貨種類 */
+     ryosyuymd ,         /* 領収日 */
+     rssyouno ,         /* 領収証番号 */
+     zenhnknkbn ,         /* 全額返金区分 */
+     srgonyknumu ,         /* 成立後入金有無 */
+     denrenno ,         /* 伝票データ連番 */
+     denrenno2 ,         /* 伝票データ連番２ */
+     edano ,         /* 枝番号 */
+     jyuutouym ,         /* 充当年月 */
+     krkno ,         /* 仮受番号 */
+     dntcd ,         /* 団体コード */
+     nyuukinhenkinsyorikbn ,         /* 入金返金処理区分 */
+     zenhnknrenno ,         /* 全額返金連番 */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_Nyuukin_Z;

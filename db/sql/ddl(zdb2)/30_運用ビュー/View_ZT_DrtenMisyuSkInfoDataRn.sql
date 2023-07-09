@@ -1,0 +1,38 @@
+CREATE VIEW ZT_DrtenMisyuSkInfoDataRn AS SELECT
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnbsydrtencd ,         /* （連携用）募集代理店コード */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnhnsyugknjkyksynm ,         /* （連携用）編集後漢字契約者名 */
+     zrnknjhhknmei ,         /* （連携用）漢字被保険者名 */
+     zrnkykjyutikbn ,         /* （連携用）契約状態区分 */
+     zrntsinkihontikucd ,         /* （連携用）通信先基本地区コード */
+     zrnkanjitsinkaiadr ,         /* （連携用）漢字通信先下位住所 */
+     zrntsintelno ,         /* （連携用）通信先電話番号 */
+     zrndai2tsintelno ,         /* （連携用）第２通信先電話番号 */
+     zrnkzhurikaebankcd ,         /* （連携用）口座振替銀行番号 */
+     zrnkzhurikaesitencd ,         /* （連携用）口座振替支店番号 */
+     zrnkzhurikaeyokinkbn ,         /* （連携用）口座振替預金種目区分 */
+     zrnkzhurikaekouzano ,         /* （連携用）口座振替口座番号 */
+     zrnkzhurikaemeiginm ,         /* （連携用）口座振替名義人名 */
+     zrnhrkkaisuukbn ,         /* （連携用）払込回数区分 */
+     zrnyobiv6x5 ,         /* （連携用）予備項目Ｖ６＿５ */
+     zrn1kaip ,         /* （連携用）１回分保険料 */
+     zrnnexthurikaeyoteigk ,         /* （連携用）次回振替予定金額 */
+     zrnhrkyykknmnryymd ,         /* （連携用）払込猶予期間満了日 */
+     zrnskymd ,         /* （連携用）失効年月日 */
+     zrnjhurikstkkahikbn ,         /* （連携用）自動振替貸付可否区分 */
+     zrnhukkatumoskahikbn ,         /* （連携用）復活申込可否区分 */
+     zrnttdkkigenymd ,         /* （連携用）手続き期限年月日 */
+     zrnhukkatukanoukknmnryymd ,         /* （連携用）復活可能期間満了年月日 */
+     zrnkeikatukisuu3keta ,         /* （連携用）経過月数（３桁） */
+     zrnmisyuuhasseiym ,         /* （連携用）未収発生年月 */
+     zrnmisyuujiyuu ,         /* （連携用）未収事由 */
+     zrnhanteiymd ,         /* （連携用）判定年月日 */
+     zrnyobin11 ,         /* （連携用）予備項目Ｎ１１ */
+     zrnyobin11x2 ,         /* （連携用）予備項目Ｎ１１＿２ */
+     zrnnexthurikaeymd ,         /* （連携用）次回振替年月日 */
+     zrnyobiv8x3 ,         /* （連携用）予備項目Ｖ８＿３ */
+     zrnikkatubaraikbn ,         /* （連携用）一括払区分 */
+     zrnikkatubaraikaisuu ,         /* （連携用）一括払回数 */
+     zrnyobiv55           /* （連携用）予備項目Ｖ５５ */
+FROM ZT_DrtenMisyuSkInfoDataRn_Z;

@@ -1,0 +1,42 @@
+CREATE VIEW ZT_KzhuriAnnaiUlfTy AS SELECT
+     ztysyono ,         /* （中継用）証券番号 */
+     ztydantaicd ,         /* （中継用）団体コード */
+     ztykzhurikaebankcd ,         /* （中継用）口座振替銀行番号 */
+     ztykzhurikaesitencd ,         /* （中継用）口座振替支店番号 */
+     ztykzhurikaeyokinkbn ,         /* （中継用）口座振替預金種目区分 */
+     ztykzhurikaekouzano ,         /* （中継用）口座振替口座番号 */
+     ztykzhurikaeannaikbn ,         /* （中継用）口座振替案内区分 */
+     ztyhurikaeymd ,         /* （中継用）振替年月日 */
+     ztyrsgaku ,         /* （中継用）領収金額 */
+     ztyjyuutouym ,         /* （中継用）充当年月 */
+     ztyjyuutounensuu ,         /* （中継用）充当年数 */
+     ztyjyuutoutukisuu ,         /* （中継用）充当月数 */
+     ztydantaikobetukbn ,         /* （中継用）団体個別区分 */
+     ztykykymd ,         /* （中継用）契約年月日 */
+     ztyhknsyukigou ,         /* （中継用）保険種類記号 */
+     ztynyknaiyou ,         /* （中継用）入金内容 */
+     ztyaatukaisosikicd ,         /* （中継用）Ａ扱者組織コード */
+     ztyhrkkaisuukbn ,         /* （中継用）払込回数区分 */
+     ztykzhurikaetkbtannaihyj ,         /* （中継用）口座振替特別案内表示 */
+     ztyhrkgk ,         /* （中継用）払込額 */
+     ztyyobin11 ,         /* （中継用）予備項目Ｎ１１ */
+     ztyyobin11x2 ,         /* （中継用）予備項目Ｎ１１＿２ */
+     ztyyobin11x3 ,         /* （中継用）予備項目Ｎ１１＿３ */
+     ztytsnsknewyno ,         /* （中継用）通信先新郵便番号 */
+     ztytsnsknewtikucd ,         /* （中継用）通信先新地区コード */
+     ztyaatukaikojincd ,         /* （中継用）Ａ扱者個人コード */
+     ztybsyym ,         /* （中継用）募集年月 */
+     ztyteikeisyouhinhyj ,         /* （中継用）提携商品表示 */
+     ztykzmeiginmei ,         /* （中継用）口座名義人名 */
+     ztykeizokup ,         /* （中継用）継続保険料 */
+     ztyiktwaribikikgk ,         /* （中継用）一括割引額 */
+     ztykeizokupnaiyoukbn ,         /* （中継用）継続Ｐ内容区分 */
+     ztyhisaijiannaitsghyj ,         /* （中継用）被災時案内対象外表示 */
+     ztydaisyono ,         /* （中継用）代表証券番号 */
+     ztykzhurisyuudaikokbn ,         /* （中継用）口座振替収納代行会社区分 */
+     ztyyobiv17 ,         /* （中継用）予備項目Ｖ１７ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_KzhuriAnnaiUlfTy_Z;

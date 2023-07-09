@@ -1,0 +1,2 @@
+INSERT INTO BM_ChkItijibrTuusanP (hhknfromnen, hhkntonen, gnditijibaraip, gnditijibaraip$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('0', '49', '70000000', 'YEN', 'init', '0', 'init', '0');
+INSERT INTO BM_ChkItijibrTuusanP (hhknfromnen, hhkntonen, gnditijibaraip, gnditijibaraip$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('50', '999', '300000000', 'YEN', 'init', '0', 'init', '0');

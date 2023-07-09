@@ -1,0 +1,41 @@
+CREATE VIEW JT_KoudosgJytGtKahi AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuurirekino ,         /* 請求履歴番号 */
+     ryougansitumeikbn ,         /* 両眼失明区分 */
+     ryougansitumeicomment ,         /* 両眼失明コメント */
+     gengososyakusousitukbn ,         /* 言語・咀嚼機能喪失区分 */
+     gengososyakusousitucomment ,         /* 言語・咀嚼機能喪失コメント */
+     ryoujyousiyoubousitukbn ,         /* 両上肢用（亡）失区分 */
+     ryoujyousiyoubousitucomt ,         /* 両上肢用（亡）失コメント */
+     ryoukasiyoubousitukbn ,         /* 両下肢用（亡）失区分 */
+     ryoukasiyoubousitucomt ,         /* 両下肢用（亡）失コメント */
+     ijyobosituikasiyositukbn ,         /* １上肢亡失・１下肢用（亡）失区分 */
+     ijyobosituikasiyositucomt ,         /* １上肢亡失・１下肢用（亡）失コメント */
+     ijyoyosituikasibositukbn ,         /* １上肢用失・１下肢亡失区分 */
+     ijyoyosituikasibositucomt ,         /* １上肢用失・１下肢亡失コメント */
+     sysnjoujikaigokbn ,         /* 終身常時介護区分 */
+     sysnjoujikaigocomment ,         /* 終身常時介護コメント */
+     hokoukbn ,         /* 歩行区分 */
+     hokoucomment ,         /* 歩行コメント */
+     ihukutyakudatukbn ,         /* 衣服着脱区分 */
+     ihukutyakudatucomment ,         /* 衣服着脱コメント */
+     nyuuyokukbn ,         /* 入浴区分 */
+     nyuuyokucomment ,         /* 入浴コメント */
+     syokumotusessyukbn ,         /* 食物摂取区分 */
+     syokumotusessyucomment ,         /* 食物摂取コメント */
+     hukitorisimatukbn ,         /* 拭き取り始末区分 */
+     hukitorisimatucomment ,         /* 拭き取り始末コメント */
+     haibenhainyoukbn ,         /* 排便・排尿区分 */
+     haibenhainyoucomment ,         /* 排便・排尿コメント */
+     kikyokbn ,         /* 起居区分 */
+     kikyocomment ,         /* 起居コメント */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_KoudosgJytGtKahi_Z;

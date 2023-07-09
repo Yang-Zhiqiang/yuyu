@@ -1,0 +1,31 @@
+CREATE VIEW HT_SkKouhuriUkTrkMihanei AS SELECT
+     syoriYmd ,         /* 処理年月日 */
+     syukkncd ,         /* 収納機関コード */
+     kinyuucd8keta ,         /* 金融機関コード（８桁） */
+     kinyuukkntratkiymd ,         /* 金融機関取扱年月日 */
+     kinyuukkntratkitime ,         /* 金融機関取扱時刻 */
+     kinyuukkntratkino ,         /* 金融機関取扱番号 */
+     kouhuriukchannelkbn ,         /* 口振受付チャネル区分 */
+     kouhuriokyakusamano ,         /* 口振お客様番号 */
+     nykmosno ,         /* 入金用申込番号 */
+     syorizumiflg ,         /* 処理済フラグ */
+     bankcd ,         /* 銀行コード */
+     sitencd5keta ,         /* 支店コード（５桁） */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano8keta ,         /* 口座番号（８桁） */
+     kzmeiginmkn ,         /* 口座名義人氏名（カナ） */
+     itakusyacd ,         /* 委託者コード */
+     syukkntratkiymd ,         /* 収納機関取扱年月日 */
+     syukkntratkitime ,         /* 収納機関取扱時刻 */
+     syukkntratkino ,         /* 収納機関取扱番号 */
+     kouhuristatuskbn ,         /* 口振ステータス区分 */
+     kouhurikekkacd ,         /* 口振処理結果コード */
+     kouhurihonninkakkekka ,         /* 口振本人確認結果 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_SkKouhuriUkTrkMihanei_Z;

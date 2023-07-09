@@ -1,0 +1,30 @@
+CREATE VIEW BM_Address AS SELECT
+     postalCd ,         /* 郵便番号 */
+     kihontikucdsimo1 ,         /* 基本地区コード下１桁 */
+     kihontikucdsyoumetukbn ,         /* 基本地区コード消滅理由区分 */
+     kjadrkyoutotuusyounmari ,         /* 漢字住所（京都市内通称町名あり） */
+     kjtodouhukennmketasuu ,         /* 漢字都道府県名桁数 */
+     kjsikugunnmketasuu ,         /* 漢字市区郡名桁数 */
+     kjsikutyousonnmketasuu ,         /* 漢字市区町村名桁数 */
+     kjtyousonnmketasuu ,         /* 漢字町村名桁数 */
+     kjkyoutotuusyounmketasuu ,         /* 漢字京都市内通称町名桁数 */
+     kjadrketasuu ,         /* 漢字住所桁数 */
+     knadrkyoutotuusyounmari ,         /* カナ住所（京都市内通称町名あり） */
+     kntodouhukennmketasuu ,         /* カナ都道府県名桁数 */
+     knsikugunnmketasuu ,         /* カナ市区郡名桁数 */
+     knsikutyousonnmketasuu ,         /* カナ市区町村名桁数 */
+     kntyousonnmketasuu ,         /* カナ町村名桁数 */
+     knkyoutotuusyounmketasuu ,         /* カナ京都市内通称町名桁数 */
+     knadrketasuu ,         /* カナ住所桁数 */
+     todouhukencd ,         /* 都道府県コード */
+     gyouseikukakucd ,         /* 行政区画コード */
+     ikoumaekihontikucd ,         /* 移行前基本地区コード */
+     newynohyouji ,         /* 新郵便番号表示 */
+     adrkj ,         /* 住所（漢字） */
+     adrkn ,         /* 住所（カナ） */
+     adrknblankari ,         /* 住所（カナ）（空白あり） */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM BM_Address_Z;

@@ -1,0 +1,47 @@
+CREATE VIEW HW_SyuHukugouSikkanZhkWk AS SELECT
+     syono ,         /* 証券番号 */
+     hknnendo ,         /* 保険年度 */
+     ijitoukeidaihyousyurui ,         /* 医事統計用代表種類 */
+     kyknendo ,         /* 契約年度 */
+     hhknsei ,         /* 被保険者性別 */
+     kykage ,         /* 加入年齢 */
+     toutatunenrei ,         /* 到達年齢 */
+     atukaibetu ,         /* 扱別 */
+     ijitoukeisinsahouhou ,         /* 医事統計用診査方法 */
+     ketteikekkaa ,         /* 決定結果Ａ */
+     sibousrank ,         /* 死亡Ｓランク */
+     jissituhosyousrank ,         /* 実質保障Ｓランク */
+     sirajikykkbn ,         /* 白地契約区分 */
+     hrkhouhoukbn ,         /* 払込方法区分 */
+     ijitoukeihokensyuruikbn ,         /* 医事統計用保険種類区分 */
+     daisiincd ,         /* 大死因コード */
+     tyuusiincd ,         /* 中死因コード */
+     siincd ,         /* 死因コード */
+     nenreihousikikbn ,         /* 年令方式区分 */
+     hhknsykgycd ,         /* 被保険者職業コード */
+     hhkntodouhukencd ,         /* 被保険者都道府県コード */
+     botaisisyaeigyouhonbu ,         /* 母体支社営業本部 */
+     sisyaeigyoubu ,         /* 支社営業部 */
+     aatsukaishasoshikicd ,         /* Ａ扱者組織コード */
+     hhknnensyuukbn ,         /* 被保険者年収区分 */
+     hanbaikeirokbn ,         /* 販売経路区分 */
+     oyadrtencd ,         /* 親代理店コード */
+     tratkiagcd ,         /* 取扱代理店コード */
+     bosyuudairitenatkikeitaikbn ,         /* 募集代理店扱形態区分 */
+     kyktuukasyu ,         /* 契約通貨種類 */
+     hrktuukasyu ,         /* 払込通貨種類 */
+     syouhncd ,         /* 商品コード */
+     initsbjiyensitihsytkhukaumu ,         /* 初期死亡時円換算最低保証特約付加有無 */
+     jyudkaigomeharaitkhukaumu ,         /* 重度介護前払特約付加有無 */
+     ijitoukeizennoukbn ,         /* 医事統計用前納区分 */
+     dai1hknkkn ,         /* 第１保険期間 */
+     ijitoukeitikshrtkykkbn ,         /* 医事統計用定期支払特約区分 */
+     ijitoukeikeikan ,         /* 医事統計用経過Ｎ */
+     ijitoukeisiboun ,         /* 医事統計用死亡Ｎ */
+     ijitoukeikeikas ,         /* 医事統計用経過Ｓ */
+     ijitoukeisibous ,         /* 医事統計用死亡Ｓ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HW_SyuHukugouSikkanZhkWk_Z;

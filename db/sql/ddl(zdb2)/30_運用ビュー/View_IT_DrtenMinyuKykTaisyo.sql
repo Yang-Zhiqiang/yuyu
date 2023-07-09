@@ -1,0 +1,35 @@
+CREATE VIEW IT_DrtenMinyuKykTaisyo AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     syoriYmd ,         /* 処理年月日 */
+     minyuutrrenno ,         /* 未入TR連番 */
+     nykkeiro ,         /* 入金経路 */
+     nyknaiyoukbn ,         /* 入金内容区分 */
+     jyuutouym ,         /* 充当年月 */
+     jyutoukaisuuy ,         /* 充当回数（年） */
+     jyutoukaisuum ,         /* 充当回数（月） */
+     rsgaku ,         /* 領収金額 */
+     rsgaku$ ,         /* 領収金額(通貨型) */
+     ryosyuymd ,         /* 領収日 */
+     hurihunokbn ,         /* 振替不能理由区分 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     dantaikobetukbn ,         /* 団体個別区分 */
+     hrkkaisuu ,         /* 払込回数 */
+     kzhurikaetkbtannaihyj ,         /* 口座振替特別案内表示 */
+     tikiktbrisyuruikbn ,         /* 定期一括払種類区分 */
+     jkipjytym ,         /* 次回Ｐ充当年月 */
+     jkiannaikg ,         /* 次回案内金額 */
+     jkiannaikg$ ,         /* 次回案内金額(通貨型) */
+     jkijyutoukaisuuy ,         /* 次回案内充当回数（年） */
+     jkijyutoukaisuum ,         /* 次回案内充当回数（月） */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_DrtenMinyuKykTaisyo_Z;

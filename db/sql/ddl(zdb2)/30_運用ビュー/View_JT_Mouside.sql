@@ -1,0 +1,41 @@
+CREATE VIEW JT_Mouside AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuusyubetu ,         /* 請求種別 */
+     nayoseyouhi ,         /* 名寄せ要否 */
+     mousideninkbn ,         /* 申出人区分 */
+     syuhiyouhi ,         /* 守秘要否 */
+     mousideninnmkj ,         /* 申出人名（漢字） */
+     uketorininsibouumukbn ,         /* 受取人死亡有無区分 */
+     kyksyasibouumukbn ,         /* 契約者死亡有無区分 */
+     souhusakikbn ,         /* 送付先区分 */
+     tsinyno ,         /* 通信先郵便番号 */
+     tsinadr1kj ,         /* 通信先住所１（漢字） */
+     tsinadr2kj ,         /* 通信先住所２（漢字） */
+     tsinadr3kj ,         /* 通信先住所３（漢字） */
+     tsintelno ,         /* 通信先電話番号 */
+     pmenkbn ,         /* Ｐ免区分 */
+     geninkbn ,         /* 原因区分 */
+     jikosyosinymd ,         /* 事故（初診）日 */
+     saigaigeninkbn ,         /* 災害原因区分 */
+     sibouymd ,         /* 死亡日 */
+     syougaikoteiymd ,         /* 障害固定日 */
+     byoumeitourokuno ,         /* 病名登録番号 */
+     tiryousakikbn ,         /* 治療先区分 */
+     nyuuinymd ,         /* 入院日 */
+     taiinymd ,         /* 退院日 */
+     syujyutuymd ,         /* 手術日 */
+     syujyututourokuno ,         /* 手術登録番号 */
+     sensinkbn ,         /* 先進医療区分 */
+     sindansyosksmaisuukbn ,         /* 診断書作成枚数区分 */
+     sindansyoskssiteikbn ,         /* 診断書作成指定区分 */
+     betukyksuu ,         /* 別契約数 */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_Mouside_Z;

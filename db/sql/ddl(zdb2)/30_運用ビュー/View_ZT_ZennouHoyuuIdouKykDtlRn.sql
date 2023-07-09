@@ -1,0 +1,40 @@
+CREATE VIEW ZT_ZennouHoyuuIdouKykDtlRn AS SELECT
+     zrnraysystemhyj ,         /* （連携用）ＲＡＹシステム表示 */
+     zrnyobiv9 ,         /* （連携用）予備項目Ｖ９ */
+     zrnrecordkbn ,         /* （連携用）レコード区分 */
+     zrnkeijyouym ,         /* （連携用）計上年月 */
+     zrnsyoricd ,         /* （連携用）処理コード */
+     zrnhenkousyoriymd ,         /* （連携用）変更処理年月日 */
+     zrndenymd ,         /* （連携用）伝票日付 */
+     zrnzennoucalckijyunymd ,         /* （連携用）前納計算基準年月日 */
+     zrnkykmfksnctr ,         /* （連携用）契約ＭＦ更新ＣＴＲ */
+     zrnzennoubikinkbn ,         /* （連携用）前納備金区分 */
+     zrnyobiv10 ,         /* （連携用）予備項目Ｖ１０ */
+     zrndatakanrino ,         /* （連携用）データ管理番号 */
+     zrnsyukeiyakusyuruicdv2 ,         /* （連携用）主契約種類コードＶ２ */
+     zrnkbnkeiriyousegmentcd ,         /* （連携用）区分経理用セグメントコード */
+     zrnzennoutoukeilistkbn ,         /* （連携用）前納統計リスト区分 */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnzennouwrbkrt ,         /* （連携用）前納割引率 */
+     zrntkyrt1 ,         /* （連携用）適用利率１ */
+     zrntndzndkhikakukbn ,         /* （連携用）当年度残高比較区分 */
+     zrnyobiv5 ,         /* （連携用）予備項目Ｖ５ */
+     zrnzennoukaisiymd ,         /* （連携用）前納開始年月日 */
+     zrnzennoukbn ,         /* （連携用）前納区分 */
+     zrnzennoukikan ,         /* （連携用）前納期間 */
+     zrnzennounyuukinymd ,         /* （連携用）前納入金年月日 */
+     zrnzennounyuukinkgk ,         /* （連携用）前納入金額 */
+     zrnyobiv5x2 ,         /* （連携用）予備項目Ｖ５＿２ */
+     zrnansyuyouyobin10 ,         /* （連携用）案内収納用予備項目Ｎ１０ */
+     zrnyobiv10x2 ,         /* （連携用）予備項目Ｖ１０＿２ */
+     zrntoukimatuzennouzndk ,         /* （連携用）当期末前納残高金額 */
+     zrntoukijyuutoup ,         /* （連携用）当期充当保険料 */
+     zrntoukizennouseisangk ,         /* （連携用）当期前納精算額 */
+     zrntoukizennounyuukinkgk ,         /* （連携用）当期前納入金額 */
+     zrnyokukinenbaraip ,         /* （連携用）翌期年払Ｐ */
+     zrnwrbkrttkyrttekiyouzndk ,         /* （連携用）割引利率適用残高 */
+     zrnyobin11 ,         /* （連携用）予備項目Ｎ１１ */
+     zrnyobin11x2 ,         /* （連携用）予備項目Ｎ１１＿２ */
+     zrnyobin11x3 ,         /* （連携用）予備項目Ｎ１１＿３ */
+     zrnyobin11x4           /* （連携用）予備項目Ｎ１１＿４ */
+FROM ZT_ZennouHoyuuIdouKykDtlRn_Z;

@@ -1,0 +1,35 @@
+CREATE VIEW HT_SkLincTourokuInfo AS SELECT
+     mosno ,         /* 申込番号 */
+     kanyuusyano ,         /* 加入者番号 */
+     hhknnmkn ,         /* 被保険者名（カナ） */
+     hhknnmkj ,         /* 被保険者名（漢字） */
+     hhknsei ,         /* 被保険者性別 */
+     hhknseiymd ,         /* 被保険者生年月日 */
+     hhknadrlinckn ,         /* 被保険者住所（ＬＩＮＣ用カナ） */
+     kykkbn ,         /* 契約者区分 */
+     kyknmkn ,         /* 契約者名（カナ） */
+     kyknmkj ,         /* 契約者名（漢字） */
+     kyksei ,         /* 契約者性別 */
+     kykseiymd ,         /* 契約者生年月日 */
+     kykadrlinckn ,         /* 契約者住所（ＬＩＮＣ用カナ） */
+     trkmousideymd ,         /* 登録申出年月日 */
+     kykytymd ,         /* 契約予定年月日 */
+     sgnyung ,         /* 災害入院給付金日額 */
+     sgnyung$ ,         /* 災害入院給付金日額(通貨型) */
+     sipnyung ,         /* 疾病入院給付金日額 */
+     sipnyung$ ,         /* 疾病入院給付金日額(通貨型) */
+     sjnyung ,         /* 成人病入院給付金日額 */
+     sjnyung$ ,         /* 成人病入院給付金日額(通貨型) */
+     sonotanyuinng ,         /* その他入院給付金日額 */
+     sonotanyuinng$ ,         /* その他入院給付金日額(通貨型) */
+     hutuusb ,         /* 普通死亡保険金額 */
+     hutuusb$ ,         /* 普通死亡保険金額(通貨型) */
+     sgsbksns ,         /* 災害死亡時加算保険金額 */
+     sgsbksns$ ,         /* 災害死亡時加算保険金額(通貨型) */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_SkLincTourokuInfo_Z;

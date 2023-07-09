@@ -1,0 +1,5 @@
+INSERT INTO BM_ChkNensyuuBairitu (nensyuukbn, gndntgk, gndntgk$, gnds, gnds$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('1', '10000', 'YEN', '75000000', 'YEN', 'init', '0', 'init', '0');
+INSERT INTO BM_ChkNensyuuBairitu (nensyuukbn, gndntgk, gndntgk$, gnds, gnds$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2', '15000', 'YEN', '125000000', 'YEN', 'init', '0', 'init', '0');
+INSERT INTO BM_ChkNensyuuBairitu (nensyuukbn, gndntgk, gndntgk$, gnds, gnds$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('3', '20000', 'YEN', '175000000', 'YEN', 'init', '0', 'init', '0');
+INSERT INTO BM_ChkNensyuuBairitu (nensyuukbn, gndntgk, gndntgk$, gnds, gnds$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('4', '25000', 'YEN', '250000000', 'YEN', 'init', '0', 'init', '0');
+INSERT INTO BM_ChkNensyuuBairitu (nensyuukbn, gndntgk, gndntgk$, gnds, gnds$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('5', '30000', 'YEN', '999999999999', 'YEN', 'init', '0', 'init', '0');

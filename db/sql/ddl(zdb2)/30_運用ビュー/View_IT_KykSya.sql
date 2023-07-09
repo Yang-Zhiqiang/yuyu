@@ -1,0 +1,34 @@
+CREATE VIEW IT_KykSya AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     kokno ,         /* 顧客番号 */
+     kyksakuinmeino ,         /* 契約者索引名番号 */
+     kyknmkn ,         /* 契約者名（カナ） */
+     kyknmkj ,         /* 契約者名（漢字） */
+     kyknmkjkhukakbn ,         /* 契約者名漢字化不可区分 */
+     kykseiymd ,         /* 契約者生年月日 */
+     kyksei ,         /* 契約者性別 */
+     kkkyktdk ,         /* 契約管理契約者続柄 */
+     tsinyno ,         /* 通信先郵便番号 */
+     tsinadr1kn ,         /* 通信先住所１（カナ） */
+     tsinadr1kj ,         /* 通信先住所１（漢字） */
+     tsinadr2kn ,         /* 通信先住所２（カナ） */
+     tsinadr2kj ,         /* 通信先住所２（漢字） */
+     tsinadr3kn ,         /* 通信先住所３（カナ） */
+     tsinadr3kj ,         /* 通信先住所３（漢字） */
+     tsintelno ,         /* 通信先電話番号 */
+     dai2tsintelno ,         /* 第２通信先電話番号 */
+     tsinmailaddress ,         /* 通信先メールアドレス */
+     kinmusakinm ,         /* 勤務先名 */
+     hjndaiykkbn ,         /* 法人代表者役職区分 */
+     hjndaiyknm ,         /* 法人代表者役職名 */
+     hjndainmkn ,         /* 法人代表者名（カナ） */
+     hjndainmkj ,         /* 法人代表者名（漢字） */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_KykSya_Z;

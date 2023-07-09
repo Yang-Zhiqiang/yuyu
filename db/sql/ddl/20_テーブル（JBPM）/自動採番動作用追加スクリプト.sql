@@ -1,0 +1,13 @@
+CREATE SEQUENCE if not exists IWF_KEY_SEQ MINVALUE 1 MAXVALUE 9999999999999999 INCREMENT BY 1 START WITH 217522 CACHE 20;
+alter table jbpm_token alter column id_ decimal(19) not null auto_increment; 
+alter table jbpm_processinstance alter column id_ decimal(19) not null auto_increment; 
+alter table jbpm_transition alter column id_ decimal(19) not null auto_increment; 
+alter table jbpm_moduleinstance alter column id_ decimal(19) not null auto_increment; 
+alter table jbpm_tokenvariablemap alter column id_ decimal(19) not null auto_increment; 
+alter table jbpm_variableinstance alter column id_ decimal(19) not null auto_increment; 
+alter table jbpm_taskinstance alter column id_ decimal(19) not null auto_increment;
+alter table jbpm_task alter column id_ decimal(19) not null auto_increment;
+alter table jbpm_node alter column id_ decimal(19) not null auto_increment;
+alter table jbpm_delegation alter column id_ decimal(19) not null auto_increment;
+alter table jbpm_moduledefinition alter column id_ decimal(19) not null auto_increment;
+alter table jbpm_processdefinition alter column id_ decimal(19) not null auto_increment;

@@ -1,0 +1,34 @@
+CREATE VIEW ST_BknkykHtjynbkn AS SELECT
+     syoriYmd ,         /* 処理年月日 */
+     kakutyoujobcd ,         /* 拡張ジョブコード */
+     syono ,         /* 証券番号 */
+     hknsyukigou ,         /* 保険種類記号 */
+     haraikomikaisukbn ,         /* 払込回数区分 */
+     hrkkeirokbn ,         /* 払込経路区分 */
+     annaihuyouriyuukbn ,         /* 案内不要理由区分 */
+     bikinkbn ,         /* 備金区分 */
+     bikinnendokbn ,         /* 備金年度区分 */
+     seisand ,         /* 精算Ｄ */
+     seisand$ ,         /* 精算Ｄ(通貨型) */
+     tumitaterisoku ,         /* 積立利息 */
+     tumitaterisoku$ ,         /* 積立利息(通貨型) */
+     syuruicd1 ,         /* 種類コード１ */
+     syuruicd3 ,         /* 種類コード３ */
+     srkijyunym ,         /* 数理用基準年月 */
+     kbnkeiriyousegmentkbn ,         /* 区分経理用セグメント区分 */
+     kbnkeiriyourgnbnskkbn ,         /* 区分経理用利源分析区分 */
+     syuruicd2 ,         /* 種類コード２ */
+     kariwariatedganrikin ,         /* 仮割当Ｄ元利金 */
+     kariwariatedganrikin$ ,         /* 仮割当Ｄ元利金(通貨型) */
+     kariwariatedrisoku ,         /* 仮割当Ｄ利息 */
+     kariwariatedrisoku$ ,         /* 仮割当Ｄ利息(通貨型) */
+     syukeiyakusyuruicd ,         /* 主契約種類コード */
+     kyknendo ,         /* 契約年度 */
+     daihyouyoteiriritu ,         /* 代表予定利率 */
+     haraikatakbn ,         /* 払方区分 */
+     yobiv32 ,         /* 予備項目Ｖ３２ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ST_BknkykHtjynbkn_Z;

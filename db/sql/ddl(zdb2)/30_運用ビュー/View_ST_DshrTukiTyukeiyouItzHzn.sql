@@ -1,0 +1,36 @@
+CREATE VIEW ST_DshrTukiTyukeiyouItzHzn AS SELECT
+     ztysequenceno ,         /* （中継用）シーケンス番号 */
+     ztyyuukourecordlength ,         /* （中継用）有効レコード長 */
+     ztyrdwarea ,         /* （中継用）ＲＤＷ領域 */
+     ztymisskbn ,         /* （中継用）ミス区分 */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztydshrym ,         /* （中継用）Ｄ支払年月 */
+     ztyhknsyukigou ,         /* （中継用）保険種類記号 */
+     ztysrsyoumetucd ,         /* （中継用）数理用消滅コード */
+     ztysyoricd ,         /* （中継用）処理コード */
+     ztykeiyakunendo ,         /* （中継用）契約年度 */
+     ztyannaikigetu ,         /* （中継用）案内期月 */
+     ztyshrriyuukbn ,         /* （中継用）支払理由区分 */
+     ztyannaikbn ,         /* （中継用）案内区分 */
+     ztyduketorihouhoukbn ,         /* （中継用）Ｄ受取方法区分 */
+     ztybikinhyj ,         /* （中継用）備金表示 */
+     ztyskskbn ,         /* （中継用）作成区分 */
+     ztysegcd ,         /* （中継用）セグメントコード */
+     ztyyobiv3 ,         /* （中継用）予備項目Ｖ３ */
+     ztysrkensuu ,         /* （中継用）数理用件数 */
+     ztysrhsys ,         /* （中継用）数理用保障Ｓ */
+     ztytoujigyounendod ,         /* （中継用）当事業年度Ｄ */
+     ztytoujigyounendohasseidrsk ,         /* （中継用）当事業年度発生Ｄ利息 */
+     ztyzenjigyounendomatudzndk ,         /* （中継用）前事業年度末Ｄ残高 */
+     ztyyokujigyounendod ,         /* （中継用）翌事業年度Ｄ */
+     ztyhushrtoujigyounendod ,         /* （中継用）不支払当事業年度Ｄ */
+     ztysyukeiyakusyuruicdv2 ,         /* （中継用）主契約種類コードＶ２ */
+     ztydaihyouyoteiriritu ,         /* （中継用）代表予定利率 */
+     ztyharaikatakbn ,         /* （中継用）払方区分 */
+     ztyhknsyruikbn ,         /* （中継用）保険種類区分 */
+     ztysyoumetukbn ,         /* （中継用）消滅区分 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ST_DshrTukiTyukeiyouItzHzn_Z;

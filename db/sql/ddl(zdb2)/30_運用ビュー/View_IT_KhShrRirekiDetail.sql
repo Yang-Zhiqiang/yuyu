@@ -1,0 +1,32 @@
+CREATE VIEW IT_KhShrRirekiDetail AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     henkousikibetukey ,         /* 変更識別キー */
+     syouhncd ,         /* 商品コード */
+     syouhnsdno ,         /* 商品世代番号 */
+     kyksyouhnrenno ,         /* 契約商品連番 */
+     syushrgk ,         /* 主たる支払額 */
+     syushrgk$ ,         /* 主たる支払額(通貨型) */
+     shrtstmttkin ,         /* 支払対象積立金 */
+     shrtstmttkin$ ,         /* 支払対象積立金(通貨型) */
+     shrtstmttkinhngkbbn ,         /* 支払対象積立金（変額部分） */
+     shrtstmttkinhngkbbn$ ,         /* 支払対象積立金（変額部分）(通貨型) */
+     sjkkktyouseigk ,         /* 市場価格調整額 */
+     sjkkktyouseigk$ ,         /* 市場価格調整額(通貨型) */
+     kaiyakusjkkktyouseiritu ,         /* 解約市場価格調整率 */
+     kaiyakusjkkktyouseiriritu ,         /* 解約時市場価格調整用利率 */
+     kaiyakukjgk ,         /* 解約控除額 */
+     kaiyakukjgk$ ,         /* 解約控除額(通貨型) */
+     kaiyakukoujyoritu ,         /* 解約控除率 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     teiritutmttkngk ,         /* 定率積立金額 */
+     teiritutmttkngk$ ,         /* 定率積立金額(通貨型) */
+     sisuurendoutmttkngk ,         /* 指数連動積立金額 */
+     sisuurendoutmttkngk$           /* 指数連動積立金額(通貨型) */
+FROM IT_KhShrRirekiDetail_Z;

@@ -1,0 +1,39 @@
+CREATE VIEW IT_BAK_KihrkmpSeisanRireki AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     trkssikibetukey ,         /* 取消識別キー */
+     renno ,         /* 連番 */
+     henkousikibetukey ,         /* 変更識別キー */
+     kouryokuhasseiymd ,         /* 効力発生日 */
+     kihrkpssnaiyoukbn ,         /* 既払込Ｐ精算内容区分 */
+     jyuutouym ,         /* 充当年月 */
+     seijyutoukaisuum ,         /* 精算充当回数（月） */
+     seijyutoukaisuuy ,         /* 精算充当回数（年） */
+     misyuumikeikakbn ,         /* 未収未経過区分 */
+     rstuukasyu ,         /* 領収通貨種類 */
+     seisanpgoukei ,         /* 精算保険料合計 */
+     seisanpgoukei$ ,         /* 精算保険料合計(通貨型) */
+     yenkansansspgoukei ,         /* 円換算精算保険料合計 */
+     yenkansansspgoukei$ ,         /* 円換算精算保険料合計(通貨型) */
+     yenkansantkykwsrateymd ,         /* 円換算適用為替レート基準日 */
+     yenkansantkykwsrate ,         /* 円換算適用為替レート */
+     henkank ,         /* 返還金 */
+     henkank$ ,         /* 返還金(通貨型) */
+     yenkansanhenkankin ,         /* 円換算返還金 */
+     yenkansanhenkankin$ ,         /* 円換算返還金(通貨型) */
+     tuityouk ,         /* 追徴金 */
+     tuityouk$ ,         /* 追徴金(通貨型) */
+     yenkansantuityoukin ,         /* 円換算追徴金 */
+     yenkansantuityoukin$ ,         /* 円換算追徴金(通貨型) */
+     zeimukwsratekjnymd ,         /* 税務用為替レート基準日 */
+     zeimukwsrate ,         /* 税務用為替レート */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     hituyoukeihiitijisytktysgk ,         /* 必要経費一時所得調整額 */
+     hituyoukeihiitijisytktysgk$           /* 必要経費一時所得調整額(通貨型) */
+FROM IT_BAK_KihrkmpSeisanRireki_Z;

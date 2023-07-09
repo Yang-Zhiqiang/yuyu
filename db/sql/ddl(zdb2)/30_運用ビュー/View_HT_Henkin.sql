@@ -1,0 +1,32 @@
+CREATE VIEW HT_Henkin AS SELECT
+     mosno ,         /* 申込番号 */
+     renno ,         /* 連番 */
+     hnkninputrenno ,         /* 返金入力連番 */
+     hnknsyoriymd ,         /* 返金処理日 */
+     henkinsyoritime ,         /* 返金処理日時 */
+     hnkngk ,         /* 返金額 */
+     hnkngk$ ,         /* 返金額(通貨型) */
+     hnkntuukasyu ,         /* 返金通貨種類 */
+     pkakinsyoriymd ,         /* Ｐ過金処理日 */
+     hnknhoukbn ,         /* 返金方法区分 */
+     hnknymd ,         /* 返金日 */
+     hnknriyuukbn ,         /* 返金理由区分 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     kzmeiginmkn ,         /* 口座名義人氏名（カナ） */
+     srgohnknumu ,         /* 成立後返金有無 */
+     denrenno ,         /* 伝票データ連番 */
+     edano ,         /* 枝番号 */
+     pkakindenrenno ,         /* Ｐ過金伝票データ連番 */
+     pkakindenedano ,         /* Ｐ過金伝票枝番号 */
+     fbsoukindatasikibetukey ,         /* ＦＢ送金データ識別キー */
+     zenhnknrenno ,         /* 全額返金連番 */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_Henkin_Z;

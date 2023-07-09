@@ -1,0 +1,45 @@
+CREATE VIEW BT_TjtIdouNyKh AS SELECT
+     syono ,         /* 証券番号 */
+     renno3keta ,         /* 連番（３桁） */
+     recordsakujyohyouji ,         /* レコード削除表示 */
+     youkyuuno ,         /* 要求通番 */
+     syouhncd ,         /* 商品コード */
+     kykjyoutai ,         /* 契約状態 */
+     kykymd ,         /* 契約日 */
+     yuukousyoumetukbn ,         /* 有効消滅区分 */
+     syoumetujiyuu ,         /* 消滅事由 */
+     syoumetuymd ,         /* 消滅日 */
+     kyktuukasyu ,         /* 契約通貨種類 */
+     tsntuukasyu ,         /* 通算用通貨種類 */
+     tsnyousibous ,         /* 通算用死亡Ｓ */
+     tsnyousibous$ ,         /* 通算用死亡Ｓ(通貨型) */
+     tsnyouitijip ,         /* 通算用一時払Ｐ */
+     tsnyouitijip$ ,         /* 通算用一時払Ｐ(通貨型) */
+     tsnyounkgns ,         /* 通算用年金原資 */
+     tsnyounkgns$ ,         /* 通算用年金原資(通貨型) */
+     hrkkkn ,         /* 払込期間 */
+     sntkhoukbn ,         /* 選択方法区分 */
+     bosyuuym ,         /* 募集年月 */
+     kykhhkndouhyouji ,         /* 契約者被保険者同一表示 */
+     ttdktyuuikbn1 ,         /* 手続注意区分１ */
+     ttdktyuuikbn2 ,         /* 手続注意区分２ */
+     ttdktyuuikbn3 ,         /* 手続注意区分３ */
+     ttdktyuuikbn4 ,         /* 手続注意区分４ */
+     ttdktyuuikbn5 ,         /* 手続注意区分５ */
+     syouhnsdno ,         /* 商品世代番号 */
+     kaigomaehrtkykumukbn ,         /* 介護前払特約有無区分 */
+     pyennykntkykumukbn ,         /* 保険料円入金特約有無区分 */
+     tsnyennyknkgk ,         /* 通算用円入金額 */
+     tsnyennyknkgk$ ,         /* 通算用円入金額(通貨型) */
+     skjmosno ,         /* 新契約時申込番号 */
+     houteityotkseisyouhnhyj ,         /* 法定貯蓄性商品表示 */
+     seiritujitrhkjikakkbn ,         /* 成立時取引時確認区分 */
+     hrkkeiro ,         /* 払込経路 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM BT_TjtIdouNyKh_Z;

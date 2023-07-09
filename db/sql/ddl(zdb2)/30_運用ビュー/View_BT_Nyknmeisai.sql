@@ -1,0 +1,46 @@
+CREATE VIEW BT_Nyknmeisai AS SELECT
+     hrkmdatakbn1 ,         /* （振込用）データ区分１ */
+     hrkmsyubetucd ,         /* （振込用）種別コード */
+     hrkmcdkbn ,         /* （振込用）コード区分 */
+     hrkmsakuseiymd6keta ,         /* （振込用）作成日６桁 */
+     hrkmknjyymdfrom6keta ,         /* （振込用）勘定日（自）６桁 */
+     hrkmknjyymdto6keta ,         /* （振込用）勘定日（至）６桁 */
+     hrkmbankcd ,         /* （振込用）銀行番号 */
+     hrkmbanknmkn ,         /* （振込用）銀行名（カナ） */
+     hrkmshitencd ,         /* （振込用）支店番号 */
+     hrkmsitennmkn ,         /* （振込用）支店名（カナ） */
+     hrkmyobiv3 ,         /* （振込用）予備項目Ｖ３ */
+     hrkmyokinkbn ,         /* （振込用）預金種目区分 */
+     hrkmkouzano ,         /* （振込用）口座番号 */
+     hrkmkznmkn ,         /* （振込用）口座名（カナ） */
+     hrkmkasikosikbn ,         /* （振込用）貸越区分 */
+     hrkmtuutyousysykbn ,         /* （振込用）通帳・証書区分 */
+     hrkmtrhkmaezndk ,         /* （振込用）取引前残高 */
+     hrkmyobiv63 ,         /* （振込用）予備項目Ｖ６３ */
+     hrkmrenno8 ,         /* （振込用）連番８桁 */
+     hrkmdatakbn2 ,         /* （振込用）データ区分２ */
+     hrkmsyoukaino ,         /* （振込用）照会番号 */
+     hrkmknjyymd6keta ,         /* （振込用）勘定日６桁 */
+     hrkmazkrhrdsymd6keta ,         /* （振込用）預入・払出日６桁 */
+     hrkmiribaraikbn ,         /* （振込用）入払区分 */
+     hrkmtrhkkbn ,         /* （振込用）取引区分 */
+     hrkmtrhkgk ,         /* （振込用）取引金額 */
+     hrkmtatenkengk ,         /* （振込用）うち他店券金額 */
+     hrkmkknteijiymd6keta ,         /* （振込用）交換呈示日６桁 */
+     hrkmhwtrhnknymd6keta ,         /* （振込用）不渡返還日６桁 */
+     hrkmtgtkgtkbn ,         /* （振込用）手形・小切手区分 */
+     hrkmtgtkgtno ,         /* （振込用）手形・小切手番号 */
+     hrkmryoutenno ,         /* （振込用）僚店番号 */
+     hrkmhrkmirnincd ,         /* （振込用）振込依頼人コード */
+     hrkmhrkmirninnm ,         /* （振込用）振込依頼人名 */
+     hrkmsimukebanknmkn ,         /* （振込用）仕向銀行名 */
+     hrkmsimuketennmkn ,         /* （振込用）仕向店名 */
+     hrkmtekiyounaiyou ,         /* （振込用）摘要内容 */
+     hrkmediinfo ,         /* （振込用）ＥＤＩ情報 */
+     hrkmyobiv1 ,         /* （振込用）予備項目Ｖ１ */
+     hrkmrensakuseiymd6keta ,         /* （振込用）連動元作成日６桁 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM BT_Nyknmeisai_Z;

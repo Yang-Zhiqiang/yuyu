@@ -1,0 +1,37 @@
+CREATE VIEW JT_SkJiyuu AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuurirekino ,         /* 請求履歴番号 */
+     uketukeno ,         /* 受付番号 */
+     geninkbn ,         /* 原因区分 */
+     jikosyosinymd ,         /* 事故（初診）日 */
+     syoubyouhsymd ,         /* 傷病発生日 */
+     saigaigeninkbn ,         /* 災害原因区分 */
+     gansindankakuteiymd ,         /* がん診断確定日 */
+     nyuuinjyoukyou ,         /* 入院状況 */
+     syuyouzaisiyouyoteiym ,         /* 腫瘍剤使用予定年月 */
+     kenpotaisyoukbn ,         /* 健保対象区分 */
+     knptsgairytikenkbn ,         /* 健保対象外理由（治験）区分 */
+     knptsgairysensinkbn ,         /* 健保対象外理由（先進医療）区分 */
+     knptsgairykknaimsynnyakukbn ,         /* 健保対象外理由（国内未承認薬）区分 */
+     knptsgairykyyhkkyhmsynnkbn ,         /* 健保対象外理由（効果用法未承認）区分 */
+     knptsgairysonotakbn ,         /* 健保対象外理由（その他）区分 */
+     knptsgairysonotanaiyou ,         /* 健保対象外理由（その他内容） */
+     sibouymd ,         /* 死亡日 */
+     siboubasyokbn ,         /* 死亡場所区分 */
+     siboubasyo ,         /* 死亡場所 */
+     syougaikoteiymd ,         /* 障害固定日 */
+     pmenkbn ,         /* Ｐ免区分 */
+     pmenkoteiymd ,         /* Ｐ免固定日 */
+     lnseikyuukbn ,         /* ＬＮ請求区分 */
+     lnsiteihokenkngk ,         /* ＬＮ指定保険金額 */
+     lnsiteihokenkngk$ ,         /* ＬＮ指定保険金額(通貨型) */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_SkJiyuu_Z;

@@ -1,0 +1,42 @@
+CREATE VIEW HT_Tuusan AS SELECT
+     mosno ,         /* 申込番号 */
+     tsnsibous ,         /* 通算総死亡Ｓ */
+     tsnsibous$ ,         /* 通算総死亡Ｓ(通貨型) */
+     tsnninenmikeikas ,         /* 通算２年未経過総死亡Ｓ */
+     tsnninenmikeikas$ ,         /* 通算２年未経過総死亡Ｓ(通貨型) */
+     tsnninenkeikas ,         /* 通算２年経過総死亡Ｓ */
+     tsnninenkeikas$ ,         /* 通算２年経過総死亡Ｓ(通貨型) */
+     tsnninenmikeikahtnkns ,         /* 通算２年未経過被転換死亡Ｓ */
+     tsnninenmikeikahtnkns$ ,         /* 通算２年未経過被転換死亡Ｓ(通貨型) */
+     tsnninenkeikadfp ,         /* 通算２年経過ＤＦＰ */
+     tsnninenkeikadfp$ ,         /* 通算２年経過ＤＦＰ(通貨型) */
+     tsnketsibous ,         /* 通算決定総死亡Ｓ */
+     tsnketsibous$ ,         /* 通算決定総死亡Ｓ(通貨型) */
+     tsnketsibous2 ,         /* 通算決定総死亡Ｓ２ */
+     tsnketsibous2$ ,         /* 通算決定総死亡Ｓ２(通貨型) */
+     tsnsoukktjituhsgk ,         /* 通算総告知書実保障額 */
+     tsnsoukktjituhsgk$ ,         /* 通算総告知書実保障額(通貨型) */
+     tsnkktjituhsgk1 ,         /* 通算告知書実保障額１ */
+     tsnkktjituhsgk1$ ,         /* 通算告知書実保障額１(通貨型) */
+     tsnkktjituhsgk2 ,         /* 通算告知書実保障額２ */
+     tsnkktjituhsgk2$ ,         /* 通算告知書実保障額２(通貨型) */
+     tsnkktitijibrsysnjs ,         /* 通算告知書一時払終身等除Ｓ */
+     tsnkktitijibrsysnjs$ ,         /* 通算告知書一時払終身等除Ｓ(通貨型) */
+     tsnnkgns ,         /* 通算年金原資 */
+     tsnnkgns$ ,         /* 通算年金原資(通貨型) */
+     tsnmsnynenbtsousbus ,         /* 通算未成年用年齢別総死亡Ｓ */
+     tsnmsnynenbtsousbus$ ,         /* 通算未成年用年齢別総死亡Ｓ(通貨型) */
+     tsnnenbtitijibrssbs ,         /* 通算年齢別一時払総死亡Ｓ */
+     tsnnenbtitijibrssbs$ ,         /* 通算年齢別一時払総死亡Ｓ(通貨型) */
+     tsnitijibrsysnp ,         /* 通算一時払終身Ｐ */
+     tsnitijibrsysnp$ ,         /* 通算一時払終身Ｐ(通貨型) */
+     kykdrtentsns ,         /* 契約者同一代理店通算Ｓ */
+     kykdrtentsns$ ,         /* 契約者同一代理店通算Ｓ(通貨型) */
+     tsnkaigomehrtkumukbn ,         /* 通算介護前払特約有無区分 */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_Tuusan_Z;

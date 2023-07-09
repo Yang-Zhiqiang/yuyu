@@ -1,0 +1,31 @@
+CREATE VIEW IT_KhKesikomiData AS SELECT
+     kbnkey ,         /* 区分キー */
+     nyuukinkakusyouno ,         /* 入金確証番号 */
+     syono ,         /* 証券番号 */
+     nyknaiyoukbn ,         /* 入金内容区分 */
+     nyuuryokukbn ,         /* 入力区分 */
+     nykkeiro ,         /* 入金経路 */
+     jyuutouym ,         /* 充当年月 */
+     nyuukinkakusyounrkymd ,         /* 入金確証入力年月日 */
+     ryosyuymd ,         /* 領収日 */
+     rsgaku ,         /* 領収金額 */
+     rsgaku$ ,         /* 領収金額(通貨型) */
+     nykdenymd ,         /* 入金伝票日付 */
+     nyuukinkakusyounrkno ,         /* 入金確証入力番号 */
+     taisyakukbn ,         /* 貸借区分 */
+     suitono ,         /* 出納番号 */
+     suitoubumoncd ,         /* 出納部門コード */
+     karikanjyono ,         /* 仮勘定番号 */
+     kzhurikaebankcd ,         /* 口座振替銀行コード */
+     hrkmyousinkkbn ,         /* 振込用紙入金区分 */
+     suitososhikicd ,         /* 出納組織コード */
+     creditcardhrkskmkbn ,         /* クレ払消込区分 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     syuudaikocd           /* 収納代行社コード */
+FROM IT_KhKesikomiData_Z;

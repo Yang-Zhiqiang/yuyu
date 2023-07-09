@@ -1,0 +1,37 @@
+CREATE VIEW HT_SmbcStyKanriSsRireki AS SELECT
+     syono ,         /* 証券番号 */
+     mosno ,         /* 申込番号 */
+     syrctrltblkostime ,         /* 処理コントロールTBL更新時間 */
+     renkanryoflg ,         /* 連動完了フラグ */
+     smbcdatakbn ,         /* ＳＭＢＣ＿データ区分 */
+     smbcdatasakuseiymd ,         /* ＳＭＢＣ＿データ作成日 */
+     smbchknkaisyacd ,         /* ＳＭＢＣ＿保険会社コード */
+     smbcuktkkanriid ,         /* ＳＭＢＣ＿受付管理ID */
+     smbcseihouktkzmymd ,         /* ＳＭＢＣ＿生保受付済DATE */
+     smbcseihohbymd ,         /* ＳＭＢＣ＿生保不備DATE */
+     smbcbankhnkykflg ,         /* ＳＭＢＣ＿銀行返却フラグ */
+     smbcseihohbksyymd ,         /* ＳＭＢＣ＿生保不備解消DATE */
+     smbcseihohjyttykymd ,         /* ＳＭＢＣ＿生保報状到着DATE */
+     smbcseihonyknzmymd ,         /* ＳＭＢＣ＿生保入金済DATE */
+     smbcseihosnszmymd ,         /* ＳＭＢＣ＿生保審査済DATE */
+     smbcseihosyknhkkzmymd ,         /* ＳＭＢＣ＿生保証券発行済DATE */
+     smbcseihosyumoku ,         /* ＳＭＢＣ＿生保種目 */
+     smbcseihosyurui ,         /* ＳＭＢＣ＿生保種類 */
+     smbcsyono ,         /* ＳＭＢＣ＿証券番号 */
+     smbcsyonoedaban ,         /* ＳＭＢＣ＿証券番号枝番 */
+     smbcjktkflg ,         /* ＳＭＢＣ＿条件付フラグ */
+     smbcseihotrksymd ,         /* ＳＭＢＣ＿生保取消DATE */
+     smbcseihohktymd ,         /* ＳＭＢＣ＿生保否決DATE */
+     smbckykseiymd ,         /* ＳＭＢＣ＿契約者生年月日 */
+     smbckyknmkn ,         /* ＳＭＢＣ＿契約者名（カナ） */
+     smbcmosuktymd ,         /* ＳＭＢＣ＿申込書受付DATE */
+     smbcmossyoriflg ,         /* ＳＭＢＣ＿申込処理フラグ */
+     smbckosyaareastyknr ,         /* ＳＭＢＣ＿個社領域（進捗管理） */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_SmbcStyKanriSsRireki_Z;

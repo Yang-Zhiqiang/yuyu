@@ -1,0 +1,31 @@
+CREATE VIEW ZT_SmbcSkMeisaiRendouTy AS SELECT
+     ztysmbcdatakbn ,         /* （中継用）ＳＭＢＣ＿データ区分 */
+     ztysmbcdatasakuseiymd ,         /* （中継用）ＳＭＢＣ＿データ作成日 */
+     ztysmbchknkaisyacd ,         /* （中継用）ＳＭＢＣ＿保険会社コード */
+     ztysmbcuktkkanriid ,         /* （中継用）ＳＭＢＣ＿受付管理ＩＤ */
+     ztysmbcseihouktkzmymd ,         /* （中継用）ＳＭＢＣ＿生保受付済ＤＡＴＥ */
+     ztysmbcseihohbymd ,         /* （中継用）ＳＭＢＣ＿生保不備ＤＡＴＥ */
+     ztysmbcbankhnkykflg ,         /* （中継用）ＳＭＢＣ＿銀行返却フラグ */
+     ztysmbcseihohbksyymd ,         /* （中継用）ＳＭＢＣ＿生保不備解消ＤＡＴＥ */
+     ztysmbcseihohjyttykymd ,         /* （中継用）ＳＭＢＣ＿生保報状到着ＤＡＴＥ */
+     ztysmbcseihonyknzmymd ,         /* （中継用）ＳＭＢＣ＿生保入金済ＤＡＴＥ */
+     ztysmbcseihosnszmymd ,         /* （中継用）ＳＭＢＣ＿生保審査済ＤＡＴＥ */
+     ztysmbcseihosyknhkkzmymd ,         /* （中継用）ＳＭＢＣ＿生保証券発行済ＤＡＴＥ */
+     ztysmbcseihosyumoku ,         /* （中継用）ＳＭＢＣ＿生保種目 */
+     ztysmbcseihosyurui ,         /* （中継用）ＳＭＢＣ＿生保種類 */
+     ztysmbcsyono ,         /* （中継用）ＳＭＢＣ＿証券番号 */
+     ztysmbcsyonoedaban ,         /* （中継用）ＳＭＢＣ＿証券番号枝番 */
+     ztysmbcjktkflg ,         /* （中継用）ＳＭＢＣ＿条件付フラグ */
+     ztysmbcseihotrksymd ,         /* （中継用）ＳＭＢＣ＿生保取消ＤＡＴＥ */
+     ztysmbcseihohktymd ,         /* （中継用）ＳＭＢＣ＿生保否決ＤＡＴＥ */
+     ztysmbckykseiymd ,         /* （中継用）ＳＭＢＣ＿契約者生年月日 */
+     ztysmbckyknmkn ,         /* （中継用）ＳＭＢＣ＿契約者名（カナ） */
+     ztysmbcmosuktymd ,         /* （中継用）ＳＭＢＣ＿申込書受付ＤＡＴＥ */
+     ztysmbcmossyoriflg ,         /* （中継用）ＳＭＢＣ＿申込処理フラグ */
+     ztysmbckosyaareastyknr ,         /* （中継用）ＳＭＢＣ＿個社領域（進捗管理） */
+     ztyyobiv60 ,         /* （中継用）予備項目Ｖ６０ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_SmbcSkMeisaiRendouTy_Z;

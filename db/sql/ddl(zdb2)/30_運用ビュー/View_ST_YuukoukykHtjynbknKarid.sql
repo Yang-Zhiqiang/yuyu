@@ -1,0 +1,36 @@
+CREATE VIEW ST_YuukoukykHtjynbknKarid AS SELECT
+     syoriYmd ,         /* 処理年月日 */
+     kakutyoujobcd ,         /* 拡張ジョブコード */
+     syono ,         /* 証券番号 */
+     hknsyukigou ,         /* 保険種類記号 */
+     haraikomikaisukbn ,         /* 払込回数区分 */
+     hrkkeirokbn ,         /* 払込経路区分 */
+     annaihuyouriyuukbn ,         /* 案内不要理由区分 */
+     znnndkrkskrwratdruigk ,         /* 前年度繰越仮割当Ｄ累計額 */
+     znnndkrkskrwratdruigk$ ,         /* 前年度繰越仮割当Ｄ累計額(通貨型) */
+     tounendokariwariated ,         /* 当年度仮割当Ｄ */
+     tounendokariwariated$ ,         /* 当年度仮割当Ｄ(通貨型) */
+     tndmatukrkskrwratdruigk ,         /* 当年度末仮割当Ｄ累計額 */
+     tndmatukrkskrwratdruigk$ ,         /* 当年度末仮割当Ｄ累計額(通貨型) */
+     kariwariatedrisoku ,         /* 仮割当Ｄ利息 */
+     kariwariatedrisoku$ ,         /* 仮割当Ｄ利息(通貨型) */
+     hsys ,         /* 保障Ｓ */
+     hsys$ ,         /* 保障Ｓ(通貨型) */
+     yobiv3 ,         /* 予備項目Ｖ３ */
+     srutiwake ,         /* 数理用内訳 */
+     srkijyunym ,         /* 数理用基準年月 */
+     kbnkeiriyousegmentkbn ,         /* 区分経理用セグメント区分 */
+     kbnkeiriyourgnbnskkbn ,         /* 区分経理用利源分析区分 */
+     seisikiwariatenendohyj ,         /* 正式割当年度表示 */
+     mankitouraiym ,         /* 満期到来年月 */
+     syukeiyakusyuruicd ,         /* 主契約種類コード */
+     kyknendo ,         /* 契約年度 */
+     daihyouyoteiriritu ,         /* 代表予定利率 */
+     haraikatakbn ,         /* 払方区分 */
+     yobiv20 ,         /* 予備項目Ｖ２０ */
+     srhaitoukinsyuukeiptnkbn ,         /* 数理配当金集計パターン区分 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ST_YuukoukykHtjynbknKarid_Z;

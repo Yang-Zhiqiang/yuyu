@@ -1,0 +1,40 @@
+CREATE VIEW IT_DairitenMinyuKykMeisai AS SELECT
+     kbnkey ,         /* 区分キー */
+     syoriYmd ,         /* 処理年月日 */
+     syono ,         /* 証券番号 */
+     drtenrenno ,         /* 代理店連番 */
+     drtencd ,         /* 代理店コード */
+     bosyuucd ,         /* 募集人コード */
+     pjytym ,         /* 保険料充当年月 */
+     kykymd ,         /* 契約日 */
+     cifcd ,         /* ＣＩＦコード */
+     kanjidairitennm ,         /* 漢字代理店名 */
+     minyujytymd ,         /* 未入充当年月日 */
+     hassinka ,         /* 発信課 */
+     bosyuuym ,         /* 募集年月 */
+     kanjibosyuuninnm ,         /* 漢字募集人名 */
+     kydatkikbn ,         /* 共同扱区分 */
+     kyknmkj ,         /* 契約者名（漢字） */
+     hrkkaisuu ,         /* 払込回数 */
+     hrkkeiro ,         /* 払込経路 */
+     hrkp ,         /* 払込保険料 */
+     hrkp$ ,         /* 払込保険料(通貨型) */
+     hurihunokbn ,         /* 振替不能理由区分 */
+     bosyuuningyouhaiymd ,         /* 募集人業廃年月日 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     dntcd ,         /* 団体コード */
+     kjdntnm ,         /* 漢字団体名 */
+     hknsyuruinm ,         /* 保険種類名 */
+     drtenkanrisosikicd ,         /* 代理店管理組織コード */
+     hjnkykhyj ,         /* 法人契約表示 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_DairitenMinyuKykMeisai_Z;

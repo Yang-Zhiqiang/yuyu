@@ -1,0 +1,1 @@
+INSERT INTO BM_ZennouKeikaRiritu (keikatukisuu, tekiyoukknfrom, tekiyoukknkto, zennoukeikariritu, gyoumuKousinKinou, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('0', '20190401', '99999999', '1.000000', 'init', 'init', '0', 'init', '0', 'init', '0');

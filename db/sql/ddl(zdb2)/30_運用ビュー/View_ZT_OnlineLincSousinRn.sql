@@ -1,0 +1,46 @@
+CREATE VIEW ZT_OnlineLincSousinRn AS SELECT
+     zrndatakbn ,         /* （連携用）データ区分 */
+     zrnrecordsyubetukbn ,         /* （連携用）レコード種別区分 */
+     zrnhenkoutype ,         /* （連携用）変更タイプ */
+     zrnsyorikekkacd ,         /* （連携用）処理結果コード */
+     zrnsyorikekkaerrjiyuu ,         /* （連携用）処理結果エラー事由 */
+     zrnsyorikekkaerrno ,         /* （連携用）処理結果エラー項番 */
+     zrnnayoserecordsuu ,         /* （連携用）名寄せレコード数 */
+     zrnkanyuusyano ,         /* （連携用）加入者番号 */
+     zrnkyoukaisiyouknnm ,         /* （連携用）協会使用カナ氏名 */
+     zrnhhknseikbn ,         /* （連携用）被保険者性別区分 */
+     zrnhhknseiymd ,         /* （連携用）被保険者生年月日 */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnkyksyhhknsydouituhyouji ,         /* （連携用）契約者被保険者同一表示 */
+     zrnsousinmotokaisyacd ,         /* （連携用）送信元会社コード */
+     zrnhhknadrkn ,         /* （連携用）被保険者住所（カナ） */
+     zrnsiginyuintkykntgkstr ,         /* （連携用）災害入院特約日額（文字列） */
+     zrnsppinyuintkykntgkstr ,         /* （連携用）疾病入院特約日額（文字列） */
+     zrnsijnbyutkykntgkstr ,         /* （連携用）成人病特約日額（文字列） */
+     zrnsonotatokuyakuntgkstr ,         /* （連携用）その他特約日額（文字列） */
+     zrntrkmousideymd ,         /* （連携用）登録申出年月日 */
+     zrnlincsyoriymd ,         /* （連携用）ＬＩＮＣ処理年月日 */
+     zrnyuyusiyouknnm ,         /* （連携用）住友使用カナ氏名 */
+     zrnkykkanrino ,         /* （連携用）契約管理番号 */
+     zrnhozenymd ,         /* （連携用）保全年月日 */
+     zrnkykknnm ,         /* （連携用）契約者カナ氏名 */
+     zrnhutuusbsstr ,         /* （連携用）普通死亡保険金額 */
+     zrnsgsbstr ,         /* （連携用）災害死亡保険金額 */
+     zrnkakusyasiyouran ,         /* （連携用）各社使用欄 */
+     zrnmousideflg ,         /* （連携用）申出フラグ */
+     zrnmousideflgsetymd ,         /* （連携用）申出フラグ設定年月日 */
+     zrnmousideflgkaijyoymd ,         /* （連携用）申出フラグ解除年月日 */
+     zrnjgyhknflg ,         /* （連携用）事業保険フラグ */
+     zrntnknflg ,         /* （連携用）転換フラグ */
+     zrnkyksyaseikbn ,         /* （連携用）契約者性別区分 */
+     zrnkyksyaseiymd ,         /* （連携用）契約者生年月日 */
+     zrnkykadrkn ,         /* （連携用）契約者住所（カナ） */
+     zrnyobiv17 ,         /* （連携用）予備項目Ｖ１７ */
+     zrnknjhhknmei30 ,         /* （連携用）漢字被保険者名（３０桁） */
+     zrnkjkyknm30 ,         /* （連携用）漢字契約者名（３０桁） */
+     zrn15sai1000manflg ,         /* （連携用）１５歳未満１０００万超フラグ */
+     zrnkjhngflg ,         /* （連携用）漢字範囲外フラグ */
+     zrnkykytymd ,         /* （連携用）契約予定年月日 */
+     zrnhozenytymd ,         /* （連携用）保全予定年月日 */
+     zrnyobiv62           /* （連携用）予備項目Ｖ６２ */
+FROM ZT_OnlineLincSousinRn_Z;

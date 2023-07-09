@@ -1,0 +1,37 @@
+CREATE VIEW BM_FundIndexGetumatuCf AS SELECT
+     unitfundkbn ,         /* ユニットファンド区分 */
+     fundhyoukaymd ,         /* ファンド評価年月日　　　　 */
+     segkey ,         /* ＳＥＧＫＥＹ　　　　　　　　 */
+     gmcfhknknkigahurikaegaku ,         /* 月末ＣＦ保険関係ＧＡ振替額 */
+     gmcfhknknkigahurikaegaku$ ,         /* 月末ＣＦ保険関係ＧＡ振替額(通貨型) */
+     gkgmcfhknknkigahurikaegaku ,         /* （外貨）月末ＣＦ保険関係ＧＡ振替額 */
+     gkgmcfhknknkigahurikaegaku$ ,         /* （外貨）月末ＣＦ保険関係ＧＡ振替額(通貨型) */
+     gmcfsakanrihigahurikaegaku ,         /* 月末ＣＦＳＡ管理費ＧＡ振替額 */
+     gmcfsakanrihigahurikaegaku$ ,         /* 月末ＣＦＳＡ管理費ＧＡ振替額(通貨型) */
+     gmsthscstgahurikaegaku ,         /* 月末最低保障コストＧＡ振替額 */
+     gmsthscstgahurikaegaku$ ,         /* 月末最低保障コストＧＡ振替額(通貨型) */
+     gmroanfundgahurikaegaku ,         /* 月末ローンファンドＧＡ振替額 */
+     gmroanfundgahurikaegaku$ ,         /* 月末ローンファンドＧＡ振替額(通貨型) */
+     gmcfhkkksahurikaegaku ,         /* 月末ＣＦ保険関係ＳＡ振替額 */
+     gmcfhkkksahurikaegaku$ ,         /* 月末ＣＦ保険関係ＳＡ振替額(通貨型) */
+     gkgmcfhkkksahurikaegaku ,         /* （外貨）月末ＣＦ保険関係ＳＡ振替額 */
+     gkgmcfhkkksahurikaegaku$ ,         /* （外貨）月末ＣＦ保険関係ＳＡ振替額(通貨型) */
+     gmroanfundsahurikaegaku ,         /* 月末ローンファンドＳＡ振替額 */
+     gmroanfundsahurikaegaku$ ,         /* 月末ローンファンドＳＡ振替額(通貨型) */
+     gmhokencvgoukeigaku ,         /* 月末保険ＣＶ合計額 */
+     gmhokencvgoukeigaku$ ,         /* 月末保険ＣＶ合計額(通貨型) */
+     gkgmhokencvgoukeigaku ,         /* （外貨）月末保険ＣＶ合計額 */
+     gkgmhokencvgoukeigaku$ ,         /* （外貨）月末保険ＣＶ合計額(通貨型) */
+     gmsktsganrigoukeizandaka ,         /* 月末初期投資元利合計残高 */
+     gmsktsganrigoukeizandaka$ ,         /* 月末初期投資元利合計残高(通貨型) */
+     gkgmsktsganrigoukeizandaka ,         /* （外貨）月末初期投資元利合計残高 */
+     gkgmsktsganrigoukeizandaka$ ,         /* （外貨）月末初期投資元利合計残高(通貨型) */
+     gmmihurikaesousatugaku ,         /* 月末未振替相殺額 */
+     gmmihurikaesousatugaku$ ,         /* 月末未振替相殺額(通貨型) */
+     gkgmmihurikaesousatugaku ,         /* （外貨）月末未振替相殺額 */
+     gkgmmihurikaesousatugaku$ ,         /* （外貨）月末未振替相殺額(通貨型) */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM BM_FundIndexGetumatuCf_Z;

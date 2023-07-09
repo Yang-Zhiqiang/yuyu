@@ -1,0 +1,29 @@
+CREATE VIEW ZT_DrtenMinyuuKykInfoRn AS SELECT
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnbsyym ,         /* （連携用）募集年月 */
+     zrnhrkkaisuukbn ,         /* （連携用）払込回数区分 */
+     zrnhrkkeirokbn ,         /* （連携用）払込経路区分 */
+     zrnsyuukeikbn ,         /* （連携用）集計区分 */
+     zrnminyukaisuu ,         /* （連携用）未入回数 */
+     zrnmisyuup ,         /* （連携用）未収Ｐ */
+     zrnhsys ,         /* （連携用）保障Ｓ */
+     zrnsyuuseis ,         /* （連携用）修正Ｓ */
+     zrnfukkatutyuuikbn ,         /* （連携用）復活注意区分 */
+     zrnmrarihyj ,         /* （連携用）ＭＲ有表示 */
+     zrnfsttatekaekykhyj ,         /* （連携用）初回立替契約表示 */
+     zrntatekaekjrenzokukaisu ,         /* （連携用）立替計上連続回数 */
+     zrnkeizokutyuuihyouji ,         /* （連携用）継続注意表示 */
+     zrnsyouhinbunruikbn ,         /* （連携用）商品分類区分 */
+     zrnsyouhnnmkbn ,         /* （連携用）商品名称区分 */
+     zrnhknsyukigou ,         /* （連携用）保険種類記号 */
+     zrnjikaipjyuutouym ,         /* （連携用）次回Ｐ充当年月 */
+     zrnkzhurikaehurihunokbn ,         /* （連携用）口座振替振替不能理由区分 */
+     zrnautocalltaisyoukykhyj ,         /* （連携用）オートコール対象契約表示 */
+     zrnbsudirtnatkikeitaikbn ,         /* （連携用）募集代理店扱形態区分 */
+     zrnbsydrtencdx1 ,         /* （連携用）募集代理店コード＿１ */
+     zrnbsydrtencdx2 ,         /* （連携用）募集代理店コード＿２ */
+     zrnikkatubaraikbn ,         /* （連携用）一括払区分 */
+     zrnikkatubaraikaisuu ,         /* （連携用）一括払回数 */
+     zrnyobiv34           /* （連携用）予備項目Ｖ３４ */
+FROM ZT_DrtenMinyuuKykInfoRn_Z;

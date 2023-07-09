@@ -1,0 +1,33 @@
+CREATE VIEW IT_TRNyuukin AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     syoriYmd ,         /* 処理年月日 */
+     nyktrrenno ,         /* 入金TR連番 */
+     datarenno ,         /* データ連番 */
+     nykkeiro ,         /* 入金経路 */
+     hrkkaisuu ,         /* 払込回数 */
+     nyknaiyoukbn ,         /* 入金内容区分 */
+     iktnyuukinnumu ,         /* 一括入金有無 */
+     jyuutouym ,         /* 充当年月 */
+     jyutoukaisuuy ,         /* 充当回数（年） */
+     jyutoukaisuum ,         /* 充当回数（月） */
+     rsgaku ,         /* 領収金額 */
+     rsgaku$ ,         /* 領収金額(通貨型) */
+     ryosyuymd ,         /* 領収日 */
+     kzhurikaebankcd ,         /* 口座振替銀行コード */
+     kzhurikaesitencd ,         /* 口座振替支店コード */
+     nykdenymd ,         /* 入金伝票日付 */
+     tikiktbrisyuruikbn ,         /* 定期一括払種類区分 */
+     rstuukasyu ,         /* 領収通貨種類 */
+     nyknkwsratekijyunymd ,         /* 入金用為替レート基準日 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     creditkessaiyouno ,         /* クレジットカード決済用番号 */
+     syuudaikocd ,         /* 収納代行社コード */
+     credituriageseikyuukbn           /* クレジットカード売上請求区分 */
+FROM IT_TRNyuukin_Z;

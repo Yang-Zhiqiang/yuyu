@@ -1,0 +1,236 @@
+CREATE TABLE ZT_RisaHitSyouhnyouRated2Rn (
+     zrnhknsyukigou                                     CHAR        (2)                                                       NOT NULL  ,  /* （連携用）保険種類記号 */
+     zrnhknsyuruikigousedaikbn                          CHAR        (1)                                                       NOT NULL  ,  /* （連携用）保険種類記号世代区分 */
+     zrnyoteiriritu                                     CHAR        (3)                                                       NOT NULL  ,  /* （連携用）予定利率 */
+     zrnpmenkbn                                         CHAR        (1)                                                       NOT NULL  ,  /* （連携用）Ｐ免区分 */
+     zrnhrkkaisuukbn                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）払込回数区分 */
+     zrnhhknsei                                         CHAR        (1)                                                       NOT NULL  ,  /* （連携用）被保険者性別 */
+     zrnkeiyakujihhknnen                                CHAR        (3)                                                       NOT NULL  ,  /* （連携用）契約時被保険者年令 */
+     zrnsaimnkkykhyj                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）才満期契約表示 */
+     zrnhknkkn                                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）保険期間 */
+     zrnphrkkikn                                        CHAR        (2)                                                       NOT NULL  ,  /* （連携用）Ｐ払込期間 */
+     zrnannaifuyouriyuukbn                              CHAR        (2)                                                       NOT NULL  ,  /* （連携用）案内不要理由区分 */
+     zrntuukasyukbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）通貨種類区分 */
+     zrndai1hknkkn                                      CHAR        (2)                                                       NOT NULL  ,  /* （連携用）第１保険期間 */
+     zrndnendo                                          CHAR        (4)                                                       NOT NULL  ,  /* （連携用）Ｄ年度 */
+     zrnnaiteikakuteikbn                                CHAR        (1)                                                       NOT NULL  ,  /* （連携用）Ｄレート内定確定区分 */
+     zrndrate00                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート００ */
+     zrndrate01                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０１ */
+     zrndrate02                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０２ */
+     zrndrate03                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０３ */
+     zrndrate04                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０４ */
+     zrndrate05                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０５ */
+     zrndrate06                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０６ */
+     zrndrate07                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０７ */
+     zrndrate08                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０８ */
+     zrndrate09                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート０９ */
+     zrndrate10                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１０ */
+     zrndrate11                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１１ */
+     zrndrate12                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１２ */
+     zrndrate13                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１３ */
+     zrndrate14                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１４ */
+     zrndrate15                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１５ */
+     zrndrate16                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１６ */
+     zrndrate17                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１７ */
+     zrndrate18                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１８ */
+     zrndrate19                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート１９ */
+     zrndrate20                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２０ */
+     zrndrate21                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２１ */
+     zrndrate22                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２２ */
+     zrndrate23                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２３ */
+     zrndrate24                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２４ */
+     zrndrate25                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２５ */
+     zrndrate26                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２６ */
+     zrndrate27                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２７ */
+     zrndrate28                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２８ */
+     zrndrate29                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート２９ */
+     zrndrate30                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３０ */
+     zrndrate31                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３１ */
+     zrndrate32                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３２ */
+     zrndrate33                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３３ */
+     zrndrate34                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３４ */
+     zrndrate35                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３５ */
+     zrndrate36                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３６ */
+     zrndrate37                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３７ */
+     zrndrate38                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３８ */
+     zrndrate39                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート３９ */
+     zrndrate40                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４０ */
+     zrndrate41                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４１ */
+     zrndrate42                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４２ */
+     zrndrate43                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４３ */
+     zrndrate44                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４４ */
+     zrndrate45                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４５ */
+     zrndrate46                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４６ */
+     zrndrate47                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４７ */
+     zrndrate48                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４８ */
+     zrndrate49                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート４９ */
+     zrndrate50                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５０ */
+     zrndrate51                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５１ */
+     zrndrate52                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５２ */
+     zrndrate53                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５３ */
+     zrndrate54                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５４ */
+     zrndrate55                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５５ */
+     zrndrate56                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５６ */
+     zrndrate57                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５７ */
+     zrndrate58                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５８ */
+     zrndrate59                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート５９ */
+     zrndrate60                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６０ */
+     zrndrate61                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６１ */
+     zrndrate62                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６２ */
+     zrndrate63                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６３ */
+     zrndrate64                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６４ */
+     zrndrate65                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６５ */
+     zrndrate66                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６６ */
+     zrndrate67                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６７ */
+     zrndrate68                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６８ */
+     zrndrate69                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート６９ */
+     zrndrate70                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７０ */
+     zrndrate71                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７１ */
+     zrndrate72                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７２ */
+     zrndrate73                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７３ */
+     zrndrate74                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７４ */
+     zrndrate75                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７５ */
+     zrndrate76                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７６ */
+     zrndrate77                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７７ */
+     zrndrate78                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７８ */
+     zrndrate79                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート７９ */
+     zrndrate80                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８０ */
+     zrndrate81                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８１ */
+     zrndrate82                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８２ */
+     zrndrate83                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８３ */
+     zrndrate84                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８４ */
+     zrndrate85                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８５ */
+     zrndrate86                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８６ */
+     zrndrate87                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８７ */
+     zrndrate88                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８８ */
+     zrndrate89                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート８９ */
+     zrndrate90                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９０ */
+     zrndrate91                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９１ */
+     zrndrate92                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９２ */
+     zrndrate93                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９３ */
+     zrndrate94                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９４ */
+     zrndrate95                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９５ */
+     zrndrate96                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９６ */
+     zrndrate97                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９７ */
+     zrndrate98                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９８ */
+     zrndrate99                                         NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄレート９９ */
+     zrndyouvrate00                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート００ */
+     zrndyouvrate01                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０１ */
+     zrndyouvrate02                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０２ */
+     zrndyouvrate03                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０３ */
+     zrndyouvrate04                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０４ */
+     zrndyouvrate05                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０５ */
+     zrndyouvrate06                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０６ */
+     zrndyouvrate07                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０７ */
+     zrndyouvrate08                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０８ */
+     zrndyouvrate09                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート０９ */
+     zrndyouvrate10                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１０ */
+     zrndyouvrate11                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１１ */
+     zrndyouvrate12                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１２ */
+     zrndyouvrate13                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１３ */
+     zrndyouvrate14                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１４ */
+     zrndyouvrate15                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１５ */
+     zrndyouvrate16                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１６ */
+     zrndyouvrate17                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１７ */
+     zrndyouvrate18                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１８ */
+     zrndyouvrate19                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート１９ */
+     zrndyouvrate20                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２０ */
+     zrndyouvrate21                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２１ */
+     zrndyouvrate22                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２２ */
+     zrndyouvrate23                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２３ */
+     zrndyouvrate24                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２４ */
+     zrndyouvrate25                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２５ */
+     zrndyouvrate26                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２６ */
+     zrndyouvrate27                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２７ */
+     zrndyouvrate28                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２８ */
+     zrndyouvrate29                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート２９ */
+     zrndyouvrate30                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３０ */
+     zrndyouvrate31                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３１ */
+     zrndyouvrate32                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３２ */
+     zrndyouvrate33                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３３ */
+     zrndyouvrate34                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３４ */
+     zrndyouvrate35                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３５ */
+     zrndyouvrate36                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３６ */
+     zrndyouvrate37                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３７ */
+     zrndyouvrate38                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３８ */
+     zrndyouvrate39                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート３９ */
+     zrndyouvrate40                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４０ */
+     zrndyouvrate41                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４１ */
+     zrndyouvrate42                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４２ */
+     zrndyouvrate43                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４３ */
+     zrndyouvrate44                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４４ */
+     zrndyouvrate45                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４５ */
+     zrndyouvrate46                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４６ */
+     zrndyouvrate47                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４７ */
+     zrndyouvrate48                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４８ */
+     zrndyouvrate49                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート４９ */
+     zrndyouvrate50                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５０ */
+     zrndyouvrate51                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５１ */
+     zrndyouvrate52                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５２ */
+     zrndyouvrate53                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５３ */
+     zrndyouvrate54                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５４ */
+     zrndyouvrate55                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５５ */
+     zrndyouvrate56                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５６ */
+     zrndyouvrate57                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５７ */
+     zrndyouvrate58                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５８ */
+     zrndyouvrate59                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート５９ */
+     zrndyouvrate60                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６０ */
+     zrndyouvrate61                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６１ */
+     zrndyouvrate62                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６２ */
+     zrndyouvrate63                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６３ */
+     zrndyouvrate64                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６４ */
+     zrndyouvrate65                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６５ */
+     zrndyouvrate66                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６６ */
+     zrndyouvrate67                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６７ */
+     zrndyouvrate68                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６８ */
+     zrndyouvrate69                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート６９ */
+     zrndyouvrate70                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７０ */
+     zrndyouvrate71                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７１ */
+     zrndyouvrate72                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７２ */
+     zrndyouvrate73                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７３ */
+     zrndyouvrate74                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７４ */
+     zrndyouvrate75                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７５ */
+     zrndyouvrate76                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７６ */
+     zrndyouvrate77                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７７ */
+     zrndyouvrate78                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７８ */
+     zrndyouvrate79                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート７９ */
+     zrndyouvrate80                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８０ */
+     zrndyouvrate81                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８１ */
+     zrndyouvrate82                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８２ */
+     zrndyouvrate83                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８３ */
+     zrndyouvrate84                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８４ */
+     zrndyouvrate85                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８５ */
+     zrndyouvrate86                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８６ */
+     zrndyouvrate87                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８７ */
+     zrndyouvrate88                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８８ */
+     zrndyouvrate89                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート８９ */
+     zrndyouvrate90                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９０ */
+     zrndyouvrate91                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９１ */
+     zrndyouvrate92                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９２ */
+     zrndyouvrate93                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９３ */
+     zrndyouvrate94                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９４ */
+     zrndyouvrate95                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９５ */
+     zrndyouvrate96                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９６ */
+     zrndyouvrate97                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９７ */
+     zrndyouvrate98                                     NUMBER      (9,6)                                                     NOT NULL  ,  /* （連携用）Ｄ用Ｖレート９８ */
+     zrndyouvrate99                                     NUMBER      (9,6)                                                     NOT NULL     /* （連携用）Ｄ用Ｖレート９９ */
+)
+;
+
+ALTER TABLE ZT_RisaHitSyouhnyouRated2Rn ADD CONSTRAINT PK_RisaHitSyouhnyouRated2Rn PRIMARY KEY (
+     zrnhknsyukigou                                           , /* （連携用）保険種類記号 */
+     zrnhknsyuruikigousedaikbn                                , /* （連携用）保険種類記号世代区分 */
+     zrnyoteiriritu                                           , /* （連携用）予定利率 */
+     zrnpmenkbn                                               , /* （連携用）Ｐ免区分 */
+     zrnhrkkaisuukbn                                          , /* （連携用）払込回数区分 */
+     zrnhhknsei                                               , /* （連携用）被保険者性別 */
+     zrnkeiyakujihhknnen                                      , /* （連携用）契約時被保険者年令 */
+     zrnsaimnkkykhyj                                          , /* （連携用）才満期契約表示 */
+     zrnhknkkn                                                , /* （連携用）保険期間 */
+     zrnphrkkikn                                              , /* （連携用）Ｐ払込期間 */
+     zrnannaifuyouriyuukbn                                    , /* （連携用）案内不要理由区分 */
+     zrntuukasyukbn                                           , /* （連携用）通貨種類区分 */
+     zrndai1hknkkn                                            , /* （連携用）第１保険期間 */
+     zrndnendo                                                , /* （連携用）Ｄ年度 */
+     zrnnaiteikakuteikbn                                        /* （連携用）Ｄレート内定確定区分 */
+) ;

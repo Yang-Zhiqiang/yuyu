@@ -1,0 +1,44 @@
+CREATE VIEW IW_KhKaiyakuWk AS SELECT
+     kouteikanriid ,         /* 工程管理ＩＤ */
+     syono ,         /* 証券番号 */
+     skssakuseiymd ,         /* 請求書作成日 */
+     kaiyakujiyuu ,         /* 解約事由 */
+     syoruiukeymd ,         /* 書類受付日 */
+     shnmkj ,         /* 送付先氏名（漢字）（３０桁） */
+     shskyno ,         /* 送付先郵便番号 */
+     shsadr1kj ,         /* 送付先住所１（漢字）（３０桁） */
+     shsadr2kj ,         /* 送付先住所２（漢字）（３０桁） */
+     shsadr3kj ,         /* 送付先住所３（漢字）（３０桁） */
+     kyksyaszknmkn ,         /* 契約者相続人氏名（カナ） */
+     kyksyaszknmkj ,         /* 契約者相続人氏名（漢字） */
+     kyksyaszkyno ,         /* 契約者相続人郵便番号 */
+     kyksyaszkadr1kj ,         /* 契約者相続人住所１（漢字） */
+     kyksyaszkadr2kj ,         /* 契約者相続人住所２（漢字） */
+     kyksyaszkadr3kj ,         /* 契約者相続人住所３（漢字） */
+     saikennmkj ,         /* 債権者氏名（漢字） */
+     saikennyno ,         /* 債権者郵便番号 */
+     saikenadr1kj ,         /* 債権者住所１（漢字） */
+     saikenadr2kj ,         /* 債権者住所２（漢字） */
+     saikenadr3kj ,         /* 債権者住所３（漢字） */
+     yenshrtkhkumu ,         /* 円支払特約付加有無 */
+     inputshrhousiteikbn ,         /* 入力用支払方法指定区分 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     kzdoukbn ,         /* 口座名義人同一区分 */
+     kzmeiginmkn ,         /* 口座名義人氏名（カナ） */
+     kykmnmeigibangou ,         /* 契約者ＭＮ名義番号 */
+     honninkakninkekkakbn ,         /* 本人確認結果区分 */
+     kanryotuutioutkbn ,         /* 完了通知出力区分 */
+     zenkaisyorikekkakbn ,         /* 前回処理結果区分 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     uktmnmeigibangou ,         /* 受取人ＭＮ名義番号 */
+     soukinsakikbn           /* 送金先区分 */
+FROM IW_KhKaiyakuWk_Z;

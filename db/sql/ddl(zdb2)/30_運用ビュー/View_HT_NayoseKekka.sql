@@ -1,0 +1,35 @@
+CREATE VIEW HT_NayoseKekka AS SELECT
+     mosno ,         /* 申込番号 */
+     sntkinfotaisyousyakbn ,         /* 選択情報対象者区分 */
+     edano ,         /* 枝番号 */
+     sakuinnmno ,         /* 索引名番号 */
+     nysjissikekkakbn ,         /* 名寄せ実施結果区分 */
+     nysjyoutaikbn ,         /* 名寄せ状態区分 */
+     sakuininfosyoukaierrkbn ,         /* 索引情報照会エラー区分 */
+     mrsyoukaierrkbn ,         /* ＭＲ照会エラー区分 */
+     signalsyoukaierrkbn ,         /* シグナル照会エラー区分 */
+     sinsntkhnsysyoukaierrkbn ,         /* 新選択情報反社照会エラー区分 */
+     tsngksyoukaierrkbn ,         /* 通算金額照会エラー区分 */
+     kykdrtentsnssyoukaierrkbn ,         /* 契約者同一代理店通算Ｓ照会エラー区分 */
+     mossakuseikahisyoukaierrkbn ,         /* 申込書作成可否照会エラー区分 */
+     hndketyhsyoukaierrkbn ,         /* ハンド決定要否照会エラー区分 */
+     sntkinfomrumukbn ,         /* 選択情報ＭＲ有無区分 */
+     sntkinfohnsyumukbn ,         /* 選択情報反社有無区分 */
+     signalsetteiumukbn ,         /* シグナル設定有無区分 */
+     signalinfohnsyumukbn ,         /* シグナル情報反社有無区分 */
+     gaikokupepsumukbn ,         /* 外国ＰＥＰｓ有無区分 */
+     sinsntkhnsyumukbn ,         /* 新選択情報反社有無区分 */
+     itekisntkhndktyhkbn ,         /* 医的選択情報ハンド決定要否区分 */
+     ttdktyuuiknkhndktyhkbn ,         /* 手続注意環境ハンド決定要否区分 */
+     kyhkinuktkariitkhndktyhkbn ,         /* 給付金受付有医的ハンド決定要否区分 */
+     doujimositekihndktyhkbn ,         /* 同時申込医的ハンド決定要否区分 */
+     doujimosknkhndktyhkbn ,         /* 同時申込環境ハンド決定要否区分 */
+     sirajikykkbn ,         /* 白地契約区分 */
+     kikykinfoseiymd ,         /* 既契約情報生年月日 */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_NayoseKekka_Z;

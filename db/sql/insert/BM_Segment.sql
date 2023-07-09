@@ -1,0 +1,13 @@
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2801', '米ドル建終身保険（一時払）（準有配）', '', '20170110130000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2901', '豪ドル建終身保険（一時払）（準有配）', '', '20170110130000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2601', '米ドル建個人年金（一時払）（準有配）', '', '20180625120000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2701', '豪ドル建個人年金（一時払）（準有配）', '', '20180625120000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('0214', '円建終身変更（準有配）', '', '20180625120000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2602', '米ドル建個人年金（準有配）', '', '20190325120000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2702', '豪ドル建個人年金（準有配）', '', '20190325120000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('0906', '円建年金変更（準有配）', '', '20190826120000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2802', '米ドル建終身保険（一時払１９）（準有配）', '', '20191216130000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2902', '豪ドル建終身保険（一時払１９）（準有配）', '', '20191216130000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2603', '米ドル建個人年金（一時払２０）（準有配）', '', '20200727130000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('2703', '豪ドル建個人年金（一時払２０）（準有配）', '', '20200727130000000', 'init', '0', 'init', '0');
+INSERT INTO BM_Segment (segcd, segnm, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('0215', '円建終身変更（１９）（準有配）', '', '20201214130000000', 'init', '0', 'init', '0');

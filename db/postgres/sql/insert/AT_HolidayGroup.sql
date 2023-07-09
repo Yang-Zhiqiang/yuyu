@@ -1,0 +1,5 @@
+INSERT INTO AT_HolidayGroup (holidayGroupCd, holidayGroupNm, holidayGroupDescription, sysSiyouKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('JapanHolidays', '祝日法で定める休日', '日本の祝日法で定められた国民の祝日・国民の休日を休日と見なす休日体系です。土曜日・日曜日は休日と見なしません。', '1', 'init', '0', 'init', '0');
+INSERT INTO AT_HolidayGroup (holidayGroupCd, holidayGroupNm, holidayGroupDescription, sysSiyouKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('CalendarHolidays', 'カレンダー休日', '日本の祝日法の休日と日曜日を休日と見なす休日体系です。土曜日は休日と見なしません。', '1', 'init', '0', 'init', '0');
+INSERT INTO AT_HolidayGroup (holidayGroupCd, holidayGroupNm, holidayGroupDescription, sysSiyouKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('WeekendHolidays', '土日祝日', '日本の祝日法の休日と土曜日・日曜日を休日と見なす休日体系です。', '1', 'init', '0', 'init', '0');
+INSERT INTO AT_HolidayGroup (holidayGroupCd, holidayGroupNm, holidayGroupDescription, sysSiyouKbn, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('BankHolidays', '金融機関休日', '日本の金融機関の非営業日を表す休日体系です。日本の祝日法の休日と土曜日・日曜日・年末年始（12月31日～1月3日）を休日と見なします。', '1', 'init', '0', 'init', '0');
+

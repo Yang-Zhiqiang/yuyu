@@ -1,0 +1,45 @@
+CREATE VIEW ZT_NyknmeisaiTr AS SELECT
+     ztrdatakbn1 ,         /* （取込用）データ区分１ */
+     ztrsyubetucd ,         /* （取込用）種別コード */
+     ztrcdkbn ,         /* （取込用）コード区分 */
+     ztrsakuseiymd6keta ,         /* （取込用）作成日６桁 */
+     ztrknjyymdfrom6keta ,         /* （取込用）勘定日（自）６桁 */
+     ztrknjyymdto6keta ,         /* （取込用）勘定日（至）６桁 */
+     ztrbankcd ,         /* （取込用）銀行番号 */
+     ztrbanknmkn ,         /* （取込用）銀行名（カナ） */
+     ztrshitencd ,         /* （取込用）支店番号 */
+     ztrsitennmkn ,         /* （取込用）支店名（カナ） */
+     ztryobiv3 ,         /* （取込用）予備項目Ｖ３ */
+     ztryokinkbn ,         /* （取込用）預金種目区分 */
+     ztrkouzano ,         /* （取込用）口座番号 */
+     ztrkznmkn ,         /* （取込用）口座名（カナ） */
+     ztrkasikosikbn ,         /* （取込用）貸越区分 */
+     ztrtuutyousysykbn ,         /* （取込用）通帳・証書区分 */
+     ztrtrhkmaezndk ,         /* （取込用）取引前残高 */
+     ztryobiv63 ,         /* （取込用）予備項目Ｖ６３ */
+     ztrrenno8 ,         /* （取込用）連番８桁 */
+     ztrdatakbn2 ,         /* （取込用）データ区分２ */
+     ztrsyoukaino ,         /* （取込用）照会番号 */
+     ztrknjyymd6keta ,         /* （取込用）勘定日６桁 */
+     ztrazkrhrdsymd6keta ,         /* （取込用）預入・払出日６桁 */
+     ztriribaraikbn ,         /* （取込用）入払区分 */
+     ztrtrhkkbn ,         /* （取込用）取引区分 */
+     ztrtrhkgk ,         /* （取込用）取引金額 */
+     ztrtatenkengk ,         /* （取込用）うち他店券金額 */
+     ztrkknteijiymd6keta ,         /* （取込用）交換呈示日６桁 */
+     ztrhwtrhnknymd6keta ,         /* （取込用）不渡返還日６桁 */
+     ztrtgtkgtkbn ,         /* （取込用）手形・小切手区分 */
+     ztrtgtkgtno ,         /* （取込用）手形・小切手番号 */
+     ztrryoutenno ,         /* （取込用）僚店番号 */
+     ztrhrkmirnincd ,         /* （取込用）振込依頼人コード */
+     ztrhrkmirninnm ,         /* （取込用）振込依頼人名 */
+     ztrsimukebanknmkn ,         /* （取込用）仕向銀行名 */
+     ztrsimuketennmkn ,         /* （取込用）仕向店名 */
+     ztrtekiyounaiyou ,         /* （取込用）摘要内容 */
+     ztrediinfo ,         /* （取込用）ＥＤＩ情報 */
+     ztryobiv1 ,         /* （取込用）予備項目Ｖ１ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_NyknmeisaiTr_Z;

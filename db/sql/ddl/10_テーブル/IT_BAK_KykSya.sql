@@ -1,0 +1,46 @@
+CREATE TABLE IT_BAK_KykSya (
+     kbnkey                                             VARCHAR     (2)                                                       NOT NULL  ,  /* 区分キー                                          */
+     syono                                              VARCHAR     (20)                                                      NOT NULL  ,  /* 証券番号                                          */
+     trkssikibetukey                                    VARCHAR     (18)                                                      NOT NULL  ,  /* 取消識別キー                                        */
+     kokno                                              VARCHAR     (10)                                                                ,  /* 顧客番号                                          */
+     kyksakuinmeino                                     VARCHAR     (10)                                                                ,  /* 契約者索引名番号                                      */
+     kyknmkn                                            VARCHAR     (18)                                                                ,  /* 契約者名（カナ）                                      */
+     kyknmkj                                            VARCHAR     (15)                                                                ,  /* 契約者名（漢字）                                      */
+     kyknmkjkhukakbn                                    VARCHAR     (1)                                                                 ,  /* 契約者名漢字化不可区分                                   */
+     kykseiymd                                          VARCHAR     (8)                                                                 ,  /* 契約者生年月日                                       */
+     kyksei                                             VARCHAR     (1)                                                                 ,  /* 契約者性別                                         */
+     kkkyktdk                                           VARCHAR     (2)                                                                 ,  /* 契約管理契約者続柄                                     */
+     tsinyno                                            VARCHAR     (7)                                                                 ,  /* 通信先郵便番号                                       */
+     tsinadr1kn                                         VARCHAR     (30)                                                                ,  /* 通信先住所１（カナ）                                    */
+     tsinadr1kj                                         VARCHAR     (30)                                                                ,  /* 通信先住所１（漢字）                                    */
+     tsinadr2kn                                         VARCHAR     (30)                                                                ,  /* 通信先住所２（カナ）                                    */
+     tsinadr2kj                                         VARCHAR     (30)                                                                ,  /* 通信先住所２（漢字）                                    */
+     tsinadr3kn                                         VARCHAR     (30)                                                                ,  /* 通信先住所３（カナ）                                    */
+     tsinadr3kj                                         VARCHAR     (30)                                                                ,  /* 通信先住所３（漢字）                                    */
+     tsintelno                                          VARCHAR     (14)                                                                ,  /* 通信先電話番号                                       */
+     dai2tsintelno                                      VARCHAR     (14)                                                                ,  /* 第２通信先電話番号                                     */
+     tsinmailaddress                                    VARCHAR     (40)                                                                ,  /* 通信先メールアドレス                                    */
+     kinmusakinm                                        VARCHAR     (25)                                                                ,  /* 勤務先名                                          */
+     hjndaiykkbn                                        VARCHAR     (2)                                                                 ,  /* 法人代表者役職区分                                     */
+     hjndaiyknm                                         VARCHAR     (30)                                                                ,  /* 法人代表者役職名                                      */
+     hjndainmkn                                         VARCHAR     (30)                                                                ,  /* 法人代表者名（カナ）                                    */
+     hjndainmkj                                         VARCHAR     (30)                                                                ,  /* 法人代表者名（漢字）                                    */
+     gyoumuKousinKinou                                  VARCHAR     (50)                                                                ,  /* 業務用更新機能ＩＤ                                     */
+     gyoumuKousinsyaId                                  VARCHAR     (15)                                                                ,  /* 業務用更新者ＩＤ                                      */
+     gyoumuKousinTime                                   VARCHAR     (17)                                                                ,  /* 業務用更新時間                                       */
+     kousinsyaId                                        VARCHAR     (30)                                                                ,  /* 更新者ＩＤ                                        */
+     kousinTime                                         VARCHAR     (17)                                                                ,  /* 更新時間                                          */
+     kousinKinou                                        VARCHAR     (50)                                                                ,  /* 更新機能                                          */
+     version                                            BIGINT      NOT NULL  DEFAULT 0                                                    /* バージョン                                        */
+)
+;
+
+ALTER TABLE IT_BAK_KykSya ADD CONSTRAINT PK_BAK_KykSya PRIMARY KEY (
+     kbnkey                                                   , /* 区分キー                                           */
+     syono                                                    , /* 証券番号                                           */
+     trkssikibetukey                                            /* 取消識別キー                                         */
+) ;
+
+CREATE INDEX IX1_BAK_KykSya ON IT_BAK_KykSya (
+     kyknmkn                                                    /* 契約者名（カナ）                                       */
+) ;

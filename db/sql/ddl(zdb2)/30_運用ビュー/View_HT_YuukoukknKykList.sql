@@ -1,0 +1,31 @@
+CREATE VIEW HT_YuukoukknKykList AS SELECT
+     mosno ,         /* 申込番号 */
+     tyouhyouymd ,         /* 帳票作成日 */
+     daimosno ,         /* 代表申込番号 */
+     hhknnmkj ,         /* 被保険者名（漢字） */
+     kyknmkj ,         /* 契約者名（漢字） */
+     syusyouhncd ,         /* 主契約商品コード */
+     syusyouhnnm ,         /* 主契約商品名 */
+     dntcd ,         /* 団体コード */
+     dntnm ,         /* 団体名 */
+     mosymd ,         /* 申込日 */
+     ssyukeymd ,         /* 支社受付日 */
+     kktkktymd ,         /* 告知書告知日 */
+     hjkktymd ,         /* 報状告知日 */
+     kthhbkbn ,         /* 決定保留不備区分 */
+     srhhbkbn ,         /* 成立保留不備区分 */
+     jimusrhkbn ,         /* 事務成立保留区分 */
+     syssrhkbn ,         /* システム成立保留区分 */
+     khnhbkbn ,         /* 基本不備区分 */
+     ketteikbn ,         /* 決定状態区分 */
+     rfstphrkkeiro ,         /* （帳票用）初回保険料払込経路 */
+     fstphrkkeirokbn ,         /* 初回保険料払込経路区分 */
+     keikakbn ,         /* 経過区分 */
+     fstnyknrsymd ,         /* 初回入金領収日 */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_YuukoukknKykList_Z;

@@ -1,0 +1,39 @@
+CREATE VIEW IT_Tesuuryou AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     tsrysyorikbn ,         /* 手数料処理区分 */
+     renno ,         /* 連番 */
+     syoriYmd ,         /* 処理年月日 */
+     kouryokuhasseiym ,         /* 効力発生年月 */
+     nyknkaisuuy ,         /* 入金回数（年） */
+     nyknkaisuum ,         /* 入金回数（月） */
+     mikeikapariflg ,         /* 未経過Ｐ有フラグ */
+     misyuupariflg ,         /* 未収Ｐ有フラグ */
+     mikeikap ,         /* 未経過保険料 */
+     mikeikap$ ,         /* 未経過保険料(通貨型) */
+     iktp ,         /* 一括払保険料 */
+     iktp$ ,         /* 一括払保険料(通貨型) */
+     seisekiym ,         /* 成績計上年月 */
+     hrkkaisuu ,         /* 払込回数 */
+     hrkkeiro ,         /* 払込経路 */
+     hrkp ,         /* 払込保険料 */
+     hrkp$ ,         /* 払込保険料(通貨型) */
+     jkipjytym ,         /* 次回Ｐ充当年月 */
+     haitounendo ,         /* 配当年度 */
+     cifcd ,         /* ＣＩＦコード */
+     smbckanriid ,         /* ＳＭＢＣ受付管理ＩＤ */
+     boskykjyoutai ,         /* 募集契約状態 */
+     kyknmkj ,         /* 契約者名（漢字） */
+     bosyuuym ,         /* 募集年月 */
+     nyknymd ,         /* 入金日 */
+     yenkansantkykwsrate ,         /* 円換算適用為替レート */
+     yenkansantkykwsrateymd ,         /* 円換算適用為替レート基準日 */
+     tikiktbrisyuruikbn ,         /* 定期一括払種類区分 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_Tesuuryou_Z;

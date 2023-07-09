@@ -1,0 +1,44 @@
+CREATE VIEW ZT_SyuSibouToukeiRn AS SELECT
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnhknsyukigou ,         /* （連携用）保険種類記号 */
+     zrnhknsyurui2keta ,         /* （連携用）保険種類（２桁） */
+     zrnatukaibetu ,         /* （連携用）扱別 */
+     zrnhhknseikbn ,         /* （連携用）被保険者性別区分 */
+     zrnhhknnen3 ,         /* （連携用）被保険者年令（３文字） */
+     zrntoutatunenrei ,         /* （連携用）到達年齢 */
+     zrnkykym ,         /* （連携用）契約年月 */
+     zrnsymtym ,         /* （連携用）消滅年月 */
+     zrnsyoriymd ,         /* （連携用）処理年月日 */
+     zrnkyktuuka ,         /* （連携用）契約通貨 */
+     zrnimustiyusbus ,         /* （連携用）医務査定用死亡Ｓ */
+     zrnsykgycd ,         /* （連携用）職業コード */
+     zrnhrkhuhukbn ,         /* （連携用）払込方法区分 */
+     zrnsirajikykkbn ,         /* （連携用）白地契約区分 */
+     zrnaatukaisosikicd ,         /* （連携用）Ａ扱者組織コード */
+     zrnaatukaikojincd ,         /* （連携用）Ａ扱者個人コード */
+     zrnsinsahouhou ,         /* （連携用）診査方法 */
+     zrnsinsasyacd ,         /* （連携用）診査者コード */
+     zrnketteikekkakbn ,         /* （連携用）決定結果区分 */
+     zrndakuhikettisyacd ,         /* （連携用）諾否決定者コード */
+     zrnsyoubyoutyuubunrui ,         /* （連携用）傷病中分類１ */
+     zrnsyoubyoucd1x5 ,         /* （連携用）傷病コード１（５文字） */
+     zrnsyoubyoucd2x5 ,         /* （連携用）傷病コード２（５文字） */
+     zrndaisiincd ,         /* （連携用）大死因コード */
+     zrntyuusiincd ,         /* （連携用）中死因コード */
+     zrnsyousiincd ,         /* （連携用）小死因コード */
+     zrnsoukisibouhyj ,         /* （連携用）早期死亡表示 */
+     zrnkeikakikankbn ,         /* （連携用）経過期間区分 */
+     zrnkoudosyougaiarihyj ,         /* （連携用）高度障害有表示 */
+     zrnkaijyokbn ,         /* （連携用）解除区分 */
+     zrnnensyuukbn ,         /* （連携用）年収区分 */
+     zrnhanbaikeirokbn ,         /* （連携用）販売経路区分 */
+     zrnoyadairitencd ,         /* （連携用）親代理店コード */
+     zrnbyoumeicd ,         /* （連携用）病名コード */
+     zrnsyksbyensitihsyutyhkumu ,         /* （連携用）初期死亡時円換算最低保証特約付加有無 */
+     zrnjyudkaigomehrtkhkumu ,         /* （連携用）重度介護前払特約付加有無 */
+     zrnijitoukeizennoukbn ,         /* （連携用）医事統計用前納区分 */
+     zrndai1hknkkn ,         /* （連携用）第１保険期間 */
+     zrnijitoukeitikshrtkykkbn ,         /* （連携用）医事統計用定期支払特約区分 */
+     zrnteikisiharaikinmanen ,         /* （連携用）定期支払金（万円） */
+     zrnyobiv78           /* （連携用）予備項目Ｖ７８ */
+FROM ZT_SyuSibouToukeiRn_Z;

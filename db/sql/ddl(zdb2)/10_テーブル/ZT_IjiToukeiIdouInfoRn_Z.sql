@@ -1,0 +1,104 @@
+CREATE TABLE ZT_IjiToukeiIdouInfoRn_Z (
+     zrnsyono                                           CHAR        (11)                                                      NOT NULL  ,  /* （連携用）証券番号 */
+     zrnsyoriymd                                        CHAR        (8)                                                       NOT NULL  ,  /* （連携用）処理年月日 */
+     zrnkykmfksnctr                                     DECIMAL     (7)                                                       NOT NULL  ,  /* （連携用）契約ＭＦ更新ＣＴＲ */
+     zrnsyukgu                                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）種類記号 */
+     zrnhhknnen2keta                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）被保険者年令（２桁） */
+     zrnhhknseikbn                                      CHAR        (1)                                                       NOT NULL  ,  /* （連携用）被保険者性別区分 */
+     zrnkykym                                           CHAR        (6)                                                       NOT NULL  ,  /* （連携用）契約年月 */
+     zrnkisnkihons                                      DECIMAL     (7)                                                       NOT NULL  ,  /* （連携用）計算基本Ｓ */
+     zrnimustiyusbus                                    DECIMAL     (7)                                                       NOT NULL  ,  /* （連携用）医務査定用死亡Ｓ */
+     zrnshrs                                            DECIMAL     (7)                                                       NOT NULL  ,  /* （連携用）支払Ｓ */
+     zrnshrymd                                          CHAR        (8)                                                       NOT NULL  ,  /* （連携用）支払年月日 */
+     zrnsymtgenincd                                     CHAR        (3)                                                       NOT NULL  ,  /* （連携用）消滅原因コード */
+     zrnkeikaym                                         CHAR        (4)                                                       NOT NULL  ,  /* （連携用）経過年月 */
+     zrnsbugenincd                                      CHAR        (3)                                                       NOT NULL  ,  /* （連携用）死亡原因コード */
+     zrnbsyym                                           CHAR        (6)                                                       NOT NULL  ,  /* （連携用）募集年月 */
+     zrndai2hhknnen                                     CHAR        (2)                                                       NOT NULL  ,  /* （連携用）第２被保険者年令 */
+     zrnmannenreihyj                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）満年令表示 */
+     zrntignmrtisyukgu                                  CHAR        (2)                                                       NOT NULL  ,  /* （連携用）逓減マル定種類記号 */
+     zrnhhknnentysihyj                                  CHAR        (1)                                                       NOT NULL  ,  /* （連携用）被保険者年令調整表示 */
+     zrndai2hhknnentysihyj                              CHAR        (1)                                                       NOT NULL  ,  /* （連携用）第２被保険者年令調整表示 */
+     zrnrenseimrtisyukgu                                CHAR        (2)                                                       NOT NULL  ,  /* （連携用）連生マル定種類記号 */
+     zrnbnktjitiktkarihyj                               CHAR        (1)                                                       NOT NULL  ,  /* （連携用）分割時定期特約有表示 */
+     zrnlivingneedsshrarihyj                            CHAR        (1)                                                       NOT NULL  ,  /* （連携用）リビングニーズ支払有表示 */
+     zrnlnkeikaym                                       CHAR        (4)                                                       NOT NULL  ,  /* （連携用）ＬＮ経過年月 */
+     zrnlnshrgenincd                                    CHAR        (4)                                                       NOT NULL  ,  /* （連携用）ＬＮ支払原因コード */
+     zrnkituenkbn                                       CHAR        (1)                                                       NOT NULL  ,  /* （連携用）喫煙区分 */
+     zrnkituenhonsuu                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）喫煙本数 */
+     zrngnspshrhyj                                      CHAR        (1)                                                       NOT NULL  ,  /* （連携用）がんサポ支払表示 */
+     zrngnspshrkeikaym                                  CHAR        (4)                                                       NOT NULL  ,  /* （連携用）がんサポ支払経過年月 */
+     zrngnspshrgenincd                                  CHAR        (4)                                                       NOT NULL  ,  /* （連携用）がんサポ支払原因コード */
+     zrnsyunyumrtisyukgu                                CHAR        (2)                                                       NOT NULL  ,  /* （連携用）収入マル定種類記号 */
+     zrnsysnymd                                         CHAR        (8)                                                       NOT NULL  ,  /* （連携用）初診年月日 */
+     zrnsindanymd                                       CHAR        (8)                                                       NOT NULL  ,  /* （連携用）診断年月日 */
+     zrnbyoumeicd1                                      CHAR        (4)                                                       NOT NULL  ,  /* （連携用）病名コード１ */
+     zrnbyoumeicd2                                      CHAR        (4)                                                       NOT NULL  ,  /* （連携用）病名コード２ */
+     zrnshrnaiyoukbn                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）支払内容区分 */
+     zrngituyuknkbn1                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）該当要件区分１ */
+     zrngituyuknkbn2                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）該当要件区分２ */
+     zrnsyeiebnri1                                      CHAR        (1)                                                       NOT NULL  ,  /* （連携用）シェイエ分類１ */
+     zrnsyeiebnri2                                      CHAR        (1)                                                       NOT NULL  ,  /* （連携用）シェイエ分類２ */
+     zrnminnesotacd1                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ミネソタコード１ */
+     zrnminnesotacd2                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ミネソタコード２ */
+     zrnminnesotacd3                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ミネソタコード３ */
+     zrnminnesotacd4                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ミネソタコード４ */
+     zrnminnesotacd5                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）ミネソタコード５ */
+     zrnmnsisiensindanjiyuu                             CHAR        (1)                                                       NOT NULL  ,  /* （連携用）慢性膵炎診断事由 */
+     zrnknkuhnsindanjiyuu                               CHAR        (1)                                                       NOT NULL  ,  /* （連携用）肝硬変診断事由 */
+     zrnhushrkbn                                        CHAR        (1)                                                       NOT NULL  ,  /* （連携用）不支払区分 */
+     zrnhushrym                                         CHAR        (6)                                                       NOT NULL  ,  /* （連携用）不支払年月 */
+     zrnsyuurouhunoukghasseiymd                         CHAR        (8)                                                       NOT NULL  ,  /* （連携用）就労不能介護傷病発生年月日 */
+     zrnsyuurouhunoukgjyoutaikbn                        CHAR        (1)                                                       NOT NULL  ,  /* （連携用）就労不能介護状態区分 */
+     zrnhokoukahikbn                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）歩行可否区分 */
+     zrnngerkahikbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）寝返り可否区分 */
+     zrnihukutyakudatukahikbn                           CHAR        (1)                                                       NOT NULL  ,  /* （連携用）衣服着脱可否区分 */
+     zrnnyykkahikbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）入浴可否区分 */
+     zrnsykmtssyukahikbn                                CHAR        (1)                                                       NOT NULL  ,  /* （連携用）食物摂取可否区分 */
+     zrnfktrsmtkahikbn                                  CHAR        (1)                                                       NOT NULL  ,  /* （連携用）拭き取り始末可否区分 */
+     zrnseiketuseiyoukahikbn                            CHAR        (1)                                                       NOT NULL  ,  /* （連携用）清潔整容可否区分 */
+     zrnsyuurouhunoujyoutaikbn                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）就労不能状態区分 */
+     zrnkyuuseisinkinkousokukbn                         CHAR        (1)                                                       NOT NULL  ,  /* （連携用）急性心筋梗塞区分 */
+     zrnnousottyuukbn                                   CHAR        (1)                                                       NOT NULL  ,  /* （連携用）脳卒中区分 */
+     zrnjinhuzenkbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）腎不全区分 */
+     zrnhukasyuksyu                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）付加主契約種類 */
+     zrntkkbn2                                          CHAR        (2)                                                       NOT NULL  ,  /* （連携用）特約区分（２文字） */
+     zrndoumyakusikkankbn                               CHAR        (1)                                                       NOT NULL  ,  /* （連携用）動脈疾患区分 */
+     zrnsykikjgykbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）職域事業区分 */
+     zrnkaijyokbn                                       CHAR        (1)                                                       NOT NULL  ,  /* （連携用）解除区分 */
+     zrnsymtymd                                         CHAR        (8)                                                       NOT NULL  ,  /* （連携用）消滅年月日 */
+     zrntyuutohukatkhyj                                 CHAR        (1)                                                       NOT NULL  ,  /* （連携用）中途付加特約表示 */
+     zrnyoukigjyutigituymd                              CHAR        (8)                                                       NOT NULL  ,  /* （連携用）要介護状態該当年月日 */
+     zrnyoukigjyutigeninkbn                             CHAR        (1)                                                       NOT NULL  ,  /* （連携用）要介護状態原因区分 */
+     zrntihougeninkbn                                   CHAR        (1)                                                       NOT NULL  ,  /* （連携用）痴呆原因区分 */
+     zrnsyukgusdkbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）種類記号世代区分 */
+     zrntignmrtisyukgusdkbn                             CHAR        (1)                                                       NOT NULL  ,  /* （連携用）逓減マル定種類記号世代区分 */
+     zrnrenseimrtisyukgusdkbn                           CHAR        (1)                                                       NOT NULL  ,  /* （連携用）連生マル定種類記号世代区分 */
+     zrnsyunyumrtisyukgusdkbn                           CHAR        (1)                                                       NOT NULL  ,  /* （連携用）収入マル定種類記号世代区分 */
+     zrnsbtoukeiidouinfopmenkbn                         CHAR        (2)                                                       NOT NULL  ,  /* （連携用）死亡統計異動情報Ｐ免区分 */
+     zrnpmenjikohasseiymd                               CHAR        (8)                                                       NOT NULL  ,  /* （連携用）Ｐ免事故発生年月日 */
+     zrnsyorino2moji                                    CHAR        (2)                                                       NOT NULL  ,  /* （連携用）処理番号（２文字） */
+     zrnksnym                                           CHAR        (6)                                                       NOT NULL  ,  /* （連携用）更新年月 */
+     zrnikoujisnskbn                                    CHAR        (1)                                                       NOT NULL  ,  /* （連携用）移行時診査区分 */
+     zrnsysnikoujiym                                    CHAR        (6)                                                       NOT NULL  ,  /* （連携用）終身移行時年月 */
+     zrnijitoukeiyuksnhyj                               CHAR        (1)                                                       NOT NULL  ,  /* （連携用）医事統計用更新表示 */
+     zrnsotodasiphkbnmnoshyouji                         CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出Ｐ不可分見直表示 */
+     zrnstdsstkjytkyuhyj                                CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出新特条適用表示 */
+     zrnstdssytikbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出集定区分 */
+     zrnbnktgosnzkkyksyono                              CHAR        (11)                                                      NOT NULL  ,  /* （連携用）分割後存続契約証券番号 */
+     zrnbnkttnknkbn                                     CHAR        (1)                                                       NOT NULL  ,  /* （連携用）分割転換区分 */
+     zrnkykjiqpackhyj                                   CHAR        (1)                                                       NOT NULL  ,  /* （連携用）契約時Ｑパック表示 */
+     zrnbnktjisisttkarihyj                              CHAR        (1)                                                       NOT NULL  ,  /* （連携用）分割時災疾特約有表示 */
+     zrnsotodasipmenkbn                                 CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出Ｐ免区分 */
+     zrnstdssnskbn                                      CHAR        (1)                                                       NOT NULL  ,  /* （連携用）外出診査区分 */
+     zrnyobisuuti7x1                                    DECIMAL     (7)                                                       NOT NULL  ,  /* （連携用）予備数値７＿１ */
+     zrnyobisuuti7x2                                    DECIMAL     (7)                                                       NOT NULL  ,  /* （連携用）予備数値７＿２ */
+     zrnyobimojihan15                                   CHAR        (15)                                                      NOT NULL  ,  /* （連携用）予備文字半角１５ */
+     zrnyobimojihan51                                   CHAR        (51)                                                      NOT NULL     /* （連携用）予備文字半角５１ */
+)
+;
+
+ALTER TABLE ZT_IjiToukeiIdouInfoRn_Z ADD CONSTRAINT PK_IjiToukeiIdouInfoRn PRIMARY KEY (
+     zrnsyono                                                 , /* （連携用）証券番号 */
+     zrnkykmfksnctr                                             /* （連携用）契約ＭＦ更新ＣＴＲ */
+) ;

@@ -1,0 +1,29 @@
+CREATE VIEW IT_FatcaInfo AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     renno ,         /* 連番 */
+     syoriYmd ,         /* 処理年月日 */
+     syorisosikicd ,         /* 処理組織コード */
+     fatcasnsikbn ,         /* ＦＡＴＣＡ宣誓区分 */
+     bikkjnssinfokbn ,         /* 米国人示唆情報区分 */
+     fatcakekkbn ,         /* ＦＡＴＣＡ結果区分 */
+     fatcahankeiikbn ,         /* ＦＡＴＣＡ判明経緯区分 */
+     bikknzsyno ,         /* 米国納税者番号 */
+     syomeiymd ,         /* 署名日 */
+     kokno ,         /* 顧客番号 */
+     fatcatgkbn ,         /* ＦＡＴＣＡ対象者区分 */
+     seionnmkn ,         /* 清音氏名（カナ） */
+     nmkn ,         /* 氏名（カナ） */
+     nmkj ,         /* 氏名（漢字） */
+     seiymd ,         /* 生年月日 */
+     seibetu ,         /* 性別 */
+     kouryokuendymd ,         /* 効力終了日 */
+     trkymd ,         /* 登録日 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_FatcaInfo_Z;

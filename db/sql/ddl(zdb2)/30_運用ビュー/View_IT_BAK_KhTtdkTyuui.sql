@@ -1,0 +1,40 @@
+CREATE VIEW IT_BAK_KhTtdkTyuui AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     trkssikibetukey ,         /* 取消識別キー */
+     ttdktyuuisetymd ,         /* 手続注意設定日 */
+     ttdktyuuisetnm ,         /* 手続注意設定者名 */
+     kktyuitakbn ,         /* 契約管理注意取扱区分 */
+     ttdktyuuinaiyou1 ,         /* 手続注意内容１ */
+     ttdktyuuinaiyou2 ,         /* 手続注意内容２ */
+     ttdktyuuinaiyou3 ,         /* 手続注意内容３ */
+     ttdktyuuikbn1 ,         /* 手続注意区分１ */
+     ttdktyuuikbn2 ,         /* 手続注意区分２ */
+     ttdktyuuikbn3 ,         /* 手続注意区分３ */
+     ttdktyuuikbn4 ,         /* 手続注意区分４ */
+     ttdktyuuikbn5 ,         /* 手続注意区分５ */
+     ttdktyuuikbnhsknaiyou1 ,         /* 手続注意区分補足内容１ */
+     ttdktyuuikbnhsknaiyou2 ,         /* 手続注意区分補足内容２ */
+     ttdktyuuikbnhsknaiyou3 ,         /* 手続注意区分補足内容３ */
+     ttdktyuuikbnhsknaiyou4 ,         /* 手続注意区分補足内容４ */
+     ttdktyuuikbnhsknaiyou5 ,         /* 手続注意区分補足内容５ */
+     ttdktyuuikbnsetymd1 ,         /* 手続注意区分設定日１ */
+     ttdktyuuikbnsetymd2 ,         /* 手続注意区分設定日２ */
+     ttdktyuuikbnsetymd3 ,         /* 手続注意区分設定日３ */
+     ttdktyuuikbnsetymd4 ,         /* 手続注意区分設定日４ */
+     ttdktyuuikbnsetymd5 ,         /* 手続注意区分設定日５ */
+     setsosikicd1 ,         /* 設定組織コード１ */
+     setsosikicd2 ,         /* 設定組織コード２ */
+     setsosikicd3 ,         /* 設定組織コード３ */
+     setsosikicd4 ,         /* 設定組織コード４ */
+     setsosikicd5 ,         /* 設定組織コード５ */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version ,         /* バージョン */
+     kykdrknhatudoujyoutai ,         /* 契約者代理権発動状態 */
+     kykdrdouiyouhi           /* 契約者代理人同意要否 */
+FROM IT_BAK_KhTtdkTyuui_Z;

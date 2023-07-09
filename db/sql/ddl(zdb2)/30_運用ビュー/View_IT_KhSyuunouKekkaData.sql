@@ -1,0 +1,29 @@
+CREATE VIEW IT_KhSyuunouKekkaData AS SELECT
+     kbnkey ,         /* 区分キー */
+     ansyuusyskbn ,         /* 案内収納用システム区分 */
+     syoriYmd ,         /* 処理年月日 */
+     syono ,         /* 証券番号 */
+     bankcd ,         /* 銀行コード */
+     sitencd ,         /* 支店コード */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     hurikaeymd ,         /* 振替日 */
+     jyuutouym ,         /* 充当年月 */
+     rsgaku ,         /* 領収金額 */
+     rsgaku$ ,         /* 領収金額(通貨型) */
+     jyutoukaisuuy ,         /* 充当回数（年） */
+     jyutoukaisuum ,         /* 充当回数（月） */
+     dantaikobetukbn ,         /* 団体個別区分 */
+     nyknaiyoukbn ,         /* 入金内容区分 */
+     hrkkaisuu ,         /* 払込回数 */
+     kzhurikaetkbtannaihyj ,         /* 口座振替特別案内表示 */
+     hurihunokbn ,         /* 振替不能理由区分 */
+     syuudaikocd ,         /* 収納代行社コード */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_KhSyuunouKekkaData_Z;

@@ -1,0 +1,38 @@
+CREATE VIEW ZT_SosikiRn AS SELECT
+     zrnsosikicd ,         /* （連携用）組織コード */
+     zrnsosikinmkbn ,         /* （連携用）組織名区分 */
+     zrnyobiv1 ,         /* （連携用）予備項目Ｖ１ */
+     zrnsosikinm20 ,         /* （連携用）組織名（２０文字） */
+     zrnkanjisosikinm20 ,         /* （連携用）漢字組織名（２０文字） */
+     zrnsosikihaisiy ,         /* （連携用）組織廃止年月年 */
+     zrnsosikihaisim ,         /* （連携用）組織廃止年月月 */
+     zrnsosikisinsetuy ,         /* （連携用）組織新設年月年 */
+     zrnsosikisinsetum ,         /* （連携用）組織新設年月月 */
+     zrntougetukeisyousosikicd ,         /* （連携用）当月継承組織コード */
+     zrntougetukeisyoueigyoubucd ,         /* （連携用）当月継承営業推進部コード */
+     zrnzengetukeisyousosikicd ,         /* （連携用）前月継承組織コード */
+     zrnzengetukeisyoueigyoubucd ,         /* （連携用）前月継承営業推進部コード */
+     zrnsosikikihontikucd ,         /* （連携用）組織基本地区コード */
+     zrnsosikikanjikaiadr30 ,         /* （連携用）組織漢字下位住所（３０文字） */
+     zrnkanjibilunm15 ,         /* （連携用）漢字ビル名称（１５文字） */
+     zrnsosikinyuukyokaisuu ,         /* （連携用）組織入居階数 */
+     zrnsosikidenwabangousigai ,         /* （連携用）組織電話番号市外局番 */
+     zrnsosikitdenwabangousinai ,         /* （連携用）組織電話番号市内局番 */
+     zrnsosikidenwabangoubangou ,         /* （連携用）組織電話番号番号 */
+     zrnsosikifaxbangousigai ,         /* （連携用）組織ＦＡＸ番号市外局番 */
+     zrnsosikifaxbangousinai ,         /* （連携用）組織ＦＡＸ番号市内局番 */
+     zrnsosikifaxbangoubangou ,         /* （連携用）組織ＦＡＸ番号番号 */
+     zrnkouryokukaisiy ,         /* （連携用）効力開始年月年 */
+     zrnkouryokukaisim ,         /* （連携用）効力開始年月月 */
+     zrnkouryokukaisid ,         /* （連携用）効力開始年月日 */
+     zrnnewsosikikihontikucd ,         /* （連携用）(変更後)組織基本地区コード */
+     zrnnewkanjisosikikaiadr30 ,         /* （連携用）(変更後)漢字組織下位住所（３０文字） */
+     zrnnewkanjibilunm15 ,         /* （連携用）(変更後)漢字ビル名称（１５文字） */
+     zrnnewsosikinyuukyokaisuu ,         /* （連携用）(変更後)組織入居階数 */
+     zrnnewsosikidenwasigai ,         /* （連携用）(変更後)組織電話番号市外局番 */
+     zrnnewsosikidenwasinai ,         /* （連携用）(変更後)組織電話番号市内局番 */
+     zrnnewsosikidenwabangou ,         /* （連携用）(変更後)組織電話番号番号 */
+     zrnnewsosikifaxsigai ,         /* （連携用）(変更後)組織ＦＡＸ番号市外局番 */
+     zrnnewsosikifaxsinai ,         /* （連携用）(変更後)組織ＦＡＸ番号市内局番 */
+     zrnnewsosikifaxbangou           /* （連携用）(変更後)組織ＦＡＸ番号番号 */
+FROM ZT_SosikiRn_Z;

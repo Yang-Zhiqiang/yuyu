@@ -1,0 +1,36 @@
+CREATE VIEW ZT_KhDrtenMinyuuKykMeisaiTy AS SELECT
+     ztysyoriymd ,         /* （中継用）処理年月日 */
+     ztybsydrtencd ,         /* （中継用）募集代理店コード */
+     ztybosyuunincd ,         /* （中継用）募集人コード */
+     ztysyono ,         /* （中継用）証券番号 */
+     ztypjyuutouyymmwareki4keta ,         /* （中継用）保険料充当年月（和暦）（４桁） */
+     ztykykymd ,         /* （中継用）契約年月日 */
+     ztycifcd ,         /* （中継用）ＣＩＦコード */
+     ztybosyuudrtennmkj ,         /* （中継用）募集代理店名（漢字） */
+     ztyminyuujyutuymd ,         /* （中継用）未入充当年月日 */
+     ztyhassinka ,         /* （中継用）発信課 */
+     ztybsyym ,         /* （中継用）募集年月 */
+     ztydrtnbsyunnmisyou ,         /* （中継用）代理店募集人名称（漢字） */
+     ztykydatkikbn ,         /* （中継用）共同扱区分 */
+     ztykyknmkj35 ,         /* （中継用）契約者名（漢字）（３５桁） */
+     ztyhrkkaisuukbn ,         /* （中継用）払込回数区分 */
+     ztyhrkkeirokbn ,         /* （中継用）払込経路区分 */
+     ztyhrkgk ,         /* （中継用）払込額 */
+     ztyknkimnyuuryu ,         /* （中継用）今回未入理由 */
+     ztybosyuuningyouhaiymd ,         /* （中継用）募集人業廃年月日 */
+     ztykzhurikaebankcd ,         /* （中継用）口座振替銀行番号 */
+     ztykzhurikaesitencd ,         /* （中継用）口座振替支店番号 */
+     ztykzhurikaeyokinkbn ,         /* （中継用）口座振替預金種目区分 */
+     ztykzhurikaekouzano ,         /* （中継用）口座振替口座番号 */
+     ztyknyukknmei ,         /* （中継用）金融機関名 */
+     ztyknyykknstnmei ,         /* （中継用）金融機関支店名 */
+     ztydantaicd ,         /* （中継用）団体コード */
+     ztykjdntnm ,         /* （中継用）漢字団体名 */
+     zty30ketahknsyuruimei ,         /* （中継用）３０桁保険種類名 */
+     ztybkofccd ,         /* （中継用）バックオフィスコード */
+     ztyhjnkykhyj ,         /* （中継用）法人契約表示 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_KhDrtenMinyuuKykMeisaiTy_Z;

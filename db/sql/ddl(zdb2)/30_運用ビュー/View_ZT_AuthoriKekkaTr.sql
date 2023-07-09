@@ -1,0 +1,30 @@
+CREATE VIEW ZT_AuthoriKekkaTr AS SELECT
+     ztrrecordkbn ,         /* （取込用）レコード区分 */
+     ztrkaiintourokukbn ,         /* （取込用）会員登録区分 */
+     ztrcreditkessaiyouno ,         /* （取込用）クレジットカード決済用番号 */
+     ztryobiv34 ,         /* （取込用）予備項目Ｖ３４ */
+     ztrcardno ,         /* （取込用）カード番号 */
+     ztrcardyuukoukigen ,         /* （取込用）カード有効期限 */
+     ztrauthorigkjyusin ,         /* （取込用）オーソリ金額（受信） */
+     ztrauthorikekkaerrorcd ,         /* （取込用）オーソリ結果エラーコード */
+     ztrbluegateerrorcd ,         /* （取込用）ＢｌｕｅＧａｔｅエラーコード */
+     ztryobiv25 ,         /* （取込用）予備項目Ｖ２５ */
+     ztrhisimukekaisyacd ,         /* （取込用）被仕向会社コード */
+     ztryobiv5 ,         /* （取込用）予備項目Ｖ５ */
+     ztrwentryuserid ,         /* （取込用）ＷエントリユーザＩＤ */
+     ztrerrorcomment ,         /* （取込用）エラーコメント */
+     ztrniniinfo ,         /* （取込用）任意情報 */
+     ztrskjkssityuumonno ,         /* （取込用）即時決済注文番号 */
+     ztrskjkssiauthorigk ,         /* （取込用）即時決済オーソリ金額 */
+     ztrskjkssiyosinkekka ,         /* （取込用）即時決済与信結果 */
+     ztrskjkssibunruikbn ,         /* （取込用）即時決済分類区分 */
+     ztrdatasyorijyoukyou ,         /* （取込用）データ処理状況 */
+     ztrdatajyusinymd ,         /* （取込用）データ受信日 */
+     ztryobiv25x2 ,         /* （取込用）予備項目Ｖ２５＿２ */
+     ztrrenno7 ,         /* （取込用）連番７桁 */
+     ztryobiv33 ,         /* （取込用）予備項目Ｖ３３ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_AuthoriKekkaTr_Z;

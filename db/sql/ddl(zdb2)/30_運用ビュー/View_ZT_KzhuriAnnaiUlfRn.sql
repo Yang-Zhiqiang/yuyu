@@ -1,0 +1,38 @@
+CREATE VIEW ZT_KzhuriAnnaiUlfRn AS SELECT
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrndantaicd ,         /* （連携用）団体コード */
+     zrnkzhurikaebankcd ,         /* （連携用）口座振替銀行番号 */
+     zrnkzhurikaesitencd ,         /* （連携用）口座振替支店番号 */
+     zrnkzhurikaeyokinkbn ,         /* （連携用）口座振替預金種目区分 */
+     zrnkzhurikaekouzano ,         /* （連携用）口座振替口座番号 */
+     zrnkzhurikaeannaikbn ,         /* （連携用）口座振替案内区分 */
+     zrnhurikaeymd ,         /* （連携用）振替年月日 */
+     zrnrsgaku ,         /* （連携用）領収金額 */
+     zrnjyuutouym ,         /* （連携用）充当年月 */
+     zrnjyuutounensuu ,         /* （連携用）充当年数 */
+     zrnjyuutoutukisuu ,         /* （連携用）充当月数 */
+     zrndantaikobetukbn ,         /* （連携用）団体個別区分 */
+     zrnkykymd ,         /* （連携用）契約年月日 */
+     zrnhknsyukigou ,         /* （連携用）保険種類記号 */
+     zrnnyknaiyou ,         /* （連携用）入金内容 */
+     zrnaatukaisosikicd ,         /* （連携用）Ａ扱者組織コード */
+     zrnhrkkaisuukbn ,         /* （連携用）払込回数区分 */
+     zrnkzhurikaetkbtannaihyj ,         /* （連携用）口座振替特別案内表示 */
+     zrnhrkgk ,         /* （連携用）払込額 */
+     zrnyobin11 ,         /* （連携用）予備項目Ｎ１１ */
+     zrnyobin11x2 ,         /* （連携用）予備項目Ｎ１１＿２ */
+     zrnyobin11x3 ,         /* （連携用）予備項目Ｎ１１＿３ */
+     zrntsnsknewyno ,         /* （連携用）通信先新郵便番号 */
+     zrntsnsknewtikucd ,         /* （連携用）通信先新地区コード */
+     zrnaatukaikojincd ,         /* （連携用）Ａ扱者個人コード */
+     zrnbsyym ,         /* （連携用）募集年月 */
+     zrnteikeisyouhinhyj ,         /* （連携用）提携商品表示 */
+     zrnkzmeiginmei ,         /* （連携用）口座名義人名 */
+     zrnkeizokup ,         /* （連携用）継続保険料 */
+     zrniktwaribikikgk ,         /* （連携用）一括割引額 */
+     zrnkeizokupnaiyoukbn ,         /* （連携用）継続Ｐ内容区分 */
+     zrnhisaijiannaitsghyj ,         /* （連携用）被災時案内対象外表示 */
+     zrndaisyono ,         /* （連携用）代表証券番号 */
+     zrnkzhurisyuudaikokbn ,         /* （連携用）口座振替収納代行会社区分 */
+     zrnyobiv17           /* （連携用）予備項目Ｖ１７ */
+FROM ZT_KzhuriAnnaiUlfRn_Z;

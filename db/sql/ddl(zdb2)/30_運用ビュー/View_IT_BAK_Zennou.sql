@@ -1,0 +1,34 @@
+CREATE VIEW IT_BAK_Zennou AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     trkssikibetukey ,         /* 取消識別キー */
+     zennoukaisiymd ,         /* 前納開始年月日 */
+     renno ,         /* 連番 */
+     zennounyuukinsyoriymd ,         /* 前納入金処理日 */
+     zennounyuukindenno ,         /* 前納入金伝票番号 */
+     zennounyuukindenymd ,         /* 前納入金伝票日付 */
+     ryosyuymd ,         /* 領収日 */
+     zennoukikan ,         /* 前納期間 */
+     zennounyuukinkgk ,         /* 前納入金額 */
+     zennounyuukinkgk$ ,         /* 前納入金額(通貨型) */
+     zennoujihrkp ,         /* 前納時払込保険料 */
+     zennoujihrkp$ ,         /* 前納時払込保険料(通貨型) */
+     zennouseisankbn ,         /* 前納精算区分 */
+     zennouseisansyoriymd ,         /* 前納精算処理日 */
+     zennouseisankgk ,         /* 前納精算金額 */
+     zennouseisankgk$ ,         /* 前納精算金額(通貨型) */
+     zennouseisankijyunymd ,         /* 前納精算基準日 */
+     zennouseisandenymd ,         /* 前納精算伝票日付 */
+     annaisaikaiym ,         /* 案内再開年月 */
+     kjsmyouzennoukaisiymd ,         /* 控除証明用前納開始年月日 */
+     kjsmyouzennoukikanm ,         /* 控除証明用前納期間（月） */
+     kjsmyouzennounyuukinkgk ,         /* 控除証明用前納入金額 */
+     kjsmyouzennounyuukinkgk$ ,         /* 控除証明用前納入金額(通貨型) */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_BAK_Zennou_Z;

@@ -1,0 +1,46 @@
+CREATE VIEW HT_MosSyouhn AS SELECT
+     mosno ,         /* 申込番号 */
+     syouhncd ,         /* 商品コード */
+     syouhnsdno ,         /* 商品世代番号 */
+     ryouritusdno ,         /* 料率世代番号 */
+     syutkkbn ,         /* 主契約特約区分 */
+     yoteiriritu ,         /* 予定利率 */
+     sknenkinsyu ,         /* 新契約年金種類 */
+     kihons ,         /* 基本Ｓ */
+     kihons$ ,         /* 基本Ｓ(通貨型) */
+     seitoukihons ,         /* 正当基本Ｓ */
+     seitoukihons$ ,         /* 正当基本Ｓ(通貨型) */
+     syutkp ,         /* 主契約・特約Ｐ */
+     syutkp$ ,         /* 主契約・特約Ｐ(通貨型) */
+     hrktuukasyutkp ,         /* 払込通貨主契約・特約Ｐ */
+     hrktuukasyutkp$ ,         /* 払込通貨主契約・特約Ｐ(通貨型) */
+     tkjyp ,         /* 特条保険料 */
+     tkjyp$ ,         /* 特条保険料(通貨型) */
+     katakbn ,         /* 型区分 */
+     kyhkatakbn ,         /* 給付型区分 */
+     syukyhkinkatakbn ,         /* 手術給付金型区分 */
+     khnkyhkgbairitukbn ,         /* 基本給付金額倍率区分 */
+     rokudaildkbn ,         /* ６大生活習慣病追加給付型区分 */
+     hknkkn ,         /* 保険期間 */
+     hrkkkn ,         /* 払込期間 */
+     hknkknsmnkbn ,         /* 保険期間歳満期区分 */
+     hrkkknsmnkbn ,         /* 払込期間歳満期区分 */
+     dai1hknkkn ,         /* 第１保険期間 */
+     tumitateriritu ,         /* 積立利率 */
+     tmttknzoukaritujygn ,         /* 積立金増加率上限 */
+     setteibairitu ,         /* 設定倍率 */
+     rendouritu ,         /* 連動率 */
+     teikisiharaikin ,         /* 定期支払金 */
+     teikisiharaikin$ ,         /* 定期支払金(通貨型) */
+     loadinghnkgtumitateriritu ,         /* ローディング変更後積立利率 */
+     kihons2 ,         /* 基本Ｓ_2 */
+     kihons2$ ,         /* 基本Ｓ_2(通貨型) */
+     hrktuukasyutkp2 ,         /* 払込通貨主契約・特約Ｐ＿２ */
+     hrktuukasyutkp2$ ,         /* 払込通貨主契約・特約Ｐ＿２(通貨型) */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_MosSyouhn_Z;

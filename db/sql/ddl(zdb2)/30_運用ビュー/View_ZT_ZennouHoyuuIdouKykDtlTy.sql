@@ -1,0 +1,44 @@
+CREATE VIEW ZT_ZennouHoyuuIdouKykDtlTy AS SELECT
+     ztyraysystemhyj ,         /* （中継用）ＲＡＹシステム表示 */
+     ztyyobiv9 ,         /* （中継用）予備項目Ｖ９ */
+     ztyrecordkbn ,         /* （中継用）レコード区分 */
+     ztykeijyouym ,         /* （中継用）計上年月 */
+     ztysyoricd ,         /* （中継用）処理コード */
+     ztyhenkousyoriymd ,         /* （中継用）変更処理年月日 */
+     ztydenymd ,         /* （中継用）伝票日付 */
+     ztyzennoucalckijyunymd ,         /* （中継用）前納計算基準年月日 */
+     ztykykmfksnctr ,         /* （中継用）契約ＭＦ更新ＣＴＲ */
+     ztyzennoubikinkbn ,         /* （中継用）前納備金区分 */
+     ztyyobiv10 ,         /* （中継用）予備項目Ｖ１０ */
+     ztydatakanrino ,         /* （中継用）データ管理番号 */
+     ztysyukeiyakusyuruicdv2 ,         /* （中継用）主契約種類コードＶ２ */
+     ztykbnkeiriyousegmentcd ,         /* （中継用）区分経理用セグメントコード */
+     ztyzennoutoukeilistkbn ,         /* （中継用）前納統計リスト区分 */
+     ztykykymd ,         /* （中継用）契約年月日 */
+     ztyzennouwrbkrt ,         /* （中継用）前納割引率 */
+     ztytkyrt1 ,         /* （中継用）適用利率１ */
+     ztytndzndkhikakukbn ,         /* （中継用）当年度残高比較区分 */
+     ztyyobiv5 ,         /* （中継用）予備項目Ｖ５ */
+     ztyzennoukaisiymd ,         /* （中継用）前納開始年月日 */
+     ztyzennoukbn ,         /* （中継用）前納区分 */
+     ztyzennoukikan ,         /* （中継用）前納期間 */
+     ztyzennounyuukinymd ,         /* （中継用）前納入金年月日 */
+     ztyzennounyuukinkgk ,         /* （中継用）前納入金額 */
+     ztyyobiv5x2 ,         /* （中継用）予備項目Ｖ５＿２ */
+     ztyansyuyouyobin10 ,         /* （中継用）案内収納用予備項目Ｎ１０ */
+     ztyyobiv10x2 ,         /* （中継用）予備項目Ｖ１０＿２ */
+     ztytoukimatuzennouzndk ,         /* （中継用）当期末前納残高金額 */
+     ztytoukijyuutoup ,         /* （中継用）当期充当保険料 */
+     ztytoukizennouseisangk ,         /* （中継用）当期前納精算額 */
+     ztytoukizennounyuukinkgk ,         /* （中継用）当期前納入金額 */
+     ztyyokukinenbaraip ,         /* （中継用）翌期年払Ｐ */
+     ztywrbkrttkyrttekiyouzndk ,         /* （中継用）割引利率適用残高 */
+     ztyyobin11 ,         /* （中継用）予備項目Ｎ１１ */
+     ztyyobin11x2 ,         /* （中継用）予備項目Ｎ１１＿２ */
+     ztyyobin11x3 ,         /* （中継用）予備項目Ｎ１１＿３ */
+     ztyyobin11x4 ,         /* （中継用）予備項目Ｎ１１＿４ */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM ZT_ZennouHoyuuIdouKykDtlTy_Z;

@@ -1,0 +1,42 @@
+CREATE VIEW IT_MinyuList AS SELECT
+     kbnkey ,         /* 区分キー */
+     syono ,         /* 証券番号 */
+     tyouhyouymd ,         /* 帳票作成日 */
+     drtencd ,         /* 代理店コード */
+     drtentsinyno ,         /* 代理店通信先郵便番号 */
+     drtentsinadrkj ,         /* 代理店通信先住所（漢字） */
+     drtennmkj ,         /* 代理店名（漢字） */
+     tsinyno ,         /* 通信先郵便番号 */
+     tsinadr1kj ,         /* 通信先住所１（漢字） */
+     tsinadr2kj ,         /* 通信先住所２（漢字） */
+     tsinadr3kj ,         /* 通信先住所３（漢字） */
+     tsintelno ,         /* 通信先電話番号 */
+     dai2tsintelno ,         /* 第２通信先電話番号 */
+     kyknmkj ,         /* 契約者名（漢字） */
+     hhknnmkj ,         /* 被保険者名（漢字） */
+     syouhnnm ,         /* 商品名 */
+     kykymd ,         /* 契約日 */
+     hrkkeiro ,         /* 払込経路 */
+     hrkkaisuu ,         /* 払込回数 */
+     jkipjytym ,         /* 次回Ｐ充当年月 */
+     hrkp ,         /* 払込保険料 */
+     hrkp$ ,         /* 払込保険料(通貨型) */
+     yykknmnryymd ,         /* 猶予期間満了日 */
+     hurihunokbn ,         /* 振替不能理由区分 */
+     bankcd ,         /* 銀行コード */
+     banknmkj ,         /* 銀行名（漢字） */
+     sitencd ,         /* 支店コード */
+     sitennmkj ,         /* 支店名（漢字） */
+     yokinkbn ,         /* 預金種目区分 */
+     kouzano ,         /* 口座番号 */
+     kzmeiginmkn ,         /* 口座名義人氏名（カナ） */
+     nexthurikaeymd ,         /* 次回振替日 */
+     rcreditcardno ,         /* （帳票用）クレジットカード番号 */
+     gyoumuKousinKinou ,         /* 業務用更新機能ＩＤ */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM IT_MinyuList_Z;

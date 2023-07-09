@@ -1,0 +1,34 @@
+CREATE VIEW JT_MisyuupMkkpDetail AS SELECT
+     skno ,         /* 請求番号 */
+     syono ,         /* 証券番号 */
+     seikyuurirekino ,         /* 請求履歴番号 */
+     datarenno ,         /* データ連番 */
+     dtlmisyuup ,         /* 明細未収保険料 */
+     dtlmisyuup$ ,         /* 明細未収保険料(通貨型) */
+     dtlmisyuupgaika ,         /* 明細未収保険料（外貨） */
+     dtlmisyuupgaika$ ,         /* 明細未収保険料（外貨）(通貨型) */
+     dtlmisyuupgaikayenknsnkngk ,         /* 明細未収保険料（外貨）円換算金額 */
+     dtlmisyuupgaikayenknsnkngk$ ,         /* 明細未収保険料（外貨）円換算金額(通貨型) */
+     dtlmisyuupiktnkumu ,         /* 明細未収保険料一括入金有無 */
+     dtlmisyuuphrkkaisuu ,         /* 明細未収保険料払込回数 */
+     dtlmisyuupjtkaisuuy ,         /* 明細未収保険料充当回数（年） */
+     dtlmisyuupjtkaisuum ,         /* 明細未収保険料充当回数（月） */
+     dtlmisyuupjytym ,         /* 明細未収保険料充当年月 */
+     dtlmikeikap ,         /* 明細未経過保険料 */
+     dtlmikeikap$ ,         /* 明細未経過保険料(通貨型) */
+     dtlmikeikapgaika ,         /* 明細未経過保険料（外貨） */
+     dtlmikeikapgaika$ ,         /* 明細未経過保険料（外貨）(通貨型) */
+     dtlmikeikapnykdenymd ,         /* 明細未経過保険料入金伝票日付 */
+     dtlmikeikaphrkkaisuu ,         /* 明細未経過保険料払込回数 */
+     dtlmikeikapjtkaisuuy ,         /* 明細未経過保険料充当回数（年） */
+     dtlmikeikapjtkaisuum ,         /* 明細未経過保険料充当回数（月） */
+     dtlmikeikapjytym ,         /* 明細未経過保険料充当年月 */
+     kossyoricd ,         /* 更新処理コード */
+     kossyorisscd ,         /* 更新処理詳細コード */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM JT_MisyuupMkkpDetail_Z;

@@ -1,0 +1,44 @@
+CREATE VIEW HT_JidouSyuunouMeisai AS SELECT
+     syoriYmd ,         /* 処理年月日 */
+     kessankbn ,         /* 決算区分 */
+     rstuukasyu ,         /* 領収通貨種類 */
+     sgittikensuu ,         /* 照合一致件数 */
+     sgittigk ,         /* 照合一致金額 */
+     sgittigk$ ,         /* 照合一致金額(通貨型) */
+     sgittigkyen ,         /* 照合一致金額（円） */
+     sgittigkyen$ ,         /* 照合一致金額（円）(通貨型) */
+     sghuittikensuu ,         /* 照合不一致件数 */
+     sghuittigk ,         /* 照合不一致金額 */
+     sghuittigk$ ,         /* 照合不一致金額(通貨型) */
+     mostrkskensuu ,         /* 申込取消件数 */
+     mostrksgk ,         /* 申込取消金額 */
+     mostrksgk$ ,         /* 申込取消金額(通貨型) */
+     yuukoukknkeikakensuu ,         /* 有効期間経過件数 */
+     yuukoukknkeikagk ,         /* 有効期間経過金額 */
+     yuukoukknkeikagk$ ,         /* 有効期間経過金額(通貨型) */
+     yokukurikosikensuu ,         /* 翌日繰越件数 */
+     yokukurikosigk ,         /* 翌日繰越金額 */
+     yokukurikosigk$ ,         /* 翌日繰越金額(通貨型) */
+     yokukurikosigkyen ,         /* 翌日繰越金額（円） */
+     yokukurikosigkyen$ ,         /* 翌日繰越金額（円）(通貨型) */
+     jnykntsgkensuu ,         /* 自動入金対象外件数 */
+     jnykntsggk ,         /* 自動入金対象外金額 */
+     jnykntsggk$ ,         /* 自動入金対象外金額(通貨型) */
+     tjkensuu ,         /* 当日件数 */
+     tjgk ,         /* 当日金額 */
+     tjgk$ ,         /* 当日金額(通貨型) */
+     tjgkyen ,         /* 当日金額（円） */
+     tjgkyen$ ,         /* 当日金額（円）(通貨型) */
+     zenjitukurikosikensuu ,         /* 前日繰越件数 */
+     zenjitukurikosigk ,         /* 前日繰越金額 */
+     zenjitukurikosigk$ ,         /* 前日繰越金額(通貨型) */
+     hrkmtsrykensuu ,         /* 振込手数料件数 */
+     hrkmtsrykingk ,         /* 振込手数料金額 */
+     hrkmtsrykingk$ ,         /* 振込手数料金額(通貨型) */
+     gyoumuKousinsyaId ,         /* 業務用更新者ＩＤ */
+     gyoumuKousinTime ,         /* 業務用更新時間 */
+     kousinsyaId ,         /* 更新者ＩＤ */
+     kousinTime ,         /* 更新時間 */
+     kousinKinou ,         /* 更新機能 */
+     version           /* バージョン */
+FROM HT_JidouSyuunouMeisai_Z;

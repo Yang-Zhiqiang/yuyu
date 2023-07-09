@@ -1,0 +1,1 @@
+INSERT INTO HM_KetteiSya (ketsyacd, palketsyacd, ketsyanm, mostenkenrankkbn, knksateirankkbn, knksateijygns, knksateijygns$, imusateirankkbn, imusateijygns, imusateijygns$, gyoumuKousinsyaId, gyoumuKousinTime, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('KYOUYOU', '', '‹¤—p', '5', '4', '999999999', 'YEN', '3', '999999999', 'YEN', 'init', '0', 'init', '0', 'init', '0');

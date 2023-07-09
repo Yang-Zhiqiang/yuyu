@@ -1,0 +1,1 @@
+INSERT INTO BM_ChkJhNenreiNensyuuTuusanS (hhknfromnen, hhkntonen, hhknfromnensyuu, hhkntonensyuu, gnds1, gnds1$, gnds2, gnds2$, itijibrgnds1, itijibrgnds1$, itijibrgnds2, itijibrgnds2$, kousinsyaId, kousinTime, kousinKinou, version) VALUES ('0', '99', '2', '5', '700000000', 'YEN', '999999999', 'YEN', '700000000', 'YEN', '999999999', 'YEN', 'init', '0', 'init', '0');

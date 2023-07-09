@@ -1,0 +1,42 @@
+CREATE TABLE ZT_DrtenMinyuKykDtlSyokaiTy (
+     ztysakuseiym                                       VARCHAR     (6)                                                       NOT NULL  ,  /* （中継用）作成年月 */
+     ztybsydrtencd                                      VARCHAR     (7)                                                       NOT NULL  ,  /* （中継用）募集代理店コード */
+     ztytntusycd                                        VARCHAR     (6)                                                       NOT NULL  ,  /* （中継用）担当者コード */
+     ztysyono                                           VARCHAR     (11)                                                      NOT NULL  ,  /* （中継用）証券番号 */
+     ztypjyuutouyymmwareki4keta                         VARCHAR     (4)                                                                 ,  /* （中継用）保険料充当年月（和暦）（４桁） */
+     ztykykymwareki4keta                                VARCHAR     (4)                                                                 ,  /* （中継用）契約年月（和暦）（４桁） */
+     ztycifcd                                           VARCHAR     (15)                                                                ,  /* （中継用）ＣＩＦコード */
+     ztyatesakinm                                       VARCHAR     (20)                                                                ,  /* （中継用）宛先名 */
+     ztyminyuujyutuymdyofuri                            VARCHAR     (15)                                                                ,  /* （中継用）未入充当年月（預振） */
+     ztyminyuujyutuymdyofuriigi                         VARCHAR     (10)                                                                ,  /* （中継用）未入充当年月（預振以外） */
+     ztyhassinka                                        VARCHAR     (31)                                                                ,  /* （中継用）発信課 */
+     ztytelno15keta                                     VARCHAR     (15)                                                                ,  /* （中継用）電話番号（１５桁） */
+     ztybsyymwareki4keta                                VARCHAR     (4)                                                                 ,  /* （中継用）募集年月（和暦）（４桁） */
+     ztytntusynm                                        VARCHAR     (10)                                                                ,  /* （中継用）担当者名 */
+     ztykydatkikbnkj                                    VARCHAR     (1)                                                                 ,  /* （中継用）共同扱区分（漢字） */
+     ztykyknmkj20                                       VARCHAR     (20)                                                                ,  /* （中継用）契約者名（漢字）（２０桁） */
+     ztyhrkkaisuukj                                     VARCHAR     (3)                                                                 ,  /* （中継用）払込回数（漢字） */
+     ztyhrkkeirokj                                      VARCHAR     (3)                                                                 ,  /* （中継用）払込経路（漢字） */
+     ztyp11keta                                         NUMBER      (11)                                                                ,  /* （中継用）保険料（１１桁） */
+     ztyknkimnyuuryukj                                  VARCHAR     (5)                                                                 ,  /* （中継用）今回未入理由（漢字） */
+     ztyjikaiminyuuji                                   VARCHAR     (5)                                                                 ,  /* （中継用）次回未入時 */
+     ztytntusygyouhaiinfo                               VARCHAR     (4)                                                                 ,  /* （中継用）担当者業廃情報 */
+     ztyhrkkeirobtjhmidasi                              VARCHAR     (5)                                                                 ,  /* （中継用）払込経路別情報見出し */
+     ztyhrkkeirobtjh                                    VARCHAR     (60)                                                                ,  /* （中継用）払込経路別情報 */
+     ztyhknsyuruimei                                    VARCHAR     (30)                                                                ,  /* （中継用）保険種類名 */
+     ztybkofccd                                         VARCHAR     (3)                                                                 ,  /* （中継用）バックオフィスコード */
+     ztydbskyoteiymd                                    VARCHAR     (6)                                                                 ,  /* （中継用）ＤＢ削除予定年月 */
+     ztyyobiv24                                         VARCHAR     (24)                                                                ,  /* （中継用）予備項目Ｖ２４ */
+     kousinsyaId                                        VARCHAR     (30)                                                                ,  /* 更新者ＩＤ */
+     kousinTime                                         VARCHAR     (17)                                                                ,  /* 更新時間 */
+     kousinKinou                                        VARCHAR     (50)                                                                ,  /* 更新機能 */
+     version                                            BIGINT      NOT NULL  DEFAULT 0                                                    /* バージョン */
+)
+;
+
+ALTER TABLE ZT_DrtenMinyuKykDtlSyokaiTy ADD CONSTRAINT PK_DrtenMinyuKykDtlSyokaiTy PRIMARY KEY (
+     ztysakuseiym                                             , /* （中継用）作成年月 */
+     ztybsydrtencd                                            , /* （中継用）募集代理店コード */
+     ztytntusycd                                              , /* （中継用）担当者コード */
+     ztysyono                                                   /* （中継用）証券番号 */
+) ;

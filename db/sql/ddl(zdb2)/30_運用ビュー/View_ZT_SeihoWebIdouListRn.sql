@@ -1,0 +1,29 @@
+CREATE VIEW ZT_SeihoWebIdouListRn AS SELECT
+     zrnsakuseiymd7keta ,         /* （連携用）作成年月（７桁） */
+     zrnbsydrtencd ,         /* （連携用）募集代理店コード */
+     zrntntusycd ,         /* （連携用）担当者コード */
+     zrnsyono ,         /* （連携用）証券番号 */
+     zrnhasseiymd ,         /* （連携用）発生日 */
+     zrnidoukbn1 ,         /* （連携用）異動区分１ */
+     zrnkydatkikbnkj ,         /* （連携用）共同扱区分（漢字） */
+     zrnkykyymm ,         /* （連携用）契約年月（西暦下２桁） */
+     zrncifcd ,         /* （連携用）ＣＩＦコード */
+     zrnmidasikbn ,         /* （連携用）見出し区分 */
+     zrnatesakinm ,         /* （連携用）宛先名 */
+     zrnhassinka ,         /* （連携用）発信課 */
+     zrnbsyyymm ,         /* （連携用）募集年月（西暦下２桁） */
+     zrntntusynm ,         /* （連携用）担当者名 */
+     zrnkyknmkjseihoweb ,         /* （連携用）契約者名（漢字）（生保ＷＥＢ） */
+     zrnpjyuutouyymm ,         /* （連携用）保険料充当年月（西暦下２桁） */
+     zrnhrkkaisuukj ,         /* （連携用）払込回数（漢字） */
+     zrnp11keta ,         /* （連携用）保険料（１１桁） */
+     zrnhrkkeirobtjhmidasi ,         /* （連携用）払込経路別情報見出し */
+     zrnhrkkeirobtjh ,         /* （連携用）払込経路別情報 */
+     zrntntusyjk ,         /* （連携用）担当者状況 */
+     zrnhrkkeirokj ,         /* （連携用）払込経路（漢字） */
+     zrnhknsyuruimei ,         /* （連携用）保険種類名 */
+     zrnidoukbn2 ,         /* （連携用）異動区分２ */
+     zrndbskyoteiymd7keta ,         /* （連携用）ＤＢ削除予定年月（７桁） */
+     zrngaikakykhrkp ,         /* （連携用）外貨契約払込保険料 */
+     zrnkyktuukasyukbn           /* （連携用）契約通貨種類区分 */
+FROM ZT_SeihoWebIdouListRn_Z;
