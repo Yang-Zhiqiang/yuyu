@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reportConfig>
+
+        <applicationMessages>application_messages</applicationMessages>
+
+        <applicationResources>application_resources</applicationResources>
+
+        <reportManagerFactoryClass>yuyu.infr.report.jasperreport.JasperReportManagerFactory</reportManagerFactoryClass>
+
+        <reportServiceBeanFactoryClass>yuyu.infr.report.jasperreport.JasperReportServiceBeanFactory</reportServiceBeanFactoryClass>
+
+        <syoruiZokuseiReaderClass>yuyu.infr.report.swakreport.reader.SyoruiZokuseiCsvReader</syoruiZokuseiReaderClass>
+
+        <encryptInfoConfig>
+
+                <userPassword></userPassword>
+
+                <ownerPassword></ownerPassword>
+
+                <print>false</print>
+
+                <contents>true</contents>
+
+                <copy>true</copy>
+
+                <notesAndField>true</notesAndField>
+
+        </encryptInfoConfig>
+
+        <documentInfoConfig>
+
+                <title>TITLE</title>
+
+                <subTitle>SUBTITLE</subTitle>
+
+                <author>AUTHOR</author>
+
+                <keywords>KEYWORDS</keywords>
+
+                <pageMode>/UseNone</pageMode>
+
+        </documentInfoConfig>
+
+        <reportDetailConfig>
+
+                <jrxmlRootPath>/WEB-INF/reports</jrxmlRootPath>
+
+                <pdfPath>/WEB-INF/classes/reports/pdf</pdfPath>
+
+                <pdfImgPath>/WEB-INF/classes/reports/image</pdfImgPath>
+
+                <pdfDisplayKbn>0</pdfDisplayKbn>
+
+                <printerName></printerName>
+
+                <printerDescription></printerDescription>
+
+                <jasperConfig>
+
+                       <compileClassPath>/WEB-INF/classes</compileClassPath>
+
+                       <compileJarPath>/WEB-INF/lib</compileJarPath>
+
+                        <virtualizerConfig>
+
+                                <maxSize>20</maxSize>
+
+                                <directory>/WEB-INF/classes/reports/reportwork</directory>
+
+                                <blockSize>0</blockSize>
+
+                                <growCount>256</growCount>
+
+                        </virtualizerConfig>
+
+                </jasperConfig>
+
+        </reportDetailConfig>
+</reportConfig>

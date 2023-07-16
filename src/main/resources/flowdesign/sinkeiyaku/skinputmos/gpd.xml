@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="skinputmos" width="777" height="792">
+  <node name="start-state1" x="328" y="21" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="mousikomisyo_1ji" x="330" y="270" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikaisi" x="329" y="99" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="mousikomisyo_2ji" x="331" y="353" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="mousikomisyo_3ji" x="331" y="514" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikanryou" x="317" y="596" width="162" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikaisi" x="248" y="178" width="296" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="10" y="-148"/>
+      <bendpoint w1="222" h1="0" w2="221" h2="-336"/>
+      <bendpoint w1="221" h1="335" w2="220" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="256" h1="0" w2="254" h2="-418"/>
+      <bendpoint w1="257" h1="418" w2="255" h2="0"/>
+    </edge>
+  </node>
+  <node name="branch-after-mousikomisyo_2ji" x="227" y="434" width="341" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="3" y="-53"/>
+      <bendpoint w1="194" h1="-1" w2="193" h2="-163"/>
+      <bendpoint w1="195" h1="162" w2="194" h2="0"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikanryou" x="236" y="674" width="322" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-185" h1="1" w2="-186" h2="79"/>
+      <bendpoint w1="-185" h1="-78" w2="-186" h2="0"/>
+    </edge>
+  </node>
+  <node name="end-state1" x="331" y="755" width="132" height="36"/>
+</root-container>

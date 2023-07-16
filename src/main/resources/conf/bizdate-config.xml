@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-bizdate-config>
+<bizDateConfig>
+  <gengouInfoReader>jp.co.slcs.swak.date.reader.GengouInfoCsvReader</gengouInfoReader>
+
+  <holidayInfoReader>yuyu.infr.date.HolidayInfoDbReader</holidayInfoReader>
+
+  <defaultHolidayCode>BankHolidays</defaultHolidayCode>
+
+  <gengouPriority>SYMDate</gengouPriority>
+  <seirekiWarekiKbn>SEIREKI</seirekiWarekiKbn>
+  <wareki>
+    <bizDateDefaultYFormat>Gyy</bizDateDefaultYFormat>
+    <bizDateDefaultYMFormat>Gyy/MM</bizDateDefaultYMFormat>
+    <bizDateDefaultFormat>Gyy/MM/dd</bizDateDefaultFormat>
+  </wareki>
+  <seireki>
+    <bizDateDefaultYFormat>yyyy</bizDateDefaultYFormat>
+    <bizDateDefaultYMFormat>yyyy/MM</bizDateDefaultYMFormat>
+    <bizDateDefaultFormat>yyyy/MM/dd</bizDateDefaultFormat>
+  </seireki>
+  <bizDateDefaultMDFormat>MM/dd</bizDateDefaultMDFormat>
+  <bizDateCachePastYears>10</bizDateCachePastYears>
+  <bizDateCacheFutureYears>10</bizDateCacheFutureYears>
+
+  <bizDateYMCachePastYears>50</bizDateYMCachePastYears>
+  <bizDateYMCacheFutureYears>50</bizDateYMCacheFutureYears>
+
+  <bizDateYCachePastYears>100</bizDateYCachePastYears>
+  <bizDateYCacheFutureYears>100</bizDateYCacheFutureYears>
+
+</bizDateConfig>

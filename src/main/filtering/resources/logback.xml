@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE logback>
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date{HH:mm:ss.SSS} %-5level %-56.56logger [%-24.24thread] - %message%n%xException{full}
+      </pattern>
+    </encoder>
+  </appender>
+
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${basedir}/log/${ant.project.name}.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <pattern>%date{HH:mm:ss.SSS} %-5level %-64.64logger [%-24.24thread] - %message%n%xException{full}
+      </pattern>
+    </encoder>
+  </appender>
+
+  <root level="${app.log.level}">
+    <appender-ref ref="STDOUT" />
+    <appender-ref ref="FILE"   />
+  </root>
+
+  <logger name="org.apache"                                level="${log.level.INFO}"  />
+  <logger name="org.apache.struts"                         level="${log.level.WARN}"  />
+  <logger name="org.jboss"                                 level="${log.level.INFO}"  />
+  <logger name="org.hibernate"                             level="${log.level.WARN}"  />
+  <logger name="com.mchange.v2"                            level="${log.level.INFO}"  />
+  <logger name="net.sf.ehcache"                            level="${log.level.INFO}"  />
+  <logger name="net.sf.jasperreports"                      level="${log.level.INFO}"  />
+  <logger name="org.h2.jdbc"                               level="${log.level.DEBUG}" />
+
+  <logger name="jp.co.slcs.swak.core.inject.TraceModule"                                       level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.core.inject.scope"                                             level="${log.level.INFO}"  />
+  <logger name="jp.co.slcs.swak.core.resource"                                                 level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.db.jdbc"                                                       level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.db.jdbc.connection"                                            level="${log.level.TRACE}" />
+  <logger name="jp.co.slcs.swak.db.typesafe.AbstractPersistenceUnit"                           level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.db.typesafe.AbstractExDBPrimaryKey"                            level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.db.typesafe.AbstractExDBEntity"                                level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.aop.UiBeanLogger"                                          level="${log.level.TRACE}" />
+  <logger name="jp.co.slcs.swak.web.conversation.ConversationContext"                          level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.conversation.ConversationScope"                            level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.conversation.el"                                           level="${log.level.INFO}"  />
+  <logger name="jp.co.slcs.swak.web.filter.ResourceFilter"                                     level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.struts.action.DefaultActionProvider"                       level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.struts.action.SwakStrutsAction"                            level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.struts.servlet.SwakStrutsActionServlet.servletRequest"     level="${log.level.TRACE}" />
+  <logger name="jp.co.slcs.swak.web.struts.servlet.SwakStrutsActionServlet.httpServletRequest" level="${log.level.TRACE}" />
+  <logger name="jp.co.slcs.swak.web.struts.servlet.SwakStrutsActionServlet.response"           level="${log.level.INFO}"  />
+  <logger name="jp.co.slcs.swak.web.struts.upload.CommonsMultipartRequestHandler"              level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.taglib"                                                    level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.web.ui.el"                                                     level="${log.level.INFO}"  />
+  <logger name="jp.co.slcs.swak.util.message"                                                  level="${log.level.DEBUG}" />
+  <logger name="jp.co.slcs.swak.util.schedule.TimerScheduleManager"                            level="${log.level.DEBUG}" />
+
+  <logger name="yuyu.app.base.menu.menu.MenuAuthFilter"                                        level="${log.level.DEBUG}" />
+  <logger name="yuyu.batch.base.common.addressmasterhanei.AddressMasterHaneiBatch"             level="${log.level.DEBUG}" />
+  <logger name="yuyu.def.base.manager.impl"                                                    level="${log.level.DEBUG}" />
+  <logger name="yuyu.def.db.entity"                                                            level="${log.level.DEBUG}" />
+  <logger name="yuyu.infr.aop.ActionInterceptor"                                               level="${log.level.DEBUG}" />
+  <logger name="yuyu.infr.inject.KinouProvider"                                                level="${log.level.DEBUG}" />
+  <logger name="yuyu.infr.processor.KadouTimeCheck"                                            level="${log.level.DEBUG}" />
+  <logger name="yuyu.infr.message.YuyuMessageResolver"                                         level="${log.level.DEBUG}" />
+
+
+
+  <appender name="RequestLogConsole" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <charset>UTF-8</charset>
+      <pattern>%X{props.startTime} - %X{props.endTime} %-15X{props.remoteAddr} : %message%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <logger name="RequestLog" level="INFO" additivity="false">
+    <appender-ref ref="RequestLogConsole" />
+  </logger>
+
+  <appender name="RequestLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${basedir}/log/${ant.project.name}.request.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <pattern>%X{props.startTime}-%X{props.endTime}\(%X{props.elapsedTime}\) %-15X{props.remoteAddr} : %message - %X{props.requestMethod} - %X{props.resultCode} - %X{props.forwardName}%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <logger name="RequestLog" level="INFO" additivity="false">
+    <appender-ref ref="RequestLogFile" />
+  </logger>
+
+
+  <conversionRule conversionWord="detail" converterClass="jp.co.slcs.swak.core.accesslog.AccessLogDetailConverter" />
+
+  <appender name="AccessLogConsole" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date{HH:mm:ss.SSS} {ip:%-15X{IpAddress} session:%-20X{SessionId} request:%X{RequestId} transaction:%-8X{TransactionId} subsys:%X{SubsystemId} category:%X{CategoryId} kinou:%X{KinouId} action:%X{ActionId} event:%X{EventId} userId:%X{SyoriUserId}}%n %-56.56logger%n %message%n %detail%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <appender name="AccessLogFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <append>true</append>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${basedir}/log/${ant.project.name}.accesslog.%d{yyyy-MM-dd}.log</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <charset>UTF-8</charset>
+      <pattern>%date{yyyy-MM-dd_HH:mm:ss.SSS} {ip:%X{IpAddress} session:%X{SessionId} request:%X{RequestId} transaction:%X{TransactionId} subsys:%X{SubsystemId} category:%X{CategoryId} kinou:%X{KinouId} tanmatutype:%X{TanmatuType} buturisosiki:%X{ButuriSosikiCd} ronrisosiki:%X{RonriSosikiCd} tanmatujyoutai:%X{TanmatuJyoutaiHyouji} action:%X{ActionId} event:%X{EventId} userId:%X{SyoriUserId}} - %message%n %detail%n
+      </pattern>
+    </encoder>
+  </appender>
+
+  <appender name="AccessLogDB" class="yuyu.infr.accesslog.AccessLogExtensionDBAppender">
+    <connectionSource class="ch.qos.logback.core.db.DataSourceConnectionSource">
+      <dataSource class="jp.co.slcs.swak.db.jdbc.datasource.SwakDataSource">
+        <name>${db.datasourceName}</name>
+        <enableAccessLog>false</enableAccessLog>
+      </dataSource>
+    </connectionSource>
+  </appender>
+
+  <logger name="accesslog" level="OFF" additivity="false">
+    <appender-ref ref="AccessLogFile"    />
+
+  </logger>
+
+  <logger name="accesslog.web.login.success"          level="OFF" />
+  <logger name="accesslog.web.login.failure"          level="OFF" />
+  <logger name="accesslog.web.logout.success"         level="OFF" />
+  <logger name="accesslog.web.lockout"                level="OFF" />
+  <logger name="accesslog.web.user.add"               level="OFF" />
+  <logger name="accesslog.web.user.modify"            level="OFF" />
+  <logger name="accesslog.web.user.delete"            level="OFF" />
+  <logger name="accesslog.web.unlock"                 level="OFF" />
+  <logger name="accesslog.web.password.alter"         level="OFF" />
+  <logger name="accesslog.web.auth.violation"         level="OFF" />
+  <logger name="accesslog.web.kadoutime.past"         level="OFF" />
+  <logger name="accesslog.web.report"                 level="OFF" />
+  <logger name="accesslog.web.db.select"              level="OFF" />
+  <logger name="accesslog.web.db.insert"              level="OFF" />
+  <logger name="accesslog.web.db.update"              level="OFF" />
+  <logger name="accesslog.web.db.delete"              level="OFF" />
+  <logger name="accesslog.web.db.commit"              level="OFF" />
+  <logger name="accesslog.web.db.rollback"            level="OFF" />
+  <logger name="accesslog.web.db.ddl"                 level="OFF" />
+
+  <logger name="accesslog.web.action.begin"           level="ALL" />
+  <logger name="accesslog.web.action.end"             level="OFF" />
+
+  <logger name="accesslog.batch.batch.begin"          level="OFF" />
+  <logger name="accesslog.batch.batch.end"            level="OFF" />
+
+  <logger name="accesslog.batch.login.success"        level="OFF" />
+  <logger name="accesslog.batch.login.failure"        level="OFF" />
+  <logger name="accesslog.batch.logout.success"       level="OFF" />
+  <logger name="accesslog.batch.lockout"              level="OFF" />
+  <logger name="accesslog.batch.user.add"             level="OFF" />
+  <logger name="accesslog.batch.user.modify"          level="OFF" />
+  <logger name="accesslog.batch.user.delete"          level="OFF" />
+  <logger name="accesslog.batch.unlock"               level="OFF" />
+  <logger name="accesslog.batch.password.alter"       level="OFF" />
+  <logger name="accesslog.batch.auth.violation"       level="OFF" />
+  <logger name="accesslog.batch.report"               level="OFF" />
+  <logger name="accesslog.batch.db.select"            level="OFF" />
+  <logger name="accesslog.batch.db.insert"            level="OFF" />
+  <logger name="accesslog.batch.db.update"            level="OFF" />
+  <logger name="accesslog.batch.db.delete"            level="OFF" />
+  <logger name="accesslog.batch.db.commit"            level="OFF" />
+  <logger name="accesslog.batch.db.rollback"          level="OFF" />
+  <logger name="accesslog.batch.db.ddl"               level="OFF" />
+
+<logger name="yuyu.infrext.RayUtil"                                                          level="${log.level.ERROR}" />
+
+
+</configuration>

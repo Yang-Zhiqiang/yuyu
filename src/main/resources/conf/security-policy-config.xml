@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<securityPolicyConfig>
+     <passwordMinsize>1</passwordMinsize>
+     <passwordMinsizeMessage>パスワードは{passwordMinsize}文字以上である必要があります。</passwordMinsizeMessage>
+
+     <passwordMaxsize>32</passwordMaxsize>
+     <passwordMaxsizeMessage>パスワードは{passwordMaxsize}文字以内である必要があります。</passwordMaxsizeMessage>
+
+     <passwordRequiredNumeric>0</passwordRequiredNumeric>
+     <passwordRequiredNumericMessage>パスワードは{passwordRequiredNumeric}文字以上の数字を含む必要があります。</passwordRequiredNumericMessage>
+     <passwordRequiredAlpha>0</passwordRequiredAlpha>
+     <passwordRequiredAlphaMessage>パスワードは{passwordRequiredAlpha}文字以上の英字を含む必要があります。</passwordRequiredAlphaMessage>
+     <passwordRequiredAlphacapital>0</passwordRequiredAlphacapital>
+     <passwordRequiredAlphacapitalMessage>パスワードは{passwordRequiredAlphacapital}文字以上の大文字の英字を含む必要があります。</passwordRequiredAlphacapitalMessage>
+     <passwordRequiredAlphasmall>0</passwordRequiredAlphasmall>
+     <passwordRequiredAlphasmallMessage>パスワードは{passwordRequiredAlphasmall}文字以上の小文字の英字を含む必要があります。</passwordRequiredAlphasmallMessage>
+     <passwordRequiredSymbol>0</passwordRequiredSymbol>
+     <passwordRequiredSymbolMessage>パスワードは{passwordRequiredSymbol}文字以上の記号を含む必要があります。</passwordRequiredSymbolMessage>
+
+     <passwordRequiredSyurui>0</passwordRequiredSyurui>
+     <passwordRequiredSyuruiMessage>パスワードは{passwordRequiredSyurui}種類以上の文字を含む必要があります。</passwordRequiredSyuruiMessage>
+
+     <passwordRenzokuDouitu>0</passwordRenzokuDouitu>
+     <passwordRenzokuDouituMessage>パスワードに{passwordRenzokuDouitu}文字以上の連続した同一文字を指定することはできません。</passwordRenzokuDouituMessage>
+
+     <passwordUserIdForbid>false</passwordUserIdForbid>
+     <passwordUserIdForbidMessage>パスワードにユーザーIDを含むことはできません。</passwordUserIdForbidMessage>
+
+     <passwordMessagedigest>false</passwordMessagedigest>
+
+     <passwordMessagedigestAlgorithm>SHA-256</passwordMessagedigestAlgorithm>
+
+     <passwordMaxrireki>2</passwordMaxrireki>
+
+     <passwordRirekiDuplicationMessage>過去{passwordMaxrireki}回以内に登録したパスワードは指定できません。</passwordRirekiDuplicationMessage>
+
+     <lockoutCount>10</lockoutCount>
+
+     <passwordYuukoukikan></passwordYuukoukikan>
+</securityPolicyConfig>

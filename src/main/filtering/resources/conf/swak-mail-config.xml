@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-mail-config>
+
+<mailConfig>
+  <protocol>smtp</protocol>
+  <sendType>${mail.mimetype}</sendType>
+  <mailServerAddress>${mail.smtp.server}</mailServerAddress>
+  <portNo>${mail.smtp.port}</portNo>
+  <charset>${mail.charset}</charset>
+  <transEncode>7bit</transEncode>
+  <smtpAuthUser>${mail.smtp.auth.user}</smtpAuthUser>
+  <smtpAuthPass>${mail.smtp.auth.pass}</smtpAuthPass>
+</mailConfig>

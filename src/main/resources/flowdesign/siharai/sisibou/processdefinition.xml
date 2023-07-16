@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="sisibou">
+
+
+	<start-state name="start-state1">
+		<transition to="state-syoruitoutyaku"></transition>
+	</start-state>
+
+
+	<task-node name="satei1">
+		<task></task>
+		<transition to="branch-after-satei1"></transition>
+	</task-node>
+
+	<task-node name="satei2">
+		<task></task>
+		<transition to="branch-after-satei2"></transition>
+	</task-node>
+
+	<decision name="branch-after-satei1">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="satei2" name="siharai"></transition>
+		<transition to="hubikanrityuu" name="hubikanrityu"></transition>
+		<transition to="satei1" name="tensou"></transition>
+		<transition to="satei1" name="horyuu"></transition>
+		<transition to="satei2" name="husiarahi"></transition>
+		<transition to="satei2" name="kakunintouroku"></transition>
+		<transition to="satei2" name="tyuukantouroku"></transition>
+		<transition to="satei2" name="tuikakakunin"></transition>
+		<transition to="satei2" name="siboussiharai-saigaihigaitou"></transition>
+	</decision>
+
+	<state name="state-syoruitoutyaku">
+		<transition to="input"></transition>
+	</state>
+
+	<task-node name="input">
+		<task></task>
+		<transition to="tenken"></transition>
+	</task-node>
+
+	<task-node name="tenken">
+		<task></task>
+		<transition to="branch-after-input"></transition>
+	</task-node>
+
+	<decision name="branch-after-input">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="tetuduki_sateihuyou" name="sateihuyou"></transition>
+		<transition to="satei1" name="sateiyou"></transition>
+	</decision>
+
+	<task-node name="tetuduki_sateihuyou">
+		<task></task>
+		<transition to="branch-after-tetuduki_sateihuyou"></transition>
+	</task-node>
+
+	<decision name="branch-after-tetuduki_sateihuyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="satei1" name="sateisiji"></transition>
+		<transition to="tetuduki_sateihuyou" name="horyuu"></transition>
+		<transition to="tetuduki_sateihuyou" name="tensou"></transition>
+		<transition to="syounin_sateihuyou" name="siharai"></transition>
+		<transition to="hubikanrityuu" name="hubikanrityu"></transition>
+	</decision>
+
+	<task-node name="syounin_sateihuyou">
+		<task></task>
+		<transition to="branch-after-syounin_sateihuyou"></transition>
+	</task-node>
+
+	<decision name="branch-after-syounin_sateihuyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="syounin_sateihuyou" name="tensou"></transition>
+		<transition to="tetuduki_sateihuyou" name="husyounin"></transition>
+		<transition to="syounin_sateihuyou" name="horyuu"></transition>
+		<transition to="state-sisiharai" name="syounin"></transition>
+	</decision>
+
+	<task-node name="hubikanrityuu">
+		<task></task>
+		<transition to="branch-after-hubikanrityuu"></transition>
+	</task-node>
+
+	<decision name="branch-after-hubikanrityuu">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="satei1" name="satei"></transition>
+		<transition to="tetuduki_sateihuyou" name="tetuduki_sateihuyou"></transition>
+		<transition to="tetuduki_sateiyou" name="tetuduki_sateiyou"></transition>
+	</decision>
+
+	<decision name="branch-after-satei2">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="satei2" name="tensou"></transition>
+		<transition to="satei2" name="horyuu"></transition>
+		<transition to="satei1" name="sasimodosi"></transition>
+		<transition to="kakuniniraityuu" name="kakunintouroku"></transition>
+		<transition to="kakuniniraityuu" name="tuikakakunin"></transition>
+		<transition to="kakuniniraityuu" name="tyuukantouroku"></transition>
+		<transition to="satei3" name="sateisanji"></transition>
+		<transition to="satei3" name="siharai-sateisanjiari"></transition>
+		<transition to="tetuduki_sateiyou" name="siharai-sateisanjinone"></transition>
+		<transition to="satei3" name="husiharai"></transition>
+		<transition to="satei3" name="siboussiharai-saigaihigaitou"></transition>
+	</decision>
+
+	<state name="state-sisiharai">
+		<transition to="end-state1"></transition>
+	</state>
+
+	<task-node name="kakuniniraityuu">
+		<task></task>
+		<transition to="satei1"></transition>
+	</task-node>
+
+	<task-node name="satei3">
+		<task></task>
+		<transition to="branch-after-satei3"></transition>
+	</task-node>
+
+	<decision name="branch-after-satei3">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="satei3" name="tensou"></transition>
+		<transition to="satei3" name="horyuu"></transition>
+		<transition to="satei1" name="sasimodosi"></transition>
+		<transition to="satei4" name="husiharai-fiveandmore"></transition>
+		<transition to="satei4" name="sateiyoji"></transition>
+		<transition to="satei4" name="siharai-fiveandmore"></transition>
+		<transition to="tetuduki_sateiyou" name="siharai-lessfive"></transition>
+		<transition to="sessyou1" name="husiharai-lessfive-sessyouyou"></transition>
+		<transition to="kaiketu_sessyouhuyou" name="husiharai-lessfive-sessyouhuyou"></transition>
+		<transition to="tetuduki_sateiyou" name="siboussiharai-saigaihigaitou-lessfive"></transition>
+		<transition to="satei4" name="siboussiharai-saigaihigaitou-fiveandmore"></transition>
+	</decision>
+
+	<task-node name="satei4">
+		<task></task>
+		<transition to="branch-after-satei4"></transition>
+	</task-node>
+
+	<task-node name="syounin_sateiyou">
+		<task></task>
+		<transition to="branch-after-syounin_sateiyou"></transition>
+	</task-node>
+
+	<task-node name="tetuduki_sateiyou">
+		<task></task>
+		<transition to="branch-after-tetuduki_sateiyou"></transition>
+	</task-node>
+
+	<task-node name="sessyou1">
+		<task></task>
+		<transition to="branch-after-sessyou1"></transition>
+	</task-node>
+
+	<task-node name="kaiketu_sessyouhuyou">
+		<task></task>
+		<transition to="branch-after-kaiketu_sessyouhuyou"></transition>
+	</task-node>
+
+	<decision name="branch-after-satei4">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="tetuduki_sateiyou" name="siharai"></transition>
+		<transition to="sessyou1" name="husiharai-sessyouyou"></transition>
+		<transition to="kaiketu_sessyouhuyou" name="husiharai-sessyouhuyou"></transition>
+		<transition to="satei4" name="tensou"></transition>
+		<transition to="satei4" name="horyuu"></transition>
+		<transition to="satei1" name="sasimodosi"></transition>
+		<transition to="tetuduki_sateiyou" name="siboussiharai-saigaihigaitou"></transition>
+	</decision>
+
+	<decision name="branch-after-tetuduki_sateiyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="hubikanrityuu" name="hubikanrityu"></transition>
+		<transition to="tetuduki_sateiyou" name="tensou"></transition>
+		<transition to="tetuduki_sateiyou" name="horyuu"></transition>
+		<transition to="syounin_sateiyou" name="syounin"></transition>
+		<transition to="satei1" name="husyounin"></transition>
+	</decision>
+
+	<decision name="branch-after-syounin_sateiyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="syounin_sateiyou" name="tensou"></transition>
+		<transition to="syounin_sateiyou" name="horyuu"></transition>
+		<transition to="state-sisiharai" name="syounin-blunk"></transition>
+		<transition to="tetuduki_sateiyou" name="husyounin"></transition>
+		<transition to="sessyou1" name="syounin-sessyouyou"></transition>
+		<transition to="kaiketu_sessyouhuyou" name="syounin-sessyouhuyou"></transition>
+	</decision>
+
+	<decision name="branch-after-sessyou1">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="sessyou1" name="tensou"></transition>
+		<transition to="sessyou1" name="horyuu"></transition>
+		<transition to="sessyou2" name="kanryo"></transition>
+	</decision>
+
+	<task-node name="sessyou2">
+		<task></task>
+		<transition to="branch-after-sessyou2"></transition>
+	</task-node>
+
+	<decision name="branch-after-kaiketu_sessyouhuyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kaiketu_sessyouhuyou" name="horyuu"></transition>
+		<transition to="state-sisiharai" name="kanryo"></transition>
+	</decision>
+
+	<decision name="branch-after-sessyou2">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kaiketu_sessyouyou" name="kanryo"></transition>
+		<transition to="sessyou1" name="sasimodosi"></transition>
+		<transition to="sessyou2" name="horyuu"></transition>
+		<transition to="sessyou2" name="tensou"></transition>
+	</decision>
+
+	<task-node name="kaiketu_sessyouyou">
+		<task></task>
+		<transition to="branch-after-kaiketu_sessyouyou"></transition>
+	</task-node>
+
+	<decision name="branch-after-kaiketu_sessyouyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kaiketu_sessyouyou" name="horyuu"></transition>
+		<transition to="state-sisiharai" name="kanryo"></transition>
+	</decision>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

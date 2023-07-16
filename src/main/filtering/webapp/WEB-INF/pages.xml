@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages base="/WEB-INF/pages">
+
+  <page view-id="${webapp.web-inf.pages.error}.jsp" />
+
+  <exception class="jp.co.slcs.swak.web.auth.logout.LogoutException" log="true" log-level="trace">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.auth.AuthorizationException" log="true" log-level="info">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="yuyu.infr.exception.InvalidFunctionException" log="true" log-level="info">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.web.conversation.exception.ConversationTimeoutException" log="true" log-level="debug">
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.web.conversation.exception.ConversationMulitPostException" log="true" log-level="debug">
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.web.conversation.exception.ConversationTokenException" log="true" log-level="debug">
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="javax.persistence.OptimisticLockException" log="true" log-level="debug">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.db.exception.DuplicatedKeyException" log="true" log-level="debug">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.web.auth.DiscardedUserSessionException" log="true" log-level="debug">
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="yuyu.infr.exception.OutOfSystemUpTimeException" log="true" log-level="debug">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.web.struts.chain.commands.servlet.SizeLimitExceededException" log="true" log-level="debug">
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="yuyu.infr.exception.ReportNotFoundException" log="true" log-level="debug">
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="yuyu.infrext.exception.RayDB2DeadLockException" log="true" log-level="warn">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.bizinfr.exception.BizLogicException" log="true" log-level="trace">
+    <action execute="jp.co.slcs.swak.web.struts.action.BizLogicExceptionHandler#handle" />
+  </exception>
+
+  <exception class="jp.co.slcs.swak.web.auth.LoginFailedException" log="true" log-level="debug">
+    <action execute="jp.co.slcs.swak.web.auth.LoginFailedExceptionHandler#handle" />
+  </exception>
+
+  <exception log="true" log-level="error">
+    <end-conversation />
+    <action execute="yuyu.infr.exception.ExceptionMessageHandler#handle" />
+    <forward view-id="${webapp.web-inf.pages.error}.jsp" />
+  </exception>
+</pages>

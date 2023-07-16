@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE yuyu-base-config>
+<yuyuBaseConfig>
+
+  <applicationName>ゆうゆう生保</applicationName>
+
+  <validationGroupsPackage>yuyu.infr.validation.groups</validationGroupsPackage>
+
+  <loginPageURI>${config.loginpage.uri}</loginPageURI>
+
+  <sessionTimeoutPageURI>/error/session_timeout_error.do</sessionTimeoutPageURI>
+
+  <loginFailedErrorCd>EAF0001</loginFailedErrorCd>
+
+  <loggedInErrorCd>EAC0024</loggedInErrorCd>
+
+  <identifierRefreshInterval>12</identifierRefreshInterval>
+
+  <identifierLength>3</identifierLength>
+
+  <batchDousaModeKbn>${config.base.batchDousaModeKbn}</batchDousaModeKbn>
+
+  <batchRetryWaitTime>${config.base.batchRetryWaitTime}</batchRetryWaitTime>
+
+  <batchRetryCount>${config.base.batchRetryCount}</batchRetryCount>
+
+  <batchLogBeginMessage>IBF0016</batchLogBeginMessage>
+
+  <batchLogEndMessage>IBF0017</batchLogEndMessage>
+
+  <messageIconEntryList>
+    <messageIconEntry>
+      <key>E</key>
+      <value>/img/message/Message_Error.png</value>
+    </messageIconEntry>
+    <messageIconEntry>
+      <key>W</key>
+      <value>/img/message/Message_Warning.png</value>
+    </messageIconEntry>
+    <messageIconEntry>
+      <key>I</key>
+      <value>/img/message/Message_Information.png</value>
+    </messageIconEntry>
+    <messageIconEntry>
+      <key>Q</key>
+      <value>/img/message/Message_Inquiry.png</value>
+    </messageIconEntry>
+    <messageIconEntry>
+      <key>T</key>
+      <value>/img/message/Message_Tokunin.png</value>
+    </messageIconEntry>
+    <messageIconEntry>
+      <key>K</key>
+      <value>/img/message/Message_TokuninKanou.png</value>
+    </messageIconEntry>
+  </messageIconEntryList>
+
+  <tokusyuKinouList>
+    <tokusyuKinou>
+      <actionClassName>yuyu.app.sinkeiyaku.skkettei.skkankyousatei.SkKankyouSateiAction</actionClassName>
+      <initMethod>initMousikomitorikesi</initMethod>
+      <kinouId>skmousikomitorikesi</kinouId>
+    </tokusyuKinou>
+    <tokusyuKinou>
+      <actionClassName>yuyu.app.sinkeiyaku.skkettei.skkankyousatei.SkKankyouSateiAction</actionClassName>
+      <initMethod>fromSinkeiyakuWorkListMousikomitorikesi</initMethod>
+      <kinouId>skmousikomitorikesi</kinouId>
+    </tokusyuKinou>
+    <tokusyuKinou>
+      <actionClassName>yuyu.app.sinkeiyaku.sknyuukin.skhenkin.SkHenkinAction</actionClassName>
+      <initMethod>initHenkinkibou</initMethod>
+      <kinouId>skhenkinkibou</kinouId>
+    </tokusyuKinou>
+    <tokusyuKinou>
+      <actionClassName>yuyu.app.biz.bzfiledl.bzfiledownload.BzFileDownloadAction</actionClassName>
+      <initMethod>initIppanjimubumonyou</initMethod>
+      <kinouId>bzfiledownloadippanjimubumonyou</kinouId>
+    </tokusyuKinou>
+  </tokusyuKinouList>
+
+  <batchHost>${config.base.batchHost}</batchHost>
+
+  <batchPort>${config.base.batchPort}</batchPort>
+
+  <batchParamBean>yuyu.infr.batch.BatchParam</batchParamBean>
+
+  <batchOutputDir>${config.base.batchOutputDir}</batchOutputDir>
+
+  <batchInputDir>${config.base.batchInputDir}</batchInputDir>
+
+  <objStorageDir>${config.base.objStorageDir}</objStorageDir>
+
+  <maxShutokuKensu>5000</maxShutokuKensu>
+
+  <subSystemEnableFlg>true</subSystemEnableFlg>
+
+  <debugMode>${config.base.debugmode}</debugMode>
+
+  <dateTimeNotShowSubSystemGroup></dateTimeNotShowSubSystemGroup>
+
+  <addressMasterCsvFileName>KEN_ALL.CSV</addressMasterCsvFileName>
+
+  <exceptionMessageList>
+    <exceptionMessage>
+      <exception>javax.persistence.OptimisticLockException</exception>
+      <titleId>IAS0003</titleId>
+      <messageId>EAS0030</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.db.exception.DuplicatedKeyException</exception>
+      <titleId>IAS0003</titleId>
+      <messageId>EAS0030</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.web.conversation.exception.ConversationTokenException</exception>
+      <titleId>IAS0004</titleId>
+      <messageId>EAS0031</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.web.conversation.exception.ConversationMulitPostException</exception>
+      <titleId>IAS0004</titleId>
+      <messageId>EAS0031</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.web.auth.logout.LogoutException</exception>
+      <titleId>IAS0005</titleId>
+      <messageId>EAS0032</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>yuyu.infr.exception.OutOfSystemUpTimeException</exception>
+      <titleId>IAS0006</titleId>
+      <messageId>EAS0033</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.auth.AuthorizationException</exception>
+      <titleId>IAS0007</titleId>
+      <messageId>EAS0034</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.web.conversation.exception.ConversationTimeoutException</exception>
+      <titleId>IAS0004</titleId>
+      <messageId>EAS0050</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.web.auth.DiscardedUserSessionException</exception>
+      <titleId>IAS0009</titleId>
+      <messageId>EAS0036</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>jp.co.slcs.swak.bizinfr.exception.BizAppException</exception>
+      <titleId>IAS0010</titleId>
+      <messageId></messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>otherException</exception>
+      <titleId>IAS0010</titleId>
+      <messageId>EAS0037</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>yuyu.common.biz.exception.LockProcessException</exception>
+      <titleId>IAS0004</titleId>
+      <messageId>EBS0010</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>yuyu.common.biz.exception.KinouModeKengenException</exception>
+      <titleId>IAS0007</titleId>
+      <messageId>EAS0034</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>yuyu.infr.exception.InvalidFunctionException</exception>
+      <titleId>IAS0012</titleId>
+      <messageId>EAS0051</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>yuyu.infrext.exception.RayDB2DeadLockException</exception>
+      <titleId>IAS0003</titleId>
+      <messageId>EAS0053</messageId>
+    </exceptionMessage>
+    <exceptionMessage>
+      <exception>yuyu.infr.exception.ReportNotFoundException</exception>
+      <titleId>IAS0014</titleId>
+      <messageId>EAS0054</messageId>
+    </exceptionMessage>
+  </exceptionMessageList>
+
+  <maxSize>20000</maxSize>
+
+
+</yuyuBaseConfig>

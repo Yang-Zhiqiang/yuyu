@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="sktenken">
+
+
+	<description>
+		40,申込点検
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-kouteikaisi"></transition>
+	</start-state>
+
+
+	<state name="state-kouteikaisi">
+		<transition to="branch-after-kouteikaisi"></transition>
+	</state>
+
+	<state name="state-kouteikanryou">
+		<transition to="branch-after-kouteikanryou"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikanryou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="mostenken_hubi" name="forward-hubi"></transition>
+		<transition to="mostenken_2ji" name="forward-2ji"></transition>
+		<transition to="mostenken_1ji" name="forward-1ji"></transition>
+	</decision>
+
+	<decision name="branch-after-kouteikaisi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="mostenken_1ji" name="forward-1ji"></transition>
+		<transition to="mostenken_2ji" name="forward-2ji"></transition>
+		<transition to="mostenken_hubi" name="forward-hubi"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<task-node name="mostenken_1ji">
+		<task></task>
+		<transition to="branch-after-mostenken_1ji"></transition>
+	</task-node>
+
+	<task-node name="mostenken_2ji">
+		<task></task>
+		<transition to="branch-after-mostenken_2ji"></transition>
+	</task-node>
+
+	<task-node name="mostenken_hubi">
+		<task></task>
+		<transition to="branch-after-mostenken_hubi"></transition>
+	</task-node>
+
+	<decision name="branch-after-mostenken_1ji">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="mostenken_2ji" name="forward-2ji"></transition>
+		<transition to="mostenken_1ji" name="forward-1ji"></transition>
+		<transition to="mostenken_hubi" name="forward-hubi"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-mostenken_2ji">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="mostenken_hubi" name="forward-hubi"></transition>
+		<transition to="mostenken_2ji" name="forward-2ji"></transition>
+		<transition to="mostenken_1ji" name="forward-1ji"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-mostenken_hubi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="mostenken_hubi" name="forward-hubi"></transition>
+		<transition to="mostenken_2ji" name="forward-2ji"></transition>
+		<transition to="mostenken_1ji" name="forward-1ji"></transition>
+	</decision>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

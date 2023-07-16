@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="sisindansyoryou" width="1626" height="364">
+  <node name="start-state1" x="19" y="74" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-start" x="221" y="73" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-start" x="433" y="72" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-42" h1="56" w2="-43" h2="-46"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="44" h1="35" w2="43" h2="-67"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-171" h1="53" w2="-172" h2="-49"/>
+    </edge>
+  </node>
+  <node name="tenken" x="706" y="71" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="input" x="434" y="174" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-input" x="705" y="173" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="1" h1="52" w2="303" h2="51"/>
+      <bendpoint w1="-270" h1="52" w2="1" h2="51"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="1" h1="71" w2="303" h2="70"/>
+      <bendpoint w1="-271" h1="72" w2="0" h2="71"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="1" h1="91" w2="303" h2="90"/>
+      <bendpoint w1="-270" h1="92" w2="1" h2="91"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-tenken" x="1011" y="70" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="0" h1="-72" w2="305" h2="-73"/>
+      <bendpoint w1="-304" h1="-71" w2="1" h2="-72"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="0" h1="-47" w2="305" h2="-48"/>
+      <bendpoint w1="-304" h1="-47" w2="1" h2="-48"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="1" h1="213" w2="578" h2="109"/>
+      <bendpoint w1="-576" h1="214" w2="1" h2="110"/>
+    </edge>
+  </node>
+  <node name="state-sisiharai" x="1257" y="70" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="end-state1" x="1493" y="70" width="132" height="36"/>
+</root-container>

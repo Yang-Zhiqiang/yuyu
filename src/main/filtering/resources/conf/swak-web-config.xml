@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-web-config>
+
+<swakWebConfig>
+  <loginFailureWaitTime>1000</loginFailureWaitTime>
+
+  <messageManager>jp.co.slcs.swak.web.message.DefaultMessageManager</messageManager>
+
+  <messageOrder>jp.co.slcs.swak.web.message.DefaultMessageOrder</messageOrder>
+
+  <elResolvers>
+    <elResolver>jp.co.slcs.swak.web.conversation.el.ConversationELResolver</elResolver>
+    <elResolver>jp.co.slcs.swak.web.ui.el.UiBeanELResolver</elResolver>
+  </elResolvers>
+
+  <actionProvider>jp.co.slcs.swak.web.struts.action.DefaultActionProvider</actionProvider>
+
+  <renderRecordCountUnit>unit.ken</renderRecordCountUnit>
+
+  <getRequestParameterEncoding>${webapp.getRequestParameterEncoding}</getRequestParameterEncoding>
+
+  <maxFileSize>50M</maxFileSize>
+  <memFileSize>256K</memFileSize>
+  <multipartClass>jp.co.slcs.swak.web.upload.CommonsMultipartRequestHandler</multipartClass>
+
+</swakWebConfig>

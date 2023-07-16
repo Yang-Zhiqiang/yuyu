@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="system-image-space">
+
+
+	<start-state name="start">
+		<transition to="image-space"></transition>
+	</start-state>
+
+
+	<state name="image-space">
+		<transition to="end"></transition>
+	</state>
+
+
+	<end-state name="end"></end-state>
+
+
+</process-definition>

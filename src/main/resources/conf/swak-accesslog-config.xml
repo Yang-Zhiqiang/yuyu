@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-accesslog-config>
+<configuration>
+
+  <accesslog>
+    <exclude kinouid="tablesyoukai" propname="tableDdNmMap" />
+    <exclude kinouid="tablesyoukai" propname="tableSearchResultListDataSource" />
+  </accesslog>
+
+  <connection>
+    <retry retrytimes="10" intervalmillitime="2000" />
+  </connection>
+
+</configuration>

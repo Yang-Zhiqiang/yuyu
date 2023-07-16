@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="skkeiyakukakunin" width="679" height="562">
+  <node name="start-state1" x="268" y="17" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikaisi" x="198" y="177" width="272" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="202" h1="-2" w2="202" h2="-173"/>
+      <bendpoint w1="202" h1="171" w2="202" h2="0"/>
+    </edge>
+  </node>
+  <node name="kykkakuninkekka" x="260" y="261" width="149" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikaisi" x="263" y="92" width="144" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikanryou" x="227" y="348" width="214" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikanryou" x="195" y="435" width="279" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="6" y="-21"/>
+      <bendpoint w1="-189" h1="-1" w2="-189" h2="86"/>
+      <bendpoint w1="-189" h1="-87" w2="-189" h2="0"/>
+    </edge>
+    <edge>
+      <label x="6" y="-40"/>
+      <bendpoint w1="-243" h1="-2" w2="-243" h2="172"/>
+      <bendpoint w1="-243" h1="-174" w2="-243" h2="0"/>
+    </edge>
+  </node>
+  <node name="end-state1" x="268" y="525" width="132" height="36"/>
+</root-container>

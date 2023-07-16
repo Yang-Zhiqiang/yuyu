@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <display-name>${spec.title}</display-name>
+  <module>
+    <web>
+      <web-url>${build.instance}.war</web-url>
+      <context-root>${build.instance}</context-root>
+    </web>
+  </module>
+</application>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE yuyu-biz-config>
+<yuyuBizConfig>
+
+  <projectList>
+    <project>sinkeiyaku</project>
+    <project>siharai</project>
+    <project>hozen</project>
+    <project>nenkin</project>
+  </projectList>
+
+  <lincGtHutuuSbS>20000000</lincGtHutuuSbS>
+
+  <lincGtHutuuSbSSgSbSGoukeiTeinen>5000000</lincGtHutuuSbSSgSbSGoukeiTeinen>
+
+  <lincGtHntiyuTeinenKijyun>15</lincGtHntiyuTeinenKijyun>
+
+  <lincGtNyuKyhkin>5000</lincGtNyuKyhkin>
+
+  <lincrecordsyubetusnkiykmuskmsyuki>5</lincrecordsyubetusnkiykmuskmsyuki>
+
+  <lincrecordsyubetusirtsyurkmusd>3</lincrecordsyubetusirtsyurkmusd>
+
+  <lincrecordsyubetuturkniyuhnkumusd>21</lincrecordsyubetuturkniyuhnkumusd>
+
+  <linchenkoutypetuika>I</linchenkoutypetuika>
+
+  <linchenkoutypekousin>U</linchenkoutypekousin>
+
+  <linchenkoutypesakujyo>D</linchenkoutypesakujyo>
+
+  <taiHyoujyunMin>16</taiHyoujyunMin>
+
+  <taiHyoujyunMax>29</taiHyoujyunMax>
+
+  <fbTknbiKsnNissuu>2</fbTknbiKsnNissuu>
+
+  <multiCsvFileOut>/WEB-INF/temp/csv/multisyoukai</multiCsvFileOut>
+
+  <skeiTaskKanriCsvFileOut>/WEB-INF/temp/csv/multisyoukai</skeiTaskKanriCsvFileOut>
+
+  <batchFileIn>${config.base.batchInputDir}</batchFileIn>
+
+  <batchFileOut>${config.base.batchOutputDir}</batchFileOut>
+
+  <kanaNmKyoyou>18</kanaNmKyoyou>
+
+  <kzmeigiKanaNmKyoyou>30</kzmeigiKanaNmKyoyou>
+
+  <kanaAdrKyoyou>0</kanaAdrKyoyou>
+
+  <haitaHosyouTime>30</haitaHosyouTime>
+
+  <hikanHaitaYuukouKbn>TRUE</hikanHaitaYuukouKbn>
+
+  <hikanHaitaYuukouTime>30</hikanHaitaYuukouTime>
+
+  <serviceRoot>@service.root@/processes/</serviceRoot>
+
+  <lincKaisyaCd>63</lincKaisyaCd>
+
+  <creditSyuuDaikoCd>10</creditSyuuDaikoCd>
+
+  <batchDoujiCtlKbn>0</batchDoujiCtlKbn>
+
+  <sokinKaisyaCd>0818192400</sokinKaisyaCd>
+
+  <sokinKaisyaNmkn>スミトモセイメイホケン</sokinKaisyaNmkn>
+
+  <sokinBankCd>0009</sokinBankCd>
+
+  <sokinBankNmkn>ミツイスミトモ</sokinBankNmkn>
+
+  <sokinSitenCd>101</sokinSitenCd>
+
+  <sokinSitenNmkn>オオサカホンテン</sokinSitenNmkn>
+
+  <sokinYokinKbn>TOUZA</sokinYokinKbn>
+
+  <sokinKzNo>0234007</sokinKzNo>
+
+  <gksokinKaisyaCd>2100234007</gksokinKaisyaCd>
+
+  <gksokinKaisyaNmej>SUMITOMOSEIMEI</gksokinKaisyaNmej>
+
+  <gksokinBankCd>0009</gksokinBankCd>
+
+  <gksokinBankNmej>MITSUISUMITOMO</gksokinBankNmej>
+
+  <gksokinSitenCd>101</gksokinSitenCd>
+
+  <gksokinSitenNmej>OSAKA HONTEN</gksokinSitenNmej>
+
+  <gksoukinmokutekicd>0316</gksoukinmokutekicd>
+
+  <gksoukinmokutekinaiyou>SUMISEI SIHARAI SOUKIN</gksoukinmokutekinaiyou>
+
+  <gkkouzatuukasyu>JPY</gkkouzatuukasyu>
+
+  <gksokinYokinKbn>2</gksokinYokinKbn>
+
+  <gksokinKzNo>0002035036</gksokinKzNo>
+
+  <gkkouzatuukasyu2>JPY</gkkouzatuukasyu2>
+
+  <gksokinYokinKbn2>2</gksokinYokinKbn2>
+
+  <gksokinKzNo2>0002035044</gksokinKzNo2>
+
+  <gndTyoukaBankCd>9</gndTyoukaBankCd>
+
+  <gndTyoukaSitenCd>948</gndTyoukaSitenCd>
+
+  <gndTyoukaYokinKbn>TOUZA</gndTyoukaYokinKbn>
+
+  <gndTyoukaKzNo>8731999</gndTyoukaKzNo>
+
+  <kensakuIdList>
+    <kensakuId>syono</kensakuId>
+    <kensakuId>drtencd</kensakuId>
+    <kensakuId>syuudaikocd</kensakuId>
+    <kensakuId>sousinymd</kensakuId>
+    <kensakuId>shrymd</kensakuId>
+    <kensakuId>bosyuuskktrkno</kensakuId>
+    <kensakuId>nksysyno</kensakuId>
+    <kensakuId>skeijimukbn</kensakuId>
+    <kensakuId>tuukasyu</kensakuId>
+    <kensakuId>mosno</kensakuId>
+    <kensakuId>nyknymd</kensakuId>
+  </kensakuIdList>
+
+  <kensakunmList>
+    <kensakunm>証券番号</kensakunm>
+    <kensakunm>代理店コード</kensakunm>
+    <kensakunm>収納代行社コード</kensakunm>
+    <kensakunm>送信日</kensakunm>
+    <kensakunm>支払日（着金日）</kensakunm>
+    <kensakunm>募集人資格登録番号</kensakunm>
+    <kensakunm>年金証書番号</kensakunm>
+    <kensakunm>新契約事務区分</kensakunm>
+    <kensakunm>通貨種類</kensakunm>
+    <kensakunm>申込番号</kensakunm>
+    <kensakunm>入金日</kensakunm>
+  </kensakunmList>
+
+  <floorLimitKingaku>30000</floorLimitKingaku>
+
+  <hisiyouSubsystemList>
+    <hisiyouSubsystem>consumer</hisiyouSubsystem>
+    <hisiyouSubsystem>workflow</hisiyouSubsystem>
+    <hisiyouSubsystem>bosyuu</hisiyouSubsystem>
+    <hisiyouSubsystem>sueoki</hisiyouSubsystem>
+    <hisiyouSubsystem>dairiten</hisiyouSubsystem>
+    <hisiyouSubsystem>base</hisiyouSubsystem>
+    <hisiyouSubsystem>ray</hisiyouSubsystem>
+    <hisiyouSubsystem>zdb</hisiyouSubsystem>
+    <hisiyouSubsystem>workflowcore</hisiyouSubsystem>
+  </hisiyouSubsystemList>
+
+  <deleteDataFileOut>/work/batch_out</deleteDataFileOut>
+
+  <contextName>@contextname@</contextName>
+
+  <impPath>D:\oracle\product\10.2.0\client_1\BIN\imp</impPath>
+
+  <expPath>D:\oracle\product\10.2.0\client_1\BIN\exp</expPath>
+
+  <dbServiceName>stx</dbServiceName>
+
+  <encryptKbn>SURU</encryptKbn>
+
+  <excelTemplate>/WEB-INF/template</excelTemplate>
+
+  <htbStartYmd3DaiSphsyTykShop>99999999</htbStartYmd3DaiSphsyTykShop>
+
+  <htbStartYmd3DaiSphsyTykShopiGai>99999999</htbStartYmd3DaiSphsyTykShopiGai>
+
+  <saitaiKnkFlag>HONBANKNK</saitaiKnkFlag>
+
+  <shrtysyTsytHuyou>1000000</shrtysyTsytHuyou>
+
+  <shrKkn>5</shrKkn>
+
+  <tienRrtNenri>0.06</tienRrtNenri>
+
+  <tienRskKyjtHsnny>HUSANNYUU</tienRskKyjtHsnny>
+
+  <tienRskHasuusyori>ROUNDDOWN</tienRskHasuusyori>
+
+  <gsntysySaiteigk>250000</gsntysySaiteigk>
+
+  <gsntysyZeiritu>0.1021</gsntysyZeiritu>
+
+  <gsntysyZeirituKg>0.2042</gsntysyZeirituKg>
+
+  <gensenbunrikazeiZeiritu>0.20315</gensenbunrikazeiZeiritu>
+
+  <gsbunrikzZeirituNationaltax>0.15315</gsbunrikzZeirituNationaltax>
+
+  <gsbunrikzZeirituLocaltax>0.05</gsbunrikzZeirituLocaltax>
+
+  <kztKeikanensuu>5</kztKeikanensuu>
+
+  <hokenKaisyaAdr>大阪市中央区城見１丁目４番３５号</hokenKaisyaAdr>
+
+  <hokenKaisyaTelno>06-6937-1435</hokenKaisyaTelno>
+
+  <hokenKaisyaNmKanji>住友生命保険相互会社</hokenKaisyaNmKanji>
+
+  <seirino1>0399901408</seirino1>
+
+  <searchResultMaxCnt>500</searchResultMaxCnt>
+
+  <jyuusyoNyuuryokuJyougenCnt>62</jyuusyoNyuuryokuJyougenCnt>
+
+  <seirino2>0310100241865</seirino2>
+
+  <tekiyouKaisiYmd>20191001</tekiyouKaisiYmd>
+
+  <syouhizeiritu>0.08</syouhizeiritu>
+
+  <sinsyouhizeiritu>0.1</sinsyouhizeiritu>
+
+  <yenkaKouzaKetasuu>7</yenkaKouzaKetasuu>
+
+  <gaikaKouzaKetasuu>12</gaikaKouzaKetasuu>
+
+  <imiBangouChkPtn>.*(1564|3742|4219|4242|4256|4259|4444|4949|4989|7979|8842|9494|9646|9999|37564|42219|42259|42730|42731|88919|88942).*</imiBangouChkPtn>
+
+  <itijiFileHozonsaki>/WEB-INF/temp</itijiFileHozonsaki>
+
+  <nkshrtkyknksyukknFrom>2</nkshrtkyknksyukknFrom>
+
+  <nkshrtkyknksyukknTo>40</nkshrtkyknksyukknTo>
+
+  <smbcOyadrtencd>5100001</smbcOyadrtencd>
+
+  <mizuhoOyadrtencd>5101378</mizuhoOyadrtencd>
+
+  <kanposeimeiOyadrtencd>7100001</kanposeimeiOyadrtencd>
+
+  <yuutyoginkouOyadrtencd>7200001</yuutyoginkouOyadrtencd>
+
+  <nihonyuubinOyadrtencd>7300001</nihonyuubinOyadrtencd>
+
+  <smtbOyadrtencd>5100002</smtbOyadrtencd>
+
+  <mrfkouzatoriatukaiOyadrtencdList>
+    <mrfkouzatoriatukaiOyadrtencd>2101079</mrfkouzatoriatukaiOyadrtencd>
+  </mrfkouzatoriatukaiOyadrtencdList>
+
+  <sikinkoubaibukacd>521</sikinkoubaibukacd>
+
+  <callcentersosikicd>6620000</callcentersosikicd>
+
+  <hanteiyouCallcentersosikicdList>
+    <hanteiyouCallcentersosikicd>6620000</hanteiyouCallcentersosikicd>
+    <hanteiyouCallcentersosikicd>4130000</hanteiyouCallcentersosikicd>
+  </hanteiyouCallcentersosikicdList>
+
+  <uketimecallcenter1>受付時間　　午前９時～午後６時</uketimecallcenter1>
+
+  <uketimecallcenter2>　　　（土・日・祝日・年末年始除く）</uketimecallcenter2>
+
+  <uketimetantousitu1>受付時間　　午前９時～午後５時</uketimetantousitu1>
+
+  <uketimetantousitu2>　　　（土・日・祝日・年末年始除く）</uketimetantousitu2>
+
+  <kariukesiharaisosikicd1>5160000</kariukesiharaisosikicd1>
+
+  <kariukesiharaisosikicd21>5580000</kariukesiharaisosikicd21>
+
+  <kariukesiharaisosikicd22>5640000</kariukesiharaisosikicd22>
+
+  <kariukesiharaisosikicd23>5870000</kariukesiharaisosikicd23>
+
+  <kariukesiharaisosikicd3>7270000</kariukesiharaisosikicd3>
+
+  <kariukesiharaisosikicd4>7500000</kariukesiharaisosikicd4>
+
+  <kariukesiharaisosikicd5>5900000</kariukesiharaisosikicd5>
+
+  <kariukesiharaisosikicd6>5510000</kariukesiharaisosikicd6>
+
+  <hjybtantositucd1>516</hjybtantositucd1>
+
+  <hjybtantositucd2>551</hjybtantositucd2>
+
+  <hjybtantositucd3>564</hjybtantositucd3>
+
+  <hjybtantositucd4>727</hjybtantositucd4>
+
+  <hjybtantositucd5>750</hjybtantositucd5>
+
+  <hjybtantositucd6>590</hjybtantositucd6>
+
+  <hjybtantositucd7>565</hjybtantositucd7>
+
+  <tableTeigiInfoKakunouPass>yuyu.def.db.entity.</tableTeigiInfoKakunouPass>
+
+  <teigiInfoKakunouRootPass>yuyu.def.</teigiInfoKakunouRootPass>
+
+  <hubianswernissuu>9</hubianswernissuu>
+
+  <douhassinsakihubimaxkensuu>10</douhassinsakihubimaxkensuu>
+
+  <tyoukihubihanteinissuu>30</tyoukihubihanteinissuu>
+
+  <huridenyouhassoukbn1tantousitucd>516</huridenyouhassoukbn1tantousitucd>
+
+  <huridenyouhassoukbn2tantousitucd>564</huridenyouhassoukbn2tantousitucd>
+
+  <huridenyouhassoukbn3tantousitucd>565</huridenyouhassoukbn3tantousitucd>
+
+  <huridenyouhassoukbn4tantousitucd>727</huridenyouhassoukbn4tantousitucd>
+
+  <huridenyouhassoukbn5tantousitucd>750</huridenyouhassoukbn5tantousitucd>
+
+  <huridenyouhassoukbn6tantousitucd>590</huridenyouhassoukbn6tantousitucd>
+
+  <huridenyouhassoukbn7tantousitucd>551</huridenyouhassoukbn7tantousitucd>
+
+  <huridenyouhassoukbn8tantousitucd>000</huridenyouhassoukbn8tantousitucd>
+
+  <hnsyaSyoukaiSosikiyouRoleCdList>
+    <hnsyaSyoukaiSosikiyouRoleCd>2070</hnsyaSyoukaiSosikiyouRoleCd>
+  </hnsyaSyoukaiSosikiyouRoleCdList>
+
+  <sisyayouRoleCdList>
+    <sisyayouRoleCd>2090</sisyayouRoleCd>
+  </sisyayouRoleCdList>
+
+  <sisyaReigaiSosikiCdList>
+    <sisyaReigaiSosikiCd>xxx</sisyaReigaiSosikiCd>
+  </sisyaReigaiSosikiCdList>
+
+  <fileDownloadAbleMachineKindList>
+    <fileDownloadAbleMachineKind>26</fileDownloadAbleMachineKind>
+    <fileDownloadAbleMachineKind>27</fileDownloadAbleMachineKind>
+    <fileDownloadAbleMachineKind>28</fileDownloadAbleMachineKind>
+    <fileDownloadAbleMachineKind>98</fileDownloadAbleMachineKind>
+    <fileDownloadAbleMachineKind>99</fileDownloadAbleMachineKind>
+  </fileDownloadAbleMachineKindList>
+
+  <provideKinouId>_system_</provideKinouId>
+
+  <sisyaAtukaiSosikiCdList>
+    <sisyaAtukaiSosikiCd>xxx</sisyaAtukaiSosikiCd>
+  </sisyaAtukaiSosikiCdList>
+
+  <aplLogOutputDir>${config.biz.aplLogOutputDir}</aplLogOutputDir>
+
+  <insatukaKinouIdList>
+    <insatukaKinouId>skmousikomisyo</insatukaKinouId>
+    <insatukaKinouId>skkokutisyo</insatukaKinouId>
+    <insatukaKinouId>skmousikomitenken</insatukaKinouId>
+    <insatukaKinouId>skhubitouroku</insatukaKinouId>
+    <insatukaKinouId>skhubikaisyou</insatukaKinouId>
+    <insatukaKinouId>skkankyousatei</insatukaKinouId>
+    <insatukaKinouId>skimusatei</insatukaKinouId>
+    <insatukaKinouId>skkeiyakukakuninirai</insatukaKinouId>
+    <insatukaKinouId>skkeiyakukakuninkekka</insatukaKinouId>
+    <insatukaKinouId>sktokunin</insatukaKinouId>
+    <insatukaKinouId>skkyouseihand</insatukaKinouId>
+    <insatukaKinouId>skmousikomitorikesi</insatukaKinouId>
+    <insatukaKinouId>skketteiriyuu</insatukaKinouId>
+    <insatukaKinouId>skhurikomisakujyotouroku</insatukaKinouId>
+    <insatukaKinouId>sknyuukin</insatukaKinouId>
+    <insatukaKinouId>skhenkinkibou</insatukaKinouId>
+    <insatukaKinouId>skhenkin</insatukaKinouId>
+    <insatukaKinouId>sktoujitufbhenkintorikesi</insatukaKinouId>
+    <insatukaKinouId>sknyuukinhenkinkakunin</insatukaKinouId>
+    <insatukaKinouId>skhurikominyuukinhaneiyoyaku</insatukaKinouId>
+    <insatukaKinouId>skseirituhoryuu</insatukaKinouId>
+    <insatukaKinouId>sktoujituseiritutorikesi</insatukaKinouId>
+    <insatukaKinouId>skseikyuusyosakusei</insatukaKinouId>
+    <insatukaKinouId>sktetudukityuui</insatukaKinouId>
+    <insatukaKinouId>skmoschkexec</insatukaKinouId>
+    <insatukaKinouId>skdairitenkobetujyouhoutouroku</insatukaKinouId>
+    <insatukaKinouId>skmossyoukai</insatukaKinouId>
+    <insatukaKinouId>skstyjksyoukai</insatukaKinouId>
+    <insatukaKinouId>sktokuteikankeihoujin</insatukaKinouId>
+    <insatukaKinouId>sknyuuryokusaisyoukai</insatukaKinouId>
+    <insatukaKinouId>skhubimsg</insatukaKinouId>
+    <insatukaKinouId>khjyuusyohenkou</insatukaKinouId>
+    <insatukaKinouId>khmeigihenkou</insatukaKinouId>
+    <insatukaKinouId>khkanakanjiteisei</insatukaKinouId>
+    <insatukaKinouId>khsiteidairitokuyakuhuka</insatukaKinouId>
+    <insatukaKinouId>khkaiyaku</insatukaKinouId>
+    <insatukaKinouId>khgengaku</insatukaKinouId>
+    <insatukaKinouId>khseinengappiseiteisei</insatukaKinouId>
+    <insatukaKinouId>khkaigomaebaraitkhenkou</insatukaKinouId>
+    <insatukaKinouId>khkeiyakutorikesi</insatukaKinouId>
+    <insatukaKinouId>khkeiyakusyoukai</insatukaKinouId>
+    <insatukaKinouId>khtetudukityuui</insatukaKinouId>
+    <insatukaKinouId>khsyoukensaihakkou</insatukaKinouId>
+    <insatukaKinouId>khkoujyosyoumeisaihakkou</insatukaKinouId>
+    <insatukaKinouId>khsyouraikaiyakuhenreikin</insatukaKinouId>
+    <insatukaKinouId>khonlinekensuusyoukai</insatukaKinouId>
+    <insatukaKinouId>khtoujituonlinetorikesi</insatukaKinouId>
+    <insatukaKinouId>khdairiteninfosyuusei</insatukaKinouId>
+    <insatukaKinouId>khhubitouroku</insatukaKinouId>
+    <insatukaKinouId>khhubinaiyoukensaku</insatukaKinouId>
+    <insatukaKinouId>khhubikaisyou</insatukaKinouId>
+    <insatukaKinouId>khbikinsakujyo</insatukaKinouId>
+    <insatukaKinouId>khsakuinnmnosyuusei</insatukaKinouId>
+    <insatukaKinouId>simousideuketuke</insatukaKinouId>
+    <insatukaKinouId>sisiboukariuketuke</insatukaKinouId>
+    <insatukaKinouId>siseikyuuuketukesb</insatukaKinouId>
+    <insatukaKinouId>sisateisb</insatukaKinouId>
+    <insatukaKinouId>sisateisougousyoukai</insatukaKinouId>
+    <insatukaKinouId>sisyounintorikesi</insatukaKinouId>
+    <insatukaKinouId>sisindansyoryousiharai</insatukaKinouId>
+    <insatukaKinouId>sisinsatyuuisetei</insatukaKinouId>
+    <insatukaKinouId>sihkkingakusisan</insatukaKinouId>
+    <insatukaKinouId>sishrrirekisyoukai</insatukaKinouId>
+    <insatukaKinouId>sittzkrirekisyoukai</insatukaKinouId>
+    <insatukaKinouId>sihubitouroku</insatukaKinouId>
+    <insatukaKinouId>sihubikaisyou</insatukaKinouId>
+    <insatukaKinouId>sihubinaiyoukensaku</insatukaKinouId>
+    <insatukaKinouId>sibikintuikasakujyo</insatukaKinouId>
+    <insatukaKinouId>usertouroku</insatukaKinouId>
+    <insatukaKinouId>bzketteisya</insatukaKinouId>
+    <insatukaKinouId>bzsimekiribi</insatukaKinouId>
+    <insatukaKinouId>bzsyokugyou</insatukaKinouId>
+    <insatukaKinouId>bzsyoubyou</insatukaKinouId>
+    <insatukaKinouId>hozenworklist</insatukaKinouId>
+    <insatukaKinouId>jimuyoucodenyuuryoku</insatukaKinouId>
+    <insatukaKinouId>kouteijyoukyousyoukai</insatukaKinouId>
+    <insatukaKinouId>kouteikaisitouroku</insatukaKinouId>
+    <insatukaKinouId>kouteitorikesi</insatukaKinouId>
+    <insatukaKinouId>siharaiworklist</insatukaKinouId>
+    <insatukaKinouId>sinkeiyakuworklist</insatukaKinouId>
+    <insatukaKinouId>syorikensuusyoukai</insatukaKinouId>
+    <insatukaKinouId>dskokyakutouroku</insatukaKinouId>
+    <insatukaKinouId>dskokyakuseibi</insatukaKinouId>
+    <insatukaKinouId>dsmailsousinrirekisyoukai</insatukaKinouId>
+    <insatukaKinouId>dsmailhaisinyoyaku</insatukaKinouId>
+    <insatukaKinouId>bzhojyoboruikeigakunyuuryoku</insatukaKinouId>
+    <insatukaKinouId>khmkhgkhenkou</insatukaKinouId>
+    <insatukaKinouId>khtmttkiniten</insatukaKinouId>
+    <insatukaKinouId>khyendthnkhrshr</insatukaKinouId>
+    <insatukaKinouId>khmkhgktttyendthnkuktk</insatukaKinouId>
+    <insatukaKinouId>khsouhuannaisakusei</insatukaKinouId>
+    <insatukaKinouId>khkanikeiyakunaiyouteisei</insatukaKinouId>
+    <insatukaKinouId>dstrhkservicetouroku</insatukaKinouId>
+    <insatukaKinouId>khkyknaiyouosirase</insatukaKinouId>
+    <insatukaKinouId>khdshr</insatukaKinouId>
+    <insatukaKinouId>khharaikatahenkou</insatukaKinouId>
+    <insatukaKinouId>khonlinenyuukin</insatukaKinouId>
+    <insatukaKinouId>khnyuukintorikesi</insatukaKinouId>
+    <insatukaKinouId>khkariuketeisei</insatukaKinouId>
+    <insatukaKinouId>khonlinedattai</insatukaKinouId>
+    <insatukaKinouId>khtokusin</insatukaKinouId>
+    <insatukaKinouId>khkzseibi</insatukaKinouId>
+    <insatukaKinouId>khzennouseisangksyoukai</insatukaKinouId>
+    <insatukaKinouId>simakeseikyuuinfof</insatukaKinouId>
+    <insatukaKinouId>dssousarirekisyoukai</insatukaKinouId>
+    <insatukaKinouId>khyendthnkuktknini</insatukaKinouId>
+    <insatukaKinouId>khkawaserateyoteirrtsyoukai</insatukaKinouId>
+    <insatukaKinouId>sktoujitunyuukintorikesi</insatukaKinouId>
+    <insatukaKinouId>khcifcdikkatuhenkoutouroku</insatukaKinouId>
+    <insatukaKinouId>sibunkatusiharaikeisan</insatukaKinouId>
+    <insatukaKinouId>simakesyorui</insatukaKinouId>
+    <insatukaKinouId>skcreditjyouhoutouroku</insatukaKinouId>
+    <insatukaKinouId>khkzktrkkykdrhnk</insatukaKinouId>
+    <insatukaKinouId>tantousyabetusyoritasksyoukai</insatukaKinouId>
+    <insatukaKinouId>wariatekaijyo</insatukaKinouId>
+    <insatukaKinouId>sisiboukariuketuketeisei</insatukaKinouId>
+  </insatukaKinouIdList>
+
+  <myNumberSyoruiCdList>
+    <myNumberSyoruiCd>hk118</myNumberSyoruiCd>
+    <myNumberSyoruiCd>kk256</myNumberSyoruiCd>
+    <myNumberSyoruiCd>kk257</myNumberSyoruiCd>
+    <myNumberSyoruiCd>kk258</myNumberSyoruiCd>
+  </myNumberSyoruiCdList>
+
+  <tableSyoukaiSansyouHukaList>
+    <tableSyoukaiSansyouHuka>BM_RateD</tableSyoukaiSansyouHuka>
+    <tableSyoukaiSansyouHuka>BM_SibouRitu</tableSyoukaiSansyouHuka>
+    <tableSyoukaiSansyouHuka>BM_RisaHitSyouhnyouRateD</tableSyoukaiSansyouHuka>
+    <tableSyoukaiSansyouHuka>BW_HtkinSikinIdouWk</tableSyoukaiSansyouHuka>
+  </tableSyoukaiSansyouHukaList>
+
+  <htkinSikinIdouDataTrkTsyJobcdList>
+    <htkinSikinIdouDataTrkTsyJobcd>RGHJM004</htkinSikinIdouDataTrkTsyJobcd>
+    <htkinSikinIdouDataTrkTsyJobcd>RGHJM001</htkinSikinIdouDataTrkTsyJobcd>
+  </htkinSikinIdouDataTrkTsyJobcdList>
+
+  <syoruiToutyakuErrorTsgList>
+    <syoruiToutyakuErrorTsg>hk015</syoruiToutyakuErrorTsg>
+    <syoruiToutyakuErrorTsg>hk411</syoruiToutyakuErrorTsg>
+  </syoruiToutyakuErrorTsgList>
+
+
+</yuyuBizConfig>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="skmaindairiten">
+
+
+	<description>
+		10,新契約（代理店）
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-mousikomisyotorikomi"></transition>
+	</start-state>
+
+
+	<state name="state-mousikomisyotorikomi">
+		<transition to="branch-after-mousikomisyotorikomi"></transition>
+	</state>
+
+	<state name="state-mousikomisyonyuuryoku">
+		<transition to="branch-after-mousikomisyonyuuryoku"></transition>
+	</state>
+
+	<state name="state-mousikomitenken">
+		<transition to="branch-after-mousikomitenken"></transition>
+	</state>
+
+	<state name="state-satei">
+		<transition to="branch-after-satei"></transition>
+	</state>
+
+	<state name="state-kouteikanryou">
+		<transition to="branch-after-kouteikanryou"></transition>
+	</state>
+
+	<task-node name="state-syoruinyuuryoku">
+		<task></task>
+		<transition to="branch-after-syoruinyuuryoku"></transition>
+	</task-node>
+
+	<task-node name="state-kettei">
+		<task></task>
+		<transition to="branch-after-kettei"></transition>
+	</task-node>
+
+	<task-node name="state-seirituhoryuuhubi">
+		<task></task>
+		<transition to="branch-after-seirituhoryuuhubi"></transition>
+	</task-node>
+
+	<task-node name="state-seiritu">
+		<task></task>
+		<transition to="branch-after-seiritu"></transition>
+	</task-node>
+
+	<decision name="branch-after-mousikomisyotorikomi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-mousikomisyonyuuryoku" name="mousikominyuuryoku"></transition>
+		<transition to="state-syoruinyuuryoku" name="syoruinyuuryoku"></transition>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-kettei" name="kettei"></transition>
+		<transition to="state-satei" name="satei"></transition>
+		<transition to="state-seirituhoryuuhubi" name="seirituhoryuuhubi"></transition>
+		<transition to="state-seiritu" name="seiritu"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-mousikomisyonyuuryoku">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-syoruinyuuryoku" name="syoruinyuuryoku"></transition>
+		<transition to="state-mousikomisyonyuuryoku" name="mousikominyuuryoku"></transition>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-syoruinyuuryoku">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-syoruinyuuryoku" name="syoruinyuuryoku"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-mousikomitenken">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-kettei" name="kettei"></transition>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-syoruinyuuryoku" name="syoruinyuuryoku"></transition>
+		<transition to="state-satei" name="satei"></transition>
+		<transition to="state-seirituhoryuuhubi" name="seirituhoryuuhubi"></transition>
+		<transition to="state-seiritu" name="seiritu"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-kettei">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-satei" name="satei"></transition>
+		<transition to="state-kettei" name="kettei"></transition>
+		<transition to="state-syoruinyuuryoku" name="syoruinyuuryoku"></transition>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-seirituhoryuuhubi" name="seirituhoryuuhubi"></transition>
+		<transition to="state-seiritu" name="seiritu"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-satei">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-seirituhoryuuhubi" name="seirituhoryuuhubi"></transition>
+		<transition to="state-satei" name="satei"></transition>
+		<transition to="state-kettei" name="kettei"></transition>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-syoruinyuuryoku" name="syoruinyuuryoku"></transition>
+		<transition to="state-seiritu" name="seiritu"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-seirituhoryuuhubi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-seiritu" name="seiritu"></transition>
+		<transition to="state-seirituhoryuuhubi" name="seirituhoryuuhubi"></transition>
+		<transition to="state-satei" name="satei"></transition>
+		<transition to="state-kettei" name="kettei"></transition>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-seiritu">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+		<transition to="state-seiritu" name="seiritu"></transition>
+		<transition to="state-kettei" name="kettei"></transition>
+		<transition to="state-satei" name="satei"></transition>
+		<transition to="state-seirituhoryuuhubi" name="seirituhoryuuhubi"></transition>
+	</decision>
+
+	<decision name="branch-after-kouteikanryou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="state-kouteikanryou" name="kouteikanryou"></transition>
+		<transition to="state-syoruinyuuryoku" name="syoruinyuuryoku"></transition>
+		<transition to="state-mousikomitenken" name="mousikomitenken"></transition>
+		<transition to="state-kettei" name="kettei"></transition>
+		<transition to="state-satei" name="satei"></transition>
+		<transition to="state-seirituhoryuuhubi" name="seirituhoryuuhubi"></transition>
+		<transition to="state-seiritu" name="seiritu"></transition>
+	</decision>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

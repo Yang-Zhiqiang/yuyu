@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="skinputkokuti">
+
+
+	<description>
+		30,告知書入力
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-kouteikaisi"></transition>
+	</start-state>
+
+
+	<state name="state-kouteikaisi">
+		<transition to="branch-after-kouteikaisi"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikaisi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kokutisyo_1ji" name="forward-1ji"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="kokutisyo_3ji" name="forward-3ji"></transition>
+	</decision>
+
+	<task-node name="kokutisyo_1ji">
+		<task></task>
+		<transition to="branch-after-kokutisyo_1ji"></transition>
+	</task-node>
+
+	<decision name="branch-after-kokutisyo_1ji">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kokutisyo_2ji" name="forward-2ji"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<task-node name="kokutisyo_2ji">
+		<task></task>
+		<transition to="branch-after-kokutisyo_2ji"></transition>
+	</task-node>
+
+	<decision name="branch-after-kokutisyo_2ji">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kokutisyo_3ji" name="forward-3ji"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<task-node name="kokutisyo_3ji">
+		<task></task>
+		<transition to="state-kouteikanryou"></transition>
+	</task-node>
+
+	<state name="state-kouteikanryou">
+		<transition to="branch-after-kouteikanryou"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikanryou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="kokutisyo_3ji" name="forward-3ji"></transition>
+		<transition to="kokutisyo_2ji" name="forward-2ji"></transition>
+		<transition to="kokutisyo_1ji" name="forward-1ji"></transition>
+	</decision>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

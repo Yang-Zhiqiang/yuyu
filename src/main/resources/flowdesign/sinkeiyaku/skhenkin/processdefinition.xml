@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="skhenkin">
+
+
+	<description>
+		110,新契約返金
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-kouteikaisi"></transition>
+	</start-state>
+
+
+	<state name="state-kouteikaisi">
+		<transition to="branch-after-kouteikaisi"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikaisi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="henkinnyuuryoku" name="henkin"></transition>
+		<transition to="end-state1" name="end"></transition>
+	</decision>
+
+	<decision name="branch-after-henkinnyuuryoku">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="henkinnyuuryoku" name="henkin"></transition>
+	</decision>
+
+	<task-node name="henkinnyuuryoku">
+		<task></task>
+		<transition to="branch-after-henkinnyuuryoku"></transition>
+	</task-node>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

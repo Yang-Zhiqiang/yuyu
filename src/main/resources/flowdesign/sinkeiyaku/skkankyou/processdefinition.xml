@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="skkankyou">
+
+
+	<description>
+		70,環境査定
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-kouteikaisi"></transition>
+	</start-state>
+
+
+	<task-node name="kankyousatei_1ji">
+		<task></task>
+		<transition to="branch-after-kankyousatei_1ji"></transition>
+	</task-node>
+
+	<task-node name="kankyousatei_2jia">
+		<task></task>
+		<transition to="branch-after-kankyousatei_2jia"></transition>
+	</task-node>
+
+	<task-node name="kankyousatei_2jib">
+		<task></task>
+		<transition to="branch-after-kankyousatei_2jib"></transition>
+	</task-node>
+
+	<state name="state-kouteikaisi">
+		<transition to="branch-after-kouteikaisi"></transition>
+	</state>
+
+	<state name="state-kouteikanryou">
+		<transition to="branch-after-kouteikanryou"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikaisi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kankyousatei_1ji" name="forward-1ji"></transition>
+		<transition to="kankyousatei_2jia" name="forward-2jia"></transition>
+		<transition to="kankyousatei_2jib" name="forward-2jib"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-kankyousatei_1ji">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kankyousatei_2jia" name="forward-2jia"></transition>
+		<transition to="kankyousatei_1ji" name="forward-1ji"></transition>
+		<transition to="kankyousatei_2jib" name="forward-2jib"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-kankyousatei_2jia">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="kankyousatei_2jib" name="forward-2jib"></transition>
+		<transition to="kankyousatei_2jia" name="forward-2jia"></transition>
+		<transition to="kankyousatei_1ji" name="forward-1ji"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-kankyousatei_2jib">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="kankyousatei_2jib" name="forward-2jib"></transition>
+		<transition to="kankyousatei_2jia" name="forward-2jia"></transition>
+		<transition to="kankyousatei_1ji" name="forward-1ji"></transition>
+	</decision>
+
+	<decision name="branch-after-kouteikanryou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="kankyousatei_2jib" name="forward-2jib"></transition>
+		<transition to="kankyousatei_2jia" name="forward-2jia"></transition>
+		<transition to="kankyousatei_1ji" name="forward-1ji"></transition>
+	</decision>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

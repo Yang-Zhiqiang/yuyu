@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) 2010-2011 Fuji Xerox Co., Ltd. All rights reserved. -->
+<definitions name="NotificationListenerService"
+	targetNamespace="http://www.fujixerox.co.jp/2010/09/pga/ws/notify"
+	xmlns="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:tns="http://www.fujixerox.co.jp/2010/09/pga/ws/notify"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:types="http://www.fujixerox.co.jp/2010/09/pga/ws/types"
+	xmlns:fault="http://www.fujixerox.co.jp/2010/09/pga/ws/fault">
+
+	<types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.fujixerox.co.jp/2010/09/pga/ws/notify" elementFormDefault="qualified">
+			<xsd:import schemaLocation="PgServiceTypes.xsd" namespace="http://www.fujixerox.co.jp/2010/09/pga/ws/types"/>
+			<xsd:import schemaLocation="FaultTypes.xsd" namespace="http://www.fujixerox.co.jp/2010/09/pga/ws/fault"/>
+			<xsd:element name="notify" type="types:Notify"/>
+			<xsd:element name="notifyResponse" type="types:NotifyResponse"/>
+		</xsd:schema>
+	</types>
+
+	<message name="NotifyRequest">
+		<part name="parameters" element="tns:notify"/>
+	</message>
+	<message name="NotifyResponse">
+		<part name="parameters" element="tns:notifyResponse" />
+	</message>
+	<message name="NotifyFault">
+		<part name="parameters" element="fault:pgFault"/>
+	</message>
+
+	<portType name="NotificationListener">
+		<operation name="notify">
+			<input message="tns:NotifyRequest"/>
+			<output message="tns:NotifyResponse"/>
+			<fault name="Fault" message="tns:NotifyFault"/>
+		</operation>
+	</portType>
+
+	<binding name="NotificationListenerServicePortBinding" type="tns:NotificationListener">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+		<operation name="notify">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="Fault" >
+				<soap:fault name="Fault" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+
+	<service name="NotificationListenerService">
+		<port name="NotificationListenerPort" binding="tns:NotificationListenerServicePortBinding">
+			<soap:address location="${NotificationListenerService.location}"/>
+		</port>
+	</service>
+</definitions>

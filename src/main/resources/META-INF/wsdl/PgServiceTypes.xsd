@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xsd:schema version="1.0"
+	targetNamespace="http://www.fujixerox.co.jp/2010/09/pga/ws/types"
+	xmlns:tns="http://www.fujixerox.co.jp/2010/09/pga/ws/types"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xmime="http://www.w3.org/2005/05/xmlmime"
+	elementFormDefault="qualified">
+
+	<xsd:complexType name="AttributeType">
+		<xsd:sequence>
+			<xsd:element name="id" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AttributesType">
+		<xsd:sequence>
+			<xsd:element name="attribute" type="tns:AttributeType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AttributeIdsType">
+		<xsd:sequence>
+			<xsd:element name="attributeId" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="KeyedAttributeType">
+		<xsd:sequence>
+			<xsd:element name="key" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="attribute" type="tns:AttributesType" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="KeyedAttributesType">
+		<xsd:sequence>
+			<xsd:element name="keyedAttributes" type="tns:KeyedAttributeType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="LocationInfoType">
+		<xsd:sequence>
+			<xsd:element name="uri" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="url" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="fileName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="CreateQRCode">
+		<xsd:sequence>
+			<xsd:element name="value" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="CreateQRCodeResponse">
+		<xsd:sequence>
+			<xsd:element name="return" type="xsd:base64Binary" xmime:expectedContentTypes="application/octet-stream" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="PutDocument">
+		<xsd:sequence>
+			<xsd:element name="fileName" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="folder" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="contentType" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="attributes" type="tns:AttributesType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="data" type="xsd:base64Binary" xmime:expectedContentTypes="application/octet-stream" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="PutDocumentResponse">
+		<xsd:sequence>
+			<xsd:element name="return" type="tns:LocationInfoType" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="GetDocument">
+		<xsd:sequence>
+			<xsd:element name="documentURI" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="GetDocumentResponseType">
+		<xsd:sequence>
+			<xsd:element name="contentType" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+			<xsd:element name="attributes" type="tns:AttributesType" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="data" type="xsd:base64Binary" xmime:expectedContentTypes="application/octet-stream" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="GetDocumentResponse">
+		<xsd:sequence>
+			<xsd:element name="return" type="tns:GetDocumentResponseType" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="DeleteDocument">
+		<xsd:sequence>
+			<xsd:element name="documentURI" type="xsd:string" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="DeleteDocumentResponse" />
+
+	<xsd:complexType name="Notify">
+		<xsd:sequence>
+			<xsd:element name="documentId" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="documentURI" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="user" type="xsd:string" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="pages" type="xsd:int" minOccurs="1" maxOccurs="1" />
+			<xsd:element name="attributes" type="tns:AttributesType" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="NotifyResponse"/>
+
+	<xsd:element name="createQRCode" type="tns:CreateQRCode" />
+	<xsd:element name="createQRCodeResponse" type="tns:CreateQRCodeResponse" />
+	<xsd:element name="putDocument" type="tns:PutDocument" />
+	<xsd:element name="putDocumentResponse" type="tns:PutDocumentResponse" />
+	<xsd:element name="getDocument" type="tns:GetDocument" />
+	<xsd:element name="getDocumentResponse" type="tns:GetDocumentResponse" />
+	<xsd:element name="deleteDocument" type="tns:DeleteDocument" />
+	<xsd:element name="deleteDocumentResponse" type="tns:DeleteDocumentResponse" />
+</xsd:schema>

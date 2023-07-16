@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence
+  xmlns="http://java.sun.com/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+  version="1.0"
+>
+
+  <persistence-unit name="YuyuDB" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+    <class>${entities}</class>
+
+    <properties>
+      <property name="hibernate.connection.provider_class"
+               value="jp.co.slcs.swak.db.hibernate.connection.SwakDataSourceConnectionProvider" />
+      <property name="swak.db.connection.datasourcename"   value="${db.datasourceName}"    />
+
+      <property name="hibernate.dialect"                   value="${db.dialect}" />
+      <property name="hibernate.flushMode"                 value="FLUSH_AUTO"    />
+
+      <property name="hibernate.hbm2ddl.auto" value="none" />
+
+      <property name="hibernate.connection.isolation" value="2" />
+
+      <property name="hibernate.jdbc.fetch_size" value="100" />
+      <property name="hibernate.jdbc.batch_size" value="100" />
+
+      <property name="hibernate.show_sql"         value="false" />
+      <property name="hibernate.format_sql"       value="false" />
+      <property name="hibernate.use_sql_comments" value="false" />
+
+      <property name="hibernate.cache.region.factory_class"
+               value="org.hibernate.cache.EhCacheRegionFactory"/>
+      <property name="hibernate.cache.use_second_level_cache" value="true" />
+      <property name="hibernate.cache.use_query_cache"        value="true" />
+
+      <property name="hibernate.order_inserts" value="${hibernate.order_inserts}" />
+      <property name="hibernate.order_updates" value="${hibernate.order_updates}" />
+      <property name="hibernate.jdbc.batch_versioned_data" value="${hibernate.jdbc.batch_versioned_data}" />
+
+    </properties>
+
+  </persistence-unit>
+
+</persistence>

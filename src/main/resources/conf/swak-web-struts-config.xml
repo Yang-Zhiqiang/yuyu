@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-web-struts-config>
+
+<SWAKStrutsConfig>
+  <renderRecordCountUnit>unit.ken</renderRecordCountUnit>
+
+  <requiredErrorCd>EAV0001</requiredErrorCd>
+
+  <uploadSizeLimitExceededErrorCd>EAC0013</uploadSizeLimitExceededErrorCd>
+
+  <seirekiFormatErrorCd>EAV0040</seirekiFormatErrorCd>
+
+  <popupParameterErrorCd>EAS0052</popupParameterErrorCd>
+
+  <bizNumberFormat>#,##0.##########</bizNumberFormat>
+  <bizCurrencyFormat>#,##0.##########</bizCurrencyFormat>
+  <numberFormat>#,##0.##########</numberFormat>
+
+  <anotherRequestUriPattern>.*NotificationListener.ws</anotherRequestUriPattern>
+
+  <webServiceRequestUriPattern>.*/webservice/.*</webServiceRequestUriPattern>
+
+</SWAKStrutsConfig>

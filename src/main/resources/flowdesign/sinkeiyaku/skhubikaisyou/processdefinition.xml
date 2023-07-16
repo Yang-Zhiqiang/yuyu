@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="skhubikaisyou">
+
+
+	<description>
+		60,新契約不備解消
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-kouteikaisi"></transition>
+	</start-state>
+
+
+	<task-node name="hubikaitoumati">
+		<task></task>
+		<transition to="branch-after-hubikaitoumati"></transition>
+	</task-node>
+
+	<task-node name="hubikaisyou">
+		<task></task>
+		<transition to="branch-after-hubikaisyou"></transition>
+	</task-node>
+
+	<state name="state-kouteikanryou">
+		<transition to="branch-after-kouteikanryou"></transition>
+	</state>
+
+	<decision name="branch-after-hubikaitoumati">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="hubikaisyou" name="kaisyou"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="hubikaitoumati" name="kaitoumati"></transition>
+	</decision>
+
+	<decision name="branch-after-hubikaisyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="hubikaitoumati" name="kaitoumati"></transition>
+		<transition to="hubikaisyou" name="kaisyou"></transition>
+	</decision>
+
+	<decision name="branch-after-kouteikanryou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="hubikaisyou" name="kaisyou"></transition>
+		<transition to="hubikaitoumati" name="kaitoumati"></transition>
+	</decision>
+
+	<state name="state-kouteikaisi">
+		<transition to="branch-after-kouteikaisi"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikaisi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="hubikaitoumati" name="kaitoumati"></transition>
+		<transition to="hubikaisyou" name="kaisyou"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

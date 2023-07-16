@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-core-config>
+<coreConfig>
+    <debugMode>${config.swakcore.debugmode}</debugMode>
+
+    <enableUnitTestVerboseLogging>true</enableUnitTestVerboseLogging>
+
+    <applicationMessages>application_messages</applicationMessages>
+
+    <additionalMessages>
+      <additionalMessage>application_messages_base</additionalMessage>
+      <additionalMessage>application_messages_biz</additionalMessage>
+      <additionalMessage>application_messages_bosyuu</additionalMessage>
+      <additionalMessage>application_messages_direct</additionalMessage>
+      <additionalMessage>application_messages_dsweb</additionalMessage>
+      <additionalMessage>application_messages_hozen</additionalMessage>
+      <additionalMessage>application_messages_nenkin</additionalMessage>
+      <additionalMessage>application_messages_siharai</additionalMessage>
+      <additionalMessage>application_messages_sinkeiyaku</additionalMessage>
+      <additionalMessage>application_messages_suuri</additionalMessage>
+      <additionalMessage>application_messages_workflow</additionalMessage>
+    </additionalMessages>
+
+    <applicationResources>application_resources</applicationResources>
+
+    <additionalResources>
+      <additionalResource>application_resources_base</additionalResource>
+      <additionalResource>application_resources_biz</additionalResource>
+      <additionalResource>application_resources_bosyuu</additionalResource>
+      <additionalResource>application_resources_direct</additionalResource>
+      <additionalResource>application_resources_dsweb</additionalResource>
+      <additionalResource>application_resources_hozen</additionalResource>
+      <additionalResource>application_resources_nenkin</additionalResource>
+      <additionalResource>application_resources_qrcode</additionalResource>
+      <additionalResource>application_resources_siharai</additionalResource>
+      <additionalResource>application_resources_sinkeiyaku</additionalResource>
+      <additionalResource>application_resources_suuri</additionalResource>
+      <additionalResource>application_resources_workflow</additionalResource>
+      <additionalResource>application_resources_workflowcore</additionalResource>
+      <additionalResource>application_resources_zdb</additionalResource>
+    </additionalResources>
+
+    <webModules>
+      <webModule>jp.co.slcs.swak.core.inject.TraceModule</webModule>
+      <webModule>jp.co.slcs.swak.core.inject.SWAKLoggerModule</webModule>
+      <webModule>jp.co.slcs.swak.core.inject.SWAKCoreModule</webModule>
+      <webModule>jp.co.slcs.swak.bizinfr.inject.BizInfrModule</webModule>
+      <webModule>jp.co.slcs.swak.mail.inject.MailModule</webModule>
+      <webModule>jp.co.slcs.swak.conversion.inject.ConversionModule</webModule>
+      <webModule>jp.co.slcs.swak.validation.inject.ValidationModule</webModule>
+      <webModule>jp.co.slcs.swak.web.conversation.inject.ConversationModule</webModule>
+      <webModule>jp.co.slcs.swak.web.download.inject.FileDownloadModule</webModule>
+      <webModule>jp.co.slcs.swak.web.inject.UiBeanLoggingModule</webModule>
+      <webModule>jp.co.slcs.swak.web.struts.inject.SWAKStrutsServletModule</webModule>
+      <webModule>yuyu.infr.inject.YuyuCommonModule</webModule>
+      <webModule>yuyu.infr.inject.YuyuWebModule</webModule>
+      <webModule>yuyu.infr.inject.IwfJpaModule</webModule>
+      <webModule>yuyu.infr.auth.YuyuAuthModule</webModule>
+      <webModule>yuyu.common.inject.YuyuCommonModule</webModule>
+      <webModule>yuyu.infr.batchweb.inject.ClientBatchModule</webModule>
+      <webModule>jp.co.slcs.swak.webservice.client.inject.ClientWebServiceModule</webModule>
+      <webModule>jp.co.slcs.swak.webservice.server.inject.ServerWebServiceModule</webModule>
+      <webModule>yuyu.common.biz.inject.BizCommonModule</webModule>
+      <webModule>yuyu.common.workflowcore.inject.WorkflowcoreCommonModule</webModule>
+      <webModule>yuyu.common.workflowcore.inject.WorkflowcoreRuleModule</webModule>
+      <webModule>yuyu.common.sinkeiyaku.inject.SinkeiyakuCommonModule</webModule>
+    </webModules>
+
+    <batchModules>
+      <batchModule>jp.co.slcs.swak.core.inject.TraceModule</batchModule>
+      <batchModule>jp.co.slcs.swak.core.inject.SWAKLoggerModule</batchModule>
+      <batchModule>jp.co.slcs.swak.core.inject.SWAKCoreModule</batchModule>
+      <batchModule>jp.co.slcs.swak.bizinfr.inject.BizInfrModule</batchModule>
+      <batchModule>jp.co.slcs.swak.conversion.inject.ConversionModule</batchModule>
+      <batchModule>jp.co.slcs.swak.validation.inject.ValidationModule</batchModule>
+      <batchModule>yuyu.infr.inject.YuyuCommonModule</batchModule>
+      <batchModule>yuyu.infr.batch.inject.YuyuBatchModule</batchModule>
+      <batchModule>yuyu.infr.inject.IwfJpaModule</batchModule>
+      <batchModule>yuyu.common.biz.inject.BizCommonModule</batchModule>
+      <batchModule>jp.co.slcs.swak.webservice.client.inject.ClientWebServiceModule</batchModule>
+      <batchModule>yuyu.common.workflowcore.inject.WorkflowcoreCommonModule</batchModule>
+      <batchModule>yuyu.common.sinkeiyaku.inject.SinkeiyakuCommonModule</batchModule>
+    </batchModules>
+
+    <webAccessLogPropCollectors>
+      <webAccessLogPropCollector>jp.co.slcs.swak.web.accesslog.AccessLogWebPropCollector</webAccessLogPropCollector>
+      <webAccessLogPropCollector>jp.co.slcs.swak.auth.accesslog.AccessLogAuthPropCollector</webAccessLogPropCollector>
+      <webAccessLogPropCollector>yuyu.infr.accesslog.YuyuAccessLogWSPropCollector</webAccessLogPropCollector>
+      <webAccessLogPropCollector>yuyu.infr.accesslog.YuyuAccessLogExtensionWSPropCollector</webAccessLogPropCollector>
+    </webAccessLogPropCollectors>
+
+    <batchAccessLogPropCollectors>
+      <batchAccessLogPropCollector>jp.co.slcs.swak.batch.accesslog.AccessLogBatchPropCollector</batchAccessLogPropCollector>
+      <batchAccessLogPropCollector>yuyu.infr.batch.accesslog.YuyuBatchAccessLogPropCollector</batchAccessLogPropCollector>
+    </batchAccessLogPropCollectors>
+
+    <webLocaleProvider>jp.co.slcs.swak.web.resource.WebAppLocaleProvider</webLocaleProvider>
+    <batchLocaleProvider>jp.co.slcs.swak.core.resource.DefaultLocaleProvider</batchLocaleProvider>
+
+    <typeBindingStrategy>jp.co.slcs.swak.bizinfr.configuration.SwakTypeBindingStrategy</typeBindingStrategy>
+    <objectStringConverter>jp.co.slcs.swak.bizinfr.configuration.SwakObjectStringConverter</objectStringConverter>
+
+    <accessLogExcluder>yuyu.infr.accesslog.YuyuAccessLogExcluder</accessLogExcluder>
+</coreConfig>

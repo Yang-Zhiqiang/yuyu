@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="skkankyou" width="1104" height="914">
+  <node name="start-state1" x="342" y="22" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="kankyousatei_1ji" x="328" y="252" width="161" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="kankyousatei_2jia" x="328" y="407" width="161" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="kankyousatei_2jib" x="328" y="569" width="161" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikaisi" x="327" y="90" width="163" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikanryou" x="327" y="718" width="163" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikaisi" x="248" y="170" width="321" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="6" y="-104"/>
+      <bendpoint w1="192" h1="1" w2="192" h2="-236"/>
+      <bendpoint w1="192" h1="236" w2="192" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="8" y="-160"/>
+      <bendpoint w1="221" h1="1" w2="221" h2="-398"/>
+      <bendpoint w1="220" h1="399" w2="220" h2="0"/>
+    </edge>
+    <edge>
+      <label x="12" y="-208"/>
+      <bendpoint w1="244" h1="1" w2="244" h2="-547"/>
+      <bendpoint w1="245" h1="549" w2="245" h2="1"/>
+    </edge>
+  </node>
+  <node name="branch-after-kankyousatei_1ji" x="248" y="334" width="321" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-189" h1="0" w2="-189" h2="82"/>
+      <bendpoint w1="-189" h1="-82" w2="-189" h2="0"/>
+    </edge>
+    <edge>
+      <label x="10" y="-142"/>
+      <bendpoint w1="272" h1="0" w2="272" h2="-155"/>
+      <bendpoint w1="271" h1="155" w2="271" h2="0"/>
+      <bendpoint w1="272" h1="234" w2="272" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="6" y="-150"/>
+      <bendpoint w1="303" h1="0" w2="303" h2="-384"/>
+      <bendpoint w1="305" h1="386" w2="305" h2="2"/>
+    </edge>
+  </node>
+  <node name="branch-after-kankyousatei_2jia" x="248" y="489" width="321" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="8" y="-1"/>
+      <bendpoint w1="-192" h1="-1" w2="-192" h2="81"/>
+      <bendpoint w1="-193" h1="-83" w2="-193" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="5" y="60"/>
+      <bendpoint w1="-233" h1="-2" w2="-233" h2="235"/>
+      <bendpoint w1="-233" h1="-130" w2="-233" h2="107"/>
+      <bendpoint w1="-232" h1="-237" w2="-232" h2="0"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="334" h1="1" w2="334" h2="-228"/>
+      <bendpoint w1="334" h1="231" w2="334" h2="2"/>
+    </edge>
+  </node>
+  <node name="branch-after-kankyousatei_2jib" x="248" y="643" width="321" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="12" y="-6"/>
+      <bendpoint w1="-193" h1="-1" w2="-193" h2="73"/>
+      <bendpoint w1="-193" h1="-73" w2="-193" h2="1"/>
+    </edge>
+    <edge>
+      <label x="6" y="65"/>
+      <bendpoint w1="-257" h1="0" w2="-257" h2="236"/>
+      <bendpoint w1="-257" h1="-237" w2="-257" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="6" y="90"/>
+      <bendpoint w1="-285" h1="0" w2="-285" h2="391"/>
+      <bendpoint w1="-285" h1="-194" w2="-285" h2="197"/>
+      <bendpoint w1="-285" h1="-391" w2="-285" h2="0"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikanryou" x="248" y="798" width="321" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="9" y="0"/>
+      <bendpoint w1="-187" h1="-2" w2="-187" h2="78"/>
+      <bendpoint w1="-187" h1="-80" w2="-187" h2="0"/>
+    </edge>
+    <edge>
+      <label x="4" y="51"/>
+      <bendpoint w1="-224" h1="-2" w2="-224" h2="227"/>
+      <bendpoint w1="-224" h1="-228" w2="-224" h2="1"/>
+    </edge>
+    <edge>
+      <label x="9" y="107"/>
+      <bendpoint w1="-307" h1="-1" w2="-307" h2="390"/>
+      <bendpoint w1="-309" h1="-392" w2="-309" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="3" y="156"/>
+      <bendpoint w1="-338" h1="-2" w2="-338" h2="544"/>
+      <bendpoint w1="-339" h1="-546" w2="-339" h2="0"/>
+    </edge>
+  </node>
+  <node name="end-state1" x="342" y="877" width="132" height="36"/>
+</root-container>

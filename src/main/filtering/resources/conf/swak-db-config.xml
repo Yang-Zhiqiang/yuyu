@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swakDbConfig>
+
+  <dataSourceDefs>
+
+    <dataSourceDef>
+      <name>jdbcYuyuDB</name>
+      <dataSourceType>JDBC</dataSourceType>
+      <dataSourceName>yuyuDatabase</dataSourceName>
+    </dataSourceDef>
+
+    <dataSourceDef>
+      <name>jndiYuyuDB</name>
+      <dataSourceType>JNDI</dataSourceType>
+      <dataSourceName>${db.jndi.resourceName}</dataSourceName>
+      <useENC>${db.use.envContext}</useENC>
+    </dataSourceDef>
+
+  </dataSourceDefs>
+
+
+  <jdbcConnections>
+    <jdbcConnection>
+      <name>yuyuDatabase</name>
+
+      <driver>${db.driver}</driver>
+
+      <url>${db.url}</url>
+
+      <user>${db.user}</user>
+      <password>${db.pass}</password>
+
+      <loginTimeout>${db.connection.pool.timeout}</loginTimeout>
+      <minIdle>${db.connection.pool.min}</minIdle>
+      <maxIdle>${db.connection.pool.max}</maxIdle>
+
+    </jdbcConnection>
+  </jdbcConnections>
+
+  <selectBatchSize>${db.selectbatchsize}</selectBatchSize>
+  <updateBatchSize>${db.updatebatchsize}</updateBatchSize>
+
+  <webFlushMode>AUTO</webFlushMode>
+
+  <batchFlushMode>COMMIT</batchFlushMode>
+
+</swakDbConfig>

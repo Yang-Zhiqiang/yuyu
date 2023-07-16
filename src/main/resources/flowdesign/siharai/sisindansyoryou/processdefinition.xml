@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="sisindansyoryou">
+
+
+	<start-state name="start-state1">
+		<transition to="state-start"></transition>
+	</start-state>
+
+
+	<state name="state-start">
+		<transition to="branch-after-start"></transition>
+	</state>
+
+	<decision name="branch-after-start">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="tenken" name="kanryou"></transition>
+		<transition to="input" name="tensou"></transition>
+		<transition to="input" name="horyuu"></transition>
+		<transition to="input" name="kouzakakunintou"></transition>
+	</decision>
+
+	<task-node name="tenken">
+		<task></task>
+		<transition to="branch-after-tenken"></transition>
+	</task-node>
+
+	<task-node name="input">
+		<task></task>
+		<transition to="branch-after-input"></transition>
+	</task-node>
+
+	<decision name="branch-after-input">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="input" name="tensou"></transition>
+		<transition to="input" name="horyuu"></transition>
+		<transition to="input" name="kouzakakunintou"></transition>
+		<transition to="tenken" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-tenken">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-sisiharai" name="syounin"></transition>
+		<transition to="tenken" name="tensou"></transition>
+		<transition to="tenken" name="horyuu"></transition>
+		<transition to="input" name="sasimodosi"></transition>
+	</decision>
+
+	<state name="state-sisiharai">
+		<transition to="end-state1"></transition>
+	</state>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

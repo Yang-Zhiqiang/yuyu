@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="khtargettkykhenkou">
+
+
+  <start-state name="start-state1">
+    <transition to="state-syoruitoutyaku"></transition>
+  </start-state>
+
+
+  <state name="state-syoruitoutyaku">
+		<transition to="input"></transition>
+	</state>
+
+  <decision name="branch-after-input">
+    <handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+    <transition to="hubitouroku" name="check"></transition>
+    <transition to="tenken" name="forward"></transition>
+    <transition to="input" name="pending"></transition>
+    <transition to="syounin" name="cancel"></transition>
+  </decision>
+
+  <task-node name="input">
+		<task></task>
+    <transition to="branch-after-input"></transition>
+  </task-node>
+
+  <task-node name="tenken">
+		<task></task>
+		<transition to="branch-after-tenken"></transition>
+  </task-node>
+
+  <decision name="branch-after-tenken">
+    <handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+    <transition to="syounin" name="forward"></transition>
+    <transition to="hubitouroku" name="check"></transition>
+    <transition to="tenken" name="pending"></transition>
+    <transition to="input" name="sendback"></transition>
+    <transition to="syounin" name="cancel"></transition>
+  </decision>
+
+  <task-node name="syounin">
+		<task></task>
+		<transition to="branch-after-syounin"></transition>
+  </task-node>
+
+  <decision name="branch-after-syounin">
+    <handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+    <transition to="end-state1" name="completed"></transition>
+    <transition to="hubitouroku" name="check"></transition>
+    <transition to="syounin" name="pending"></transition>
+    <transition to="tenken" name="sendback-tenken"></transition>
+    <transition to="input" name="sendback-input"></transition>
+  </decision>
+
+  <task-node name="hubitouroku">
+		<task></task>
+		<transition to="branch-after-hubitouroku"></transition>
+  </task-node>
+
+  <decision name="branch-after-hubitouroku">
+    <handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+    <transition to="hubisyounin" name="forward"></transition>
+    <transition to="hubitouroku" name="pending"></transition>
+    <transition to="hubitouroku" name="forward_s"></transition>
+    <transition to="hubisyounin" name="hubi-cancel"></transition>
+  </decision>
+
+  <task-node name="hubisyounin">
+		<task></task>
+		<transition to="branch-after-hubisyounin"></transition>
+  </task-node>
+
+  <decision name="branch-after-hubisyounin">
+    <handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+    <transition to="input" name="hubi-cancel"></transition>
+    <transition to="hubikaitoumati" name="forward"></transition>
+    <transition to="hubisyounin" name="pending"></transition>
+    <transition to="hubisyounin" name="forward_s"></transition>
+    <transition to="hubitouroku" name="sendback"></transition>
+  </decision>
+
+  <task-node name="hubikaitoumati">
+		<task></task>
+		<transition to="hubikaisyou"></transition>
+  </task-node>
+
+  <task-node name="hubikaisyou">
+		<task></task>
+		<transition to="branch-after-hubikaisyou"></transition>
+  </task-node>
+
+  <decision name="branch-after-hubikaisyou">
+    <handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+    <transition to="input" name="completed"></transition>
+    <transition to="hubitouroku" name="check"></transition>
+    <transition to="hubikaisyou" name="pending"></transition>
+    <transition to="hubikaitoumati" name="waiting"></transition>
+  </decision>
+
+
+  <end-state name="end-state1"></end-state>
+
+
+</process-definition>

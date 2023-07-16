@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="sktorikesi" width="679" height="610">
+  <node name="start-state1" x="268" y="9" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikaisi" x="264" y="78" width="139" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikaisi" x="183" y="155" width="301" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="213" h1="-1" w2="214" h2="-262"/>
+      <bendpoint w1="214" h1="261" w2="215" h2="0"/>
+    </edge>
+  </node>
+  <node name="mostorikesi" x="235" y="234" width="196" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-mostorikesi" x="182" y="322" width="301" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-182" h1="2" w2="-183" h2="90"/>
+      <bendpoint w1="-182" h1="-89" w2="-183" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikanryou" x="247" y="416" width="170" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikanryou" x="198" y="494" width="270" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-248" h1="0" w2="-248" h2="260"/>
+      <bendpoint w1="-248" h1="-261" w2="-248" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="5" y="-10"/>
+      <bendpoint w1="-207" h1="1" w2="-206" h2="79"/>
+      <bendpoint w1="-207" h1="-79" w2="-206" h2="-1"/>
+    </edge>
+  </node>
+  <node name="end-state1" x="266" y="573" width="132" height="36"/>
+</root-container>

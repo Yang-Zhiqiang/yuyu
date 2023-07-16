@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="sihubisibou">
+
+
+	<start-state name="start-state1">
+		<transition to="state-start"></transition>
+	</start-state>
+
+
+	<state name="state-start">
+		<transition to="branch-after-start"></transition>
+	</state>
+
+	<decision name="branch-after-start">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="hubitouroku" name="tensou"></transition>
+		<transition to="hubisyounin" name="kanryou"></transition>
+		<transition to="hubitouroku" name="horyuu"></transition>
+	</decision>
+
+	<task-node name="hubitouroku">
+		<task></task>
+		<transition to="branch-after-hubitouroku"></transition>
+	</task-node>
+
+	<decision name="branch-after-hubitouroku">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="hubitouroku" name="horyuu"></transition>
+		<transition to="hubitouroku" name="tensou"></transition>
+		<transition to="hubisyounin" name="kanryou"></transition>
+	</decision>
+
+	<task-node name="hubisyounin">
+		<task></task>
+		<transition to="branch-after-hubisyounin"></transition>
+	</task-node>
+
+	<decision name="branch-after-hubisyounin">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="hubisyounin" name="horyuu"></transition>
+		<transition to="hubisyounin" name="tensou"></transition>
+		<transition to="hubikaitoumati" name="kanryou"></transition>
+		<transition to="hubitouroku" name="sasimodosi"></transition>
+	</decision>
+
+	<task-node name="hubikaitoumati">
+		<task></task>
+		<transition to="hubikaisyou"></transition>
+	</task-node>
+
+	<task-node name="hubikaisyou">
+		<task></task>
+		<transition to="branch-after-hubikaisyou"></transition>
+	</task-node>
+
+	<decision name="branch-after-hubikaisyou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="hubikaisyou" name="horyuu"></transition>
+		<transition to="hubikaisyou" name="tensou"></transition>
+		<transition to="hubitouroku" name="hubi"></transition>
+		<transition to="kanryou" name="kanryou"></transition>
+	</decision>
+
+
+	<end-state name="kanryou"></end-state>
+
+
+</process-definition>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="skimu">
+
+
+	<description>
+		80,医務査定
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-kouteikaisi"></transition>
+	</start-state>
+
+
+	<state name="state-kouteikaisi">
+		<transition to="branch-after-kouteikaisi"></transition>
+	</state>
+
+	<state name="state-kouteikanryou">
+		<transition to="branch-after-kouteikanryou"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikaisi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="imusatei_kani_uw" name="forward-uw"></transition>
+		<transition to="imusatei_kani_md" name="forward-md"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-imusatei_kani_uw">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="imusatei_kani_md" name="forward-md"></transition>
+		<transition to="imusatei_kani_uw" name="forward-uw"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-imusatei_kani_md">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="imusatei_kani_md" name="forward-md"></transition>
+		<transition to="imusatei_kani_uw" name="forward-uw"></transition>
+	</decision>
+
+	<decision name="branch-after-kouteikanryou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+		<transition to="imusatei_kani_md" name="forward-md"></transition>
+		<transition to="imusatei_kani_uw" name="forward-uw"></transition>
+	</decision>
+
+	<task-node name="imusatei_kani_uw">
+		<task></task>
+		<transition to="branch-after-imusatei_kani_uw"></transition>
+	</task-node>
+
+	<task-node name="imusatei_kani_md">
+		<task></task>
+		<transition to="branch-after-imusatei_kani_md"></transition>
+	</task-node>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

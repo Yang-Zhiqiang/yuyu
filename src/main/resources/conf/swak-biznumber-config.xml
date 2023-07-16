@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-bizinfr-config>
+
+<bizNumberConfig>
+  <defaultRateMode>PERCENT</defaultRateMode>
+  <defaultCurrencyTypeEnum>YEN</defaultCurrencyTypeEnum>
+  <bizCurrencyTypeConfigs>
+	<bizCurrencyTypeConfig>
+		<currencyType>YEN</currencyType>
+		<unitValue>円</unitValue>
+		<position>BACK</position>
+		<formatString>#,##0</formatString>
+	</bizCurrencyTypeConfig>
+	<bizCurrencyTypeConfig>
+		<currencyType>MANYEN</currencyType>
+		<unitValue>万円</unitValue>
+		<position>BACK</position>
+		<formatString>#,##0</formatString>
+	</bizCurrencyTypeConfig>
+	<bizCurrencyTypeConfig>
+		<currencyType>DOLLAR</currencyType>
+		<unitValue>米ドル</unitValue>
+		<position>BACK</position>
+		<formatString>#,##0.00</formatString>
+	</bizCurrencyTypeConfig>
+	<bizCurrencyTypeConfig>
+		<currencyType>AU_DOLLAR</currencyType>
+		<unitValue>豪ドル</unitValue>
+		<position>BACK</position>
+		<formatString>#,##0.00</formatString>
+	</bizCurrencyTypeConfig>
+	<bizCurrencyTypeConfig>
+		<currencyType>EURO</currencyType>
+		<unitValue>ユーロ</unitValue>
+		<position>BACK</position>
+		<formatString>#,##0.00</formatString>
+	</bizCurrencyTypeConfig>
+  </bizCurrencyTypeConfigs>
+</bizNumberConfig>

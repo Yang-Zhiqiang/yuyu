@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-trace-config>
+<traceConfig>
+  <traceEnabled>true</traceEnabled>
+
+  <excludePackages>
+    <excludePackage>jp.co.slcs.swak.bizinfr.configuration.kinouconfig</excludePackage>
+    <excludePackage>jp.co.slcs.swak.bizinfr.dao</excludePackage>
+    <excludePackage>jp.co.slcs.swak.conversion.converter</excludePackage>
+    <excludePackage>jp.co.slcs.swak.db.typesafe</excludePackage>
+    <excludePackage>jp.co.slcs.swak.file.manager</excludePackage>
+    <excludePackage>jp.co.slcs.swak.web.auth</excludePackage>
+    <excludePackage>jp.co.slcs.swak.web.processor</excludePackage>
+    <excludePackage>jp.co.slcs.swak.web.struts.action</excludePackage>
+    <excludePackage>jp.co.slcs.swak.webservice.client.factory</excludePackage>
+    <excludePackage>jp.co.slcs.swak.util.crypto</excludePackage>
+    <excludePackage>jp.co.slcs.swak.util.message</excludePackage>
+
+    <excludePackage>yuyu.def.db.dao</excludePackage>
+    <excludePackage>yuyu.def.db.entity</excludePackage>
+
+  </excludePackages>
+
+  <excludeClasses>
+    <excludeClass>jp.co.slcs.swak.sequence.PersistenceManager</excludeClass>
+    <excludeClass>jp.co.slcs.swak.uniquekey.AppIdentifierManager</excludeClass>
+    <excludeClass>jp.co.slcs.swak.core.util.ProxyAnalyzer</excludeClass>
+    <excludeClass>jp.co.slcs.swak.web.auth.UserSessionManager</excludeClass>
+    <excludeClass>jp.co.slcs.swak.web.filter.ResourceFilter</excludeClass>
+    <excludeClass>jp.co.slcs.swak.batch.engine.BatchJob</excludeClass>
+    <excludeClass>yuyu.def.base.manager.AbstractDomManager</excludeClass>
+    <excludeClass>yuyu.def.base.manager.impl.BaseDomManagerImpl</excludeClass>
+    <excludeClass>yuyu.infr.batch.WebBatchClient</excludeClass>
+    <excludeClass>yuyu.infr.objstorage.YuyuObjStorageManager</excludeClass>
+    <excludeClass>yuyu.testinfr.inject.YuyuMockBatchModule</excludeClass>
+    <excludeClass>yuyu.testinfr.inject.YuyuMockBatchModule$MockBatchJob</excludeClass>
+  </excludeClasses>
+
+</traceConfig>

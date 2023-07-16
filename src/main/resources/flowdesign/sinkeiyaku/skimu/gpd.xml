@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root-container name="skimu" width="780" height="740">
+  <node name="start-state1" x="354" y="17" width="132" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikaisi" x="340" y="89" width="161" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="state-kouteikanryou" x="342" y="558" width="161" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikaisi" x="270" y="162" width="305" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="7" y="-106"/>
+      <bendpoint w1="192" h1="0" w2="192" h2="-240"/>
+      <bendpoint w1="192" h1="240" w2="192" h2="0"/>
+    </edge>
+    <edge>
+      <label x="12" y="-156"/>
+      <bendpoint w1="231" h1="0" w2="231" h2="-396"/>
+      <bendpoint w1="230" h1="394" w2="230" h2="-2"/>
+    </edge>
+  </node>
+  <node name="branch-after-imusatei_kani_uw" x="270" y="322" width="305" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="3" y="-12"/>
+      <bendpoint w1="-180" h1="0" w2="-180" h2="84"/>
+      <bendpoint w1="-180" h1="-85" w2="-180" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="9" y="-105"/>
+      <bendpoint w1="269" h1="-1" w2="269" h2="-237"/>
+      <bendpoint w1="268" h1="235" w2="268" h2="-1"/>
+    </edge>
+  </node>
+  <node name="branch-after-imusatei_kani_md" x="270" y="479" width="305" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="7" y="-1"/>
+      <bendpoint w1="-174" h1="-3" w2="-174" h2="74"/>
+      <bendpoint w1="-174" h1="-79" w2="-174" h2="-2"/>
+    </edge>
+    <edge>
+      <label x="3" y="58"/>
+      <bendpoint w1="-201" h1="-4" w2="-201" h2="237"/>
+      <bendpoint w1="-202" h1="-241" w2="-202" h2="0"/>
+    </edge>
+  </node>
+  <node name="branch-after-kouteikanryou" x="270" y="631" width="305" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+    <edge>
+      <label x="11" y="-2"/>
+      <bendpoint w1="-189" h1="0" w2="-189" h2="73"/>
+      <bendpoint w1="-188" h1="-72" w2="-188" h2="1"/>
+    </edge>
+    <edge>
+      <label x="2" y="57"/>
+      <bendpoint w1="-224" h1="1" w2="-224" h2="230"/>
+      <bendpoint w1="-223" h1="-230" w2="-223" h2="-1"/>
+    </edge>
+    <edge>
+      <label x="3" y="108"/>
+      <bendpoint w1="-256" h1="1" w2="-256" h2="394"/>
+      <bendpoint w1="-257" h1="-394" w2="-257" h2="-1"/>
+    </edge>
+  </node>
+  <node name="imusatei_kani_uw" x="348" y="238" width="149" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="imusatei_kani_md" x="348" y="402" width="149" height="36">
+    <edge>
+      <label x="5" y="-10"/>
+    </edge>
+  </node>
+  <node name="end-state1" x="357" y="703" width="132" height="36"/>
+</root-container>

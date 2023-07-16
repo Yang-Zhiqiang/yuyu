@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="skinputmos">
+
+
+	<description>
+		20,申込書入力
+	</description>
+
+
+	<start-state name="start-state1">
+		<transition to="state-kouteikaisi"></transition>
+	</start-state>
+
+
+	<task-node name="mousikomisyo_1ji">
+		<task></task>
+		<transition to="mousikomisyo_2ji"></transition>
+	</task-node>
+
+	<state name="state-kouteikaisi">
+		<transition to="branch-after-kouteikaisi"></transition>
+	</state>
+
+	<task-node name="mousikomisyo_2ji">
+		<task></task>
+		<transition to="branch-after-mousikomisyo_2ji"></transition>
+	</task-node>
+
+	<task-node name="mousikomisyo_3ji">
+		<task></task>
+		<transition to="state-kouteikanryou"></transition>
+	</task-node>
+
+	<state name="state-kouteikanryou">
+		<transition to="branch-after-kouteikanryou"></transition>
+	</state>
+
+	<decision name="branch-after-kouteikaisi">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="mousikomisyo_1ji" name="forward-1ji"></transition>
+		<transition to="mousikomisyo_3ji" name="forward-3ji"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-mousikomisyo_2ji">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="mousikomisyo_3ji" name="forward-3ji"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+	<decision name="branch-after-kouteikanryou">
+		<handler class="yuyu.common.workflowcore.iwfcommon.extension.decisionhandler.IwfDecisionHandler"></handler>
+		<transition to="end-state1" name="end"></transition>
+		<transition to="state-kouteikanryou" name="kanryou"></transition>
+	</decision>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

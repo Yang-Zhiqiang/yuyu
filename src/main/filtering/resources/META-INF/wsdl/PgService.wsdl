@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Copyright (c) 2010-2011 Fuji Xerox Co., Ltd. All rights reserved. -->
+<definitions name="PgService"
+	targetNamespace="http://www.fujixerox.co.jp/2010/09/pga/ws"
+	xmlns="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:tns="http://www.fujixerox.co.jp/2010/09/pga/ws"
+	xmlns:types="http://www.fujixerox.co.jp/2010/09/pga/ws/types"
+	xmlns:fault="http://www.fujixerox.co.jp/2010/09/pga/ws/fault"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+	<types>
+		<xsd:schema>
+			<xsd:import namespace="http://www.fujixerox.co.jp/2010/09/pga/ws/types"
+				schemaLocation="PgServiceTypes.xsd"/>
+			<xsd:import namespace="http://www.fujixerox.co.jp/2010/09/pga/ws/fault"
+				schemaLocation="FaultTypes.xsd"/>
+		</xsd:schema>
+	</types>
+
+	<message name="CreateQRCodeRequest">
+		<part name="parameters" element="types:createQRCode"/>
+	</message>
+	<message name="CreateQRCodeResponse">
+		<part name="parameters" element="types:createQRCodeResponse"/>
+	</message>
+	<message name="QRCodeFault">
+		<part name="parameters" element="fault:fault"/>
+	</message>
+	<message name="putDocumentRequest">
+		<part name="parameters" element="types:putDocument"/>
+	</message>
+	<message name="putDocumentResponse">
+		<part name="parameters" element="types:putDocumentResponse"/>
+	</message>
+	<message name="GetDocumentRequest">
+		<part name="parameters" element="types:getDocument"/>
+	</message>
+	<message name="GetDocumentResponse">
+		<part name="parameters" element="types:getDocumentResponse"/>
+	</message>
+	<message name="DeleteDocumentRequest">
+		<part name="parameters" element="types:deleteDocument"/>
+	</message>
+	<message name="DeleteDocumentResponse">
+		<part name="parameters" element="types:deleteDocumentResponse"/>
+	</message>
+	<message name="RepositoryFault">
+		<part name="parameters" element="fault:fault"/>
+	</message>
+
+	<portType name="PgServicePortType">
+		<operation name="createQRCode">
+			<input message="tns:CreateQRCodeRequest"/>
+			<output message="tns:CreateQRCodeResponse"/>
+			<fault name="Fault" message="tns:QRCodeFault"/>
+		</operation>
+		<operation name="putDocument">
+			<input message="tns:putDocumentRequest"/>
+			<output message="tns:putDocumentResponse"/>
+			<fault	name="Fault" message="tns:RepositoryFault"/>
+		</operation>
+		<operation name="getDocument">
+			<input message="tns:GetDocumentRequest"/>
+			<output message="tns:GetDocumentResponse"/>
+			<fault	name="Fault" message="tns:RepositoryFault"/>
+		</operation>
+		<operation name="deleteDocument">
+			<input message="tns:DeleteDocumentRequest"/>
+			<output message="tns:DeleteDocumentResponse"/>
+			<fault	name="Fault" message="tns:RepositoryFault"/>
+		</operation>
+	</portType>
+
+	<binding name="PgServicePortBinding" type="tns:PgServicePortType">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+		<operation name="createQRCode">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="Fault" >
+				<soap:fault name="Fault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="putDocument">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault	name="Fault" >
+				<soap:fault name="Fault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="getDocument">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault	name="Fault" >
+				<soap:fault name="Fault" use="literal"/>
+			</fault>
+		</operation>
+		<operation name="deleteDocument">
+			<soap:operation soapAction=""/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault	name="Fault" >
+				<soap:fault name="Fault" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+
+	<service name="PgService">
+		<port name="PgServicePort" binding="tns:PgServicePortBinding">
+			<soap:address location="${PgService.location}"/>
+		</port>
+	</service>
+</definitions>
