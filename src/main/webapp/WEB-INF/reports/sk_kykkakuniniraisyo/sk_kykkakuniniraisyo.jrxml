@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sk_kykkakuniniraisyo" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="563" leftMargin="17" rightMargin="15" topMargin="30" bottomMargin="30" uuid="33830c5f-3c2a-4ecd-b3b5-e33fafcb639d">
+	<property name="com.jasperassistant.designer.VGuides.Group_4Header" value="4"/>
+	<property name="com.jasperassistant.designer.VGuides.Group_4Footer" value="4"/>
+	<property name="com.jasperassistant.designer.Units" value="Pixels"/>
+	<property name="com.jasperassistant.designer.DataSource" value="DSK"/>
+	<property name="com.jasperassistant.designer.Grid" value="false"/>
+	<property name="com.jasperassistant.designer.SnapToGrid" value="true"/>
+	<property name="com.jasperassistant.designer.GridWidth" value="3"/>
+	<property name="com.jasperassistant.designer.GridHeight" value="3"/>
+	<property name="com.jasperassistant.designer.Margins" value="true"/>
+	<property name="com.jasperassistant.designer.Rulers" value="true"/>
+	<property name="com.jasperassistant.designer.SnapToGuides" value="true"/>
+	<property name="com.jasperassistant.designer.VGuides.Detail" value="718"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<import value="yuyu.common.biz.bzcommon.BizUtil"/>
+	<import value="yuyu.def.classification.C_MosKbn"/>
+	<style name="Default" isDefault="true" fontName="IPA明朝" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<style name="Gothic" fontName="IPAゴシック" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<parameter name="REPORT_ROOT" class="java.lang.String"/>
+	<parameter name="Q_IMG" class="Object" isForPrompting="false"/>
+	<parameter name="Q_PRM" class="java.lang.String"/>
+	<parameter name="O_PRM1" class="yuyu.def.sinkeiyaku.bean.report.SkKykKakIraisyoBean"/>
+	<group name="契約確認依頼書">
+		<groupHeader>
+			<band height="777" splitType="Stretch">
+				<staticText>
+					<reportElement style="Gothic" mode="Opaque" x="301" y="28" width="100" height="29" backcolor="#C0C0C0" uuid="05374d76-3a81-4c6e-a4d9-e8410486af37"/>
+				</staticText>
+				<staticText>
+					<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="0" width="98" height="14" uuid="ffc7ef79-b449-4124-9cdd-b3e1d821c637"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="IPAゴシック" size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[契約確認依頼書]]></text>
+				</staticText>
+				<elementGroup>
+					<staticText>
+						<reportElement style="Gothic" mode="Opaque" x="6" y="28" width="100" height="44" backcolor="#C0C0C0" uuid="7f894c8a-52d3-4f1f-9967-2ad827865096"/>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="29" y="30" width="54" height="9" uuid="e6cbe0d5-eb61-4fb9-a31d-b794ba2ab8fb"/>
+						<textElement textAlignment="Center"/>
+						<text><![CDATA[契約確認種類]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="20" y="45" width="72" height="9" uuid="4052cfb6-4d10-4f04-9a17-954a9605c984"/>
+						<textElement textAlignment="Center">
+							<font size="9"/>
+						</textElement>
+						<text><![CDATA[契約確認依頼番号]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="34" y="60" width="45" height="9" uuid="6b1eba61-3ada-485f-b6b2-fd40885ffd35"/>
+						<textElement textAlignment="Center">
+							<font size="9"/>
+						</textElement>
+						<text><![CDATA[募集代理店]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="111" y="30" width="190" height="9" uuid="116dca00-4a91-4635-84cb-a41c25c2e08f"/>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrKykkaksyrui()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="111" y="45" width="132" height="9" uuid="59d700da-cef5-4988-bba6-b86a0928cfa4"/>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrKykkakiraino()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="111" y="60" width="62" height="9" uuid="f86aea80-b6c2-44e6-a6a2-f3a7bb5ce1f5"/>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTratkiagcd()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="176" y="60" width="295" height="9" uuid="76594617-61eb-400c-b163-4f19293e9d82"/>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTratkiagnm()]]></textFieldExpression>
+					</textField>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="27" width="550" height="1" uuid="09c9cbc1-1c95-424d-ac4a-8d9a4045a2d0">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="57" width="550" height="1" uuid="84f36c82-19c3-4f4b-ade3-da051986d569">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="42" width="550" height="1" uuid="0313194e-fbbb-403d-998e-021901ebd8e6">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="72" width="550" height="1" uuid="d715acf8-1a79-45c4-9223-f06898017dca">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="28" width="1" height="44" uuid="4030f202-d477-4ea6-8af7-072a40c46064"/>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="105" y="28" width="1" height="44" uuid="53f95e37-7529-4243-8c86-5e549d2b98c2"/>
+					</line>
+				</elementGroup>
+				<elementGroup>
+					<staticText>
+						<reportElement style="Gothic" mode="Opaque" x="6" y="77" width="100" height="218" backcolor="#C0C0C0" uuid="8375ed10-ac7f-4bd6-ba90-242bfebdbfb9"/>
+						<textElement>
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="38" y="79" width="36" height="9" uuid="f43e3a47-51cd-4b26-b80f-1bebb29bb3d1"/>
+						<textElement textAlignment="Center">
+							<font size="9" pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[申込番号]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="38" y="94" width="36" height="9" uuid="e5d65cd0-20da-4e56-8455-121ec8718835"/>
+						<textElement textAlignment="Center">
+							<font size="9" pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[契約者名]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="20" y="109" width="72" height="9" uuid="51173c20-4bac-4b62-add6-0792e4e61ebe"/>
+						<textElement textAlignment="Center">
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[契約者名(カナ)]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="33" y="144" width="45" height="9" uuid="5330774b-7bb5-43bb-8307-7e0179a05d31"/>
+						<textElement textAlignment="Center">
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[通信先住所]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="24" y="181" width="63" height="9" uuid="a14e2d47-ee55-41bd-9491-58a4de814107"/>
+						<textElement textAlignment="Center">
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[通信先電話番号]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="33" y="196" width="45" height="9" uuid="75dad8fe-a07c-4d65-a7dc-17e75ceeff34"/>
+						<textElement textAlignment="Center">
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[被保険者名]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="15" y="211" width="81" height="9" uuid="5e08ef9c-d0a0-43b3-8fcd-a020ec7b8cae"/>
+						<textElement textAlignment="Center">
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[被保険者名(カナ)]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="29" y="248" width="54" height="9" uuid="b83a80ea-c196-470a-a221-f3e8b27f903e"/>
+						<textElement textAlignment="Center">
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[被保険者住所]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="20" y="283" width="72" height="9" uuid="311fddbc-f69f-4ea1-bcb5-e7a227260213"/>
+						<textElement textAlignment="Center">
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[被保険者電話番号]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="110" y="125" width="12" height="9" uuid="2be75aa6-7a4f-446e-891e-7be1f8973af5"/>
+						<textElement>
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[〒]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="110" y="227" width="9" height="9" uuid="73d64ed1-81dc-4151-9796-64c35a29351a"/>
+						<textElement>
+							<font pdfFontName="HeiseiKakuGo-W5"/>
+						</textElement>
+						<text><![CDATA[〒]]></text>
+					</staticText>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="79" width="369" height="9" uuid="bfac320d-71ab-4a57-8d6a-c3c7d3d27a21"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrMosno()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="94" width="369" height="9" uuid="9a757036-98e8-4277-a552-872d67d626dd"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrKyknmkj()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="109" width="369" height="9" uuid="f9cfdd8f-cb8a-4c9f-bae3-9934cab10d00"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrKyknmkn()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="124" y="125" width="73" height="9" uuid="379483ed-a023-4299-b83f-faff67c0cd02"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTsinyno()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="196" width="369" height="9" uuid="3fcc6988-c75f-44b5-b869-7ff8a4171bde"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHhknnmkj()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="163" width="369" height="9" uuid="f5da901b-be30-4767-a2f7-3fd0aefeab75"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTsinadr3kj()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="151" width="369" height="9" uuid="e25192fd-b2ee-48c1-9786-370bf6815404"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTsinadr2kj()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="265" width="369" height="9" uuid="72b3ffd6-f777-44f2-823d-410d33380e04"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHhknadr3kj()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="253" width="369" height="9" uuid="5c71cc54-604e-47bb-a703-e8699b7085ed"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHhknadr2kj()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="283" width="369" height="9" uuid="d71ca4e2-a872-453a-a853-49d967f9eeb4"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHhkntelno()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="241" width="369" height="9" uuid="83d4ab6e-20ae-41e9-b6d6-2380b2e878cc"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHhknadr1kj()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="124" y="227" width="73" height="9" uuid="a1ee4661-76b5-4063-9108-5ae3a2c7cd0e"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHhknyno()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="111" y="211" width="369" height="9" uuid="96ca2005-7206-4a78-a41b-3a1ef6eb13d5"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHhknnmkn()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="181" width="100" height="9" uuid="b0ce4e72-d9c0-475b-a22f-abb20f581082"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTsintelno()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="110" y="139" width="369" height="9" uuid="0726ef4b-3769-45ed-b85d-4640b8325ee9"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTsinadr1kj()]]></textFieldExpression>
+					</textField>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="77" width="1" height="218" uuid="5c6f9496-d508-408f-9dbf-265bd0510e7e"/>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="76" width="550" height="1" uuid="ee76380c-2303-4e1e-9eff-73c63250fdb6">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="295" width="550" height="1" uuid="6907fddb-19e6-43c3-a2e3-b04906035064">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="91" width="550" height="1" uuid="808969c1-e0dc-4fe7-968d-b051f83c182a">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="106" width="550" height="1" uuid="a31ad2c5-da31-4810-9992-87f7a19c213d">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="121" width="550" height="1" uuid="8e713708-e0fc-43cf-b9f0-4ad85f156589">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="178" width="550" height="1" uuid="e816f5f3-e2e0-46f1-9323-cb6f62f3cec3">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="193" width="550" height="1" uuid="3db89fa1-dfa0-4db2-ab71-34a1b18f4612">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="208" width="550" height="1" uuid="57ccecaf-2dd0-40b3-b238-6b041759548d">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="223" width="550" height="1" uuid="145d34fc-80ed-4c1d-8089-37aca14ce4b2">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="280" width="550" height="1" uuid="79ea1ab9-7982-43ae-9de8-9cc4e118c473">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="105" y="77" width="1" height="219" uuid="35a4a99b-a27a-473b-b4b7-0c6b005a8cb2"/>
+					</line>
+				</elementGroup>
+				<elementGroup>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="322" width="545" height="9" uuid="b7c59b97-31ff-41f7-b6ac-d36348f5d217">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg2()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="332" width="545" height="9" uuid="a0337142-0855-49db-8beb-d6d209021b10">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg3()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="342" width="545" height="9" uuid="55f8fe8f-0db4-41d3-9738-b5b4bbce8e91">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg4()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="352" width="545" height="9" uuid="5b836b20-5334-4dd4-abba-c3dd01ecdcf4">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg5()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="362" width="545" height="9" uuid="8c01bc65-44da-448f-a923-96bdd6e27333">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg6()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="372" width="545" height="9" uuid="f1553a9a-8c92-4e4e-930c-f93c4d39848d">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg7()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="382" width="545" height="9" uuid="52608840-b2e7-418f-b235-5540ba2b4049">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg8()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="392" width="545" height="9" uuid="b4b46357-627a-465d-978c-f5ce781bdb7c">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg9()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="402" width="545" height="9" uuid="a0607add-90c3-44bd-8029-0d439eb0a376">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg10()]]></textFieldExpression>
+					</textField>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="433" width="489" height="9" uuid="3fffd465-d290-4762-ba21-af9467a09e59"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrKykkakcomment(), 52, true).length >= 1
+? BizUtil.splitLineSeparator($P{O_PRM1}.getIrKykkakcomment(), 52, true)[0]
+: ""]]></textFieldExpression>
+					</textField>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="297" width="81" height="9" uuid="28c10e56-cc96-4af1-8274-715b1d971b3e"/>
+						<text><![CDATA[＜詳細メッセージ＞]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="418" width="90" height="9" uuid="88ee3667-d821-48b8-b87c-b714672b6d0e"/>
+						<text><![CDATA[＜契約確認コメント＞]]></text>
+					</staticText>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="430" width="1" height="35" uuid="0a7b949a-ff72-49f1-ad04-23298456a8d8"/>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="308" width="550" height="1" uuid="5496b60b-e0a7-4422-ac8e-1679bfc3cb80">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="416" width="550" height="1" uuid="5666de92-0a9c-41ed-a1c1-451654882f90">
+							<property name="local_mesure_unitwidth" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="309" width="1" height="107" uuid="7740ae1e-bef2-4179-9b18-a792b9a033f5"/>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="429" width="550" height="1" uuid="3035a7da-1666-446b-ae88-697329ea305e">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+					<line>
+						<reportElement positionType="FixRelativeToBottom" x="6" y="465" width="550" height="1" uuid="ec77cafc-eb9e-4c29-bafb-154800556511">
+							<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						</reportElement>
+					</line>
+				</elementGroup>
+				<elementGroup>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="0" y="724" width="126" height="9" uuid="501ae402-5d5c-4083-bc7e-d2aa91746084"/>
+						<textElement>
+							<font fontName="IPAゴシック" size="9"/>
+						</textElement>
+						<text><![CDATA[◎お客様情報、処理済後破細]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="666" width="27" height="9" uuid="9143bd05-baf9-4965-9757-5c62d28034fb"/>
+						<textElement>
+							<font fontName="IPAゴシック" size="9"/>
+						</textElement>
+						<text><![CDATA[担当者]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="171" y="666" width="9" height="9" uuid="b2b31286-4243-41b5-8605-1f5d8753938e"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="9"/>
+						</textElement>
+						<text><![CDATA[印]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="643" width="36" height="9" uuid="9fbf0803-f78c-450b-b37d-cb76dd30110a"/>
+						<textElement>
+							<font fontName="IPAゴシック" size="9"/>
+						</textElement>
+						<text><![CDATA[担当組織]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="512" width="63" height="9" uuid="dfaaa90a-c59f-4455-a7a0-0b76ea7a3b89"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<text><![CDATA[＜詳細記入欄＞]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="467" width="54" height="9" uuid="daca1b2f-0783-40ea-845e-843cf37d7d05"/>
+						<text><![CDATA[＜結果区分＞]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="622" width="45" height="9" uuid="7267e1ae-0fc1-4d1b-8553-a178b54d9880"/>
+						<textElement textAlignment="Center">
+							<font fontName="IPAゴシック"/>
+						</textElement>
+						<text><![CDATA[確認完了日]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="6" y="690" width="18" height="9" uuid="de89446b-8428-4bca-b7ca-b2dbf8aa4b28"/>
+						<textElement>
+							<font fontName="IPAゴシック"/>
+						</textElement>
+						<text><![CDATA[備考]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="13" y="490" width="72" height="9" uuid="db9319e8-a25a-41e0-9149-af24d94f6a54"/>
+						<text><![CDATA[□ 報告事項あり]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="94" y="490" width="72" height="9" uuid="589ace86-270e-4c7d-b392-e16f08e4c627"/>
+						<text><![CDATA[□ 報告事項なし]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="176" y="490" width="54" height="9" uuid="3c3d30c9-2f4e-4d39-a3f6-83577df7ead3"/>
+						<text><![CDATA[□ 確認中止]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="75" y="622" width="127" height="9" uuid="5e2b4b62-8979-4f6c-b49c-44545df43eae"/>
+						<text><![CDATA[　　　　　年　　　月　　　日]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="187" y="643" width="40" height="9" uuid="be8c0bd5-4759-4194-b8f4-a0d37e0e3c10"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<text><![CDATA[(コード)]]></text>
+					</staticText>
+					<staticText>
+						<reportElement style="Gothic" positionType="FixRelativeToBottom" x="187" y="666" width="40" height="9" uuid="2910353d-504e-4da7-b802-b33cc58a23e5"/>
+						<textElement>
+							<font size="9"/>
+						</textElement>
+						<text><![CDATA[(コード)]]></text>
+					</staticText>
+					<ellipse>
+						<reportElement positionType="FixRelativeToBottom" mode="Transparent" x="170" y="665" width="12" height="12" uuid="8447389a-5d35-416c-9ff4-fd26f84bf05f"/>
+						<graphicElement>
+							<pen lineWidth="0.5" lineStyle="Solid"/>
+						</graphicElement>
+					</ellipse>
+					<textField isBlankWhenNull="true">
+						<reportElement style="Default" positionType="FixRelativeToBottom" x="0" y="734" width="99" height="43" uuid="9dd9a26b-decc-47b0-9107-f772d23d5467"/>
+						<textElement verticalAlignment="Middle">
+							<font size="9"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$P{Q_PRM}]]></textFieldExpression>
+					</textField>
+				</elementGroup>
+				<image scaleImage="RetainShape">
+					<reportElement x="499" y="620" width="57" height="57" uuid="4c23273e-f3b7-41dc-b4fa-4db5e4703305"/>
+					<imageExpression><![CDATA[$P{Q_IMG}]]></imageExpression>
+				</image>
+				<line>
+					<reportElement x="6" y="22" width="550" height="1" forecolor="#000080" uuid="918883ed-82d2-4b5c-8a31-16c91e70e1df">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="1.0" lineStyle="Solid"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="6" y="18" width="550" height="1" forecolor="#000080" uuid="1f756475-3648-4912-bc35-ae7b55de5f01">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="4.0" lineStyle="Solid"/>
+					</graphicElement>
+				</line>
+				<rectangle>
+					<reportElement x="6" y="523" width="550" height="84" uuid="2d4225cc-f4fd-422e-b961-6bf2dafe0454">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="443" width="489" height="9" uuid="59e834bf-3b88-4799-a703-c5876ea36caf"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrKykkakcomment(), 52, true).length >= 2
+? BizUtil.splitLineSeparator($P{O_PRM1}.getIrKykkakcomment(), 52, true)[1]
+: ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="453" width="489" height="9" uuid="85f5060f-c646-4a4b-9f36-1b840d0233ec"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrKykkakcomment(), 52, true).length >= 3
+? BizUtil.splitLineSeparator($P{O_PRM1}.getIrKykkakcomment(), 52, true)[2]
+: ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" positionType="FixRelativeToBottom" x="404" y="30" width="129" height="9" uuid="5a7c30f9-d894-4042-9941-5d6ecc54b110"/>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrKykkakiraiymd()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" positionType="FixRelativeToBottom" x="404" y="45" width="129" height="9" uuid="08aaffa6-3c94-4300-9f6f-8a54d461558c"/>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrKykkakkanytymd()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Gothic" positionType="FixRelativeToBottom" x="319" y="30" width="63" height="9" uuid="ccb65cfa-000b-4572-90ea-25372dcd6f80"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<text><![CDATA[契約確認依頼日]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Gothic" positionType="FixRelativeToBottom" x="319" y="45" width="63" height="9" uuid="e6a26d29-e945-4737-96a1-367df7f54f8c"/>
+					<textElement textAlignment="Center" verticalAlignment="Top">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[確認完了予定日]]></text>
+				</staticText>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="301" y="28" width="1" height="29" uuid="bcdaf217-7140-43aa-8374-8bab11911068"/>
+				</line>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="401" y="28" width="1" height="29" uuid="187ef805-fe9a-4d0c-9004-544a8e45daaf"/>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" positionType="FixRelativeToBottom" x="11" y="313" width="545" height="9" uuid="f2632b5d-7b48-4e97-b6ec-710280a79dfc"/>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrSyousaimsg1()]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="556" y="308" width="1" height="109" uuid="6fb7fbd3-ac89-4639-92df-e3eb12736aac">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="556" y="429" width="1" height="37" uuid="0dba3ff9-155c-4b39-b9a0-57f58d6e7b52">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="556" y="76" width="1" height="220" uuid="f7080c64-6ab9-4750-a258-3f226cecfec8">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="556" y="27" width="1" height="46" uuid="09aee227-c38d-4d24-badf-898a3713cc72">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<staticText>
+					<reportElement style="Gothic" positionType="FixRelativeToBottom" x="463" y="753" width="96" height="10" uuid="a5928f7f-1959-4cb3-b1f0-eb755c9af8b5">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPAゴシック" size="9"/>
+					</textElement>
+					<text><![CDATA[住友生命保険相互会社]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+</jasperReport>

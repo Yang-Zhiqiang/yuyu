@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="useritiranhyou" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="789" leftMargin="40" rightMargin="13" topMargin="57" bottomMargin="43" uuid="cb8560b2-01e5-400a-9c21-e38a53455fb4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<import value="yuyu.common.base.useritiranhyou.EditUserItiranhyou"/>
+	<import value="jp.co.slcs.swak.date.BizDate"/>
+	<import value="java.lang.Boolean"/>
+	<import value="java.lang.String"/>
+	<import value="yuyu.def.classification.C_KyokaKbn"/>
+	<parameter name="BizDate" class="jp.co.slcs.swak.date.BizDate">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="userId" class="java.lang.String"/>
+	<field name="userNm" class="java.lang.String"/>
+	<field name="userGroupNm" class="java.lang.String"/>
+	<field name="passwordSetteiYmd" class="jp.co.slcs.swak.date.BizDate"/>
+	<field name="passwordYuukouKigenYmd" class="jp.co.slcs.swak.date.BizDate"/>
+	<field name="loginKyokaKbn" class="yuyu.def.classification.C_KyokaKbn"/>
+	<field name="lastLoginTime" class="java.lang.String"/>
+	<field name="roleNm" class="java.lang.String"/>
+	<field name="hoyuuRoleKakuninFlg" class="java.lang.Boolean"/>
+	<field name="passwordHenkouKyokaKbn" class="yuyu.def.classification.C_KyokaKbn"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="71" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="161" height="1" uuid="bbfc914e-3038-428b-a40f-753cc2d9bad0">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<textField evaluationTime="Page">
+				<reportElement x="708" y="0" width="27" height="10" uuid="64abd438-ff24-44e7-94bb-072a4c7ad751">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="IPAMin" size="10" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="21" width="161" height="1" uuid="6cb55b26-98bc-4736-a8fc-1dc2fabeb527">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="3" width="161" height="16" uuid="16ca0d0e-1397-409b-9d1a-01d21377256c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="IPAMin" size="12" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ユ ー ザ ー 一 覧 表]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="735" y="0" width="9" height="10" uuid="9d4b64b2-f7a7-40db-8c11-6272fda89f5f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[/]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="668" y="0" width="44" height="10" uuid="b3d9e0b2-6944-4c43-915f-b4d42988e5a9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ページ : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="685" y="12" width="32" height="10" uuid="1f4dc8f4-0b90-4f90-b2dd-a4c81222b911">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[件数 :]]></text>
+			</staticText>
+			<textField evaluationTime="Report">
+				<reportElement x="744" y="0" width="26" height="10" uuid="2a95e628-0f27-4c21-8d4b-35cd10499b5b">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="IPAMin" size="10" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="722" y="12" width="34" height="10" uuid="2a5ccd50-f179-4d56-9d24-f78f3e871f42">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="IPAMin" size="10" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Opaque" x="761" y="12" width="10" height="10" uuid="cad2860d-04d3-42bf-98fd-610a9e4aeeae">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[件]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="29" width="774" height="1" uuid="95283157-8df9-44b0-ac68-2cc80cb3b840">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="2" y="34" width="62" height="10" uuid="6e47c19a-857b-4bf5-8d38-9791b71d91ab">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ユーザーID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2" y="45" width="62" height="10" uuid="64b931ef-b7cb-4fca-b22a-88f939949481">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ユーザー名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="2" y="56" width="102" height="10" uuid="9df8397b-dc92-4c14-a603-705aa83c8350">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ユーザーグループ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="70" width="774" height="1" uuid="5d65f0e1-9a72-4384-8c23-5369fae839bf">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="294" y="34" width="116" height="10" uuid="cd82b868-da7e-402b-925b-36fedbc8dd2b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[パスワード設定年月日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="294" y="45" width="105" height="10" uuid="314a8df7-dd4e-4962-a3c8-feeace3b3e76">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[パスワード変更許可]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="412" y="45" width="70" height="10" uuid="ef3307b6-e35e-41b0-ac5c-a734ebd409b0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[ログイン許可]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="412" y="34" width="100" height="10" uuid="5aa4ca1e-bf32-4383-a229-071c06376029">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[パスワード有効期限]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="523" y="34" width="70" height="10" uuid="6a6f6aff-7b0b-48ff-9c81-c917e85316b9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[保有ロール名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="680" y="34" width="86" height="10" uuid="d25467d8-f1b6-441e-ab57-ecbb2280a67e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[最終ログイン時間]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="521" y="0" width="64" height="10" uuid="ff0520a6-38bd-4926-9556-23f7baa40c0f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="10" isBold="false" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[作成年月日 : ]]></text>
+			</staticText>
+			<textField pattern="Gyy.MM.dd" isBlankWhenNull="true">
+				<reportElement x="585" y="0" width="83" height="10" isPrintWhenDetailOverflows="true" uuid="48a7aa85-c7a1-466a-b60a-6f4bf9b6f1bc">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="IPAMin" size="10" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditUserItiranhyou.editYMD(BizDate.getSysDate())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="3" y="15" width="293" height="10" uuid="c8390702-5bfc-47a3-bf52-bc3570e3ff94">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userNm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="295" y="15" width="114" height="10" uuid="086211e7-8b2d-4706-9e29-65fd2188926e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditUserItiranhyou.editPasswordHenkouKyokaKbn($F{passwordHenkouKyokaKbn})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="3" y="4" width="293" height="10" uuid="5e44da9f-6cf9-4010-8ef5-f6e6887f207f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="3" y="26" width="293" height="10" uuid="b6e66e11-378d-4535-bedf-d8825b5804e3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userGroupNm}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Gyy" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="295" y="4" width="114" height="10" uuid="43700ac8-b424-4c7c-afdd-8bd8342b743c">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditUserItiranhyou.editYMD($F{passwordSetteiYmd})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="413" y="4" width="108" height="10" uuid="b82d3c8f-e309-4502-a82c-7e5f987d0ea4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditUserItiranhyou.editYMD($F{passwordYuukouKigenYmd})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="" mode="Opaque" x="523" y="4" width="137" height="32" uuid="06306976-03e7-4e75-b2e4-ab8475c1ef34">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="html">
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{roleNm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="413" y="15" width="108" height="10" uuid="0e86b935-c193-47df-9eee-3670ae3b9230">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditUserItiranhyou.editLoginKyokaKbn($F{loginKyokaKbn})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="680" y="4" width="89" height="10" uuid="21c15470-7334-4bdc-b53c-4d2a2565c2b3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditUserItiranhyou.editYMDhm($F{lastLoginTime})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="662" y="4" width="10" height="10" uuid="b3734e3d-3004-4632-b479-5d7e72dda9cc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="IPAMin" size="9" pdfFontName="IPAMin" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditUserItiranhyou.editHoyuuRoleKakuninFlg($F{hoyuuRoleKakuninFlg})]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

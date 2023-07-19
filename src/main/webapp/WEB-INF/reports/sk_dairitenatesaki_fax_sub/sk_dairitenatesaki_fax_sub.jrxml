@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sk_dairitenatesaki_fax_sub" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="be590da3-e58c-47fd-9d63-b450806d4e8b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<import value="yuyu.common.biz.report.ViewReport"/>
+	<import value="yuyu.common.biz.bzcommon.BizUtil"/>
+	<import value="yuyu.def.classification.C_SkeijimuKbn"/>
+	<style name="Default" isDefault="true" fontName="IPA明朝" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<style name="Gothic" fontName="IPAゴシック" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<parameter name="SUB_PRM1" class="yuyu.def.biz.bean.report.BzDairitenAtesakiBean"/>
+	<parameter name="REPORT_ROOT" class="java.lang.String"/>
+	<group name="グループ1">
+		<groupHeader>
+			<band height="100">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<printWhenExpression><![CDATA[!C_SkeijimuKbn.SHOP.eq($P{SUB_PRM1}.getIrSkeijimukbn())]]></printWhenExpression>
+				<rectangle>
+					<reportElement x="394" y="0" width="143" height="100" uuid="2012be07-beda-484a-9e42-714d427835af"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="197" y="0" width="143" height="100" uuid="d462d7fd-9490-486a-9f3c-5471679951b0">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+				</rectangle>
+				<rectangle>
+					<reportElement x="0" y="0" width="143" height="100" uuid="2f6a0479-1c28-4e19-b317-41055c143a8f"/>
+				</rectangle>
+				<staticText>
+					<reportElement style="Default" mode="Transparent" x="145" y="83" width="47" height="12" uuid="d648fcca-38cc-4af5-81aa-925a016295e7">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<text><![CDATA[月    日]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="200" y="23" width="136" height="10" uuid="0f56195b-7821-4219-92ca-0ace0160506d"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrDrtenutdskknnm2()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" mode="Transparent" x="437" y="66" width="100" height="14" uuid="493310e6-5744-4e4d-8342-b6b2fd23292f">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Top">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasetelno()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="437" y="83" width="100" height="14" uuid="c40a8581-fca9-4b96-a3b5-c2941dfe1736">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasefaxno()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Default" x="10" y="67" width="30" height="12" uuid="5fd13013-fbb3-419d-b770-ce4595158a72">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[TEL：]]></text>
+				</staticText>
+				<image hAlign="Center">
+					<reportElement x="340" y="65" width="54" height="13" uuid="702d1763-1287-4617-ac6e-41c0588cc4b4"/>
+					<imageExpression><![CDATA[$P{REPORT_ROOT} +"/../../classes/reports/image/yazirusi_big_white_left.png"]]></imageExpression>
+				</image>
+				<line>
+					<reportElement x="0" y="62" width="143" height="1" uuid="8ddb1e6d-2154-4173-9faa-584ce5149aac"/>
+				</line>
+				<line>
+					<reportElement x="394" y="62" width="143" height="1" uuid="26d7336b-6e67-4eb3-8a41-39b70613b5ba">
+						<property name="local_mesure_unity" value="pixel"/>
+					</reportElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="3" y="13" width="134" height="10" uuid="7f266f97-e208-41e5-9383-94d713ffd9e3"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false).length >= 2? BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false)[1]:""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="344" y="83" width="48" height="12" uuid="cad8e554-a599-4458-980c-d2edff002dc3"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrDrtenhassouymd()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="3" y="3" width="134" height="10" uuid="58e923ba-6103-4735-b5b6-cb0ca77dce53"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false).length>=1?BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false)[0]:""]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Default" x="207" y="67" width="30" height="12" uuid="cb412a80-b31e-4942-b8f6-4a2353932885">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[TEL：]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="3" y="34" width="152" height="10" uuid="d9e0538f-1254-4e47-914a-58b085d2a02c">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.isBlank($P{SUB_PRM1}.getIrTratkitantounmkj())?"":ViewReport.editSama($P{SUB_PRM1}.getIrTratkitantounmkj())]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="200" y="3" width="136" height="10" uuid="300eb913-fb1d-4dc9-ba03-d2eafb3939e2"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrDrtenutdskknnm1()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="10" y="84" width="30" height="12" uuid="e23bb840-1b1a-4568-b221-1721ab1b6d9c">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasefaxmidasi()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="397" y="3" width="130" height="10" uuid="6704716d-3de5-423f-8521-ed2c144123d7"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrHknkisynm()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Default" x="312" y="42" width="24" height="10" uuid="916519ce-4893-48f3-b30a-036c675a55d7">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[御中]]></text>
+				</staticText>
+				<line>
+					<reportElement x="197" y="62" width="143" height="1" uuid="27125757-e9d8-4f87-b994-e60a838fba00"/>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="3" y="23" width="134" height="10" uuid="270ef5a7-c27d-49fb-8dc4-1ea44b53a46f"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false).length >= 3? BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false)[2]:""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="404" y="84" width="30" height="12" uuid="db0257d4-81c5-4b81-a144-85f2cb4941e1">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasefaxmidasi()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Default" x="404" y="67" width="30" height="12" uuid="9a1a4210-a9e0-4554-b31d-297680c86bb2">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[TEL：]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="397" y="13" width="130" height="10" uuid="cbde5dff-f4b8-4903-a415-f88d050119dd"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasesosiki()]]></textFieldExpression>
+				</textField>
+				<image hAlign="Center">
+					<reportElement x="143" y="64" width="54" height="13" uuid="54a945f7-744d-402a-a66f-14071b7053b7"/>
+					<imageExpression><![CDATA[$P{REPORT_ROOT} +"/../../classes/reports/image/yazirusi_big_white_left.png"]]></imageExpression>
+				</image>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="207" y="84" width="30" height="12" uuid="2669d195-ea0a-4adf-a2d3-01dbc18a7b01">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasefaxmidasi()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Default" x="399" y="34" width="42" height="9" uuid="0287cce5-440e-425c-8bd7-56f7922e9599">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[ 担当：]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="グループ2">
+		<groupHeader>
+			<band height="100">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<printWhenExpression><![CDATA[C_SkeijimuKbn.SHOP.eq($P{SUB_PRM1}.getIrSkeijimukbn())]]></printWhenExpression>
+				<rectangle>
+					<reportElement x="350" y="0" width="175" height="100" uuid="30ce2cc1-9a5f-436d-89cc-a6c815dce4a0">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+				</rectangle>
+				<rectangle>
+					<reportElement x="12" y="0" width="175" height="100" uuid="165e9944-ac44-4a5b-961a-9b6b3a837c33">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+				</rectangle>
+				<staticText>
+					<reportElement style="Default" x="20" y="75" width="30" height="12" uuid="06598aa1-07c6-46b1-99eb-fd54281399c1">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[TEL：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Default" x="355" y="37" width="42" height="9" uuid="f831a164-bf75-4b1a-95c4-93539d423e74">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="9"/>
+					</textElement>
+					<text><![CDATA[ 担当：]]></text>
+				</staticText>
+				<image hAlign="Center">
+					<reportElement x="187" y="35" width="163" height="20" uuid="5132fcbc-a342-4893-9f95-19d9e74974a0"/>
+					<imageExpression><![CDATA[$P{REPORT_ROOT} +"/../../classes/reports/image/yazirusi_prettybig_white_left.png"]]></imageExpression>
+				</image>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="353" y="13" width="140" height="10" uuid="4ecdf1b7-09c8-46e5-8b1f-53c5fb8fb7d1">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasesosiki()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="353" y="3" width="140" height="10" uuid="33a27927-e85b-4a66-873d-de51fd145a25">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrHknkisynm()]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="350" y="62" width="175" height="1" uuid="1e7d3274-3686-4823-ad62-4e00443f980f">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="187" y="61" width="163" height="8" uuid="5335478c-375f-40cf-b072-49aa6f788ca5"/>
+					<textElement textAlignment="Center">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrDrtenhassouymd()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="15" y="23" width="140" height="10" uuid="d1a3a194-c335-4fe9-b262-a2137a58825a">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false).length >= 3? BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false)[2]:""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="15" y="3" width="140" height="10" uuid="dfc0dd69-11cc-4b89-8430-4abe08547ae6">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false).length>=1?BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false)[0]:$P{SUB_PRM1}.getIrDrtennmkj()]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="12" y="62" width="175" height="1" uuid="5d7357be-dab7-44c5-9189-143f42fed759">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="15" y="33" width="165" height="10" uuid="e140016a-5bae-4e87-98fd-13008f1dba78">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.isBlank($P{SUB_PRM1}.getIrTratkitantounmkj())?"":ViewReport.editSama($P{SUB_PRM1}.getIrTratkitantounmkj())]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="15" y="13" width="140" height="10" uuid="5158da49-f7ed-4c7a-8d54-9c2e33969b08">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false).length >= 2? BizUtil.splitLineSeparator($P{SUB_PRM1}.getIrDrtennmkj(),15,false)[1]:""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="391" y="74" width="100" height="14" uuid="978ab9fc-2edd-4461-8b65-f185625e93f2">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="14"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{SUB_PRM1}.getIrToiawasetelno()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement style="Default" x="360" y="75" width="30" height="12" uuid="3fd1b3ff-e862-41c8-bdde-31665165b50d">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font size="12"/>
+					</textElement>
+					<text><![CDATA[TEL：]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+</jasperReport>

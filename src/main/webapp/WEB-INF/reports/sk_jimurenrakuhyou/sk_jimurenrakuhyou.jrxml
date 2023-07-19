@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sk_jimurenrakuhyou" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="542" leftMargin="40" rightMargin="13" topMargin="57" bottomMargin="43" uuid="59b6be2d-33f0-47f0-a90d-48fb20c736b8">
+	<property name="com.jasperassistant.designer.Grid" value="false"/>
+	<property name="com.jasperassistant.designer.SnapToGrid" value="false"/>
+	<property name="com.jasperassistant.designer.GridWidth" value="12"/>
+	<property name="com.jasperassistant.designer.GridHeight" value="12"/>
+	<property name="com.jasperassistant.designer.HGuides" value="258"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Default" isDefault="true" fontName="IPA明朝" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<parameter name="O_PRM1" class="yuyu.def.sinkeiyaku.bean.report.SkJimurenrakuhyouBean"/>
+	<field name="irMessage" class="java.lang.String"/>
+	<group name="Group_1">
+		<groupHeader>
+			<band height="134" splitType="Stretch">
+				<staticText>
+					<reportElement x="372" y="3" width="42" height="12" uuid="be9c42d8-74d5-4fea-a5df-7b2b419f7fed"/>
+					<textElement>
+						<font fontName="IPAゴシック" size="9" pdfFontName="HeiseiKakuGo-W5"/>
+					</textElement>
+					<text><![CDATA[処理日：]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="419" y="3" width="76" height="12" uuid="ed7749bb-1968-4186-9ea1-3a32fdd40802"/>
+					<textElement>
+						<font fontName="IPA明朝" pdfFontName="HeiseiMin-W3"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrTyouhyousakuseiymd()]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="235" y="15" width="102" height="24" uuid="78aea04b-eb46-4314-9c3e-e181e2100164"/>
+					<textElement>
+						<font fontName="IPAゴシック" size="15" pdfFontName="HeiseiKakuGo-W5"/>
+					</textElement>
+					<text><![CDATA[事務連絡票]]></text>
+				</staticText>
+				<rectangle>
+					<reportElement x="10" y="45" width="383" height="30" backcolor="#C0C0C0" uuid="2a53616e-96f1-4cb9-9110-61334ea4d527"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="24" y="45" width="75" height="30" uuid="e8276847-f9eb-44d2-a3a5-909ff684fb91"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="IPAゴシック" size="9" pdfFontName="HeiseiKakuGo-W5"/>
+					</textElement>
+					<text><![CDATA[申込番号]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="202" y="45" width="113" height="30" uuid="e048667a-d8d4-4149-b320-5e13a44f95b0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="IPAゴシック" pdfFontName="HeiseiKakuGo-W5"/>
+					</textElement>
+					<text><![CDATA[機能名]]></text>
+				</staticText>
+				<line>
+					<reportElement x="114" y="45" width="1" height="30" uuid="061f0389-bd70-4453-939c-e7c8f9652cb1"/>
+				</line>
+				<textField isBlankWhenNull="true">
+					<reportElement x="12" y="76" width="100" height="28" uuid="d8fc6b82-8130-4608-b49b-95fad27e9c00"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrMosno()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement x="117" y="76" width="270" height="28" uuid="dafa3af8-a915-41a5-8813-dd5247ebd413"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrKinounm()]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement x="10" y="120" width="496" height="12" backcolor="#C0C0C0" uuid="2ad4d2ff-42ff-47b6-bff3-8abbc980f6e4"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="218" y="120" width="89" height="12" uuid="c30b63d5-fa71-4d33-86bc-0e514ce8afd2"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="IPAゴシック" size="8" isBold="false" pdfFontName="HeiseiKakuGo-W5"/>
+					</textElement>
+					<text><![CDATA[メッセージ]]></text>
+				</staticText>
+				<line>
+					<reportElement x="114" y="75" width="1" height="30" uuid="cbc2d58b-dae5-441d-996b-2947cedc273f"/>
+				</line>
+				<rectangle>
+					<reportElement mode="Transparent" x="10" y="75" width="383" height="30" backcolor="#FFFFFF" uuid="e7bc5eda-ca17-4432-bc9e-4e8b6507227d"/>
+				</rectangle>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band height="692" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="671" width="130" height="12" uuid="3c781af9-aad3-4f12-9981-307e1f5458ac"/>
+				<textElement>
+					<font fontName="IPAゴシック" pdfFontName="HeiseiKakuGo-W5"/>
+				</textElement>
+				<text><![CDATA[◎お客様情報、処理済後破細]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Transparent" x="10" y="132" width="496" height="515" backcolor="#FFFFFF" uuid="8d9da7bc-7ca3-4839-a5ca-ae3689920abf">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</rectangle>
+		</band>
+	</background>
+	<detail>
+		<band height="13" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="11" y="1" width="491" height="12" uuid="9837db41-69c7-451d-a326-50419c019171"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{irMessage}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

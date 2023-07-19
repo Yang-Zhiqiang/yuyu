@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="qrsealyousi" columnCount="7" printOrder="Horizontal" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="65" columnSpacing="6" leftMargin="56" rightMargin="42" topMargin="55" bottomMargin="10" isFloatColumnFooter="true" uuid="05756dad-8e5b-42b7-a0cd-a3fdc1078508">
+	<property name="com.jasperassistant.designer.Grid" value="true"/>
+	<property name="com.jasperassistant.designer.SnapToGrid" value="false"/>
+	<property name="com.jasperassistant.designer.GridWidth" value="12"/>
+	<property name="com.jasperassistant.designer.GridHeight" value="12"/>
+	<property name="com.jasperassistant.designer.DataSource" value="DBMD02"/>
+	<property name="com.jasperassistant.designer.Units" value="Pixels"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<import value="yuyu.common.workflow.wfcommon.EditQRSeal"/>
+	<import value="yuyu.common.biz.bzcommon.BizUtil"/>
+	<style name="Default" isDefault="true" fontName="IPA明朝" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<parameter name="REPORT_ROOT" class="java.lang.String"/>
+	<parameter name="O_PRM1" class="yuyu.def.workflow.bean.report.QRSealDataSourceBean"/>
+	<field name="syoruinmryaku" class="java.lang.String"/>
+	<field name="mosno" class="java.lang.String"/>
+	<field name="workflowDocumentId" class="java.lang.String"/>
+	<field name="qrcodedata" class="java.lang.Object"/>
+	<detail>
+		<band height="93" splitType="Prevent">
+			<property name="local_mesure_unitheight" value="pixel"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" isUsingCache="false">
+				<reportElement x="2" y="0" width="63" height="63" uuid="07786769-0acb-4d82-890e-4461fad4ebeb">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[($F{qrcodedata}==null?($P{REPORT_ROOT} +"/../../classes/reports/image/barcode_blank.gif"):$P{REPORT_ROOT} + "/../../classes/reports/qr/" + EditQRSeal.editQRCodeImg($F{qrcodedata}, $F{workflowDocumentId}))]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" mode="Opaque" x="1" y="58" width="65" height="6" uuid="678b25dd-40f5-4dbd-8eac-7da4e1bf2547">
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{syoruinmryaku}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="1" y="64" width="65" height="8" uuid="e118cb7c-53cc-4463-9c70-933bc1326a26">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[BizUtil.editMosNo($F{mosno})]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="1" y="72" width="65" height="12" uuid="93799086-7587-45ac-8879-944905e4dfef">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="local_mesure_unitx" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[BizUtil.editMojiretu($F{workflowDocumentId},11)]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

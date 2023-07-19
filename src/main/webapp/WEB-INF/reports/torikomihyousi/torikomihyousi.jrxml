@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="torikomihyousi" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="20" whenResourceMissingType="Empty" uuid="e16a98c7-9bd3-4746-97e6-9b4133867a61">
+	<property name="com.jasperassistant.designer.Grid" value="false"/>
+	<property name="com.jasperassistant.designer.SnapToGrid" value="false"/>
+	<property name="com.jasperassistant.designer.GridWidth" value="12"/>
+	<property name="com.jasperassistant.designer.GridHeight" value="12"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<import value="jp.co.slcs.swak.date.BizDateFormat.FillStyle"/>
+	<import value="jp.co.slcs.swak.date.BizDateFormat"/>
+	<import value="jp.co.slcs.swak.date.BizDate"/>
+	<import value="yuyu.common.workflow.wfcommon.EditTorikomiHyousiSakusei"/>
+	<style name="Default" isDefault="true" fontName="IPA明朝" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<parameter name="Q_IMG" class="Object" isForPrompting="false"/>
+	<parameter name="BizDate" class="jp.co.slcs.swak.date.BizDate"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="sousasyanm" class="java.lang.String"/>
+	<field name="subSystemNm" class="java.lang.String"/>
+	<field name="jimutetuzukinm" class="java.lang.String"/>
+	<field name="syono" class="java.lang.String"/>
+	<field name="mosno" class="java.lang.String"/>
+	<field name="nksysyno" class="java.lang.String"/>
+	<field name="syoruinm" class="java.lang.String"/>
+	<field name="workflowDocumentId" class="java.lang.String"/>
+	<pageHeader>
+		<band height="789" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="193" width="151" height="20" backcolor="#C8FFC8" uuid="ebb79986-fb90-4a51-96b4-c17baee72be3"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="220" width="151" height="60" backcolor="#C8FFC8" uuid="1fcea6be-268a-4a83-89dd-dab7911f94f8"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="1" y="164" width="553" height="1" uuid="d81a3e82-1940-4d21-992f-513e915a4267"/>
+				<graphicElement>
+					<pen lineWidth="4.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="280" width="151" height="20" backcolor="#C8FFC8" uuid="85d0e9bb-d4fe-47dc-bfc9-6ad4a47a82ee"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="1" y="168" width="553" height="1" uuid="97a18a76-926c-48c4-9c2c-cd08ba58e5f3"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Default" x="0" y="128" width="342" height="30" uuid="fb875d6d-773b-4cb6-9a5b-4e3d32efc80a"/>
+				<textElement>
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[取込表紙]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="193" width="554" height="1" uuid="f8256950-2652-494b-9819-fe37c0fa9c8d"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="213" width="554" height="1" uuid="003a053b-ade5-4a02-a31c-bd9e27c7b209"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="220" width="554" height="1" uuid="487f6727-03ed-4b91-8098-592f942ffffa"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="240" width="554" height="1" uuid="d075f6f7-1b11-4176-9ff9-aa67cf9d304f"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="260" width="554" height="1" uuid="c8396046-5e8f-4cf4-9de9-ea1b96037e9b"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="280" width="1" height="21" uuid="bad96566-4b78-4851-a617-4afec415aee0"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="300" width="554" height="1" uuid="b2f7b7f1-a3d5-4ef3-81dc-0fac9f12430a"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="193" width="1" height="20" uuid="877e07f1-d235-438a-b974-3275b80e2722"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="220" width="1" height="61" uuid="5243f47e-25b6-4b26-84ea-6614a7ba45a4"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="553" y="193" width="1" height="20" uuid="27cd7e1b-5288-4a02-b338-cb2becbdb9ee"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="553" y="220" width="1" height="61" uuid="6a9dab43-d653-4678-b23e-e93eb11a3949"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="151" y="193" width="1" height="20" uuid="916ae83c-3a4f-4c4d-91af-01b337d63d54"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="151" y="220" width="1" height="61" uuid="4d97cd6a-9fad-49d1-a07d-2e590060ceb4"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="307" width="554" height="459" uuid="91e9ccfc-23d1-45f0-94f7-3be1fb338182"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="1" y="308" width="552" height="20" backcolor="#C8FFC8" uuid="64fcf4dc-fdf5-4834-8711-42c02cc1c3a8"/>
+				<graphicElement>
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="1" y="327" width="552" height="1" uuid="449e851e-f398-4f5b-a27c-12089a0eef1e"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Default" x="5" y="198" width="140" height="11" uuid="1fbc82d0-1598-45ee-935c-9951d41c3e2c"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[操作者]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Default" x="5" y="225" width="140" height="11" uuid="9f6c079e-10ba-4414-868e-05787c6823e8"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[サブシステム]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Default" x="5" y="245" width="140" height="12" uuid="f852a5ed-d19e-4ac2-a536-370173009117"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[事務手続]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Default" x="5" y="285" width="140" height="12" uuid="af3629dd-1425-48dd-b5d9-cfce87d4cae7"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[書類名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Default" x="207" y="310" width="140" height="15" uuid="d3e84f37-a2d8-43d7-8035-f565a7f3d1ff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[コメント]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="156" y="198" width="370" height="11" uuid="4377aa83-194b-47fc-a792-8432fe7d60be"/>
+				<textFieldExpression><![CDATA[$F{sousasyanm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="156" y="225" width="370" height="11" uuid="218bf6b0-3a5d-4e79-a895-732cc9e5285b"/>
+				<textFieldExpression><![CDATA[$F{subSystemNm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="156" y="245" width="370" height="11" uuid="2a912a5f-e4ef-45e0-befd-ce1710744be1"/>
+				<textFieldExpression><![CDATA[$F{jimutetuzukinm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="156" y="285" width="370" height="11" uuid="d58fb023-b15f-4c8f-989d-650428a91ad3"/>
+				<textFieldExpression><![CDATA[$F{syoruinm}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="414" y="778" width="141" height="11" uuid="1a90320f-a762-4f67-9b6b-bed9d1e6c37e"/>
+				<textElement textAlignment="Right">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[EditTorikomiHyousiSakusei.editYMDhm($P{BizDate}.getSysDateTime());]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="5" y="265" width="140" height="12" uuid="72e00499-5d36-42e0-9200-929d2ba5034c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[EditTorikomiHyousiSakusei.editGyoumuKey($F{subSystemNm})]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="151" y="280" width="1" height="21" uuid="caafd45d-09ee-4923-8ef5-92f750223b9e"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="280" width="1" height="21" uuid="eb7678ab-ff6c-49a7-b26d-9a90dca52d22"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="280" width="554" height="1" uuid="eb49916e-f762-479d-b64a-020783718768"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="553" y="280" width="1" height="21" uuid="9e66c64f-8eeb-4dae-b21c-71c45e7d8857"/>
+				<graphicElement>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<image isUsingCache="true">
+				<reportElement x="467" y="98" width="60" height="60" uuid="d21b561d-043b-46a9-818a-fec919a48426"/>
+				<imageExpression><![CDATA[$P{Q_IMG}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="0" y="778" width="141" height="11" uuid="50e53817-e63c-45fd-8183-033e88e77ffb"/>
+				<textElement textAlignment="Left">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{workflowDocumentId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="Default" x="156" y="265" width="370" height="11" uuid="0c74ab06-7407-4227-8408-bd0316614f7e"/>
+				<textFieldExpression><![CDATA[EditTorikomiHyousiSakusei.getGyoumukeyValue($F{mosno}, $F{syono}, $F{nksysyno});]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+</jasperReport>

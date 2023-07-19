@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sk_ttdkkr" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="30" bottomMargin="10" uuid="fcab07b7-573d-41be-b32a-65d9aa183b0a">
+	<import value="yuyu.common.biz.bzcommon.BizUtil"/>
+	<import value="yuyu.def.classification.C_Ketkekkacd"/>
+	<style name="Default" isDefault="true" fontName="IPA明朝" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<style name="Gothic" fontName="IPAゴシック" fontSize="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<parameter name="O_PRM1" class="yuyu.def.sinkeiyaku.bean.report.SkTtdkkanryouTuutiBean"/>
+	<parameter name="REPORT_ROOT" class="java.lang.String"/>
+	<parameter name="O_PRM2" class="yuyu.def.biz.bean.report.BzKokyakuAtesakiBean"/>
+	<group name="手続完了通知（顧客宛）">
+		<groupHeader>
+			<band height="214" splitType="Stretch">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<subreport>
+					<reportElement x="0" y="0" width="595" height="214" uuid="9d95db0a-ebf0-4cff-8c61-93a27b7dffdf"/>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<subreportParameter name="SUB_PRM1">
+						<subreportParameterExpression><![CDATA[$P{O_PRM2}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportExpression><![CDATA[$P{REPORT_ROOT}+"/../sk_kokyakuatesaki_mado_sub/sk_kokyakuatesaki_mado_sub.jasper"]]></subreportExpression>
+				</subreport>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="588" splitType="Stretch">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<rectangle radius="8">
+					<reportElement mode="Transparent" x="30" y="42" width="535" height="524" forecolor="#000000" uuid="3cad9a50-86d1-4e62-8069-8471416eb669"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<rectangle radius="8">
+					<reportElement mode="Transparent" x="30" y="9" width="330" height="22" forecolor="#000000" uuid="9c9819d5-4408-4884-9f42-6da649f1f9fb">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="0.5" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<staticText>
+					<reportElement style="Default" x="510" y="300" width="24" height="12" uuid="c96ccb50-5174-4889-8d3b-4ebd7716ff9b"/>
+					<textElement>
+						<font fontName="IPA明朝" size="12" pdfFontName="HeiseiMin-W3"/>
+					</textElement>
+					<text><![CDATA[以上]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Default" x="40" y="9" width="320" height="22" uuid="4ce01680-6414-4488-bf03-5d094e4aee74">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="IPA明朝" size="16" isBold="false" pdfFontName="HeiseiKakuGo-W5"/>
+					</textElement>
+					<text><![CDATA[お手続き完了のお知らせ]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Default" x="40" y="54" width="515" height="116" uuid="fd8f2755-4365-4415-8051-26a037451e83">
+						<printWhenExpression><![CDATA[C_Ketkekkacd.MOS_TORIKESI.eq($P{O_PRM1}.getIrKetkekkacd())]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="12"/>
+						<paragraph lineSpacing="Fixed" lineSpacingSize="19.0"/>
+					</textElement>
+					<text><![CDATA[いつもお引立てをいただきありがとうございます。
+このたび当社にお申し込みいただきました下記契約について、申込取消の手続きが完了
+しましたのでご連絡いたします。
+今後とも変わらぬご愛顧を賜りますようお願いいたします。
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Default" x="291" y="190" width="12" height="12" uuid="0d92e73e-a352-4564-8ed1-c866934b1040"/>
+					<textElement>
+						<font fontName="IPA明朝" size="12"/>
+					</textElement>
+					<text><![CDATA[記]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Default" x="40" y="54" width="515" height="116" uuid="31a7106b-7f07-4c6b-a872-b1b2c1725657">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<printWhenExpression><![CDATA[C_Ketkekkacd.COOLINGOFF.eq($P{O_PRM1}.getIrKetkekkacd())]]></printWhenExpression>
+					</reportElement>
+					<textElement>
+						<font size="12"/>
+						<paragraph lineSpacing="Fixed" lineSpacingSize="19.0"/>
+					</textElement>
+					<text><![CDATA[いつもお引立てをいただきありがとうございます。
+このたび当社にお申し込みいただきました下記契約について、クーリングオフの手続きが完了
+しましたのでご連絡いたします。
+今後とも変わらぬご愛顧を賜りますようお願いいたします。
+]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="55" y="240" width="484" height="17" uuid="ec277ea8-3da6-412f-9c61-20b7d14b42b0"/>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHknsyurui()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="101" y="257" width="393" height="17" uuid="c1b0195d-dde5-4cd3-93f9-a47baef2f7bd"/>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrAisyoumei()]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="177" y="274" width="240" height="17" uuid="4aa0da49-98e8-4d17-83d7-a288b823a504">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA["申込番号："+(BizUtil.isBlank($P{O_PRM1}.getIrMosno())?"":$P{O_PRM1}.getIrMosno())]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="83" width="26" height="1" forecolor="#C0C0C0" uuid="113152a5-e3aa-4224-a315-68346ffea3d9">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineColor="#C0C0C0"/>
+					</graphicElement>
+				</line>
+				<line>
+					<reportElement x="569" y="83" width="26" height="1" forecolor="#C0C0C0" uuid="0beafab8-690d-4dd1-8c01-92a798b37d65">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="0" y="392" width="26" height="1" forecolor="#C0C0C0" uuid="6c50fa25-2ee1-45e1-b811-60bf2331b2ba">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+				<line>
+					<reportElement x="569" y="392" width="26" height="1" forecolor="#C0C0C0" uuid="a6a43233-09b4-4038-b530-4fa5ddbb3b2a">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+</jasperReport>

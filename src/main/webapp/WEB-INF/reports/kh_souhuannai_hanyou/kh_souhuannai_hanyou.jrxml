@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version last-->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="kh_souhuannai_hanyou" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="30" bottomMargin="10" uuid="2cb1891f-7670-4650-8f13-afdec05c3e10">
+	<property name="com.jasperassistant.designer.DataSource" value="Test"/>
+	<property name="com.jasperassistant.designer.Grid" value="false"/>
+	<property name="com.jasperassistant.designer.SnapToGrid" value="false"/>
+	<property name="com.jasperassistant.designer.GridWidth" value="12"/>
+	<property name="com.jasperassistant.designer.GridHeight" value="12"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<import value="yuyu.common.biz.bzcommon.BizUtil"/>
+	<style name="Default" fontName="IPA明朝" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<style name="Gothic" fontName="IPAゴシック" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+	<parameter name="O_PRM1" class="yuyu.def.hozen.bean.report.KhHanyouSouhuannaiBean"/>
+	<parameter name="REPORT_ROOT" class="java.lang.String"/>
+	<parameter name="O_PRM2" class="yuyu.def.biz.bean.report.BzKokyakuAtesakiBean"/>
+	<group name="サブレポート">
+		<groupHeader>
+			<band height="230">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<subreport>
+					<reportElement x="0" y="8" width="536" height="191" uuid="80b2f6f3-68ff-4fa1-83ff-3e98a4492292">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<parametersMapExpression><![CDATA[$P{REPORT_PARAMETERS_MAP}]]></parametersMapExpression>
+					<subreportParameter name="SUB_PRM2">
+						<subreportParameterExpression><![CDATA[$P{O_PRM2}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportExpression><![CDATA[$P{REPORT_ROOT}+"/../bz_kokyakuatesaki_sub/bz_kokyakuatesaki_sub.jasper"]]></subreportExpression>
+				</subreport>
+				<rectangle radius="8">
+					<reportElement mode="Transparent" x="20" y="189" width="330" height="36" uuid="4887e5f7-8b8e-4030-bd89-b72f17df9002">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="2.0" lineStyle="Solid" lineColor="#808080"/>
+					</graphicElement>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Gothic" x="30" y="193" width="310" height="27" uuid="e0021c24-9471-48e9-80fd-442557fd7026">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="IPAゴシック" size="10" isBold="false" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{O_PRM1}.getIrHanyoushannaityouhyounm()]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="Group_1">
+		<groupHeader>
+			<band height="527" splitType="Stretch">
+				<property name="local_mesure_unitheight" value="pixel"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<rectangle radius="8">
+					<reportElement mode="Transparent" x="20" y="13" width="549" height="499" forecolor="#808080" uuid="f90785b1-4f06-403c-ad7a-d27248826ec2">
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<graphicElement>
+						<pen lineWidth="2.0" lineStyle="Solid"/>
+					</graphicElement>
+				</rectangle>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="265" width="500" height="15" uuid="5958787a-ab57-445b-b073-08d252738473">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 17 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[16] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="175" width="500" height="15" uuid="5da22c6d-9e53-424c-bdb6-073a5752ec6d">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 11 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[10] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="55" width="500" height="15" uuid="ab2b221b-84a1-4dee-bdf0-7aa16f5e732b">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 3 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[2] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="190" width="500" height="15" uuid="1225df1c-290f-409a-a97a-a994b728fd0e">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 12 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[11] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="445" width="500" height="15" uuid="09e7782b-d02d-49f6-a1e0-bc8838a427e1">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 29 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[28] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="340" width="500" height="15" uuid="333961af-87d3-4e9f-829a-3b985e823e53">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 22 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[21] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="370" width="500" height="15" uuid="7a5461a3-97f2-4e3e-ad6d-30fdd1e3ba94">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 24 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[23] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="400" width="500" height="15" uuid="fb6ee5e1-a614-4610-a14d-86bbf19954e4">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 26 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[25] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="130" width="500" height="15" uuid="a240af91-0956-46cd-b53f-6a2a03d57b93">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 8 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[7] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="220" width="500" height="15" uuid="4c58851c-da42-4ee0-af67-65a7f52a088d">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 14 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[13] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="25" width="500" height="15" uuid="97a7244e-109f-4dc6-8d9f-7bb70b37c5bb">
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 1 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[0] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="280" width="500" height="15" uuid="9c966917-58d0-4fdd-8c14-1ca16fb674e1">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 18 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[17] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="250" width="500" height="15" uuid="f6aa9af3-e022-43ff-9c6a-7ce1e61e7594">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 16 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[15] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="430" width="500" height="15" uuid="44fb3ad9-0099-4ece-952c-7ee4999b53c5">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 28 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[27] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="460" width="500" height="15" uuid="e1883189-1f1b-47c1-9de8-5e176cbcf855">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 30 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[29] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="205" width="500" height="15" uuid="405c0bd3-196f-47e2-b5ae-852d825612e2">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 13 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[12] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="85" width="500" height="15" uuid="6a1d8f7a-4dad-4b02-94ec-e363779392c3">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 5 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[4] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="70" width="500" height="15" uuid="1ceb96d6-114c-45d1-a9da-1b4595cd50e1">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 4 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[3] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="415" width="500" height="15" uuid="7ce9a70d-388f-4e6b-839e-4d188b7ff599">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 27 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[26] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="355" width="500" height="15" uuid="98856c99-47cc-4510-9466-d9f48fb51acd">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 23 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[22] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="40" width="500" height="15" uuid="4c24932e-9007-45f0-b616-67da46ee72ca">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 2 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[1] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="235" width="500" height="15" uuid="db5e9a33-081f-471c-aa52-bf7d3583b965">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 15 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[14] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="295" width="500" height="15" uuid="823a0058-8392-4a4e-b636-037ae81dd7ba">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 19 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[18] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="310" width="500" height="15" uuid="288efefe-c597-47c7-b596-924b911274cf">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 20 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[19] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="145" width="500" height="15" uuid="4cc01a9f-bf09-4cc9-8b9d-f1d5a4715923">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 9 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[8] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="115" width="500" height="15" uuid="3620cd2b-3817-484a-bd39-d8ef39cd0e26">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 7 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[6] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="160" width="500" height="15" uuid="0dc3c284-da00-496f-bfad-c7a7c30bf33b">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 10 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[9] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="100" width="500" height="15" uuid="bdf2059c-9edc-4d42-917c-6885425b6531">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 6 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[5] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="385" width="500" height="15" uuid="043bd2c8-7d10-412d-9aff-f6195e938a27">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 25 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[24] : ""]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement style="Default" x="44" y="325" width="500" height="15" uuid="ee526c27-f798-4681-a80f-82526a53b4e0">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="IPA明朝" size="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-HW-H" isPdfEmbedded="false"/>
+						<paragraph lineSpacing="1_1_2"/>
+					</textElement>
+					<textFieldExpression><![CDATA[BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false).length >= 21 ? BizUtil.splitLineSeparator($P{O_PRM1}.getIrHanyoushannaiinjinaiyou(), 50, false)[20] : ""]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+</jasperReport>
