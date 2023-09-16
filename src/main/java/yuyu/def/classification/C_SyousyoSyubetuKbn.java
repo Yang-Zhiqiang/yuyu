@@ -1,0 +1,57 @@
+
+package yuyu.def.classification;
+
+import jp.co.slcs.swak.core.classification.Classification;
+
+/**
+ * 証書種別区分 クラスです。
+ * <table border="1" cellspacing="0" cellpadding="0">
+ *  <tr bgcolor="whitesmoke"><th colspan="2">区分ID</th><th colspan="3">名称</th></tr>
+ *  <tr><td colspan="2">C_SyousyoSyubetuKbn</td><td colspan="3">証書種別区分</td></tr>
+ *  <tr bgcolor="whitesmoke"><th>パターンID(名称)</th><th>初期値</th><th>区分値ID</th><th>区分値</th><th>内容</th></tr>
+ *  <tr><td rowspan="3">{@link #PATTERN_DEFAULT DEFAULT}<br />(デフォルト)</td><td align="center">○</td><td>{@link #BLNK}</td><td>&quot;0&quot;</td><td>ブランク</td></tr>
+ *  <tr><td align="center">&nbsp;</td><td>{@link #TEIGAKU}</td><td>&quot;1&quot;</td><td>定額年金</td></tr>
+ *  <tr><td align="center">&nbsp;</td><td>{@link #IZOKU}</td><td>&quot;2&quot;</td><td>遺族年金</td></tr>
+ * </table>
+ */
+public class C_SyousyoSyubetuKbn extends Classification<C_SyousyoSyubetuKbn> {
+
+    private static final long serialVersionUID = 1L;
+
+
+    public static final C_SyousyoSyubetuKbn BLNK = new C_SyousyoSyubetuKbn("0");
+
+    public static final C_SyousyoSyubetuKbn TEIGAKU = new C_SyousyoSyubetuKbn("1");
+
+    public static final C_SyousyoSyubetuKbn IZOKU = new C_SyousyoSyubetuKbn("2");
+
+
+    public static final String PATTERN_DEFAULT = "1";
+
+
+    static {
+
+        addPattern(PATTERN_DEFAULT, BLNK, "BLNK", true);
+        addPattern(PATTERN_DEFAULT, TEIGAKU, "TEIGAKU", false);
+        addPattern(PATTERN_DEFAULT, IZOKU, "IZOKU", false);
+
+
+        lock(C_SyousyoSyubetuKbn.class);
+    }
+
+    private C_SyousyoSyubetuKbn(String value) {
+        super(value);
+    }
+
+    public static C_SyousyoSyubetuKbn valueOf(String value) {
+        return valueOf(C_SyousyoSyubetuKbn.class, value);
+    }
+
+    public static String getContentByValue(String value) {
+        return getContentByValue(C_SyousyoSyubetuKbn.class, value);
+    }
+
+    public static String getContentByValue(String patternId, String value) {
+        return getContentByValue(C_SyousyoSyubetuKbn.class, patternId, value);
+    }
+}

@@ -1,0 +1,57 @@
+
+package yuyu.def.classification;
+
+import jp.co.slcs.swak.core.classification.Classification;
+
+/**
+ * 検索指定区分 クラスです。
+ * <table border="1" cellspacing="0" cellpadding="0">
+ *  <tr bgcolor="whitesmoke"><th colspan="2">区分ID</th><th colspan="3">名称</th></tr>
+ *  <tr><td colspan="2">C_KensakusiteiKbn</td><td colspan="3">検索指定区分</td></tr>
+ *  <tr bgcolor="whitesmoke"><th>パターンID(名称)</th><th>初期値</th><th>区分値ID</th><th>区分値</th><th>内容</th></tr>
+ *  <tr><td rowspan="3">{@link #PATTERN_DEFAULT DEFAULT}<br />(デフォルト)</td><td align="center">○</td><td>{@link #HUKA}</td><td>&quot;0&quot;</td><td>不可</td></tr>
+ *  <tr><td align="center">&nbsp;</td><td>{@link #KENSAKU}</td><td>&quot;1&quot;</td><td>検索</td></tr>
+ *  <tr><td align="center">&nbsp;</td><td>{@link #SITEI}</td><td>&quot;2&quot;</td><td>指定</td></tr>
+ * </table>
+ */
+public class C_KensakusiteiKbn extends Classification<C_KensakusiteiKbn> {
+
+    private static final long serialVersionUID = 1L;
+
+
+    public static final C_KensakusiteiKbn HUKA = new C_KensakusiteiKbn("0");
+
+    public static final C_KensakusiteiKbn KENSAKU = new C_KensakusiteiKbn("1");
+
+    public static final C_KensakusiteiKbn SITEI = new C_KensakusiteiKbn("2");
+
+
+    public static final String PATTERN_DEFAULT = "1";
+
+
+    static {
+
+        addPattern(PATTERN_DEFAULT, HUKA, "HUKA", true);
+        addPattern(PATTERN_DEFAULT, KENSAKU, "KENSAKU", false);
+        addPattern(PATTERN_DEFAULT, SITEI, "SITEI", false);
+
+
+        lock(C_KensakusiteiKbn.class);
+    }
+
+    private C_KensakusiteiKbn(String value) {
+        super(value);
+    }
+
+    public static C_KensakusiteiKbn valueOf(String value) {
+        return valueOf(C_KensakusiteiKbn.class, value);
+    }
+
+    public static String getContentByValue(String value) {
+        return getContentByValue(C_KensakusiteiKbn.class, value);
+    }
+
+    public static String getContentByValue(String patternId, String value) {
+        return getContentByValue(C_KensakusiteiKbn.class, patternId, value);
+    }
+}
