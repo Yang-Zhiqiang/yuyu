@@ -1,0 +1,53 @@
+
+package yuyu.def.classification;
+
+import jp.co.slcs.swak.core.classification.Classification;
+
+/**
+ * 手続機能区分 クラスです。
+ * <table border="1" cellspacing="0" cellpadding="0">
+ *  <tr bgcolor="whitesmoke"><th colspan="2">区分ID</th><th colspan="3">名称</th></tr>
+ *  <tr><td colspan="2">C_TtdkKinouKbn</td><td colspan="3">手続機能区分</td></tr>
+ *  <tr bgcolor="whitesmoke"><th>パターンID(名称)</th><th>初期値</th><th>区分値ID</th><th>区分値</th><th>内容</th></tr>
+ *  <tr><td rowspan="2">{@link #PATTERN_DEFAULT DEFAULT}<br />(デフォルト)</td><td align="center">○</td><td>{@link #BLANK}</td><td>&quot;0&quot;</td><td>ブランク</td></tr>
+ *  <tr><td align="center">&nbsp;</td><td>{@link #DENWAKAIYAKUUKETUKE}</td><td>&quot;01&quot;</td><td>電話解約受付</td></tr>
+ * </table>
+ */
+public class C_TtdkKinouKbn extends Classification<C_TtdkKinouKbn> {
+
+    private static final long serialVersionUID = 1L;
+
+
+    public static final C_TtdkKinouKbn BLANK = new C_TtdkKinouKbn("0");
+
+    public static final C_TtdkKinouKbn DENWAKAIYAKUUKETUKE = new C_TtdkKinouKbn("01");
+
+
+    public static final String PATTERN_DEFAULT = "1";
+
+
+    static {
+
+        addPattern(PATTERN_DEFAULT, BLANK, "BLANK", true);
+        addPattern(PATTERN_DEFAULT, DENWAKAIYAKUUKETUKE, "DENWAKAIYAKUUKETUKE", false);
+
+
+        lock(C_TtdkKinouKbn.class);
+    }
+
+    private C_TtdkKinouKbn(String value) {
+        super(value);
+    }
+
+    public static C_TtdkKinouKbn valueOf(String value) {
+        return valueOf(C_TtdkKinouKbn.class, value);
+    }
+
+    public static String getContentByValue(String value) {
+        return getContentByValue(C_TtdkKinouKbn.class, value);
+    }
+
+    public static String getContentByValue(String patternId, String value) {
+        return getContentByValue(C_TtdkKinouKbn.class, patternId, value);
+    }
+}
