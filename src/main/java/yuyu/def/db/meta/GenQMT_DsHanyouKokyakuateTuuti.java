@@ -1,0 +1,39 @@
+package yuyu.def.db.meta;
+
+import jp.co.slcs.swak.date.BizDate;
+import jp.co.slcs.swak.db.typesafe.ExDBFieldString;
+import yuyu.def.classification.C_DsHanyouKokyakuateTuutiKbn;
+import yuyu.def.db.entity.MT_DsHanyouKokyakuateTuuti;
+import jp.co.slcs.swak.db.hibernate.usertype.BizDateType;
+import yuyu.def.db.type.UserType_C_DsHanyouKokyakuateTuutiKbn;
+
+/**
+ * ＤＳ汎用顧客宛通知テーブル のエンティティメタデータ定義Beanです。<br/>
+ * このソースはツールによる自動生成です。テーブル定義に変更があるとツールにより上書きされます。
+ */
+public abstract class GenQMT_DsHanyouKokyakuateTuuti extends AbstractExDBTable<MT_DsHanyouKokyakuateTuuti> {
+
+    public GenQMT_DsHanyouKokyakuateTuuti() {
+        this("MT_DsHanyouKokyakuateTuuti");
+    }
+
+    public GenQMT_DsHanyouKokyakuateTuuti(String pAlias) {
+        super("MT_DsHanyouKokyakuateTuuti", MT_DsHanyouKokyakuateTuuti.class, pAlias);
+    }
+
+    public String MT_DsHanyouKokyakuateTuuti() {
+        return getAliasExpression();
+    }
+
+    public final ExDBFieldString<MT_DsHanyouKokyakuateTuuti, BizDate> dsdatasakuseiymd = new ExDBFieldString<>("dsdatasakuseiymd", this, BizDateType.class);
+
+    public final ExDBFieldString<MT_DsHanyouKokyakuateTuuti, String> dskokno = new ExDBFieldString<>("dskokno", this);
+
+    public final ExDBFieldString<MT_DsHanyouKokyakuateTuuti, C_DsHanyouKokyakuateTuutiKbn> dshanyoukokyakuatetuutikbn = new ExDBFieldString<>("dshanyoukokyakuatetuutikbn", this, UserType_C_DsHanyouKokyakuateTuutiKbn.class);
+
+    public final ExDBFieldString<MT_DsHanyouKokyakuateTuuti, String> gyoumuKousinKinou = new ExDBFieldString<>("gyoumuKousinKinou", this);
+
+    public final ExDBFieldString<MT_DsHanyouKokyakuateTuuti, String> gyoumuKousinsyaId = new ExDBFieldString<>("gyoumuKousinsyaId", this);
+
+    public final ExDBFieldString<MT_DsHanyouKokyakuateTuuti, String> gyoumuKousinTime = new ExDBFieldString<>("gyoumuKousinTime", this);
+}
