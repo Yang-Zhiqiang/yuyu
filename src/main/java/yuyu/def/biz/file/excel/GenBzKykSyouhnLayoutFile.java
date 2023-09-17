@@ -1,0 +1,827 @@
+package yuyu.def.biz.file.excel;
+
+import java.io.Serializable;
+
+import jp.co.slcs.swak.file.description.excel.annotations.Column;
+import jp.co.slcs.swak.util.bean.BeanUtil;
+
+/**
+ * （共通）契約商品テーブルレイアウトファイル データレイアウトのベースBeanクラスです。<br />
+ * このソースはツールにより自動生成されたものです。データレイアウト定義に変更があると上書きされてしまいます。
+ */
+public class GenBzKykSyouhnLayoutFile implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    public GenBzKykSyouhnLayoutFile() {
+    }
+
+    @Column(order = 1, label = "kbnkey")
+    private String ifeTskbnkey;
+
+    public String getIfeTskbnkey() {
+        return ifeTskbnkey;
+    }
+
+    public void setIfeTskbnkey(String pIfeTskbnkey) {
+        ifeTskbnkey = pIfeTskbnkey;
+    }
+
+    @Column(order = 2, label = "syono")
+    private String ifeTssyono;
+
+    public String getIfeTssyono() {
+        return ifeTssyono;
+    }
+
+    public void setIfeTssyono(String pIfeTssyono) {
+        ifeTssyono = pIfeTssyono;
+    }
+
+    @Column(order = 3, label = "syutkkbn")
+    private String ifeTssyutkkbn;
+
+    public String getIfeTssyutkkbn() {
+        return ifeTssyutkkbn;
+    }
+
+    public void setIfeTssyutkkbn(String pIfeTssyutkkbn) {
+        ifeTssyutkkbn = pIfeTssyutkkbn;
+    }
+
+    @Column(order = 4, label = "syouhncd")
+    private String ifeTssyouhncd;
+
+    public String getIfeTssyouhncd() {
+        return ifeTssyouhncd;
+    }
+
+    public void setIfeTssyouhncd(String pIfeTssyouhncd) {
+        ifeTssyouhncd = pIfeTssyouhncd;
+    }
+
+    @Column(order = 5, label = "syouhnsdno")
+    private String ifeTssyouhnsdno;
+
+    public String getIfeTssyouhnsdno() {
+        return ifeTssyouhnsdno;
+    }
+
+    public void setIfeTssyouhnsdno(String pIfeTssyouhnsdno) {
+        ifeTssyouhnsdno = pIfeTssyouhnsdno;
+    }
+
+    @Column(order = 6, label = "kyksyouhnrenno")
+    private String ifeTskyksyouhnrenno;
+
+    public String getIfeTskyksyouhnrenno() {
+        return ifeTskyksyouhnrenno;
+    }
+
+    public void setIfeTskyksyouhnrenno(String pIfeTskyksyouhnrenno) {
+        ifeTskyksyouhnrenno = pIfeTskyksyouhnrenno;
+    }
+
+    @Column(order = 7, label = "henkousikibetukey")
+    private String ifeTshenkousikibetukey;
+
+    public String getIfeTshenkousikibetukey() {
+        return ifeTshenkousikibetukey;
+    }
+
+    public void setIfeTshenkousikibetukey(String pIfeTshenkousikibetukey) {
+        ifeTshenkousikibetukey = pIfeTshenkousikibetukey;
+    }
+
+    @Column(order = 8, label = "yuukousyoumetukbn")
+    private String ifeTsyuukousyoumetukbn;
+
+    public String getIfeTsyuukousyoumetukbn() {
+        return ifeTsyuukousyoumetukbn;
+    }
+
+    public void setIfeTsyuukousyoumetukbn(String pIfeTsyuukousyoumetukbn) {
+        ifeTsyuukousyoumetukbn = pIfeTsyuukousyoumetukbn;
+    }
+
+    @Column(order = 9, label = "kykjyoutai")
+    private String ifeTskykjyoutai;
+
+    public String getIfeTskykjyoutai() {
+        return ifeTskykjyoutai;
+    }
+
+    public void setIfeTskykjyoutai(String pIfeTskykjyoutai) {
+        ifeTskykjyoutai = pIfeTskykjyoutai;
+    }
+
+    @Column(order = 10, label = "syoumetujiyuu")
+    private String ifeTssyoumetujiyuu;
+
+    public String getIfeTssyoumetujiyuu() {
+        return ifeTssyoumetujiyuu;
+    }
+
+    public void setIfeTssyoumetujiyuu(String pIfeTssyoumetujiyuu) {
+        ifeTssyoumetujiyuu = pIfeTssyoumetujiyuu;
+    }
+
+    @Column(order = 11, label = "syoumetuymd")
+    private String ifeTssyoumetuymd;
+
+    public String getIfeTssyoumetuymd() {
+        return ifeTssyoumetuymd;
+    }
+
+    public void setIfeTssyoumetuymd(String pIfeTssyoumetuymd) {
+        ifeTssyoumetuymd = pIfeTssyoumetuymd;
+    }
+
+    @Column(order = 12, label = "kouryokuhasseiymd")
+    private String ifeTskouryokuhasseiymd;
+
+    public String getIfeTskouryokuhasseiymd() {
+        return ifeTskouryokuhasseiymd;
+    }
+
+    public void setIfeTskouryokuhasseiymd(String pIfeTskouryokuhasseiymd) {
+        ifeTskouryokuhasseiymd = pIfeTskouryokuhasseiymd;
+    }
+
+    @Column(order = 13, label = "kykymd")
+    private String ifeTskykymd;
+
+    public String getIfeTskykymd() {
+        return ifeTskykymd;
+    }
+
+    public void setIfeTskykymd(String pIfeTskykymd) {
+        ifeTskykymd = pIfeTskykymd;
+    }
+
+    @Column(order = 14, label = "kykymdsiteiumukbn")
+    private String ifeTskykymdsiteiumukbn;
+
+    public String getIfeTskykymdsiteiumukbn() {
+        return ifeTskykymdsiteiumukbn;
+    }
+
+    public void setIfeTskykymdsiteiumukbn(String pIfeTskykymdsiteiumukbn) {
+        ifeTskykymdsiteiumukbn = pIfeTskykymdsiteiumukbn;
+    }
+
+    @Column(order = 15, label = "sknnkaisiymd")
+    private String ifeTssknnkaisiymd;
+
+    public String getIfeTssknnkaisiymd() {
+        return ifeTssknnkaisiymd;
+    }
+
+    public void setIfeTssknnkaisiymd(String pIfeTssknnkaisiymd) {
+        ifeTssknnkaisiymd = pIfeTssknnkaisiymd;
+    }
+
+    @Column(order = 16, label = "gansknnkaisiymd")
+    private String ifeTsgansknnkaisiymd;
+
+    public String getIfeTsgansknnkaisiymd() {
+        return ifeTsgansknnkaisiymd;
+    }
+
+    public void setIfeTsgansknnkaisiymd(String pIfeTsgansknnkaisiymd) {
+        ifeTsgansknnkaisiymd = pIfeTsgansknnkaisiymd;
+    }
+
+    @Column(order = 17, label = "hksknnkaisiymd")
+    private String ifeTshksknnkaisiymd;
+
+    public String getIfeTshksknnkaisiymd() {
+        return ifeTshksknnkaisiymd;
+    }
+
+    public void setIfeTshksknnkaisiymd(String pIfeTshksknnkaisiymd) {
+        ifeTshksknnkaisiymd = pIfeTshksknnkaisiymd;
+    }
+
+    @Column(order = 18, label = "hkgansknnkaisiymd")
+    private String ifeTshkgansknnkaisiymd;
+
+    public String getIfeTshkgansknnkaisiymd() {
+        return ifeTshkgansknnkaisiymd;
+    }
+
+    public void setIfeTshkgansknnkaisiymd(String pIfeTshkgansknnkaisiymd) {
+        ifeTshkgansknnkaisiymd = pIfeTshkgansknnkaisiymd;
+    }
+
+    @Column(order = 19, label = "hknkknsmnkbn")
+    private String ifeTshknkknsmnkbn;
+
+    public String getIfeTshknkknsmnkbn() {
+        return ifeTshknkknsmnkbn;
+    }
+
+    public void setIfeTshknkknsmnkbn(String pIfeTshknkknsmnkbn) {
+        ifeTshknkknsmnkbn = pIfeTshknkknsmnkbn;
+    }
+
+    @Column(order = 20, label = "hknkkn")
+    private String ifeTshknkkn;
+
+    public String getIfeTshknkkn() {
+        return ifeTshknkkn;
+    }
+
+    public void setIfeTshknkkn(String pIfeTshknkkn) {
+        ifeTshknkkn = pIfeTshknkkn;
+    }
+
+    @Column(order = 21, label = "hrkkknsmnkbn")
+    private String ifeTshrkkknsmnkbn;
+
+    public String getIfeTshrkkknsmnkbn() {
+        return ifeTshrkkknsmnkbn;
+    }
+
+    public void setIfeTshrkkknsmnkbn(String pIfeTshrkkknsmnkbn) {
+        ifeTshrkkknsmnkbn = pIfeTshrkkknsmnkbn;
+    }
+
+    @Column(order = 22, label = "hrkkkn")
+    private String ifeTshrkkkn;
+
+    public String getIfeTshrkkkn() {
+        return ifeTshrkkkn;
+    }
+
+    public void setIfeTshrkkkn(String pIfeTshrkkkn) {
+        ifeTshrkkkn = pIfeTshrkkkn;
+    }
+
+    @Column(order = 23, label = "kyknen")
+    private String ifeTskyknen;
+
+    public String getIfeTskyknen() {
+        return ifeTskyknen;
+    }
+
+    public void setIfeTskyknen(String pIfeTskyknen) {
+        ifeTskyknen = pIfeTskyknen;
+    }
+
+    @Column(order = 24, label = "hhknnen")
+    private String ifeTshhknnen;
+
+    public String getIfeTshhknnen() {
+        return ifeTshhknnen;
+    }
+
+    public void setIfeTshhknnen(String pIfeTshhknnen) {
+        ifeTshhknnen = pIfeTshhknnen;
+    }
+
+    @Column(order = 25, label = "hhknseiymd")
+    private String ifeTshhknseiymd;
+
+    public String getIfeTshhknseiymd() {
+        return ifeTshhknseiymd;
+    }
+
+    public void setIfeTshhknseiymd(String pIfeTshhknseiymd) {
+        ifeTshhknseiymd = pIfeTshhknseiymd;
+    }
+
+    @Column(order = 26, label = "hhknsei")
+    private String ifeTshhknsei;
+
+    public String getIfeTshhknsei() {
+        return ifeTshhknsei;
+    }
+
+    public void setIfeTshhknsei(String pIfeTshhknsei) {
+        ifeTshhknsei = pIfeTshhknsei;
+    }
+
+    @Column(order = 27, label = "haraimanymd")
+    private String ifeTsharaimanymd;
+
+    public String getIfeTsharaimanymd() {
+        return ifeTsharaimanymd;
+    }
+
+    public void setIfeTsharaimanymd(String pIfeTsharaimanymd) {
+        ifeTsharaimanymd = pIfeTsharaimanymd;
+    }
+
+    @Column(order = 28, label = "hknkknmanryouymd")
+    private String ifeTshknkknmanryouymd;
+
+    public String getIfeTshknkknmanryouymd() {
+        return ifeTshknkknmanryouymd;
+    }
+
+    public void setIfeTshknkknmanryouymd(String pIfeTshknkknmanryouymd) {
+        ifeTshknkknmanryouymd = pIfeTshknkknmanryouymd;
+    }
+
+    @Column(order = 29, label = "katakbn")
+    private String ifeTskatakbn;
+
+    public String getIfeTskatakbn() {
+        return ifeTskatakbn;
+    }
+
+    public void setIfeTskatakbn(String pIfeTskatakbn) {
+        ifeTskatakbn = pIfeTskatakbn;
+    }
+
+    @Column(order = 30, label = "kyhgndkatakbn")
+    private String ifeTskyhgndkatakbn;
+
+    public String getIfeTskyhgndkatakbn() {
+        return ifeTskyhgndkatakbn;
+    }
+
+    public void setIfeTskyhgndkatakbn(String pIfeTskyhgndkatakbn) {
+        ifeTskyhgndkatakbn = pIfeTskyhgndkatakbn;
+    }
+
+    @Column(order = 31, label = "syukyhkinkatakbn")
+    private String ifeTssyukyhkinkatakbn;
+
+    public String getIfeTssyukyhkinkatakbn() {
+        return ifeTssyukyhkinkatakbn;
+    }
+
+    public void setIfeTssyukyhkinkatakbn(String pIfeTssyukyhkinkatakbn) {
+        ifeTssyukyhkinkatakbn = pIfeTssyukyhkinkatakbn;
+    }
+
+    @Column(order = 32, label = "khnkyhkgbairitukbn")
+    private String ifeTskhnkyhkgbairitukbn;
+
+    public String getIfeTskhnkyhkgbairitukbn() {
+        return ifeTskhnkyhkgbairitukbn;
+    }
+
+    public void setIfeTskhnkyhkgbairitukbn(String pIfeTskhnkyhkgbairitukbn) {
+        ifeTskhnkyhkgbairitukbn = pIfeTskhnkyhkgbairitukbn;
+    }
+
+    @Column(order = 33, label = "rokudaildkbn")
+    private String ifeTsrokudaildkbn;
+
+    public String getIfeTsrokudaildkbn() {
+        return ifeTsrokudaildkbn;
+    }
+
+    public void setIfeTsrokudaildkbn(String pIfeTsrokudaildkbn) {
+        ifeTsrokudaildkbn = pIfeTsrokudaildkbn;
+    }
+
+    @Column(order = 34, label = "pmnjtkkbn")
+    private String ifeTspmnjtkkbn;
+
+    public String getIfeTspmnjtkkbn() {
+        return ifeTspmnjtkkbn;
+    }
+
+    public void setIfeTspmnjtkkbn(String pIfeTspmnjtkkbn) {
+        ifeTspmnjtkkbn = pIfeTspmnjtkkbn;
+    }
+
+    @Column(order = 35, label = "kihons")
+    private String ifeTskihons;
+
+    public String getIfeTskihons() {
+        return ifeTskihons;
+    }
+
+    public void setIfeTskihons(String pIfeTskihons) {
+        ifeTskihons = pIfeTskihons;
+    }
+
+    @Column(order = 36, label = "kihons$")
+    private String ifeTskihonst;
+
+    public String getIfeTskihonst() {
+        return ifeTskihonst;
+    }
+
+    public void setIfeTskihonst(String pIfeTskihonst) {
+        ifeTskihonst = pIfeTskihonst;
+    }
+
+    @Column(order = 37, label = "hokenryou")
+    private String ifeTshokenryou;
+
+    public String getIfeTshokenryou() {
+        return ifeTshokenryou;
+    }
+
+    public void setIfeTshokenryou(String pIfeTshokenryou) {
+        ifeTshokenryou = pIfeTshokenryou;
+    }
+
+    @Column(order = 38, label = "hokenryou$")
+    private String ifeTshokenryout;
+
+    public String getIfeTshokenryout() {
+        return ifeTshokenryout;
+    }
+
+    public void setIfeTshokenryout(String pIfeTshokenryout) {
+        ifeTshokenryout = pIfeTshokenryout;
+    }
+
+    @Column(order = 39, label = "kyktuukasyu")
+    private String ifeTskyktuukasyu;
+
+    public String getIfeTskyktuukasyu() {
+        return ifeTskyktuukasyu;
+    }
+
+    public void setIfeTskyktuukasyu(String pIfeTskyktuukasyu) {
+        ifeTskyktuukasyu = pIfeTskyktuukasyu;
+    }
+
+    @Column(order = 40, label = "ryouritusdno")
+    private String ifeTsryouritusdno;
+
+    public String getIfeTsryouritusdno() {
+        return ifeTsryouritusdno;
+    }
+
+    public void setIfeTsryouritusdno(String pIfeTsryouritusdno) {
+        ifeTsryouritusdno = pIfeTsryouritusdno;
+    }
+
+    @Column(order = 41, label = "yoteiriritu")
+    private String ifeTsyoteiriritu;
+
+    public String getIfeTsyoteiriritu() {
+        return ifeTsyoteiriritu;
+    }
+
+    public void setIfeTsyoteiriritu(String pIfeTsyoteiriritu) {
+        ifeTsyoteiriritu = pIfeTsyoteiriritu;
+    }
+
+    @Column(order = 42, label = "yoteirrthendohosyurrt")
+    private String ifeTsyoteirrthendohosyurrt;
+
+    public String getIfeTsyoteirrthendohosyurrt() {
+        return ifeTsyoteirrthendohosyurrt;
+    }
+
+    public void setIfeTsyoteirrthendohosyurrt(String pIfeTsyoteirrthendohosyurrt) {
+        ifeTsyoteirrthendohosyurrt = pIfeTsyoteirrthendohosyurrt;
+    }
+
+    @Column(order = 43, label = "ytirrthndmnskaisuu")
+    private String ifeTsytirrthndmnskaisuu;
+
+    public String getIfeTsytirrthndmnskaisuu() {
+        return ifeTsytirrthndmnskaisuu;
+    }
+
+    public void setIfeTsytirrthndmnskaisuu(String pIfeTsytirrthndmnskaisuu) {
+        ifeTsytirrthndmnskaisuu = pIfeTsytirrthndmnskaisuu;
+    }
+
+    @Column(order = 44, label = "kyksjkkktyouseiriritu")
+    private String ifeTskyksjkkktyouseiriritu;
+
+    public String getIfeTskyksjkkktyouseiriritu() {
+        return ifeTskyksjkkktyouseiriritu;
+    }
+
+    public void setIfeTskyksjkkktyouseiriritu(String pIfeTskyksjkkktyouseiriritu) {
+        ifeTskyksjkkktyouseiriritu = pIfeTskyksjkkktyouseiriritu;
+    }
+
+    @Column(order = 45, label = "nksyukbn")
+    private String ifeTsnksyukbn;
+
+    public String getIfeTsnksyukbn() {
+        return ifeTsnksyukbn;
+    }
+
+    public void setIfeTsnksyukbn(String pIfeTsnksyukbn) {
+        ifeTsnksyukbn = pIfeTsnksyukbn;
+    }
+
+    @Column(order = 46, label = "nenkinkkn")
+    private String ifeTsnenkinkkn;
+
+    public String getIfeTsnenkinkkn() {
+        return ifeTsnenkinkkn;
+    }
+
+    public void setIfeTsnenkinkkn(String pIfeTsnenkinkkn) {
+        ifeTsnenkinkkn = pIfeTsnenkinkkn;
+    }
+
+    @Column(order = 47, label = "nkgnshosyouritu")
+    private String ifeTsnkgnshosyouritu;
+
+    public String getIfeTsnkgnshosyouritu() {
+        return ifeTsnkgnshosyouritu;
+    }
+
+    public void setIfeTsnkgnshosyouritu(String pIfeTsnkgnshosyouritu) {
+        ifeTsnkgnshosyouritu = pIfeTsnkgnshosyouritu;
+    }
+
+    @Column(order = 48, label = "nkgnshosyougk")
+    private String ifeTsnkgnshosyougk;
+
+    public String getIfeTsnkgnshosyougk() {
+        return ifeTsnkgnshosyougk;
+    }
+
+    public void setIfeTsnkgnshosyougk(String pIfeTsnkgnshosyougk) {
+        ifeTsnkgnshosyougk = pIfeTsnkgnshosyougk;
+    }
+
+    @Column(order = 49, label = "nkgnshosyougk$")
+    private String ifeTsnkgnshosyougkt;
+
+    public String getIfeTsnkgnshosyougkt() {
+        return ifeTsnkgnshosyougkt;
+    }
+
+    public void setIfeTsnkgnshosyougkt(String pIfeTsnkgnshosyougkt) {
+        ifeTsnkgnshosyougkt = pIfeTsnkgnshosyougkt;
+    }
+
+    @Column(order = 50, label = "gyoumuKousinKinou")
+    private String ifeTsgyoumukousinkinou;
+
+    public String getIfeTsgyoumukousinkinou() {
+        return ifeTsgyoumukousinkinou;
+    }
+
+    public void setIfeTsgyoumukousinkinou(String pIfeTsgyoumukousinkinou) {
+        ifeTsgyoumukousinkinou = pIfeTsgyoumukousinkinou;
+    }
+
+    @Column(order = 51, label = "gyoumuKousinsyaId")
+    private String ifeTsgyoumukousinsyaid;
+
+    public String getIfeTsgyoumukousinsyaid() {
+        return ifeTsgyoumukousinsyaid;
+    }
+
+    public void setIfeTsgyoumukousinsyaid(String pIfeTsgyoumukousinsyaid) {
+        ifeTsgyoumukousinsyaid = pIfeTsgyoumukousinsyaid;
+    }
+
+    @Column(order = 52, label = "gyoumuKousinTime")
+    private String ifeTsgyoumukousintime;
+
+    public String getIfeTsgyoumukousintime() {
+        return ifeTsgyoumukousintime;
+    }
+
+    public void setIfeTsgyoumukousintime(String pIfeTsgyoumukousintime) {
+        ifeTsgyoumukousintime = pIfeTsgyoumukousintime;
+    }
+
+    @Column(order = 53, label = "kousinsyaId")
+    private String ifeTskousinsyaid;
+
+    public String getIfeTskousinsyaid() {
+        return ifeTskousinsyaid;
+    }
+
+    public void setIfeTskousinsyaid(String pIfeTskousinsyaid) {
+        ifeTskousinsyaid = pIfeTskousinsyaid;
+    }
+
+    @Column(order = 54, label = "kousinTime")
+    private String ifeTskousintime;
+
+    public String getIfeTskousintime() {
+        return ifeTskousintime;
+    }
+
+    public void setIfeTskousintime(String pIfeTskousintime) {
+        ifeTskousintime = pIfeTskousintime;
+    }
+
+    @Column(order = 55, label = "kousinKinou")
+    private String ifeTskousinkinou;
+
+    public String getIfeTskousinkinou() {
+        return ifeTskousinkinou;
+    }
+
+    public void setIfeTskousinkinou(String pIfeTskousinkinou) {
+        ifeTskousinkinou = pIfeTskousinkinou;
+    }
+
+    @Column(order = 56, label = "version")
+    private String ifeTsversion;
+
+    public String getIfeTsversion() {
+        return ifeTsversion;
+    }
+
+    public void setIfeTsversion(String pIfeTsversion) {
+        ifeTsversion = pIfeTsversion;
+    }
+
+    @Column(order = 57, label = "gengakugoyenitijibrpstgk")
+    private String ifeTsgengakugyenitjbrpstgk;
+
+    public String getIfeTsgengakugyenitjbrpstgk() {
+        return ifeTsgengakugyenitjbrpstgk;
+    }
+
+    public void setIfeTsgengakugyenitjbrpstgk(String pIfeTsgengakugyenitjbrpstgk) {
+        ifeTsgengakugyenitjbrpstgk = pIfeTsgengakugyenitjbrpstgk;
+    }
+
+    @Column(order = 58, label = "gengakugoyenitijibrpstgk$")
+    private String ifeTsgengakugyenitjbrpstgkt;
+
+    public String getIfeTsgengakugyenitjbrpstgkt() {
+        return ifeTsgengakugyenitjbrpstgkt;
+    }
+
+    public void setIfeTsgengakugyenitjbrpstgkt(String pIfeTsgengakugyenitjbrpstgkt) {
+        ifeTsgengakugyenitjbrpstgkt = pIfeTsgengakugyenitjbrpstgkt;
+    }
+
+    @Column(order = 59, label = "yendthnkymd")
+    private String ifeTsyendthnkymd;
+
+    public String getIfeTsyendthnkymd() {
+        return ifeTsyendthnkymd;
+    }
+
+    public void setIfeTsyendthnkymd(String pIfeTsyendthnkymd) {
+        ifeTsyendthnkymd = pIfeTsyendthnkymd;
+    }
+
+    @Column(order = 60, label = "setteibairitu")
+    private String ifeTssetteibairitu;
+
+    public String getIfeTssetteibairitu() {
+        return ifeTssetteibairitu;
+    }
+
+    public void setIfeTssetteibairitu(String pIfeTssetteibairitu) {
+        ifeTssetteibairitu = pIfeTssetteibairitu;
+    }
+
+    @Column(order = 61, label = "kykjisisuurendourate")
+    private String ifeTskykjisisuurendourate;
+
+    public String getIfeTskykjisisuurendourate() {
+        return ifeTskykjisisuurendourate;
+    }
+
+    public void setIfeTskykjisisuurendourate(String pIfeTskykjisisuurendourate) {
+        ifeTskykjisisuurendourate = pIfeTskykjisisuurendourate;
+    }
+
+    @Column(order = 62, label = "tmttknzoukaritujygn")
+    private String ifeTstmttknzoukaritujygn;
+
+    public String getIfeTstmttknzoukaritujygn() {
+        return ifeTstmttknzoukaritujygn;
+    }
+
+    public void setIfeTstmttknzoukaritujygn(String pIfeTstmttknzoukaritujygn) {
+        ifeTstmttknzoukaritujygn = pIfeTstmttknzoukaritujygn;
+    }
+
+    @Column(order = 63, label = "tumitateriritu")
+    private String ifeTstumitateriritu;
+
+    public String getIfeTstumitateriritu() {
+        return ifeTstumitateriritu;
+    }
+
+    public void setIfeTstumitateriritu(String pIfeTstumitateriritu) {
+        ifeTstumitateriritu = pIfeTstumitateriritu;
+    }
+
+    @Column(order = 64, label = "tmttknhaibunjyoutai")
+    private String ifeTstmttknhaibunjyoutai;
+
+    public String getIfeTstmttknhaibunjyoutai() {
+        return ifeTstmttknhaibunjyoutai;
+    }
+
+    public void setIfeTstmttknhaibunjyoutai(String pIfeTstmttknhaibunjyoutai) {
+        ifeTstmttknhaibunjyoutai = pIfeTstmttknhaibunjyoutai;
+    }
+
+    @Column(order = 65, label = "sisuukbn")
+    private String ifeTssisuukbn;
+
+    public String getIfeTssisuukbn() {
+        return ifeTssisuukbn;
+    }
+
+    public void setIfeTssisuukbn(String pIfeTssisuukbn) {
+        ifeTssisuukbn = pIfeTssisuukbn;
+    }
+
+    @Column(order = 66, label = "gsbunrikzkakuninumu")
+    private String ifeTsgsbunrikzkakuninumu;
+
+    public String getIfeTsgsbunrikzkakuninumu() {
+        return ifeTsgsbunrikzkakuninumu;
+    }
+
+    public void setIfeTsgsbunrikzkakuninumu(String pIfeTsgsbunrikzkakuninumu) {
+        ifeTsgsbunrikzkakuninumu = pIfeTsgsbunrikzkakuninumu;
+    }
+
+    @Column(order = 67, label = "gsbunritaisyou")
+    private String ifeTsgsbunritaisyou;
+
+    public String getIfeTsgsbunritaisyou() {
+        return ifeTsgsbunritaisyou;
+    }
+
+    public void setIfeTsgsbunritaisyou(String pIfeTsgsbunritaisyou) {
+        ifeTsgsbunritaisyou = pIfeTsgsbunritaisyou;
+    }
+
+    @Column(order = 68, label = "pharaikomisougaku")
+    private String ifeTspharaikomisougaku;
+
+    public String getIfeTspharaikomisougaku() {
+        return ifeTspharaikomisougaku;
+    }
+
+    public void setIfeTspharaikomisougaku(String pIfeTspharaikomisougaku) {
+        ifeTspharaikomisougaku = pIfeTspharaikomisougaku;
+    }
+
+    @Column(order = 69, label = "pharaikomisougaku$")
+    private String ifeTspharaikomisougakut;
+
+    public String getIfeTspharaikomisougakut() {
+        return ifeTspharaikomisougakut;
+    }
+
+    public void setIfeTspharaikomisougakut(String pIfeTspharaikomisougakut) {
+        ifeTspharaikomisougakut = pIfeTspharaikomisougakut;
+    }
+
+    @Column(order = 70, label = "tmttknitenymd")
+    private String ifeTstmttknitenymd;
+
+    public String getIfeTstmttknitenymd() {
+        return ifeTstmttknitenymd;
+    }
+
+    public void setIfeTstmttknitenymd(String pIfeTstmttknitenymd) {
+        ifeTstmttknitenymd = pIfeTstmttknitenymd;
+    }
+
+    @Column(order = 71, label = "loadinghnkgtumitateriritu")
+    private String ifeTsloadinghnkgtmttrrt;
+
+    public String getIfeTsloadinghnkgtmttrrt() {
+        return ifeTsloadinghnkgtmttrrt;
+    }
+
+    public void setIfeTsloadinghnkgtmttrrt(String pIfeTsloadinghnkgtmttrrt) {
+        ifeTsloadinghnkgtmttrrt = pIfeTsloadinghnkgtmttrrt;
+    }
+
+    @Column(order = 72, label = "rendouritu")
+    private String ifeTsrendouritu;
+
+    public String getIfeTsrendouritu() {
+        return ifeTsrendouritu;
+    }
+
+    public void setIfeTsrendouritu(String pIfeTsrendouritu) {
+        ifeTsrendouritu = pIfeTsrendouritu;
+    }
+
+    @Column(order = 73, label = "teikishrritu")
+    private String ifeTsteikishrritu;
+
+    public String getIfeTsteikishrritu() {
+        return ifeTsteikishrritu;
+    }
+
+    public void setIfeTsteikishrritu(String pIfeTsteikishrritu) {
+        ifeTsteikishrritu = pIfeTsteikishrritu;
+    }
+
+    @Override
+    public String toString() {
+        return BeanUtil.toString(this);
+    }
+
+}
