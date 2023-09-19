@@ -1,0 +1,30 @@
+package yuyu.common.workflowcore.core.webservice.provide.kouteikanri.gettaskkensuubyactor;
+
+
+import java.util.Map;
+
+import net.arnx.jsonic.JSONHint;
+import yuyu.common.workflowcore.core.iwfinfr.util.IwfDecodeType;
+import yuyu.common.workflowcore.core.iwfinfr.util.IwfNeedsDecode;
+import yuyu.common.workflowcore.core.webservice.common.WSCommonResponse;
+
+/**
+ * ユーザ別タスク件数照会サービスのレスポンスBeanです。<br/>
+ */
+@SuppressWarnings("serial")
+public class WSGetTaskKensuuByActorResponse extends WSCommonResponse {
+
+
+    @IwfNeedsDecode(IwfDecodeType.BASE64)
+    private Map<String,String>[] taskSummaryMaps_;
+
+    @JSONHint(name=IWSGetTaskKensuuByActorIOKey.OUT.sO_TASKSUMMARYMAPS)
+    public Map<String,String>[] getTaskSummaryMaps() {
+        return taskSummaryMaps_;
+    }
+
+    public void setTaskSummaryMaps(Map<String,String>[] summaryMaps) {
+        taskSummaryMaps_ = summaryMaps;
+    }
+
+}
