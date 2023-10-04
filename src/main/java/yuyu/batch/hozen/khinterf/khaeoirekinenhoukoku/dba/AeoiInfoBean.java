@@ -1,0 +1,45 @@
+package yuyu.batch.hozen.khinterf.khaeoirekinenhoukoku.dba;
+
+import java.io.Serializable;
+
+import jp.co.slcs.swak.db.EntityContainer;
+import jp.co.slcs.swak.util.bean.BeanUtil;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import yuyu.def.db.entity.IT_AeoiInfo;
+import yuyu.def.db.entity.IT_AnsyuKihon;
+import yuyu.def.db.entity.IT_KykKihon;
+import yuyu.def.db.entity.IT_KykSya;
+import yuyu.def.db.entity.IT_KykSyouhn;
+
+/**
+ * ＡＥＯＩ暦年報告情報Beanクラスです。<br />
+ */
+@AllArgsConstructor
+public class AeoiInfoBean implements Serializable,EntityContainer {
+
+    private static final long serialVersionUID = 1L;
+
+
+    @Getter @Setter
+    private IT_AeoiInfo iT_AeoiInfo;
+
+    @Getter @Setter
+    private IT_KykKihon iT_KykKihon;
+
+    @Getter @Setter
+    private IT_KykSyouhn iT_KykSyouhn;
+
+    @Getter @Setter
+    private IT_KykSya iT_KykSya;
+
+    @Getter @Setter
+    private IT_AnsyuKihon iT_AnsyuKihon;
+
+    @Override
+    public String toString() {
+        return BeanUtil.toString(this);
+    }
+
+}
