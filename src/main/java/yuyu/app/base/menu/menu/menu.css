@@ -1,0 +1,157 @@
+/* メニュー -  menu.css */
+div.mainContents {
+	overflow-y: auto;
+}
+
+table.groupTitle {
+	display: none;
+}
+
+table.listItems {
+	display: none;
+}
+
+#menuContents {
+	display: none;
+}
+
+#myMenuContents {
+	display: none;
+}
+
+.popupLink {
+	display: none;
+}
+
+.infoMsgArea {
+	display: none;
+	margin-top: 15px;
+	width: 100%;
+	max-height: 150px;
+	overflow-y: auto;
+	border: solid 1px;
+}
+
+a:link {
+	text-decoration: none;
+	outline: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: large;
+	font-weight: normal;
+	color: #4F4F4F;
+	background-color: #FEE35F;
+	background: -moz-linear-gradient(left, #FEE35F, #FFFFFF);
+	background: -webkit-gradient(linear, left center, right center, from(#FEE35F),
+		to(#FFFFFF));
+	background: linear-gradient(to right, #FEE35F, #FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,
+		startColorstr='#FFFEE35F', endColorstr='#FFFFFFFF');
+	padding: 3px 0px 1px 8px;
+	font-weight: 600;
+	text-shadow: 3px 3px 3px #FFFFFF;
+	margin: 1px;
+}
+
+h2 {
+	font-size: medium;
+	font-weight: normal;
+	color: #FF6600;
+	border-bottom: solid #FF6600;
+	padding-left: 5px;
+	text-shadow: 1px 1px 1px #FF6600;
+	margin-bottom: 12px;
+}
+
+table.kinous td.kinou {
+	width: 33%;
+	vertical-align: middle;
+}
+
+table.kinous td {
+	height: 2.5em;
+	color: #239627;
+	padding-left: 5px;
+}
+
+table.kinous td.check {
+	width: 50px;
+}
+
+table.kinous td.active {
+	background-color: #FFFFC0;
+	color: red;
+}
+
+.mainContents {
+	cursor: default;
+}
+
+form div {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12px;
+}
+
+.listDiv {
+	width: 97%;
+}
+
+.listDiv div {
+	width: 97%;
+}
+
+.listDiv div div {
+	width: 100%;
+}
+
+div.contentsHeader {
+	background-image: url(../../../img/MenuHeader.png);
+	background-repeat: no-repeat;
+	height: 90px;
+	position: relative;
+}
+
+div.contentsHeaderLeft {
+	display: none;
+}
+
+div.contentsHeaderRight {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#menuFooterLinkDiv {
+	margin-bottom: 10px;
+}
+
+div.footer {
+	margin-bottom: 5px;
+}
+
+.menuFooterLink {
+	display: inline-block;
+	padding-left: 10x;
+}
+
+#menuFooterButtonsDiv {
+	text-align: left;
+}
+
+input.menuFooterButton {
+	width: 100px;
+	font-size: x-small;
+	margin-top: 3px;
+	margin-left: 8px;
+	padding: 1px;
+}
+
+.dualLink {
+	font-size: 9pt;
+}
