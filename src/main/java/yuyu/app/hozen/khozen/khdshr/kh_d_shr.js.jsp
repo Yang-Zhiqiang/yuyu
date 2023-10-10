@@ -1,0 +1,232 @@
+<%--
+    kh_d_shr.js.jsp - 配当金支払 JavaScript(JSP)
+--%>
+<%@page language="java" contentType="text/javascript; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@page import="static jp.co.slcs.swak.web.struts.ui.IdSelectorConstants.*" %>
+<%@page import="static yuyu.app.hozen.khozen.khdshr.KhDShrConstants.*" %>
+<%@page import="static yuyu.app.hozen.khozen.khdshr.KhDShrSelector.*"  %>
+<%@page import="jp.co.slcs.swak.core.inject.SWAKInjector" %>
+<%@page import="yuyu.app.hozen.khozen.khdshr.KhDShrUiBean" %>
+<%@page import="yuyu.infr.kinoumode.KinouMode" %>
+<%@page import="yuyu.common.biz.bzview.CommonViewInBean" %>
+<%@page import="yuyu.def.classification.C_HyoujiptnKbn" %>
+<%@page import="yuyu.def.classification.C_KhkinouModeIdKbn" %>
+<%@page import="yuyu.def.classification.C_SyorikekkaKbn" %>
+<%@page import="yuyu.def.classification.C_InputShrhousiteiKbn" %>
+<%@page import="yuyu.def.classification.C_UmuKbn" %>
+<% KhDShrUiBean uiBean = SWAKInjector.getInstance(KhDShrUiBean.class); %>
+<% KinouMode kinouMode = SWAKInjector.getInstance(KinouMode.class);%>
+<% CommonViewInBean commonViewInBean = SWAKInjector.getInstance(CommonViewInBean.class);
+    commonViewInBean.setCommonViewUiBeanParam(uiBean);
+    commonViewInBean.setHyoujiptnKbn(C_HyoujiptnKbn.TUUJYOU);
+%>
+<%
+  if (uiBean.getPageNo() != PAGENO_INPUTKEY) { %>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewkihon/view_kihon.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewtetudukityuui/view_tetudukityuui.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewkeiyakusya/view_keiyakusya.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewtuusinsaki/view_tuusinsaki.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewhosyou/view_hosyou.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewsonotatk/view_sonota_tk.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewharaikomiinfo/view_haraikomi_info.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewtrkkazoku/view_trk_kazoku.js.jsp"/>
+    <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewkyksyadairi/view_kyksyadairi.js.jsp"/>
+
+    <%
+      if (C_KhkinouModeIdKbn.INPUT.getValue().equals(kinouMode.getKinouMode()) ||
+          C_KhkinouModeIdKbn.TENKEN.getValue().equals(kinouMode.getKinouMode()) ||
+          C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode())) { %>
+        <jsp:include page="/WEB-INF/pages/appcommon/biz/koutei/viewkouteiinfo/view_koutei_info.js.jsp"/>
+        <jsp:include page="/WEB-INF/pages/appcommon/biz/koutei/viewprogresshistory/view_progress_history.js.jsp"/>
+  <% } %>
+<% } %>
+<%
+  if (uiBean.getPageNo() == PAGENO_INPUTCONTENTS) { %>
+    <%
+      if (C_KhkinouModeIdKbn.INPUT.getValue().equals(kinouMode.getKinouMode()) ||
+          C_KhkinouModeIdKbn.TENKEN.getValue().equals(kinouMode.getKinouMode()) ||
+          C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode())) { %>
+        <jsp:include page="/WEB-INF/pages/appcommon/biz/syoruiitiran/viewsyoruiinfoitiran/view_syorui_info_itiran.js.jsp"/>
+    <% } %>
+<% }%>
+
+<%
+  if (uiBean.getPageNo() == PAGENO_REFERENCE || uiBean.getPageNo() == PAGENO_CONFIRM || uiBean.getPageNo() == PAGENO_RESULT) { %>
+  <%
+    if (!C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode()) ||
+        !C_SyorikekkaKbn.TORIKESI.eq(uiBean.getZenkaisyorikekkakbn())) {%>
+      <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewhituyousyorui/view_hituyou_syorui.js.jsp"/>
+  <% } %>
+<% }%>
+
+<%
+  if (uiBean.getPageNo() == PAGENO_SKSCONFIRM || uiBean.getPageNo() == PAGENO_SKSRESULT) { %>
+  <jsp:include page="/WEB-INF/pages/appcommon/hozen/khview/viewhituyousyorui/view_hituyou_syorui.js.jsp"/>
+<% }%>
+
+<script type="text/javascript"><!--
+$(function(){
+<%
+  if (uiBean.getPageNo() != PAGENO_INPUTKEY) { %>
+      <%
+      if (C_KhkinouModeIdKbn.INPUTKEY.getValue().equals(kinouMode.getKinouMode()) ||
+          C_KhkinouModeIdKbn.SYOUKAI.getValue().equals(kinouMode.getKinouMode())) { %>
+        $(<%= KOUTEIINFO + DIV%>).visible(false);
+    <% } %>
+<% } %>
+
+<%
+  if (uiBean.getPageNo() == PAGENO_INPUTCONTENTS) { %>
+  <%
+    if (!C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode()) ||
+        !C_SyorikekkaKbn.TORIKESI.eq(uiBean.getZenkaisyorikekkakbn())) {%>
+        showGroup(<%=SHIHARAISYORINYUURYOKUINFO%>);
+      <%
+        if (C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode())) {%>
+          inputToOutput("#syoruiukeymdSpan > *");
+      <% } %>
+  <% } %>
+<% } %>
+
+<%
+  if (uiBean.getPageNo() == PAGENO_REFERENCE) { %>
+  <%
+    if (!C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode()) ||
+        !C_SyorikekkaKbn.TORIKESI.eq(uiBean.getZenkaisyorikekkakbn())) { %>
+         showGroup(<%=SHIHARAISYORINYUURYOKUINFO%>);
+         showKoumoku(<%=TUMITATEHAITOUGANRIKIN_SHIHARAISYORINYUURYOKUINFO%>);
+  <% } %>
+
+  <%
+    if (C_KhkinouModeIdKbn.SYOUKAI.getValue().equals(kinouMode.getKinouMode()) ||
+        C_KhkinouModeIdKbn.INPUTKEY.getValue().equals(kinouMode.getKinouMode())) { %>
+      $(<%=SKSSAKUSEIBTN_REFERENCEBUTTONS%>).visible(true);
+  <% } %>
+
+  <%
+    if ((!C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode()) ||
+         !C_SyorikekkaKbn.TORIKESI.eq(uiBean.getZenkaisyorikekkakbn())) &&
+         !C_KhkinouModeIdKbn.SYOUKAI.getValue().equals(kinouMode.getKinouMode())) { %>
+         <%
+            if (!C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode())) { %>
+              showGroup(<%=SKNAIYOUINFO%>);
+              showKoumoku(<%=INPUTHAITOUKINSKKNGK_SKNAIYOUINFO%>);
+              showGroup(<%=SIHARAIHOUHOU%>);
+              showGroup(<%=KOUZAINFO%>);
+              showGroup(<%=HONNININFO%>);
+              showGroup(<%=SHSNMINFO%>);
+         <% } %>
+         <%
+            if (C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode())) { %>
+              showGroup(<%=SKNAIYOUINFO%>);
+              inputToOutput(<%=HAITOUKINSKKBN_SKNAIYOUINFO%>);
+              showKoumoku(<%=HAITOUKINSKKNGK_SKNAIYOUINFO%>);
+
+              $(<%= ROWSPAN2 %>).attr('rowspan', '2');
+              $(<%= COLSPAN1 %>).attr('colspan', '1');
+
+              showGroup(<%=SIHARAIHOUHOU%>);
+              inputToOutput(<%=INPUTSHRHOUSITEIKBN_SIHARAIHOUHOU%>);
+
+              showGroup(<%=KOUZAINFO%>);
+              inputToOutput(<%=BANKCD_KOUZAINFO%>);
+              inputToOutput(<%=SITENCD_KOUZAINFO%>);
+              inputToOutput(<%=YOKINKBN_KOUZAINFO%>);
+              inputToOutput(<%=KOUZANO_KOUZAINFO%>);
+              inputToOutput(<%=KZDOUKBN_KOUZAINFO%>);
+              inputToOutput(<%=KZMEIGINMKN_KOUZAINFO%>);
+              $(<%= IBC1001 %>).text("");
+              $(<%= IBC1002 %>).text("");
+              $(<%= IBC1003 %>).text("");
+              $(<%= IBC1004 %>).text("");
+              $(<%= IIC1003 %>).text("");
+
+              showGroup(<%=HONNININFO%>);
+              inputToOutput(<%=HONNINKAKNINKEKKAKBN_HONNININFO%>);
+
+              showGroup(<%=SHSNMINFO%>);
+              inputToOutput(<%=SHSKYNO_SHSNMINFO%>);
+              inputToOutput(<%=SHSADR1KJ_SHSNMINFO%>);
+              inputToOutput(<%=SHSADR2KJ_SHSNMINFO%>);
+              inputToOutput(<%=SHSADR3KJ_SHSNMINFO%>);
+         <% } %>
+  <% } %>
+
+  <%
+    if (C_KhkinouModeIdKbn.INPUT.getValue().equals(kinouMode.getKinouMode()) ||
+        C_KhkinouModeIdKbn.TENKEN.getValue().equals(kinouMode.getKinouMode()) ||
+        C_KhkinouModeIdKbn.INPUTKEY.getValue().equals(kinouMode.getKinouMode())) { %>
+      showGroup(<%=KEKKAINPUTGROUP%>);
+  <%
+    } else if (C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode())) { %>
+      showGroup(<%=KEKKAINPUTGROUP%>);
+      showKoumoku(<%=SASIMODOSISAKIKBN_KEKKAINPUTGROUP%>);
+  <% } %>
+
+  <%
+    if (!C_KhkinouModeIdKbn.SYOUKAI.getValue().equals(kinouMode.getKinouMode())) { %>
+      showGroup(<%=FOOTERBUTTONS3%>);
+  <% } %>
+<% } %>
+
+<%
+  if (uiBean.getPageNo() == PAGENO_CONFIRM || uiBean.getPageNo() == PAGENO_RESULT) { %>
+    <%
+    if (!C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode()) ||
+        !C_SyorikekkaKbn.TORIKESI.eq(uiBean.getZenkaisyorikekkakbn())) { %>
+          showGroup(<%=SHIHARAISYORINYUURYOKUINFO%>);
+
+          showGroup(<%=SIHARAINAIYOUINFOGK%>);
+
+          showGroup(<%=SKNAIYOUINFO%>);
+          showKoumoku(<%=HAITOUKINSKKNGK_SKNAIYOUINFO%>);
+
+          showGroup(<%=SIHARAIHOUHOU%>);
+
+          showGroup(<%=KOUZAINFO%>);
+
+          showGroup(<%=HONNININFO%>);
+
+          showGroup(<%=SHSNMINFO%>);
+
+          $(<%= ROWSPAN2 %>).attr('rowspan', '2');
+          $(<%= COLSPAN1 %>).attr('colspan', '1');
+
+          <%
+            if (C_InputShrhousiteiKbn.KARIUKE_RISOKU_NASI.eq(uiBean.getInputshrhousiteikbn())) {%>
+                $(<%=DISPTIENRSKKISANYMDNISSUU_SIHARAINAIYOUINFOGK%>).css("padding-right", "110px");
+          <%
+
+          } else { %>
+             <%
+               if (!C_SyorikekkaKbn.SYOUNIN.eq(uiBean.getSyorikekkakbn()) && !C_SyorikekkaKbn.KANRYOU.eq(uiBean.getSyorikekkakbn())) { %>
+                 $(<%=DISPTIENRSKKISANYMDNISSUU_DATA%>).removeClass("alignRight");
+             <% } %>
+          <% } %>
+    <% } %>
+
+    showGroup(<%=KEKKAINPUTGROUP%>);
+
+    <%
+      if (C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode())) { %>
+        showKoumoku(<%=SASIMODOSISAKIKBN_KEKKAINPUTGROUP%>);
+    <% } %>
+<% } %>
+
+<%
+  if (uiBean.getPageNo() == PAGENO_SKSCONFIRM || uiBean.getPageNo() == PAGENO_SKSRESULT) { %>
+  <%
+    if (!C_KhkinouModeIdKbn.SYOUNIN.getValue().equals(kinouMode.getKinouMode()) ||
+        !C_SyorikekkaKbn.TORIKESI.eq(uiBean.getZenkaisyorikekkakbn())) { %>
+         showGroup(<%=SHIHARAISYORINYUURYOKUINFO%>);
+         showKoumoku(<%=TUMITATEHAITOUGANRIKIN_SHIHARAISYORINYUURYOKUINFO%>);
+  <% } %>
+<% }%>
+ <% if (uiBean.getPageNo() == PAGENO_RESULT || uiBean.getPageNo() == PAGENO_SKSRESULT) { %>
+    <% if (C_UmuKbn.ARI.eq(uiBean.getTyouhyoumukbn())) { %>
+        openReport("print", "_blank");
+    <% } %>
+ <% } %>
+});
+//-->
+</script>
