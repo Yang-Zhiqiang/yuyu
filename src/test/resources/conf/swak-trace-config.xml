@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-trace-config>
+<!--
+  TraceModule (TraceInterceptor) 用の設定ファイルです。
+  この設定ファイルの内容は TraceConfig クラスに読み込まれます。
+-->
+<traceConfig>
+  <!--
+    TraceInterceptor の 有効／無効 を設定します。
+
+      true  : TraceInterceptor を有効化します。
+              TraceInterceptor で大量のトレースログが出力されるようになりデバッグしやすくなりますが、パフォーマンスは落ちます。
+
+      false : TraceInterceptor を無効化します (TraceInterceptor は bindInterceptor されません)。
+              TraceInterceptor によるトレースログが一切出力されなくなる代わりにパフォーマンスが上がります。
+
+      注1)
+        この設定で有効／無効化されるのは TraceInterceptor によるトレースログ出力のみです。
+        メソッド中にハードコーディングされた
+          log.trace("トレースログ");
+        のようなトレースログ出力は、この設定の影響を受けません。
+        これらトレースログの出力レベルは logback.xml で設定してください。
+
+      注2)
+        TraceInterceptor は slf4j の Logger を使ってトレースログを出力するので、
+        ベースとなるログ出力レベルの設定は logback.xml に準じます。
+        この設定ファイルでいくら traceEnabled を true に設定しても
+        logback.xml で「トレースログ禁止」にされていたらトレースログは出力されません。
+  -->
+  <traceEnabled>true</traceEnabled>
+
+  <excludePackages>
+    <excludePackage>jp.co.slcs.swak.bizinfr.configuration.kinouconfig</excludePackage>
+    <excludePackage>jp.co.slcs.swak.bizinfr.dao</excludePackage>
+    <excludePackage>jp.co.slcs.swak.conversion.converter</excludePackage>
+    <excludePackage>jp.co.slcs.swak.db.typesafe</excludePackage>
+    <excludePackage>jp.co.slcs.swak.file.manager</excludePackage>
+    <excludePackage>jp.co.slcs.swak.web.auth</excludePackage>
+    <excludePackage>jp.co.slcs.swak.web.processor</excludePackage>
+    <excludePackage>jp.co.slcs.swak.util.message</excludePackage>
+
+<!--
+    <excludePackage>yuyu.def.db.dao</excludePackage>
+    <excludePackage>yuyu.def.db.entity</excludePackage>
+-->
+  </excludePackages>
+
+  <excludeClasses>
+    <excludeClass>jp.co.slcs.swak.sequence.PersistenceManager</excludeClass>
+    <excludeClass>jp.co.slcs.swak.uniquekey.AppIdentifierManager</excludeClass>
+    <excludeClass>jp.co.slcs.swak.core.util.ProxyAnalyzer</excludeClass>
+    <excludeClass>jp.co.slcs.swak.util.schedule.TimerScheduleManager</excludeClass>
+    <excludeClass>jp.co.slcs.swak.web.auth.UserSessionManager</excludeClass>
+    <excludeClass>jp.co.slcs.swak.web.filter.ResourceFilter</excludeClass>
+<!--
+    <excludeClass>yuyu.def.base.manager.AbstractDomManager</excludeClass>
+-->
+    <excludeClass>yuyu.testinfr.inject.YuyuMockBatchModule</excludeClass>
+    <excludeClass>yuyu.testinfr.inject.YuyuMockBatchModule$MockBatchJob</excludeClass>
+  </excludeClasses>
+
+</traceConfig>
