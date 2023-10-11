@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE selenium-test-config>
+  <!-- Seleniumテスト基盤 設定情報 -->
+<seleniumTestConfig>
+
+  <seleniumConfig>
+
+    <webDriver>org.openqa.selenium.chrome.ChromeDriver</webDriver>
+
+<!--
+    WebDriver は以下の５つから選択します。
+
+    <webDriver>org.openqa.selenium.firefox.FirefoxDriver</webDriver>
+    <webDriver>org.openqa.selenium.chrome.ChromeDriver</webDriver>
+    <webDriver>org.openqa.selenium.ie.InternetExplorerDriver</webDriver>
+
+    <webDriver>org.openqa.selenium.opera.OperaDriver</webDriver>
+    <webDriver>org.openqa.selenium.safari.SafariDriver/<webDriver>
+
+    正常動作確認済みは「FirefoxDriver」「ChromeDriver」「InternetExplorerDriver」のみです。
+
+    ・Selenium においては Firefox が一番安定しており、デファクトスタンダード。
+      基盤チーム的には Firefox ( + Firebug) を最も推奨する。
+
+    ・Chrome は delay（この設定ファイルで指定する「待ち時間」）を設定してやらないと
+      うまく動かない（delay = 0 だとかなりの高確率で失敗する）。
+      しかし delay さえちゃんと設定してやれば正しく動くし、
+      Selenium 自体の動作は Chrome が一番速いようだ。
+      また Chrome は (Firefox における Firebug のような) デバッグ用アドインを足さずとも、
+      デフォルトの開発者ユーティリティーが充実しているので、クライアントサイドのデバッグにも向く。
+
+    ・IE は Chrome 同様 delay の設定が必要。また 32bit IE でないと正常動作しない。
+      さらにインターネットオプションのセキュリティー設定を変更しなければならない。
+      そのため SLC では、Selenium のテスト対象ブラウザとして IE はあまり推奨しない。
+      どうしても IE でテストしたいのなら
+      「セキュリティー設定を変えても良いような、テスト専用端末」
+      を用意すべき。
+
+    ・その他の ブラウザ は未検証。
+-->
+
+    <ieDriverServer>src/test/lib/IEDriver_x64/IEDriverServer.exe</ieDriverServer>
+<!--
+    <ieDriverServer>src/test/lib/IEDriver_win32/IEDriverServer.exe</ieDriverServer>
+    <ieDriverServer>src/test/lib/IEDriver_x64/IEDriverServer.exe</ieDriverServer>
+-->
+    <chromeDriver>src/test/lib/chromedriver.exe</chromeDriver>
+
+  </seleniumConfig>
+
+  <protocol>http</protocol>
+  <host>localhost</host>
+  <port>8080</port>
+  <contextName>yuyuseiho-pkg</contextName>
+
+  <screenshotDir>work/ss/</screenshotDir>
+
+  <assertionErrorScreenshotFileName>AssertionError.png</assertionErrorScreenshotFileName>
+
+  <!--
+    ボタン押下後やスクリーンショット撮影前に入れる「待ち時間」をミリ秒単位で指定します。
+
+    Firefox は 待ち時間 が 0 でも正しく動きます。
+    もちろん、待ち時間を設定しても正しく動きます。
+
+    IE や Chrome は 500 ミリ秒程度の待ち時間を入れないと
+      「次の画面が開ききる前に次の画面の操作に入ってしまい、検証に失敗する」
+    ことがあります。
+
+    テスト機のマシンスペックによってはもっと長い待ちを入れないとテストがうまく動かない
+    ことがあるかもしれませんが、長い待ち時間を指定すると当然テストの実行は遅くなります。
+
+    WebDriver (ブラウザをコントロールするプログラム) 作成者の思想の違いだとは思いますが、
+    Firefox用の WebDriver は「サーバーレスポンスをダウンロードし切るのをちゃんと待ってから、次の画面操作を開始する」ように作られており、
+    待ち時間 が 0 でも正しく動きます。「レスポンス完了前からのボタン連打とかをしない、行儀の良いクライアントユーザー」のイメージです。
+    一方、IE や Chrome の WebDriver は（たぶん、わざと）「サーバーレスポンスをダウンロードし切る前から、次の画面の操作が可能」となっています。
+    このため 500 ミリ秒程度の待ち時間を入れないと「次画面遷移(描画)が完了する前に、機能名が反映されるハズのウィンドウタイトルを検証しに行ってしまう」ため、
+    「正しく画面遷移することができなかった」と誤認してしまいます。
+    IE や Chrome の WebDriver は「レスポンスダウンロードの最中から、次画面でボタンが描画されるであろう位置で予め連打操作をするような、
+    行儀の悪いクライアントユーザー」さえもエミュレートすることが可能な WebDriver として設計されているようです。
+  -->
+  <delay>200</delay>
+
+  <windowSizeWidth>1024</windowSizeWidth>
+  <windowSizeHeight>768</windowSizeHeight>
+
+</seleniumTestConfig>

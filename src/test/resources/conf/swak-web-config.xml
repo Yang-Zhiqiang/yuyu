@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE swak-web-config>
+
+<swakWebConfig>
+  <!--
+    LoginManager # login(String, String) でのログイン失敗時、LoginFailedException を throw するまでの待ち時間 (単位:ミリ秒) です。
+    待ち時間を増やせば、連続ログイン失敗による「サービス拒否(DOS)攻撃」や「パスワード辞書アタック」に対する耐性が上がります。
+    ただし、パスワード入力ミス時のレスポンスタイムも増えるので、極端に大きな値にするとクライアントユーザーは
+    「サーバーが落ちた。レスポンス返ってこない」と勘違いします。
+  -->
+  <loginFailureWaitTime>1000</loginFailureWaitTime>
+
+  <messageManager>jp.co.slcs.swak.web.message.DefaultMessageManager</messageManager>
+
+  <messageOrder>jp.co.slcs.swak.web.message.DefaultMessageOrder</messageOrder>
+
+  <elResolvers>
+    <elResolver>jp.co.slcs.swak.web.conversation.el.ConversationELResolver</elResolver>
+    <elResolver>jp.co.slcs.swak.web.ui.el.UiBeanELResolver</elResolver>
+  </elResolvers>
+
+  <actionProvider>jp.co.slcs.swak.web.test.ActionProviderForTest</actionProvider>
+
+  <renderRecordCountUnit>unit.ken</renderRecordCountUnit>
+</swakWebConfig>
