@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE logback>
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date{HH:mm:ss.SSS} %-5level %-56.56logger [%-16.16thread] - %message%n%xException{full}
+      </pattern>
+    </encoder>
+  </appender>
+
+  <root level="TRACE">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+  <logger name="jp.co.slcs.swak.core.inject.Slf4JTypeListener"           level="DEBUG" />
+  <logger name="jp.co.slcs.swak.core.inject.TraceModule"                 level="DEBUG" />
+  <logger name="jp.co.slcs.swak.core.inject.scope"                       level="DEBUG" />
+  <logger name="jp.co.slcs.swak.core.resource"                           level="DEBUG" />
+  <logger name="jp.co.slcs.swak.db.driver"                               level="DEBUG" />
+  <logger name="jp.co.slcs.swak.db.typesafe.AbstractPersistenceUnit"     level="DEBUG" />
+  <logger name="jp.co.slcs.swak.db.typesafe.AbstractExDBPrimaryKey"      level="DEBUG" />
+  <logger name="jp.co.slcs.swak.db.typesafe.AbstractExDBEntity"          level="DEBUG" />
+  <logger name="jp.co.slcs.swak.web.filter.ResourceFilter"               level="DEBUG" />
+  <logger name="jp.co.slcs.swak.web.struts.action.DefaultActionProvider" level="DEBUG" />
+  <logger name="jp.co.slcs.swak.web.struts.taglib.component"             level="DEBUG" />
+  <logger name="jp.co.slcs.swak.web.test"                                level="DEBUG" />
+  <logger name="jp.co.slcs.swak.util.crypto"                             level="DEBUG" />
+
+  <logger name="yuyu.app.base.menu.menu.MenuAuthFilter"                            level="DEBUG" />
+  <logger name="yuyu.batch.base.common.addressmasterhanei.AddressMasterHaneiBatch" level="DEBUG" />
+  <logger name="yuyu.def.db.dao"                                                   level="DEBUG" />
+  <logger name="yuyu.def.db.entity"                                                level="DEBUG" />
+  <logger name="yuyu.def.base.manager"                                             level="DEBUG" />
+  <logger name="yuyu.infr.inject.KinouProvider"                                    level="DEBUG" />
+  <logger name="yuyu.testinfr.selenium"                                            level="DEBUG" />
+<!--
+-->
+  <logger name="yuyu.infr.validation.constraintvalidators"               level="DEBUG" />
+  <logger name="yuyu.testinfr.selenium.PackageWebApp"                    level="DEBUG" />
+
+<!--
+  <logger name="jp.co.slcs.swak.util.message"                            level="DEBUG" />
+-->
+
+  <logger name="org.apache"           level="INFO" />
+  <logger name="org.apache.struts"    level="WARN" />
+  <logger name="net.sf.jasperreports" level="INFO" />
+  <logger name="org.jboss"            level="INFO" />
+  <logger name="org.hibernate"        level="WARN" />
+  <logger name="net.sf.ehcache"       level="INFO" />
+  <logger name="com.mchange.v2.c3p0"  level="WARN" />
+
+  <logger name="org.h2.jdbc"          level="DEBUG" />
+  <logger name="org.openqa.selenium"  level="DEBUG" />
+
+
+
+
+  <conversionRule conversionWord="detail" converterClass="jp.co.slcs.swak.core.accesslog.AccessLogDetailConverter" />
+
+  <appender name="AccessLogConsole" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%message %date{HH:mm:ss.SSS} {ip:%-15X{IpAddress} session:%-20X{SessionId} transaction:%-8X{TransactionId}}%n %detail%n
+      </pattern>
+    </encoder>
+  </appender>
+
+<!--
+  <appender name="AccessLogDB" class="yuyu.infr.accesslog.AccessLogDBAppender">
+    <connectionSource class="ch.qos.logback.core.db.DriverManagerConnectionSource">
+      <driverClass>org.h2.Driver</driverClass>
+      <url>jdbc:h2:./db/h2db/yuyu;DB_CLOSE_ON_EXIT=TRUE;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE;MODE=Oracle</url>
+      <user>sa</user>
+      <password></password>
+    </connectionSource>
+  </appender>
+-->
+
+  <logger name="accesslog" level="ALL" additivity="false">
+    <appender-ref ref="AccessLogConsole" />
+<!--
+    <appender-ref ref="AccessLogDB" />
+-->
+  </logger>
+
+  <logger name="accesslog.web.login.success"          level="ALL" />
+  <logger name="accesslog.web.login.failure"          level="ALL" />
+  <logger name="accesslog.web.logout.success"         level="ALL" />
+  <logger name="accesslog.web.logout.failure"         level="ALL" />
+  <logger name="accesslog.web.user.lockout"           level="ALL" />
+  <logger name="accesslog.web.user.add"               level="ALL" />
+  <logger name="accesslog.web.user.change"            level="ALL" />
+  <logger name="accesslog.web.user.delete"            level="ALL" />
+  <logger name="accesslog.web.user.unlock"            level="ALL" />
+  <logger name="accesslog.web.user.passwordchange"    level="ALL" />
+  <logger name="accesslog.web.auth.error"             level="ALL" />
+  <logger name="accesslog.web.auth.kadoutime.error"   level="ALL" />
+  <logger name="accesslog.web.screen.input"           level="ALL" />
+  <logger name="accesslog.web.screen.output"          level="ALL" />
+  <logger name="accesslog.web.print"                  level="ALL" />
+  <logger name="accesslog.web.file.output"            level="ALL" />
+  <logger name="accesslog.web.db.select"              level="OFF" />
+  <logger name="accesslog.web.db.insert"              level="ALL" />
+  <logger name="accesslog.web.db.update"              level="ALL" />
+  <logger name="accesslog.web.db.delete"              level="ALL" />
+  <logger name="accesslog.web.db.commit"              level="ALL" />
+  <logger name="accesslog.web.db.rollback"            level="ALL" />
+  <logger name="accesslog.web.db.ddl"                 level="ALL" />
+
+  <logger name="accesslog.batch.start"                level="ALL" />
+  <logger name="accesslog.batch.end"                  level="ALL" />
+
+  <logger name="accesslog.batch.login.success"        level="ALL" />
+  <logger name="accesslog.batch.login.failure"        level="ALL" />
+  <logger name="accesslog.batch.logout.success"       level="ALL" />
+  <logger name="accesslog.batch.logout.failure"       level="ALL" />
+  <logger name="accesslog.batch.user.lockout"         level="ALL" />
+  <logger name="accesslog.batch.user.add"             level="ALL" />
+  <logger name="accesslog.batch.user.change"          level="ALL" />
+  <logger name="accesslog.batch.user.delete"          level="ALL" />
+  <logger name="accesslog.batch.user.unlock"          level="ALL" />
+  <logger name="accesslog.batch.user.passwordchange"  level="ALL" />
+  <logger name="accesslog.batch.auth.error"           level="ALL" />
+  <logger name="accesslog.batch.auth.kadoutime.error" level="ALL" />
+  <logger name="accesslog.batch.print"                level="ALL" />
+  <logger name="accesslog.batch.file.output"          level="ALL" />
+  <logger name="accesslog.batch.db.select"            level="ALL" />
+  <logger name="accesslog.batch.db.insert"            level="ALL" />
+  <logger name="accesslog.batch.db.update"            level="ALL" />
+  <logger name="accesslog.batch.db.delete"            level="ALL" />
+  <logger name="accesslog.batch.db.commit"            level="ALL" />
+  <logger name="accesslog.batch.db.rollback"          level="ALL" />
+  <logger name="accesslog.batch.db.ddl"               level="ALL" />
+
+</configuration>
