@@ -1,0 +1,28 @@
+package yuyu.app.siharai.sisatei.sisateisougousyoukai;
+
+import yuyu.common.biz.syoruiitiran.SyoruiInfoItiranDataSourceBeanCommonParam;
+
+/**
+ * 査定総合照会 - ●書類情報 の 行データBean クラスです。<br />
+ * このクラスは手書きのコード変更が行われる可能性があります。
+ * ツールの自動生成ファイルを無条件で上書きしないよう注意して下さい。
+ */
+public class SyoruiInfoListDataSourceBean extends GenSyoruiInfoListDataSourceBean implements
+SyoruiInfoItiranDataSourceBeanCommonParam {
+
+    private static final long serialVersionUID = 1L;
+
+    public SyoruiInfoListDataSourceBean() {
+    }
+    private String torikomiSyoruiCd;
+
+    @Override
+    public String getTorikomiSyoruiCd() {
+        return torikomiSyoruiCd;
+    }
+
+    @Override
+    public void setTorikomiSyoruiCd(String pTorikomiSyoruiCd) {
+        torikomiSyoruiCd = pTorikomiSyoruiCd;
+    }
+}
