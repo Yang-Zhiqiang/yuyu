@@ -1,0 +1,88 @@
+package yuyu.def.db.entity;
+
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.transaction.Transactional;
+
+import jp.co.slcs.swak.core.inject.SWAKInjector;
+import jp.co.slcs.swak.core.test.SWAKTestRunner;
+
+import org.junit.AfterClass;
+import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import yuyu.def.siharai.manager.SiharaiDomManager;
+import yuyu.testinfr.TestOrder;
+
+/**
+ * 通算到達テーブル エンティティのテストクラス<br />
+ */
+@RunWith(SWAKTestRunner.class)
+public class JT_TuusanToutatuEntityTest {
+
+    @Inject
+    private SiharaiDomManager siharaiDomManager;
+
+    @BeforeClass
+    @Transactional
+    public static void insertTestData() {
+
+        SiharaiDomManager siharaiDomManager = SWAKInjector.getInstance(SiharaiDomManager.class);
+
+        String pSkno1 = "1111111111";
+        String pSyono1 = "SYONO000001";
+
+        JT_SkKihon jT_SkKihon1 = new JT_SkKihon(pSkno1, pSyono1);
+
+        Integer pSeikyuurirekino = 111;
+
+        JT_Sk jT_Sk1 = jT_SkKihon1.createSk();
+        jT_Sk1.setSeikyuurirekino(pSeikyuurirekino);
+
+        String pKyuuhucd = "1111";
+
+        JT_TuusanToutatu jT_TuusanToutatu1 = jT_Sk1.createTuusanToutatu();
+        jT_TuusanToutatu1.setKyuuhucd(pKyuuhucd);
+
+        siharaiDomManager.insert(jT_SkKihon1);
+
+    }
+
+    @AfterClass
+    @Transactional
+    public static void deleteTestData() {
+
+        SiharaiDomManager siharaiDomManager = SWAKInjector.getInstance(SiharaiDomManager.class);
+
+        String pSkno1 = "1111111111";
+        String pSyono1 = "SYONO000001";
+
+        JT_SkKihon jT_SkKihon1 = siharaiDomManager.getSkKihon(pSkno1, pSyono1);
+
+        siharaiDomManager.delete(jT_SkKihon1);
+    }
+
+    @Test
+    @TestOrder(10)
+    public void getSk() {
+
+        String pSkno1 = "1111111111";
+        String pSyono1 = "SYONO000001";
+        Integer pSeikyuurirekino = 111;
+
+        JT_SkKihon jT_SkKihon1 = siharaiDomManager.getSkKihon(pSkno1, pSyono1);
+        List<JT_Sk> jT_Sks = jT_SkKihon1.getSks();
+        JT_Sk jT_Sk1 = jT_Sks.get(0);
+        List<JT_TuusanToutatu> JT_TuusanToutatus = jT_Sk1.getTuusanToutatus();
+        JT_TuusanToutatu JT_TuusanToutatu1 = JT_TuusanToutatus.get(0);
+        JT_Sk jT_Sk2 = JT_TuusanToutatu1.getSk();
+
+        Assert.assertEquals(pSyono1, jT_Sk2.getSyono());
+        Assert.assertEquals(pSkno1, jT_Sk2.getSkno());
+        Assert.assertEquals(pSeikyuurirekino, jT_Sk2.getSeikyuurirekino());
+    }
+
+}
